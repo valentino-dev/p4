@@ -14,6 +14,7 @@
 \usepackage{listings}
 \usepackage{fancyhdr}
 \usepackage{nopageno}
+\usepackage{bm}
 \usepackage{authblk}
 \usepackage{amsmath}
 \usepackage{mathtools}
@@ -43,10 +44,10 @@
 \begin{document}
 \pagenumbering{gobble}
 \maketitle
-\newpage
+%\newpage
 
-\tableofcontents
-\newpage
+%\tableofcontents
+%\newpage
 
 \pagenumbering{arabic}
 
@@ -61,11 +62,11 @@
   \section{Aufbau}
   Bei dem Aufbau handelt es sich um eine Verkabelung der vier verschiedenen Geräte: MAGNET, PS2 Controller, Mainframe und das digitale Oszilloskop.
   
-  Der \textbf{Magnet} ist eine Permanent Magnet, der ein homogenes Magnetfeld erzeugt und kann mit einer Helmholzspule, also zwei Spulen die genau einen Radius entfernt sind, ein homogenes Magnetfeld erzeugen, wenn die Spulen antisymmetrisch, also '$-+$' und '$-+$', oder ein Gradientenfeld, wenn die Spulen symmterisch, also '$-+$' und '$+-$', gepolt sind, erzeugen. Zusätzlich beinhaltet er eine sog. Sample Coil, die ein Magnetfeld innerhalb der Appartur messen kann. Solch ein Magnetfeld würde in unserem Falle eine Probe erzeugen, welche in die Mitte eingeführt werden kann, sodass sie umgeben von der Sample Coil und der Helmholzspulen ist.
+  Der \textbf{Magnet} ist eine Permanent Magnet, der ein homogenes Magnetfeld erzeugt und kann mit einer Helmholzspule, also zwei Spulen die genau einen Radius entfernt sind, ein homogenes Magnetfeld erzeugen, wenn die Spulen antisymmetrisch, also '$-+$' und '$-+$', oder ein Gradientenfeld, wenn die Spulen symmterisch, also '$-+$' und '$+-$', gepolt sind, erzeugen. Zusätzlich beinhaltet er eine sog. Sample Coil, die ein Magnetfeld innerhalb der Appartur messen kann. Solch ein Magnetfeld würde in unserem Falle eine Probe erzeugen, welche in die Mitte eingeführt werden kann, sodass sie umgeben von der Sample Coil und der Helmholzspulen ist. Das Innere ist nochmal in Abb. \ref{fig:mag} gezeigt.
 \begin{Figure}
 		\centering\includegraphics[width=0.8\textwidth]{magnet_aufbau.png}
     \captionof{figure}{Aufbau vom Magneten.\cite{TeachSpin}}
-		\label{fig:alu}
+		\label{fig:mag}
 	\end{Figure}
 
   Der \textbf{PS2 Controller} reguliert den Magneten auf die Raumtemperatur, um Imperfektionen/Inhomogenitäten zu reduzieren. Außerdem lässt er über die Stromzufuhr der Helmholzspulen dessen Gradienten einstellen. Dafür sind uns die Regler für $X$, $Y$, $Z$ und $Z^2$ gegeben. Diese sind später bei der Justage für $\frac{\pi}{2}$- bzw. $\pi$-Pulse iterativ zu optimieren. Zusätzslich lässt sich neben der Sträke auch das Vorzeichen der Gradienten mithilfe eines jeweiligen Schalters einstellen.
@@ -76,6 +77,36 @@
 
   \section{Durchführung}
   \subsection{Justage}
+  Zuerst regeln wir mithilfe von zwei Potentiometern am PS2 Controller die \textbf{Temperatur}, sodass diese auf die Raumtemperatur eingestellt ist und dort konstant hällt. Nun lassen sich \textbf{Tuning-Kondensatoren} an dem Magneten mithilfe eines nicht-magnetischen Schraubendrehers einstellen, um die Amplitude zu maxmieren. Hierbei wird das Signal betrachtet, wenn wir $\texttt{A_len}=\SI{2.5}{\micro s}$ und an dem Oszi einen Sweep von \SI{2}{\micro s/div} einstellen. Als Probe wird die mitgelieferte \textbf{Pickup Probe} verwendet. Das optimierte Signal ist in dem Oszillogramm von Abb. \ref{fig:PP} dargestellt.
+
+\begin{Figure}
+		\centering\includegraphics[width=0.8\textwidth]{scope_0.png}
+    \captionof{figure}{Signal von der Pickup Probe}
+		\label{fig:PP}
+	\end{Figure}
+Leider ist dies unser einziges gesichertes Bild von dem Singal. Eines mit korrekter Achsenbeschriftung und Skalen wurde leider nicht gesichert. Es ist allerdings auch hier schon gut zu erkennen, dass das größere Signal, also die Antwort der Pickup Probe, dann abfällt, sobald kein Magnetfeld (das kleine gerade Singal) anliegt.
+
+  Um letztlich die longitunale und transversale Relaxationszeit zu ermitteln müssen wir in der Lage sein unser Medium druch die Spins mit einem Magnetfeld magnetisieren zu können. Dafür haben wir den Magneten und die Helmholzspulen. Mithilfe der Magneten können wir mit dessen homogenen Magnetfeldes eine z-Richtung defnieren und in diese auch unser Medium magnetisieren. Dabei richten sich die Spins, welche ein magnetisches Moment aufgrund des Drehimpulses der Ladung haben, in z-Richtung aus. Nun lässt sich ein zirkular polarisiertes Magenetfeld mithilfe der Helmholzspulen anlegen. Treffen wir mit der Frequenz des zirkluaren Magnetfeldes (oder homogenes?????????) nun die sog. Lamor-Frequenz, so lässt sich ein Drehmoment auf die Spins ausüben, welches die Ausrichtung der Spins in die xy-Ebene neigt. Die Lamor-Frequen $\omega_0$ ist die gleiche, welche bei einem Übergang von $m_s=+\frac{1}{2}$ zu $m_s=-\frac{1}{2}$ benötigt wird:
+\begin{align}
+  \Delta U = \hbar \omega_0.
+\end{align}
+Um nun das Magnetfeld $B_0$ auf die Lamorfrquenz einstellen zu können, müssen wir die Energie berechnen, die uns dann den Übergang geben soll. Dafür nutzen wir die Relationen aus, dass $\bm{\mu}=\gamma \bm{J}$ und $\bm{J}=\hbar\bm{I}$ ist.
+\begin{align}
+  U &= - \bm{\mu} \cdot \bm{B}\\
+    &= - \mu_zB_0\\
+    &= - \gamma\hbar I_z B_0
+\end{align}
+Mit $m_s=\pm \frac{1}{2}$ erhalten wir als Differenz 
+\begin{align}
+  \Delta U = \gamma \hbar B_0.
+\end{align}
+Daraus ergibt die Bedingung
+\begin{align}
+  \omega_0 = \gamma B_0.
+\end{align}
+  Je länger wir nun dieses Feld angeschalten lassen, desto größer wird der Neigungswinkel. Dieser Zeitraum wird RF-Pulse genannt und lässt sich an dem Pulse Programmer mit \texttt{A_len} einstellen. Sollten wir einen Neigungswinkel von $\frac{\pi}{2}$ erreichen, so können wir aufgrund der Sample Coil, die über den Reciever verstärkt wird eine Auslänkung auf unserem Oszilloskop sehen. Erreichen wir $\pi$, so wird der Ausschlag wieder 0 sein, da die Sample Coil nur ein Magnetfeld in der xy-Ebene messen kann. Wir stellen nun die %hier jetzt die optmierung des free induction decays schrieben
+
+ 
 
   \subsection{Rabi-Oszillationen}
   
@@ -88,13 +119,14 @@
   \end{Figure}
 
   \begin{center}
-  \begin{tabular}{c|cccc}
-    fit & red. $\chi^2$ & $m$ & $b$ & $c$\\
+    \begin{tabular}{c|cc}
+    & Probe & In-Phase \\
     \hline
-    Probe & 1.02 & \SI{1478+-29}{\milli V} & \SI{0.6530+-0.0060}{\frac{1}{\micro s}} & \SI{3.120+-0.042}{}\\
-    In-Phase & 1.82 & \SI{197.9+-3.9}{\milli V} & \SI{0.6571+-0.0059}{\frac{1}{\micro s}} & \SI{-0.090+-0.041}{}
-
-  \end{tabular}
+    Reduced $\chi^2$ & 1.02 & 1.82 \\
+    $m$ & \SI{1478 \pm 29}{\milli\volt} & \SI{197.9 \pm 3.9}{\milli\volt} \\
+    $b$ & \SI{0.6530 \pm 0.0060}{\per\micro\second} & \SI{0.6571 \pm 0.0059}{\per\micro\second} \\
+    $c$ & \SI{3.120 \pm 0.042}{} & \SI{-0.090 \pm 0.041}{}
+\end{tabular}
   \captionof{table}{Ergebnisse zur p2gg Auswertung.}
   \label{Tab:1.1}
   \end{center}

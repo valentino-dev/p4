@@ -3,4 +3,4 @@
 \contentsline {section}{\numberline {2}Aufbau}{1}{}%
 \contentsline {section}{\numberline {3}Durchführung}{1}{}%
 \contentsline {subsection}{\numberline {3.1}Justage}{1}{}%
-\contentsline {subsection}{\numberline {3.2}Rabi-Oszillationen}{1}{}%
+\contentsline {subsection}{\numberline {3.2}Rabi-Oszillationen}{2}{}%

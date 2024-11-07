@@ -20,3 +20,11 @@ plot rabi_oszi_dat using 1:($2*1e3):($3*1e3) with yerrorbars pt 0 title 'Probe',
     f(x) with lines title 'Probe fit',\
     rabi_oszi_dat using 1:($4):($5) with yerrorbars pt 0 title 'In-Phase',\
     g(x) with lines title 'In-Phase fit'
+
+set datafile separator ","
+set output 'opt_sig.tex'
+opt_sig_dat='../data/print_001.csv'
+set grid
+set ylabel 'y'
+set xlabel 'x'
+plot opt_sig_dat using 1:2 with lines title 'Oszillogramm'
