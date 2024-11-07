@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.10.14)  7 NOV 2024 11:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.10.14)  7 NOV 2024 13:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -879,7 +879,235 @@ File: pgflibrarycurvilinear.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (/usr/local/texlive/2024/texmf-dist/tex/generic/circuitikz/pgfcircquadpoles.tex) (/usr/local/texlive/2024/texmf-dist/tex/generic/circuitikz/pgfcircmultipoles.tex)
 (/usr/local/texlive/2024/texmf-dist/tex/generic/circuitikz/pgfcirclabel.tex) (/usr/local/texlive/2024/texmf-dist/tex/generic/circuitikz/pgfcircvoltage.tex
 \pgfcirc@labelshift=\dimen359
-) (/usr/local/texlive/2024/texmf-dist/tex/generic/circuitikz/pgfcirccurrent.tex) (/usr/local/texlive/2024/texmf-dist/tex/generic/circuitikz/pgfcircflow.tex))
+) (/usr/local/texlive/2024/texmf-dist/tex/generic/circuitikz/pgfcirccurrent.tex) (/usr/local/texlive/2024/texmf-dist/tex/generic/circuitikz/pgfcircflow.tex)) (/usr/local/texlive/2024/texmf-dist/tex/latex/biblatex/biblatex.sty
+Package: biblatex 2024/03/21 v3.20 programmable bibliographies (PK/MW)
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+)) (/usr/local/texlive/2024/texmf-dist/tex/latex/logreq/logreq.sty
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count403
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/logreq/logreq.def
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+)) (/usr/local/texlive/2024/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip23
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+\c@tabx@nest=\count404
+\c@listtotal=\count405
+\c@listcount=\count406
+\c@liststart=\count407
+\c@liststop=\count408
+\c@citecount=\count409
+\c@citetotal=\count410
+\c@multicitecount=\count411
+\c@multicitetotal=\count412
+\c@instcount=\count413
+\c@maxnames=\count414
+\c@minnames=\count415
+\c@maxitems=\count416
+\c@minitems=\count417
+\c@citecounter=\count418
+\c@maxcitecounter=\count419
+\c@savedcitecounter=\count420
+\c@uniquelist=\count421
+\c@uniquename=\count422
+\c@refsection=\count423
+\c@refsegment=\count424
+\c@maxextratitle=\count425
+\c@maxextratitleyear=\count426
+\c@maxextraname=\count427
+\c@maxextradate=\count428
+\c@maxextraalpha=\count429
+\c@abbrvpenalty=\count430
+\c@highnamepenalty=\count431
+\c@lownamepenalty=\count432
+\c@maxparens=\count433
+\c@parenlevel=\count434
+\blx@tempcnta=\count435
+\blx@tempcntb=\count436
+\blx@tempcntc=\count437
+\c@blx@maxsection=\count438
+\blx@maxsegment@0=\count439
+\blx@notetype=\count440
+\blx@parenlevel@text=\count441
+\blx@parenlevel@foot=\count442
+\blx@sectionciteorder@0=\count443
+\blx@sectionciteorderinternal@0=\count444
+\blx@entrysetcounter=\count445
+\blx@biblioinstance=\count446
+\labelnumberwidth=\skip83
+\labelalphawidth=\skip84
+\biblabelsep=\skip85
+\bibitemsep=\skip86
+\bibnamesep=\skip87
+\bibinitsep=\skip88
+\bibparsep=\skip89
+\bibhang=\skip90
+\blx@bcfin=\read4
+\blx@bcfout=\write4
+\blx@langwohyphens=\language90
+\c@mincomprange=\count447
+\c@maxcomprange=\count448
+\c@mincompwidth=\count449
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/biblatex/blx-dm.def
+File: blx-dm.def 2024/03/21 v3.20 biblatex datamodel (PK/MW)
+)
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count450
+\c@savedafterword=\count451
+\c@annotator=\count452
+\c@savedannotator=\count453
+\c@author=\count454
+\c@savedauthor=\count455
+\c@bookauthor=\count456
+\c@savedbookauthor=\count457
+\c@commentator=\count458
+\c@savedcommentator=\count459
+\c@editor=\count460
+\c@savededitor=\count461
+\c@editora=\count462
+\c@savededitora=\count463
+\c@editorb=\count464
+\c@savededitorb=\count465
+\c@editorc=\count466
+\c@savededitorc=\count467
+\c@foreword=\count468
+\c@savedforeword=\count469
+\c@holder=\count470
+\c@savedholder=\count471
+\c@introduction=\count472
+\c@savedintroduction=\count473
+\c@namea=\count474
+\c@savednamea=\count475
+\c@nameb=\count476
+\c@savednameb=\count477
+\c@namec=\count478
+\c@savednamec=\count479
+\c@translator=\count480
+\c@savedtranslator=\count481
+\c@shortauthor=\count482
+\c@savedshortauthor=\count483
+\c@shorteditor=\count484
+\c@savedshorteditor=\count485
+\c@labelname=\count486
+\c@savedlabelname=\count487
+\c@institution=\count488
+\c@savedinstitution=\count489
+\c@lista=\count490
+\c@savedlista=\count491
+\c@listb=\count492
+\c@savedlistb=\count493
+\c@listc=\count494
+\c@savedlistc=\count495
+\c@listd=\count496
+\c@savedlistd=\count497
+\c@liste=\count498
+\c@savedliste=\count499
+\c@listf=\count500
+\c@savedlistf=\count501
+\c@location=\count502
+\c@savedlocation=\count503
+\c@organization=\count504
+\c@savedorganization=\count505
+\c@origlocation=\count506
+\c@savedoriglocation=\count507
+\c@origpublisher=\count508
+\c@savedorigpublisher=\count509
+\c@publisher=\count510
+\c@savedpublisher=\count511
+\c@language=\count512
+\c@savedlanguage=\count513
+\c@origlanguage=\count514
+\c@savedoriglanguage=\count515
+\c@pageref=\count516
+\c@savedpageref=\count517
+\shorthandwidth=\skip91
+\shortjournalwidth=\skip92
+\shortserieswidth=\skip93
+\shorttitlewidth=\skip94
+\shortauthorwidth=\skip95
+\shorteditorwidth=\skip96
+\locallabelnumberwidth=\skip97
+\locallabelalphawidth=\skip98
+\localshorthandwidth=\skip99
+\localshortjournalwidth=\skip100
+\localshortserieswidth=\skip101
+\localshorttitlewidth=\skip102
+\localshortauthorwidth=\skip103
+\localshorteditorwidth=\skip104
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/biblatex/blx-compat.def
+File: blx-compat.def 2024/03/21 v3.20 biblatex compatibility (PK/MW)
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/biblatex/biblatex.def
+File: biblatex.def 2024/03/21 v3.20 biblatex compatibility (PK/MW)
+\c@textcitecount=\count518
+\c@textcitetotal=\count519
+\c@textcitemaxnames=\count520
+\c@biburlbigbreakpenalty=\count521
+\c@biburlbreakpenalty=\count522
+\c@biburlnumpenalty=\count523
+\c@biburlucpenalty=\count524
+\c@biburllcpenalty=\count525
+\biburlbigskip=\muskip24
+\biburlnumskip=\muskip25
+\biburlucskip=\muskip26
+\biburllcskip=\muskip27
+\c@smartand=\count526
+)
+Package biblatex Info: Trying to load bibliography style 'numeric'...
+Package biblatex Info: ... file 'numeric.bbx' found.
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
+File: numeric.bbx 2024/03/21 v3.20 biblatex bibliography style (PK/MW)
+Package biblatex Info: Trying to load bibliography style 'standard'...
+Package biblatex Info: ... file 'standard.bbx' found.
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
+File: standard.bbx 2024/03/21 v3.20 biblatex bibliography style (PK/MW)
+\c@bbx:relatedcount=\count527
+\c@bbx:relatedtotal=\count528
+))
+Package biblatex Info: Trying to load citation style 'numeric'...
+Package biblatex Info: ... file 'numeric.cbx' found.
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/biblatex/cbx/numeric.cbx
+File: numeric.cbx 2024/03/21 v3.20 biblatex citation style (PK/MW)
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\supercite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\smartcites'.
+)
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/biblatex/biblatex.cfg
+File: biblatex.cfg 
+)
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Document encoding is UTF8 ....
+Package biblatex Info: ... and expl3
+(biblatex)             2024-09-10 L3 programming layer (loader) 
+(biblatex)             is new enough (at least 2020/04/06),
+(biblatex)             setting 'casechanger=expl3'.
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty (/usr/local/texlive/2024/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2024-08-16 L3 Experimental document command parser
+)
+Package: blx-case-expl3 2024/03/21 v3.20 expl3 case changing code for biblatex
+))
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
@@ -887,20 +1115,20 @@ Package csquotes Info: Redefining alias 'default' -> 'ngerman'.
  (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -938,16 +1166,16 @@ LaTeX Font Info:    ... okay on input line 40.
 
 (/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count403
+\scratchcounter=\count529
 \scratchdimen=\dimen360
 \scratchbox=\box134
-\nofMPsegments=\count404
-\nofMParguments=\count405
+\nofMPsegments=\count530
+\nofMParguments=\count531
 \everyMPshowfont=\toks47
-\MPscratchCnt=\count406
+\MPscratchCnt=\count532
 \MPscratchDim=\dimen361
-\MPnumerator=\count407
-\makeMPintoPDFobject=\count408
+\MPnumerator=\count533
+\makeMPintoPDFobject=\count534
 \everyMPtoPDFconversion=\toks48
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -958,16 +1186,40 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count409
+\c@lstlisting=\count535
  (/usr/local/texlive/2024/texmf-dist/tex/latex/translations/translations-basic-dictionary-german.trsl
 File: translations-basic-dictionary-german.trsl (german translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `german'. on input line 40.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 42.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `german'. on input line 43.
+Package biblatex Info: Trying to load language 'ngerman'...
+Package biblatex Info: ... file 'ngerman.lbx' found.
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/biblatex/lbx/ngerman.lbx
+File: ngerman.lbx 2024/03/21 v3.20 biblatex localization (PK/MW)
+Package biblatex Info: Trying to load language 'german'...
+Package biblatex Info: ... file 'german.lbx' found.
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/biblatex/lbx/german.lbx
+File: german.lbx 2024/03/21 v3.20 biblatex localization (PK/MW)
+)
+Package biblatex Info: Trying to load language 'german'...
+Package biblatex Info: ... file 'german.lbx' found.
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/biblatex/lbx/german.lbx
+File: german.lbx 2024/03/21 v3.20 biblatex localization (PK/MW)
+))
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
+\openout4 = `main.bcf'.
+
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'main.bbl' found.
+ (./main.bbl)
+Package biblatex Info: Reference section=0 on input line 43.
+Package biblatex Info: Reference segment=0 on input line 43.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 45.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 42.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 45.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
@@ -975,30 +1227,41 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 [1
 
 {/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] (./main.toc)
-\tf@toc=\write4
-\openout4 = `main.toc'.
+\tf@toc=\write5
+\openout5 = `main.toc'.
 
 
 
-[2] (./main.aux)
+[2]
+<magnet_aufbau.png, id=19, 1146.2825pt x 794.97pt>
+File: magnet_aufbau.png Graphic file (type png)
+<use magnet_aufbau.png>
+Package pdftex.def Info: magnet_aufbau.png  used on input line 66.
+(pdftex.def)             Requested size: 200.86061pt x 139.29166pt.
+
+
+[1 <./magnet_aufbau.png>] (./main.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-09-10>
  ***********
+Package logreq Info: Writing requests to 'main.run.xml'.
+\openout1 = `main.run.xml'.
+
  ) 
 Here is how much of TeX's memory you used:
- 43105 strings out of 473579
- 1061198 string characters out of 5728233
- 1764227 words of memory out of 5000000
- 65533 multiletter control sequences out of 15000+600000
- 568625 words of font info for 74 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 99i,6n,101p,419b,534s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb>
-Output written on main.pdf (2 pages, 73667 bytes).
+ 50586 strings out of 473579
+ 1212193 string characters out of 5728233
+ 2367450 words of memory out of 5000000
+ 72938 multiletter control sequences out of 15000+600000
+ 571866 words of font info for 86 fonts, out of 8000000 for 9000
+ 1143 hyphenation exceptions out of 8191
+ 99i,11n,101p,693b,2371s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb>
+Output written on main.pdf (3 pages, 198741 bytes).
 PDF statistics:
- 45 PDF objects out of 1000 (max. 8388607)
- 28 compressed objects within 1 object stream
+ 84 PDF objects out of 1000 (max. 8388607)
+ 51 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 18 words of extra memory for PDF output out of 10000 (max. 10000000)
 
