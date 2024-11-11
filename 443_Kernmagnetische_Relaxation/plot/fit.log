@@ -3686,3 +3686,77 @@ correlation matrix of the fit parameters:
 m2              1.000 
 b2              0.007  1.000 
 c2             -0.068 -0.874  1.000 
+
+
+*******************************************************************************
+Mon Nov 11 16:06:10 2024
+
+
+FIT:    data read from rabi_oszi_dat using 1:($2*1e3):($3*1e3)
+        format = x:z:s
+        #datapoints = 24
+function used for fitting: f(x)
+	f(x)=m1*abs(sin(b1*x+c1))
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   m1            b1            c1           
+   0 6.8035649820e+01   0.00e+00  2.58e+01    1.400000e+03   6.570000e-01   1.000000e-01
+   5 2.1553838495e+01  -1.52e-01  2.58e-04    1.478832e+03   6.530537e-01  -2.140614e-02
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 21.5538
+rel. change during last iteration : -1.5151e-06
+
+degrees of freedom    (FIT_NDF)                        : 21
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.0131
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.02637
+p-value of the Chisq distribution (FIT_P)              : 0.425599
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+m1              = 1478.83          +/- 28.99        (1.96%)
+b1              = 0.653054         +/- 0.006034     (0.924%)
+c1              = -0.0214061       +/- 0.04239      (198%)
+
+correlation matrix of the fit parameters:
+                m1     b1     c1     
+m1              1.000 
+b1              0.009  1.000 
+c1             -0.068 -0.878  1.000 
+
+
+*******************************************************************************
+Mon Nov 11 16:06:10 2024
+
+
+FIT:    data read from rabi_oszi_dat using 1:($4):($5)
+        format = x:z:s
+        #datapoints = 24
+function used for fitting: g(x)
+	g(x)=m2*sin(b2*x+c2)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   m2            b2            c2           
+   0 8.1458702076e+02   0.00e+00  1.75e+01    2.000000e+02   6.280000e-01   1.000000e+00
+   5 9.5513918660e+00  -4.66e-02  1.75e-04    1.979324e+02   6.571348e-01  -9.036969e-02
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 9.55139
+rel. change during last iteration : -4.65939e-07
+
+degrees of freedom    (FIT_NDF)                        : 21
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.67441
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.454828
+p-value of the Chisq distribution (FIT_P)              : 0.98417
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+m2              = 197.932          +/- 3.881        (1.961%)
+b2              = 0.657135         +/- 0.005896     (0.8972%)
+c2              = -0.0903697       +/- 0.04134      (45.74%)
+
+correlation matrix of the fit parameters:
+                m2     b2     c2     
+m2              1.000 
+b2              0.007  1.000 
+c2             -0.068 -0.874  1.000 

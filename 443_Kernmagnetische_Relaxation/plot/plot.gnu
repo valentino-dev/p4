@@ -29,6 +29,6 @@ set output 'opt_sig.tex'
 opt_sig_dat='../data/print_001.csv'
 set grid
 set key top right
-set ylabel 'Auslenkung/\SI{}{mV}'
+set ylabel 'Auslenkung/\SI{}{V}'
 set xlabel 'Zeit t/\SI{}{\micro s}'
 plot opt_sig_dat using ($1*1e3):2 with lines title 'FID'

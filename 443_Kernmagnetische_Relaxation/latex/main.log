@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.10.14)  11 NOV 2024 16:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.10.14)  11 NOV 2024 16:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1315,15 +1315,30 @@ Package hyperref Info: Link coloring OFF on input line 21.
 \@outlinefile=\write5
 \openout5 = `main.out'.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 25.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 24.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 25.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 24.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<magnet_aufbau.png, id=28, 1146.2825pt x 794.97pt>
+
+[1
+
+{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] (./main.toc)
+\tf@toc=\write6
+\openout6 = `main.toc'.
+
+
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.27 \newpage
+              [2]
+<magnet_aufbau.png, id=49, 1146.2825pt x 794.97pt>
 File: magnet_aufbau.png Graphic file (type png)
 <use magnet_aufbau.png>
 Package pdftex.def Info: magnet_aufbau.png  used on input line 44.
@@ -1334,29 +1349,28 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 45.
 See the caption package documentation for explanation.
 
-
-Package multicol Warning: I moved some lines to the next page.
-(multicol)                Footnotes on page 1 might be wrong on input line 58.
-
-[1
-
-{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./magnet_aufbau.png>]
-<scope_0.png, id=51, 1027.84pt x 640.3925pt>
+<scope_0.png, id=53, 1027.84pt x 640.3925pt>
 File: scope_0.png Graphic file (type png)
 <use scope_0.png>
 Package pdftex.def Info: scope_0.png  used on input line 60.
 (pdftex.def)             Requested size: 200.86061pt x 125.14474pt.
 
-
 Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 61.
 See the caption package documentation for explanation.
 
-(./opt_sig.tex
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 12.37082pt, for example:
+(fancyhdr)                \setlength{\headheight}{12.37082pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-0.37082pt}.
+
+[1 <./magnet_aufbau.png> <./scope_0.png>] (./opt_sig.tex
 \gptboxheight=\skip106
 \gptboxwidth=\skip107
 \gptboxtext=\box135
-<opt_sig.pdf, id=53, 361.35pt x 216.81pt>
+<opt_sig.pdf, id=69, 361.35pt x 216.81pt>
 File: opt_sig.pdf Graphic file (type pdf)
 <use opt_sig.pdf>
 Package pdftex.def Info: opt_sig.pdf  used on input line 139.
@@ -1367,14 +1381,7 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 89.
 See the caption package documentation for explanation.
 
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 12.37082pt, for example:
-(fancyhdr)                \setlength{\headheight}{12.37082pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-0.37082pt}.
-
-[2 <./scope_0.png>] (./rabi_oszi.tex
+(./rabi_oszi.tex
 <rabi_oszi.pdf, id=71, 361.35pt x 216.81pt>
 File: rabi_oszi.pdf Graphic file (type pdf)
 <use rabi_oszi.pdf>
@@ -1387,16 +1394,21 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 See the caption package documentation for explanation.
 
 
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 12.37082pt, for example:
+(fancyhdr)                \setlength{\headheight}{12.37082pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-0.37082pt}.
+
+[2 <./opt_sig.pdf>]
+
 Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 116.
 See the caption package documentation for explanation.
 
 
 
-[3 <./opt_sig.pdf> <./rabi_oszi.pdf
-
-pdfTeX warning: pdflatex (file ./rabi_oszi.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->] (./main.aux)
+[3 <./rabi_oszi.pdf>] (./main.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-09-10>
@@ -1408,18 +1420,18 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 56776 strings out of 473579
- 1307949 string characters out of 5728233
- 2488831 words of memory out of 5000000
- 79028 multiletter control sequences out of 15000+600000
+ 56785 strings out of 473579
+ 1308042 string characters out of 5728233
+ 2479857 words of memory out of 5000000
+ 79033 multiletter control sequences out of 15000+600000
  572369 words of font info for 88 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  106i,13n,106p,1578b,2371s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on main.pdf (3 pages, 269135 bytes).
+Output written on main.pdf (5 pages, 271662 bytes).
 PDF statistics:
- 163 PDF objects out of 1000 (max. 8388607)
- 116 compressed objects within 2 object streams
- 21 named destinations out of 1000 (max. 500000)
+ 176 PDF objects out of 1000 (max. 8388607)
+ 127 compressed objects within 2 object streams
+ 22 named destinations out of 1000 (max. 500000)
  73 words of extra memory for PDF output out of 10000 (max. 10000000)
 

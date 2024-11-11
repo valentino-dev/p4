@@ -1,0 +1,6 @@
+\babel@toc {ngerman}{}\relax 
+\contentsline {section}{\numberline {1}Einführung}{1}{section.1}%
+\contentsline {section}{\numberline {2}Aufbau}{1}{section.2}%
+\contentsline {section}{\numberline {3}Durchführung}{1}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Justage}{1}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Rabi-Oszillationen}{2}{subsection.3.2}%
