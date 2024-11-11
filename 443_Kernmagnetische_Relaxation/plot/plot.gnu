@@ -4,8 +4,11 @@ set output 'rabi_oszi.tex'
 set grid
 set ylabel 'Amplitude/$\SI{}{\milli V}$'
 set xlabel 'Pulslänge \texttt{A_len}/$\SI{}{\micro s}$'
+set key bottom left
 
 m1=1400
+c1=0.1
+b1=0.657
 f(x)=m1*abs(sin(b1*x+c1))
 m2=200
 b2=0.628
@@ -25,6 +28,7 @@ set datafile separator ","
 set output 'opt_sig.tex'
 opt_sig_dat='../data/print_001.csv'
 set grid
-set ylabel 'y'
-set xlabel 'x'
-plot opt_sig_dat using 1:2 with lines title 'Oszillogramm'
+set key top right
+set ylabel 'Auslenkung/\SI{}{mV}'
+set xlabel 'Zeit t/\SI{}{\micro s}'
+plot opt_sig_dat using ($1*1e3):2 with lines title 'FID'

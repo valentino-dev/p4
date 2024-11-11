@@ -1,15 +1,15 @@
 [0] Config.pm:308> INFO - This is Biber 2.20
 [0] Config.pm:311> INFO - Logfile is 'main.blg'
-[70] biber:340> INFO - === Thu Nov  7, 2024, 16:20:49
-[85] Biber.pm:420> INFO - Reading 'main.bcf'
-[144] Biber.pm:994> INFO - Found 1 citekeys in bib section 0
-[156] Biber.pm:4463> INFO - Processing section 0
-[165] Biber.pm:4654> INFO - Looking for bibtex file 'latex.bib' for section 0
-[166] bibtex.pm:1713> INFO - LaTeX decoding ...
-[168] bibtex.pm:1519> INFO - Found BibTeX data source 'latex.bib'
-[179] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
-[179] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[179] Biber.pm:4283> INFO - Sorting list 'nty/global//global/global/global' of type 'entry' with template 'nty' and locale 'de-DE'
-[179] Biber.pm:4289> INFO - No sort tailoring available for locale 'de-DE'
-[181] bbl.pm:676> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[181] bbl.pm:779> INFO - Output to main.bbl
+[68] biber:340> INFO - === Mon Nov 11, 2024, 14:43:42
+[82] Biber.pm:420> INFO - Reading 'main.bcf'
+[141] Biber.pm:994> INFO - Found 1 citekeys in bib section 0
+[152] Biber.pm:4463> INFO - Processing section 0
+[161] Biber.pm:4654> INFO - Looking for bibtex file 'latex.bib' for section 0
+[162] bibtex.pm:1713> INFO - LaTeX decoding ...
+[163] bibtex.pm:1519> INFO - Found BibTeX data source 'latex.bib'
+[174] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[174] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[174] Biber.pm:4283> INFO - Sorting list 'nty/global//global/global/global' of type 'entry' with template 'nty' and locale 'de-DE'
+[174] Biber.pm:4289> INFO - No sort tailoring available for locale 'de-DE'
+[175] bbl.pm:676> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[176] bbl.pm:779> INFO - Output to main.bbl
