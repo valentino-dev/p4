@@ -1,29 +1,7 @@
 \documentclass[10pt]{article}
-\usepackage[a4paper, left=1.5cm, right=1.5cm, top=3.5cm]{geometry}
-\usepackage[ngerman]{babel}
-\usepackage[]{graphicx}
-\usepackage{multicol}
-\usepackage{amssymb}
-\usepackage{inputenc}
-\usepackage{breqn}
-\usepackage{titlesec}
-\usepackage{wrapfig}
-\usepackage{blindtext}
-\usepackage{lipsum}
-\usepackage{caption}
-\usepackage{listings}
-\usepackage{fancyhdr}
-\usepackage{nopageno}
-\usepackage{authblk}
-\usepackage{amsmath}
-\usepackage{mathtools}
-\usepackage{bm}
-\usepackage[ISO]{diffcoeff}
-\usepackage{xcolor}
-\usepackage{csquotes}
-\usepackage{siunitx}
-\usepackage{circuitikz}
-\usepackage{biblatex}
+%\documentclass[prd,twocolumn,showpcs,amsmath,amssymb,nofootinbib,preprintnumbers,balancelastpage,longbibliography]{revtex4-1}
+\include{packages}
+%\include{paper_format.tex}
 \fancyhf[]{}
 
 \addbibresource{latex.bib}
@@ -43,10 +21,10 @@
 \begin{document}
 \pagenumbering{gobble}
 \maketitle
-\newpage
+%\newpage
 
-\tableofcontents
-\newpage
+%\tableofcontents
+%\newpage
 
 \pagenumbering{arabic}
 
@@ -57,22 +35,91 @@
 
 \begin{multicols}{2}
   \section{Einführung}
-  Die Kernmagnetische Relaxation ist die Grundlage vieler moderner Messtechniken der Medizin, Chemie und Physik. Sie wird gebrauch, um z.B. MRTs oder NMRs durchzuführen. In diesem Versuch bestimmen wir die Rabioszillation und die longitudinale bzw. transversale Relaxationszeit $T_1$ und $T_2$. Diese sind Materialspezifische größen, die z.B. dessen Identifikation ermöglichen. Wir legen hier allerdings den Schwerpunkt auf die Messtechniken.
+  Die Kernmagnetische Relaxation ist die Grundlage vieler moderner Messtechniken der Medizin, Chemie und Physik. Sie wird gebrauch, um z.B. MRTs oder NMRs durchzuführen. In diesem Versuch bestimmen wir die Rabioszillation und die longitudinale bzw. transversale Relaxationszeit $T_1$ und $T_2$. Diese sind Materialspezifische größen, die z.B. dessen Identifikation ermöglichen. Wir legen hier allerdings den Schwerpunkt auf die Messung der Größen selbst.
   \section{Aufbau}
   Bei dem Aufbau handelt es sich um eine Verkabelung der vier verschiedenen Geräte: MAGNET, PS2 Controller, Mainframe und das digitale Oszilloskop.
   
-  Der \textbf{Magnet} ist eine Permanent Magnet, der ein homogenes Magnetfeld erzeugt und kann mit einer Helmholzspule, also zwei Spulen die genau einen Radius entfernt sind, ein homogenes Magnetfeld erzeugen, wenn die Spulen antisymmetrisch, also '$-+$' und '$-+$', oder ein Gradientenfeld, wenn die Spulen symmterisch, also '$-+$' und '$+-$', gepolt sind, erzeugen. Zusätzlich beinhaltet er eine sog. Sample Coil, die ein Magnetfeld innerhalb der Appartur messen kann. Solch ein Magnetfeld würde in unserem Falle eine Probe erzeugen, welche in die Mitte eingeführt werden kann, sodass sie umgeben von der Sample Coil und der Helmholzspulen ist.
+  Der \textbf{Magnet} ist eine Permanent Magnet, der ein homogenes Magnetfeld erzeugt und kann mit einer Helmholzspule, also zwei Spulen die genau einen Radius entfernt sind, ein homogenes Magnetfeld erzeugen, wenn die Spulen antisymmetrisch, also '$-+$' und '$-+$', oder ein Gradientenfeld, wenn die Spulen symmterisch, also '$-+$' und '$+-$', gepolt sind, erzeugen. Zusätzlich beinhaltet er eine sog. Sample Coil, die ein Magnetfeld innerhalb der Appartur messen kann. Solch ein Magnetfeld würde in unserem Falle eine Probe erzeugen, welche in die Mitte eingeführt werden kann, sodass sie umgeben von der Sample Coil und der Helmholzspulen ist. Das Innere ist nochmal in Abb. \ref{fig:mag} gezeigt.
 \begin{Figure}
-		\centering\includegraphics[width=0.8\textwidth]{magnet_aufbau.png}
-    \captionof{figure}{Aufbau vom Magneten.\cite{TeachSpin}}
-		\label{fig:alu}
-	\end{Figure}
+  \centering\includegraphics[width=0.8\textwidth]{magnet_aufbau.png}
+  \captionof{figure}{Aufbau vom Magneten.\cite{TeachSpin}}
+  \label{fig:mag}
+\end{Figure}
 
   Der \textbf{PS2 Controller} reguliert den Magneten auf die Raumtemperatur, um Imperfektionen/Inhomogenitäten zu reduzieren. Außerdem lässt er über die Stromzufuhr der Helmholzspulen dessen Gradienten einstellen. Dafür sind uns die Regler für $X$, $Y$, $Z$ und $Z^2$ gegeben. Diese sind später bei der Justage für $\frac{\pi}{2}$- bzw. $\pi$-Pulse iterativ zu optimieren. Zusätzslich lässt sich neben der Sträke auch das Vorzeichen der Gradienten mithilfe eines jeweiligen Schalters einstellen.
 
   Der \textbf{Mainframe} enthält einen Receiver, der ein einkommendes Signal zur Darstellung am Oszilloskop verstärken kann, einen Synthesizer, der die Frequenz des zirkular polarisierten Mangetfeldes angibt, einen Pulse Programmer, der zwei Pulse einstellen kann und diese periodeisch wieder gibt, wobei der Abstand der zwei Pulse unser $\tau$ ist. Außerdem gibt es noch ein Lock-In / Field Sweep, welchen wir aber nicht benötigen.
 
   Das digitale \textbf{Oszilloskop} kann dann unsere Signal darstellen. Dafür stehen uns drei Eingänge zur verfügung. 
+
+  \section{Durchführung}
+  \subsection{Justage}
+  Während des Experiments wird es einen Energiefluss vom Nukleus zum Lattice geben. Dabei erwärmt sich das Lattice. Dafür regeln wir mithilfe von zwei Potentiometern am PS2 Controller die \textbf{Temperatur}, sodass diese auf die Raumtemperatur eingestellt ist und dort konstant hällt. Ansonsten würde das Magnetfeld nicht homogen bleiben. Nun lassen sich \textbf{Tuning-Kondensatoren} an dem Magneten mithilfe eines nicht-magnetischen Schraubendrehers einstellen, um die Amplitude zu maxmieren. Hierbei wird das Signal betrachtet, wenn wir $\texttt{A_len}=\SI{2.5}{\micro s}$ und an dem Oszi einen Sweep von \SI{2}{\micro s/div} einstellen. Als Probe wird die mitgelieferte \textbf{Pickup Probe} verwendet. Das optimierte Signal ist in dem Oszillogramm von Abb. \ref{fig:PP} dargestellt.
+  
+\begin{Figure}
+		\centering\includegraphics[width=0.8\textwidth]{scope_0.png}
+    \captionof{figure}{Signal von der Pickup Probe}
+		\label{fig:PP}
+	\end{Figure}
+Leider ist dies unser einziges gesichertes Bild von dem Singal. Eines mit korrekter Achsenbeschriftung und Skalen wurde leider nicht gesichert. Es ist allerdings auch hier schon gut zu erkennen, dass das größere Signal, also die Antwort der Pickup Probe, dann abfällt, sobald kein Magnetfeld (das kleine gerade Singal) anliegt.
+
+  Um letztlich die longitunale und transversale Relaxationszeit zu ermitteln müssen wir in der Lage sein unser Medium druch die Spins mit einem Magnetfeld magnetisieren zu können. Dafür haben wir den Magneten und die Helmholzspulen. Mithilfe der Magneten können wir mit dessen homogenen Magnetfeldes eine z-Richtung defnieren und in diese auch unser Medium magnetisieren. Dabei richten sich die Spins, welche ein magnetisches Moment aufgrund des Drehimpulses der Ladung haben, in z-Richtung aus. Nun lässt sich ein zirkular polarisiertes Magenetfeld mithilfe der Helmholzspulen anlegen. Treffen wir mit der Frequenz des zirkluaren Magnetfeldes nun die sog. Lamor-Frequenz, so lässt sich ein Drehmoment auf die Spins ausüben, welches die Ausrichtung der Spins in die xy-Ebene neigt. Die Lamor-Frequen $\omega_0$ ist die gleiche, welche bei einem Übergang von $m_s=+\frac{1}{2}$ zu $m_s=-\frac{1}{2}$ benötigt wird:
+\begin{align}
+  \Delta U = \hbar \omega_0.
+\end{align}
+Um nun das Magnetfeld $B_0$ auf die Lamorfrquenz einstellen zu können, müssen wir die Energie berechnen, die uns dann den Übergang geben soll. Dafür nutzen wir die Relationen aus, dass $\bm{\mu}=\gamma \bm{J}$ und $\bm{J}=\hbar\bm{I}$ ist.
+\begin{align}
+  U &= - \bm{\mu} \cdot \bm{B}\\
+    &= - \mu_zB_0\\
+    &= - \gamma\hbar I_z B_0
+\end{align}
+Mit $m_s=\pm \frac{1}{2}$ erhalten wir als Differenz 
+\begin{align}
+  \Delta U = \gamma \hbar B_0.
+\end{align}
+Daraus ergibt sich die Bedingung
+\begin{align}
+  \omega_0 = \gamma B_0.
+\end{align}
+Je länger wir nun dieses Feld angeschalten lassen, desto größer wird der Neigungswinkel. Dieser Zeitraum wird RF-Pulse genannt und lässt sich an dem Pulse Programmer mit \texttt{A_len} einstellen. Sollten wir einen Neigungswinkel von $\frac{\pi}{2}$ erreichen, so können wir aufgrund der Sample Coil, die über den Reciever verstärkt wird eine Auslänkung auf unserem Oszilloskop sehen. Erreichen wir $\pi$, so wird der Ausschlag wieder 0 sein, da die Sample Coil nur ein Magnetfeld in der xy-Ebene messen kann und nun unsere Magnetisierung in $(-)$z-Richtung ausgerichtet ist. Da allerdings immernoch das homogene Magnetfeld wirkt, richtet sich der Spin nach der Neigung wieder in z-Richtung aus. Dieses Verhalten ist aufgraund der Gesammtmagnetisierung mit der Sample Coil messbar und wird Free Induction Decay (FID) genannt. Wir ersetzen hier die Pickup Probe mit unserer Mineralöl Probe. Nun müssen die Gradienten am PS2 Controller und die Frequenz am Syntheziser so optimiert werden, dass wir ein möglichst langes FID und für den Fall, dass wir bei $\pi$ liegen, eine möglichst kleine Amplitude haben. Gleichzeitig wird das I und Q (Out of Phase) Signal betrachetet, welches keine Nachschwingung haben darf, da dann die Resonazfrequenz getroffen wird. Wir erhalten das in Abb. \ref{fig:opt_sig} dargestellte Signal. Dabei ist eine Frequenz von \SI{21.18322+-0.00001}{\mega Hz} eingestellt. Das I und Q Signal würden dann entsprechend wie bei einem gedempften harmonischen Oszillator im Kriechfall aussehen.
+  \begin{Figure}
+    \centering\resizebox{\textwidth}{!}{\input{opt_sig.tex}}
+    \captionof{figure}{
+      Optimiertes FID Signal.
+    }
+    \label{fig:opt_sig}
+  \end{Figure}
+  Generell messen wir aufgrund des Farady'schen Gesetzes $U=-\frac{\text{d}}{\text{d}t}\Phi_m$ eine Spannung. Das liegt daran, dass der Spin wegen des Drehimpulses um die z-Achse präzediert und so $\Phi_m$ sich zeitlich ändert.. Dabei hatten wir sichergestellt, dass die Zerfallszeit über \SI{4}{\milli s} liegt.
+
+  Nun mussten die Pulslängen ermittelt werden, dafür wurde diese so eingestellt, dass wir die Amplitude minimieren. Somit erhalten wir ein $\pi$-Puls. Währendessen verändern sich die Nachschwingungen von I und Q. Nun hablieren wir diese Pulslänge und erhalten ein $\frac{\pi}{2}$-Puls. Die Pulslängen sind dabei \SI{2.42}{\milli s} bzw. \SI{4.84}{\milli s}. Hierbei und bei allen folgenden Messungen wurde das Offset direkt im Versuch abgezogen und ist somit in der eigenen Unsicherheitenabschätzung schon mit einbezogen. Dabei erhalten wir ein Amplitudenverhältniss $U_{\text{max}}(\pi):U_{\text{max}}(\pi/2)$ von 1:\SI{17.2+-1.4} mit $U_{\text{max}}(\pi)=\SI{0.086+-0.007}{V}$ und $U_{\text{max}}(\pi/2)=\SI{1.483+-0.007}{V}$, was über den notwendigen 1:6 liegt.
+
+
+  \subsection{Rabi-Oszillationen}
+  Bei der Rabi-Oszillation erhöhen wir die Pulslänge und messen die Maxima, also die Amplitude. Wir stellen sicher, dass die Periode zwischen zwei Pulsen mit \SI{1}{s} ausreichend groß ist. Neben der FID Amplitude wir auch die Amplitude des In-Signals gemessen. Wir wählen hierbei Pulslängen von zwischen \SI{0.5}{\micro s} und \SI{12}{\micro s}. Dabei erhalten wir Abb. \ref{fig:rabioszi}.
+  \begin{Figure}
+    \centering\resizebox{\textwidth}{!}{\input{rabi_oszi.tex}}
+    \captionof{figure}{
+      Rabi-Oszillation 
+    }
+    \label{fig:rabioszi}
+  \end{Figure}
+  Als Anpassfunktionen haben wir für die Probe $f(x)=m\cdot|\sin{(b\cdot x+c)}|$ und für das In-Phase Signal $g(x)=m\cdot\sin{(b\cdot x+c)}$ gewählt. Die Paramter der Anpassung sind in Tab. \ref{Tab:rabioszi} dargestellt.
+  \begin{center}
+    \begin{tabular}{c|cc}
+    & Probe & In-Phase \\
+    \hline
+    red. $\chi^2$ & 1.03 & 0.46 \\
+    $m$ & \SI{1478 \pm 29}{\milli\volt} & \SI{197.9 \pm 3.9}{\milli\volt} \\
+    $b$ & \SI{0.6530 \pm 0.0060}{\per\micro\second} & \SI{0.6571 \pm 0.0059}{\per\micro\second} \\
+    $c$ & \SI{-0.021 \pm 0.042}{} & \SI{-0.090 \pm 0.041}{}
+\end{tabular}
+  \captionof{table}{Parameter der Anpassung zu Rabi Oszillation}
+  \label{Tab:rabioszi}
+  \end{center}
+  Ein gutes reduziertes $\chi^2$ liegt in der Nähe von 1. Dies ist für die Probe der Fall mit $1.03$. Für das In-Phase Signal erhalten wir $\chi^2/\text{ddof}=0.46$, was unter unseren gewollten 1 liegt, aber immernoch vertretbar ist. Somit haben wir entweder bei dem In-Phase Signal unsere Messunsicherheit unterschätzt, oder gute Messergebnisse erhalten.
+
+  Wie erwartet, erhalten wir einen betragsmäßigen und normalen Sinus, welcher Phasengleich ist und die gleiche Periodendauer hat. Dies liegt daran, dass das Antwortsignal den Betrag der Projektion der Magnetisierung in die xy-Ebene zeigt und das I Signal die Magnetisierung in y-Richtung zeigt.
+
 
   
 
