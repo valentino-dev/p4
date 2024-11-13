@@ -1,6 +1,6 @@
 # polarisationszurückgewinnung
 # offset 30mV aber Y1 bei offset Y2 bei wert -> Delta gemessen also kein offset in den werten
-# tau [ms] | Amplitude [mV] Delta: 10mv
+# tau [ms] | Amplitude [mV] Delta: 50mv
 7 1240
 10 1080
 13 920

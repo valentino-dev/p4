@@ -4,3 +4,9 @@
 \contentsline {section}{\numberline {3}Durchführung}{1}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Justage}{1}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}Rabi-Oszillationen}{2}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Longitudinale Relaxationszeit $T_1$}{3}{subsection.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.1}Sättigungszurückgewinnung}{3}{subsubsection.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.2}Polarisationszurückgewinnung}{4}{subsubsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.4}Transversale Relaxationszeit $T_2$}{4}{subsection.3.4}%
+\contentsline {subsubsection}{\numberline {3.4.1}Effektive Transversale Relaxationszeit $T_2^*$}{5}{subsubsection.3.4.1}%
+\contentsline {subsubsection}{\numberline {3.4.2}Homogene Transversale Relaxationszeit $T_2$}{5}{subsubsection.3.4.2}%

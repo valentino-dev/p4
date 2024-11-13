@@ -120,9 +120,204 @@ Je länger wir nun dieses Feld angeschalten lassen, desto größer wird der Neig
 
   Wie erwartet, erhalten wir einen Sinus -- mit und ohne Betrag -- welcher Phasengleich ist und die gleiche Periodendauer hat. Dies liegt daran, dass das Antwortsignal den Betrag der Projektion der Magnetisierung in die xy-Ebene und das I Signal die Magnetisierung in y-Richtung zeigt.
 
+\subsection{Longitudinale Relaxationszeit $T_1$}
+Die longitudinale Relaxationszeit $T_1$ beschreibt die Spin--Lattice--Relaxationszeit.
+Nachdem die Spins der Protonen in der Probe durch magnetische Wechselfelder ausgelenkt wurden, relaxieren sie nach einer Zeit $T_1$ wieder in den energetisch günstigsten Zustand; entlang der Feldlinien des homogenen Magnetfeldes.
+Diese Zeit $T_1$ wird longitudinale Relaxationszeit genannt.
 
-  
+Um diese Zeit zu messen können die Sättigungszurückgewinnungs- (SZG) oder Polarisationszurückgewinnungsmethoden (PZG) verwendet werden. 
+Beide Methoden beruhen auf der Messung eines FID nach der Spinauslenkung.
 
+\subsubsection{Sättigungszurückgewinnung}
+Die Sequenz der SZG ist
+\begin{align} 
+        \tfrac{\pi }{2}\rightarrow \text{FID}\rightarrow \tau \rightarrow \tfrac{\pi }{2}\rightarrow \text{FID}
+.\end{align} 
+Gemessen wird immer die Amplitude des FID.
+Zuerst werden die Spins mit einem $\pi /2$--Puls ausgelenkt. 
+Man misst einen typischen FID in dem zu erkennen ist, dass die Polarisation in der $xy$--Ebene abnimmt.
+
+Nach einer gewissen Zeit $\tau $ werden die Spins durch einen weiteren $\pi /2$--Puls ausgelenkt. 
+Ist diese Zeit $\tau =\SI{0}{s}$, so erwartet man das selbe Ergebnis wie bei einem $\pi $--Puls; die Magnetisierung in der $xy$--Ebene ist vollständig aufgehoben.
+Wird allerdings eine Zeit $\tau \neq \SI{0}{s}$ gewartet, relaxieren die Spins über diesen Zeitraum $\tau $ und die Magnetisierung nimmt zuerst ab.
+Der zweite $\pi /2$--Puls bewirkt dann, dass die Spins zu einem Winkel unter $\pi /2$ ausgelenkt werden, allerdings nicht ganz $\pi $, was zur Folge hat, dass sich eine Magnetisierung in der $xy$--Ebene, also auch ein FID, messen lässt.
+Misst man diesen zweiten FID für verschiedene Zeiten $\tau $, lässt sich daraus auf $T_1$ schließen, da die Magnetisierung von $T_1$ abhängt.
+Der Zusammenhang kann mit
+\begin{align} 
+        M\left(\tau \right)=M_0\left(1-\text{exp}\left(-\dfrac{\tau }{T_1}\right)\right)
+\end{align} 
+modelliert werden.
+
+Wichtig im Zusammenhang mit der Messung ist, dass die Periode $P$ zwischen zwei Sequenzen groß genug ist, damit die Spins genügend Zeit haben vollständig zu relaxieren.
+$P=\SI{1}{s}$ ist hier völlig ausreichend.
+  \begin{Figure}
+    \centering\resizebox{\textwidth}{!}{\input{s_zurück.tex}}
+    \captionof{figure}{
+      Zweites FID der Sättigungszurückgewinnung.
+    }
+    \label{fig:szurück}
+  \end{Figure}
+Die Daten und Fitfunktion sind in Abb.\ \ref{fig:szurück} dargestellt.
+Die Fitfunktion ist charakterisiert durch folgende Parameter:
+  \begin{center}
+    \begin{tabular}{c|c}
+    & Fit SZG\\
+    \hline
+    red.\ $\chi^2$ & 1.17785\\
+    $M_0$ & $\SI{1496.68+-13.43}{mV}$ \\
+    $T_1$ & $\SI{29.0361+-1.201}{ms}$ 
+    \end{tabular}
+  \captionof{table}{Parameter der Anpassung zum SZG}
+  \label{Tab:SZG_para}
+  \end{center}
+Das optimale reduzierte $\chi ^2$ liegt bei 1; der Fit passt also sehr gut zu den gemessenen Datenpunkten.
+Aus den Parametern ergibt sich dann die longitudinale Relaxationszeit zu
+\begin{align} 
+        T_1=\SI{29.0361+-1.201}{ms}
+.\end{align} 
+
+
+\subsubsection{Polarisationszurückgewinnung}
+Die Sequenz der PZG ist
+\begin{align} 
+        \pi \rightarrow \tau \rightarrow \dfrac{\pi }{2}\rightarrow \text{FID}
+.\end{align} 
+Gemessen wird immer die Amplitude des FID.
+Zuerst werden die Spins von einem $\pi $--Puls rotiert, so dass keine Magnetisierung in der $xy$--Ebene zu sehen ist.
+Nach einer Zeit $\tau $ werden die Spins mit einem $\pi /2$--Puls weiter rotiert.
+Für $\tau =\SI{0}{s}$ lässt sich ein typischer FID beobachten.
+Wartet man eine Zeit von ungefähr $\tau \leq \SI{30}{ms}$, so erkennt man, dass die Magnetisierung in der $xy$--Ebene nicht mehr so stark ist, wie für $\tau =\SI{0}{s}$.
+Das liegt daran, dass die Spins bereits über die Zeit $\tau $ rotiert haben (in Richtung der Gleichgewichtslage).
+Wählt man $\tau $ so groß, dass die Spins genug Zeit hatten zu einer Stellung von $\pi /2$ zu rotieren, dann bewirkt der $\pi /2$--Puls, dass keine Magnetisierung zu messen ist.
+Die Spins sind wieder um insgesamt $\pi $ rotiert.
+Wählt man $\tau $ noch größer lässt sich wieder eine Magnetisierung nach dem $\pi /2$--Puls erkennen.
+Für $\tau $ viel größer als bisher wird die Sequenz zu einem einfachen $\pi /2$--Puls.
+
+Die Kurve der gemessenen Daten sieht dann analog zu der Kurve aus dem Verfahren der SZG aus, allerdings lässt sich noch die starke Abnahme der Magnetisierung für kleine $\tau \leq \SI{30}{ms}$ erkennen.
+Passt man die Funktion
+\begin{align} 
+        M\left(\tau \right)=\left(1-2\cdot \text{ecp}\left(-\dfrac{\tau }{T_1}\right)\right)
+\end{align} 
+an die Daten für $\tau >\SI{30}{ms}$ an (da hier nur die Zunahme der Magnetisierung für $T_1$ wichtig ist), lässt sich $T_1$ berechnen.
+Daten und Fitfunktion sind in Abb.\ \ref{fig:pzurück} dargestellt.
+  \begin{Figure}
+    \centering\resizebox{\textwidth}{!}{\input{p_zurück.tex}}
+    \captionof{figure}{
+      Zweites FID der Polarisationszurückgewinnung.
+    }
+    \label{fig:pzurück}
+  \end{Figure}
+Die Fitfunktion ist charakterisiert durch folgende Parameter
+  \begin{center}
+    \begin{tabular}{c|c}
+    & Fit PZG\\
+    \hline
+    red.\ $\chi^2$ & 0.169581\\
+    $M_0$ & $\SI{1521.43+-6.343}{mV}$ \\
+    $T_1$ & $\SI{47.8268+-0.4078}{ms}$ 
+    \end{tabular}
+  \captionof{table}{Parameter der Anpassung zum PZG}
+  \label{Tab:PZG_para}
+  \end{center}
+Das optimale reduzierte $\chi ^2$ liegt bei 1; der Fit ist also überangepasst.
+Das könnte daran liegen, dass hier die Fehler zu groß geschätzt sind und die Fitfunktion dadurch in fast allen Fehlergrenzen liegt.
+Aus den Parametern ergibt sich dann die longitudinale Relaxationszeit zu
+\begin{align} 
+        T_1=\SI{47.8268+-0.4078}{ms}
+.\end{align} 
+
+Dieser Wert weicht um circa $65\%$ von $T_1$ aus der SZG ab.
+Dieses Ergebnis war nicht zu erwarten, da die Methoden zwar unterschiedlich in der Durchführung sind, allerdings auf die Bestimmung der selben physikalischen Größe aus sind.
+Der Grund dieser Diskrepanz könnte in der Überanpassung des Fits der PZG sein.
+Es ist aber auch nicht auszuschließen, dass keine Fehler in der Messung unterlaufen sind.
+Die gemessenen Zeiten können nicht mit Literaturwerten verglichen werden, da das Mineralöl nicht bekannt ist und keine weiteren Literaturwerte angegeben sind.
+
+\subsection{Transversale Relaxationszeit $T_2$}
+Die transversale Relaxationszeit $T_2$ beschreibt die Spin--Spin--Relaxationszeit.
+Wenn die Spins ausgerichtet sind, dann lässt sich eine Gesamtmagnetisierung in der $xy$--Ebene messen.
+Nach der Zeit $T_2$ ist diese Magnetisierung verschwunden.
+Grund dafür ist, dass die Spins (die orthogonal zu den homogenen Magnetfeldlinien stehen) unterschiedlich \textsc{Lamor}--Präzessionsgeschwindigkeiten haben und so phasenverschoben werden.
+Durch diese Fluktuationen kommt es dann nach einer gewissen Zeit zu einem Ausgleich aller präzedierenden Spins, sodass keine Gesamtmagnetisierung in der $xy$--Ebene mehr zu messen ist.
+
+Bei den transversalen Relaxationszeiten wird zwischen drei verschiedenen Zeiten unterschieden.
+Die effektive $T_2^*$, die inhomogene $T_{2,\text{inhom.}}$ und der homogenen Relaxationszeit $T_2$.
+Der Zusammenhang dieser drei Größen ist wie
+\begin{align} 
+        \dfrac{1}{T_2^*}=\dfrac{1}{T_{2,\text{inhom.}}}+\dfrac{1}{T_2}
+.\end{align} 
+Im folgenden wird $T_2^*$ und $T_2$ berechnet.
+
+\subsubsection{Effektive Transversale Relaxationszeit $T_2^*$}
+$T_2^*$ kann ohne großen Aufwand über einen FID gemessen werden.
+Dazu wird die Fitfunktion
+\begin{align} 
+        M\left(t\right)=M_0\text{exp}\left(-\dfrac{t}{T_2^*}\right)
+\end{align} 
+verwendet.
+  \begin{Figure}
+    \centering\resizebox{\textwidth}{!}{\input{T2eff.tex}}
+    \captionof{figure}{
+      FID von $T_2^*$.
+    }
+    \label{fig:T2eff}
+  \end{Figure}
+Die Fitfunktion ist charakterisiert durch folgende Parameter
+  \begin{center}
+    \begin{tabular}{c|c}
+    & Fit $T_2^*$\\
+    \hline
+    $M_0$ & $\SI{1.58012+-0.002594}{V}$ \\
+    $T_2^*$ & $\SI{4.63375+-0.01054}{ms}$ 
+    \end{tabular}
+  \captionof{table}{Parameter der Anpassung zum PZG}
+  \label{Tab:PZG_para}
+  \end{center}
+Das reduzierte $\chi ^2$ ist hier nicht aufgeführt, da diese Datenpunkte ohne Fehler dem Oszi entnommen worden sind.
+Die effektive transversale Relaxationszeit berechnet sich dann mit Hilfe des Fits zu
+\begin{align} 
+        T_2^*=\SI{4.63375+-0.01054}{ms}
+.\end{align} 
+Für diesen Wert existiert keine Literaturangabe.
+
+\subsubsection{Homogene Transversale Relaxationszeit $T_2$}
+Die homogene transversale Relaxationszeit $T_2$ kann mit Hilfe des \textsc{Hahn}--Spinechoeffekts berechnet werden.
+
+Die Sequenz um ein solches Echo zu erzeugen ist
+\begin{align} 
+        \dfrac{\pi }{2}\rightarrow \tau \rightarrow \pi \rightarrow FID
+.\end{align} 
+Die Spins werden mit einem $\pi /2$--Puls rotiert und nach einer kurzen Zeit $\tau $ um einen weiteren $\pi $--Puls.
+Anschließend kann ein FID gemessen werden.
+
+Werden die Spins um einen $\pi /2$--Puls rotiert, so laufen ihre \textsc{Lamor}--Präzessionen aus der Phase und man kann eine abnehmende Magnetisierung in der $xy$--Ebene messen.
+Werden nach kurzer Zeit $\tau $ alle Spins um $\pi $ rotiert, dann drehen sich auch ihre Phasen um, sodass sie nach der selben Zeit $\tau $ wieder zu einer Phase zusammenlaufen.
+Diesen Rückgang zu einer einheitlichen Phase lässt sich dann durch eine steigende Gesamtmagnetisierung beobachten die auch als Spinecho bezeichnet wird.
+Wartet man noch eine längere Zeit, so laufen die Spins wieder außer Phase und die Gesamtmagnetisierung nimmt ab.
+Der gesamte Prozess dauert also $2\tau $.
+
+Nimmt man für verschiedene Zeiten $\tau $ die Amplituden des Echos auf, so kann man mit Hilfe einer Fitfunktion,
+\begin{align} 
+        M\left(\tau \right)=M_0\text{exp}\left(-\dfrac{\tau }{T_2}\right)
+,\end{align} 
+die Zeit $T_2$ bestimmen.
+  \begin{Figure}
+    \centering\resizebox{\textwidth}{!}{\input{T2hom.tex}}
+    \captionof{figure}{
+      Maxima der Echo FIDs von $T_2$.
+    }
+    \label{fig:T2eff}
+  \end{Figure}
+Die Fitfunktion ist charakterisiert durch folgende Parameter
+  \begin{center}
+    \begin{tabular}{c|c}
+    & Fit $T_2^*$\\
+    \hline
+    $M_0$ & $\SI{1.58012+-0.002594}{V}$ \\
+    $T_2^*$ & $\SI{4.63375+-0.01054}{ms}$ 
+    \end{tabular}
+  \captionof{table}{Parameter der Anpassung zum PZG}
+  \label{Tab:PZG_para}
+  \end{center}
 
 \end{multicols}
 \printbibliography
