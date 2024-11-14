@@ -495,12 +495,11 @@ INPUT ./rabi_oszi.pdf
 INPUT ./s_zurück.tex
 INPUT ./s_zurück.tex
 INPUT s_zurück.tex
-INPUT ../latex/s_zurück.tex
-INPUT ../latex/s_zurück.tex
-INPUT ../latex/s_zurück.pdf
-INPUT ../latex/s_zurück.pdf
-INPUT ../latex/s_zurück.pdf
-INPUT ../latex/s_zurück.pdf
+INPUT ./s_zurück.tex
+INPUT ./s_zurück.pdf
+INPUT ./s_zurück.pdf
+INPUT ./s_zurück.pdf
+INPUT ./s_zurück.pdf
 INPUT ./p_zurück.tex
 INPUT ./p_zurück.tex
 INPUT p_zurück.tex
@@ -567,6 +566,7 @@ INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pf
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb

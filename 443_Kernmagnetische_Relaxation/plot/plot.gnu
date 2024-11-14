@@ -91,11 +91,14 @@ set ylabel 'Amplitude/V'
 MT2eff(x) = MT2eff0 * exp(-x/T2eff) # x = tau
 MT2eff0 = 1000
 T2eff = 1
-fit MT2eff(x) T2eff_dat u ($1*1e3):2 every 1::320::1000 via MT2eff0,T2eff
+fit MT2eff(x) T2eff_dat u ($1*1e3):($2-0.00399802):(0.00873516) every 1::320::1000 via MT2eff0,T2eff
+
+c(x) = C
+fit c(x) T2eff_dat u ($1*1e3):2 every 1::1::315 via C
 
 set yrange[-.1:2]
 set output '../latex/T2eff.tex'
-plot T2eff_dat u ($1*1e3):2 pt 0 title 'FID',\
+plot T2eff_dat u ($1*1e3):2 with lines title 'FID',\
         MT2eff(x) title '$T_2^*$ Fit'
 
 set datafile separator " "
@@ -130,29 +133,29 @@ set ylabel 'Amplitude/V'
 set datafile separator ","
 cp_dat = '../data/print_002.csv'
 mg_dat = '../data/print_003.csv'
-cp_max_dat = '../data/cp'
-mg_max_dat = '../data/mg'
+cp_max_dat = '../data/cp_maxima'
+mg_max_dat = '../data/mg_maxima'
 cp_Q_dat = '../data/print_004.csv'
 mg_Q_dat = '../data/print_005.csv'
 
 cp(x) = cp0 * exp(-x/T2cp)
 cp0 = 10
 T2cp = 20
-fit cp(x) cp_max_dat u 1:2:(.2) via cp0,T2cp
+fit cp(x) cp_max_dat u 1:2:(.03) via cp0,T2cp
 
 set output '../latex/cp.tex'
-plot cp_dat u ($1*1e3):2 every 1::3::1002 pt 0 title 'CP Sequenz',\
-        cp_max_dat u 1:2:(.2):(.05) with xyerrorbars pt 13 ps .3 title 'CP Maxima',\
-        cp_Q_dat u ($1*1e3):4 every 1::3::1002 pt 0 title 'Q--Signal',\
+plot cp_dat u ($1*1e3):2 every 1::3::1002 with lines title 'CP Sequenz',\
+        cp_max_dat u 1:2:(.2):(.03) with xyerrorbars pt 13 ps .3 title 'CP Maxima',\
+        cp_Q_dat u ($1*1e3):4 every 1::3::1002 with lines title 'Q--Signal',\
         cp(x) title 'CP Fit'
 
 mg(x) = mg0 * exp(-x/T2mg)
 mg0 = 10
 T2mg = 20
-fit mg(x) mg_max_dat u 1:2:(.2) via mg0,T2mg
+fit mg(x) mg_max_dat u 1:2:(.03) via mg0,T2mg
 
 set output '../latex/mg.tex'
-plot mg_dat u ($1*1e3):2 every 1::3::1002 pt 0 title 'MG Sequenz',\
-        mg_max_dat u 1:2:(.2):(.05) with xyerrorbars pt 13 ps .3 title 'MG Maxima',\
-        mg_Q_dat u ($1*1e3):4 every 1::3::1002 pt 0 title 'Q--Signal',\
+plot mg_dat u ($1*1e3):2 every 1::3::1002 with lines title 'MG Sequenz',\
+        mg_max_dat u 1:2:(.2):(.03) with xyerrorbars pt 13 ps .3 title 'MG Maxima',\
+        mg_Q_dat u ($1*1e3):4 every 1::3::1002 with lines title 'Q--Signal',\
         mg(x) title 'MG Fit'

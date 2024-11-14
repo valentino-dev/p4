@@ -1,0 +1,6 @@
+print_000.csv - pickup probe (kalibrierung) // verloren gegangen
+print_001.csv - optimiertes FID signal UND T_2^*
+print_002.csv - carr purcell sequenz
+print_003.csv - meiboom gill sequenz
+print_004.csv - nicht alternierend Q Signal (cp)
+print_005.csv - alternierend Q Signal (mg)
