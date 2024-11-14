@@ -53,6 +53,11 @@
   Das digitale \textbf{Oszilloskop} kann dann die Signal darstellen. Dafür stehen uns drei Eingänge zur verfügung. 
 
   \section{Durchführung}
+Alle Daten zu den Plots sind auf dem Github \url{https://github.com/valentino-dev/p4.git} zu finden.
+Die Ordnerstruktur und Dateibennenung ist selbsterklärend.
+Die Zuordnung der \texttt{.csv} Dateien sind in \texttt{data/csv_file_zuordnung}.
+Bei jedem Plot ist weiterhin die Datei angegeben, aus der die Daten entnommen wurden.
+
   \subsection{Justage}
   Während des Experiments wird es einen Energiefluss vom Nukleus zum Lattice geben. Dabei erwärmt sich das Lattice. Dafür regeln wir mithilfe von zwei Potentiometern am PS2 Controller die \textbf{Temperatur}, sodass diese auf die Raumtemperatur eingestellt ist und dort konstant hällt. Ansonsten würde das Magnetfeld nicht homogen bleiben. Nun lassen sich \textbf{Tuning-Kondensatoren} an dem Magneten mithilfe eines nicht-magnetischen Schraubendrehers einstellen, um die Amplitude zu maxmieren. Hierbei wird das Signal betrachtet, wenn wir $\texttt{A_len}=\SI{2.5}{\micro s}$ und an dem Oszi einen Sweep von \SI{2}{\micro s/div} einstellen. Als Probe wird die mitgelieferte \textbf{Pickup Probe} verwendet. Das optimierte Signal ist in dem Oszillogramm von Abb. \ref{fig:PP} dargestellt.
   
@@ -81,15 +86,17 @@ Daraus ergibt sich die Bedingung
 \begin{align}
   \omega_0 = \gamma B_0.
 \end{align}
-Je länger wir nun dieses Feld angeschalten lassen, desto größer wird der Neigungswinkel. Dieser Zeitraum wird RF-Pulse genannt und lässt sich an dem Pulse Programmer mit \texttt{A_len} einstellen. Sollten wir einen Neigungswinkel von $\frac{\pi}{2}$ erreichen, so können wir aufgrund der Sample Coil, die über den Reciever verstärkt wird eine Auslänkung auf unserem Oszilloskop sehen. Erreichen wir $\pi$, so wird der Ausschlag wieder 0 sein, da die Sample Coil nur ein Magnetfeld in der xy-Ebene messen kann und nun unsere Magnetisierung in $(-)$z-Richtung ausgerichtet ist. Da allerdings immernoch das homogene Magnetfeld wirkt, richtet sich der Spin nach der Neigung wieder in z-Richtung aus. Dieses Verhalten ist aufgraund der Gesammtmagnetisierung mit der Sample Coil messbar und wird Free Induction Decay (FID) genannt. Wir ersetzen hier die Pickup Probe mit unserer Mineralöl Probe. Nun müssen die Gradienten am PS2 Controller und die Frequenz am Syntheziser so optimiert werden, dass wir ein möglichst langes FID und für den Fall, dass wir bei $\pi$ liegen, eine möglichst kleine Amplitude haben. Gleichzeitig wird das I (In Phase) und Q (Out of Phase) Signal betrachetet, welches keine Nachschwingung haben darf, da dann die Resonazfrequenz getroffen wird. Wir erhalten das in Abb. \ref{fig:opt_sig} dargestellte Signal. Dabei ist eine Frequenz von \SI{21.18322+-0.00001}{\mega Hz} eingestellt. Das I und Q Signal würden dann entsprechend wie bei einem gedämpften harmonischen Oszillator im Kriechfall aussehen.
+Je länger wir nun dieses Feld angeschalten lassen, desto größer wird der Neigungswinkel. Dieser Zeitraum wird RF-Pulse genannt und lässt sich an dem Pulse Programmer mit \texttt{A_len} einstellen. Sollten wir einen Neigungswinkel von $\frac{\pi}{2}$ erreichen, so können wir aufgrund der Sample Coil, die über den Reciever verstärkt wird eine Auslänkung auf unserem Oszilloskop sehen. Erreichen wir $\pi$, so wird der Ausschlag wieder 0 sein, da die Sample Coil nur ein Magnetfeld in der xy-Ebene messen kann und nun unsere Magnetisierung in $(-)$z-Richtung ausgerichtet ist. Da allerdings immernoch das homogene Magnetfeld wirkt, richtet sich der Spin nach der Neigung wieder in z-Richtung aus. Dieses Verhalten ist aufgraund der Gesamtmagnetisierung mit der Sample Coil messbar und wird Free Induction Decay (FID) genannt. Wir ersetzen hier die Pickup Probe mit unserer Mineralöl Probe. Nun müssen die Gradienten am PS2 Controller und die Frequenz am Syntheziser so optimiert werden, dass wir ein möglichst langes FID und für den Fall, dass wir bei $\pi$ liegen, eine möglichst kleine Amplitude haben. Gleichzeitig wird das I (In Phase) und Q (Out of Phase) Signal betrachetet, welches keine Nachschwingung haben darf, da dann die Resonazfrequenz getroffen wird. Wir erhalten das in Abb. \ref{fig:opt_sig} dargestellte Signal. Dabei ist eine Frequenz von \SI{21.18322+-0.00001}{\mega Hz} eingestellt. Das I und Q Signal würden dann entsprechend wie bei einem gedämpften harmonischen Oszillator im Kriechfall aussehen.
   \begin{Figure}
     \centering\resizebox{\textwidth}{!}{\input{opt_sig.tex}}
     \captionof{figure}{
-      Optimiertes FID Signal.
+            Optimiertes FID Signal. Datei \texttt{print_001.csv}
     }
     \label{fig:opt_sig}
   \end{Figure}
-  Generell messen wir aufgrund des Farady'schen Gesetzes $U=-\frac{\text{d}}{\text{d}t}\Phi_m$ eine Spannung. Das liegt daran, dass der Spin wegen des Drehimpulses um die z-Achse präzediert und so $\Phi_m$ sich zeitlich ändert. Dabei hatten wir sichergestellt, dass die Zerfallszeit über \SI{4}{\milli s} liegt.
+Das Grundrauschen des experimentellen Aufbaus liegt bei $U=\SI{0.00399802+-0.00873516}{V}$ und ist aus diesem und allen folgenden Plots, die dem Oszi entnommen sind, rausgerechnet.
+
+Generell messen wir aufgrund des Farady'schen Gesetzes $U=-\frac{\text{d}}{\text{d}t}\Phi_m$ eine Spannung. Das liegt daran, dass der Spin wegen des Drehimpulses um die z-Achse präzediert und so $\Phi_m$ sich zeitlich ändert. Dabei hatten wir sichergestellt, dass die Zerfallszeit über \SI{4}{\milli s} liegt.
 
   Nun mussten die Pulslängen ermittelt werden, dafür wurde diese so eingestellt, dass wir die Amplitude minimieren. Somit erhalten wir ein $\pi$-Puls. Währendessen verändern sich die Nachschwingungen von I und Q. Nun hablieren wir diese Pulslänge und erhalten ein $\frac{\pi}{2}$-Puls. Die Pulslängen sind dabei \SI{2.42}{\milli s} bzw. \SI{4.84}{\milli s}. Hierbei und bei allen folgenden Messungen wurde das Offset direkt im Versuch abgezogen und ist somit in der eigenen Unsicherheitenabschätzung schon mit einbezogen. Dabei erhalten wir ein Amplitudenverhältniss $U_{\text{max}}(\pi):U_{\text{max}}(\pi/2)$ von 1:\SI{17.2+-1.4} mit $U_{\text{max}}(\pi)=\SI{0.086+-0.007}{V}$ und $U_{\text{max}}(\pi/2)=\SI{1.483+-0.007}{V}$, was über den notwendigen 1:6 liegt.
 
@@ -99,7 +106,7 @@ Je länger wir nun dieses Feld angeschalten lassen, desto größer wird der Neig
   \begin{Figure}
     \centering\resizebox{\textwidth}{!}{\input{rabi_oszi.tex}}
     \captionof{figure}{
-      Rabi-Oszillation 
+            Rabi-Oszillation. Datei \texttt{rabi_oszillation.dat}
     }
     \label{fig:rabioszi}
   \end{Figure}
@@ -119,6 +126,59 @@ Je länger wir nun dieses Feld angeschalten lassen, desto größer wird der Neig
   Ein gutes reduziertes $\chi^2$ liegt in der Nähe von 1. Dies ist für die Probe der Fall mit $1.03$. Für das In-Phase Signal erhalten wir $\chi^2/\text{ddof}=0.46$, was unter unseren gewollten 1 liegt, aber immernoch vertretbar ist. Somit haben wir entweder bei dem In-Phase Signal unsere Messunsicherheit unterschätzt, oder gute Messergebnisse erhalten.
 
   Wie erwartet, erhalten wir einen Sinus -- mit und ohne Betrag -- welcher Phasengleich ist und die gleiche Periodendauer hat. Dies liegt daran, dass das Antwortsignal den Betrag der Projektion der Magnetisierung in die xy-Ebene und das I Signal die Magnetisierung in y-Richtung zeigt.
+
+\subsection{Fitfunktion}
+Im Folgenden wird wiederholt eine Fitfunktion auftreten, mit der sich die Magnetisierung gut modellieren lässt.
+Hier soll diese Funktion kurz hergeleitet werden.
+Die Herleitung ist aus \cite{TeachSpin} entnommen.
+
+Die Magnetisierung eines Mediums ist durch die Anzahl $N_1$ (für $m_z=+\tfrac{1}{2}$) und $N_2$ (für $m_z=-\tfrac{1}{2}$) der Spins pro Volumeneinheit gegeben.
+Das Verhältnis ist
+\begin{align} 
+        \dfrac{N_2}{N_1}=\text{exp}\left(\dfrac{\hbar \omega _0}{kT}\right)
+.\end{align} 
+Die Magnetisierung in $z$--Richtung ist
+\begin{align} 
+        M_z=\left(N_1-N_2\right)\mu 
+,\end{align} 
+mit $\mu $ dem magnetischen Moment.
+Im thermischen Gleichgewicht ist die Magnetisierung
+\begin{align} 
+        M_0=N\mu \tanh \left(\dfrac{\mu B}{kT}\right)\approx N\dfrac{\mu ^2B}{kT}\qquad N=N_1+N_2
+.\end{align} 
+Diese Magnetisierung baut sich nur endlich schnell auf, was bedeutet dass sich eine Differentialgleichung aufstellen lassen kann, die die Magnetisierung in $z$--Richtung in Abhängigkeit von der Zeit darstellt
+\begin{align} 
+        \diff[]{M_z\left(t\right)}{t}=\dfrac{M_0-M_z}{t}
+.\end{align} 
+Die Lösung dieser Gleichung ist die im folgenden verwendete Fitfunktion
+\begin{align} 
+        M_z\left(t\right)=M_0\left(1-\text{exp}\left(-\dfrac{t}{T_1}\right)\right)
+,\end{align} 
+wobei $T_1$ die longitudinale Relaxationzeit ist.
+
+Für die Magnetisierung in der $xy$--Ebene lässt sich eine ähnliche Fitfunktion aufstellen.
+Es ist die Differentialgleichung für die Magnetisierung
+\begin{align} 
+        \diff[]{\boldsymbol{M}}{t}=\gamma \boldsymbol{M} \times \boldsymbol{B} 
+.\end{align} 
+Sei $\boldsymbol{B} $ nun ein beliebiges (auch rotierendes) Magnetfeld.
+In einem mitrotiertem Bezugssystem ist dieses Feld gegeben durch
+\begin{align} 
+        \boldsymbol{B}^*_{\text{eff}}=B_x\hat{i}+\left(B_0-\dfrac{\omega }{\gamma }\right)\hat{k}
+\end{align} 
+Die DGL vereinfacht sich dann zu
+\begin{align} 
+        \left.\diff[]{\boldsymbol{M} }{t}\right|_{\text{eff}}=\gamma \boldsymbol{M} \times \boldsymbol{B} ^*_{\text{eff}}
+.\end{align}
+Das bedeutet, dass $\boldsymbol{M}$ um das Feld $\boldsymbol{B}^*_{\text{eff}}$ präzedieren wird.
+Diese Magnetisierung wird aber exponentiell abfallen
+\begin{align} 
+        \diff[]{M_{x^*}}{t}=-\dfrac{M_{x^*}}{T_2}\qquad \diff[]{M_{y^*}}{t}=-\dfrac{M_{y^*}}{T_2}
+.\end{align} 
+Die Lösung dieser DGLs sind auch die im folgenden verwendeten Fitfunktionen 
+\begin{align} 
+        M_{x^*}=M_0\text{exp}\left(-\dfrac{t}{T_2}\right)\qquad M_{y^*}=M_0\text{exp}\left(-\dfrac{t}{T_2}\right)
+.\end{align} 
 
 \subsection{Longitudinale Relaxationszeit $T_1$}
 Die longitudinale Relaxationszeit $T_1$ beschreibt die Spin--Lattice--Relaxationszeit.
@@ -153,7 +213,7 @@ $P=\SI{1}{s}$ ist hier völlig ausreichend.
   \begin{Figure}
     \centering\resizebox{\textwidth}{!}{\input{s_zurück.tex}}
     \captionof{figure}{
-      Zweites FID der Sättigungszurückgewinnung.
+            Zweites FID der Sättigungszurückgewinnung. Datei \texttt{sättigungszurückgewinnung}
     }
     \label{fig:szurück}
   \end{Figure}
@@ -196,14 +256,14 @@ Für $\tau $ viel größer als bisher wird die Sequenz zu einem einfachen $\pi /
 Die Kurve der gemessenen Daten sieht dann analog zu der Kurve aus dem Verfahren der SZG aus, allerdings lässt sich noch die starke Abnahme der Magnetisierung für kleine $\tau \leq \SI{30}{ms}$ erkennen.
 Passt man die Funktion
 \begin{align} 
-        M\left(\tau \right)=\left(1-2\cdot \text{ecp}\left(-\dfrac{\tau }{T_1}\right)\right)
+        M\left(\tau \right)=\left(1-2\cdot \text{exp}\left(-\dfrac{\tau }{T_1}\right)\right)
 \end{align} 
 an die Daten für $\tau >\SI{30}{ms}$ an (da hier nur die Zunahme der Magnetisierung für $T_1$ wichtig ist), lässt sich $T_1$ berechnen.
 Daten und Fitfunktion sind in Abb.\ \ref{fig:pzurück} dargestellt.
   \begin{Figure}
     \centering\resizebox{\textwidth}{!}{\input{p_zurück.tex}}
     \captionof{figure}{
-      Zweites FID der Polarisationszurückgewinnung.
+            Zweites FID der Polarisationszurückgewinnung. Datei \texttt{polarisationszurückgewinnung}
     }
     \label{fig:pzurück}
   \end{Figure}
@@ -259,7 +319,7 @@ verwendet.
   \begin{Figure}
     \centering\resizebox{\textwidth}{!}{\input{T2eff.tex}}
     \captionof{figure}{
-      FID von $T_2^*$.
+            FID von $T_2^*$. Datei \texttt{print_001.csv}
     }
     \label{fig:T2eff}
   \end{Figure}
@@ -305,7 +365,7 @@ die Zeit $T_2$ bestimmen.
   \begin{Figure}
     \centering\resizebox{\textwidth}{!}{\input{T2hom.tex}}
     \captionof{figure}{
-      Maxima der Echo FIDs von $T_2$.
+            Maxima der Echo FIDs von $T_2$. Datei \texttt{hahn_spinecho_sequenz}
     }
     \label{fig:T2eff}
   \end{Figure}
@@ -347,7 +407,7 @@ Das Q--Signal ist über die ganze Sequenz gleichgerichtet, der Unterschied zur M
   \begin{Figure}
     \centering\resizebox{\textwidth}{!}{\input{cp.tex}}
     \captionof{figure}{
-      Carr--Purcell Sequenz.
+            Carr--Purcell Sequenz. Datei \texttt{print_002.csv}
     }
     \label{fig:cp}
   \end{Figure}
@@ -355,14 +415,14 @@ Das Q--Signal ist über die ganze Sequenz gleichgerichtet, der Unterschied zur M
     \begin{tabular}{c|c}
     & Fit $T_2$\\
     \hline
-    red.\ $\chi ^2$ &  0.0183232\\
+    red.\ $\chi ^2$ & 0.814366\\
     $M_0$ & $\SI{1.51687+-0.01545}{V}$ \\
     $T_2^{\text{CP}}$ & $\SI{16.6177+-0.3026}{ms}$ 
     \end{tabular}
   \captionof{table}{Parameter der Anpassung von den Maxima der Carr--Purcell--Sequenz}
   \label{Tab:mg_para}
   \end{center}
-Das reduzierte $\chi ^2$ ist viel kleiner als 1; betrachtet man allerdings die Fitfunktion lässt sich aber erkennen, dass die Fehler groß genug sind, die Funktion nur sehr genau jeden Wert trifft.
+Das reduzierte $\chi ^2$ ist nahe 1, der Fit modelliert also die Kurve der Maxima passend.
 Die homogene transversale Relaxationszeit ist damit
 \begin{align} 
         T_2^{\text{CP}}=\SI{16.6177+-0.3026}{ms}
@@ -381,7 +441,7 @@ Man erkennt klar den Unterschied zur Carr--Purcell--Sequenz.
   \begin{Figure}
     \centering\resizebox{\textwidth}{!}{\input{mg.tex}}
     \captionof{figure}{
-      Meiboom--Gill Sequenz.
+            Meiboom--Gill Sequenz. Datei \texttt{print_003.csv}
     }
     \label{fig:mg}
   \end{Figure}
@@ -389,14 +449,15 @@ Man erkennt klar den Unterschied zur Carr--Purcell--Sequenz.
     \begin{tabular}{c|c}
     & Fit $T_2$\\
     \hline
-    red.\ $\chi ^2$ &  0.0446407\\
+    red.\ $\chi ^2$ &  1.98403\\
     $M_0$ & $\SI{1.42096+-0.02117}{V}$ \\
     $T_2^{\text{MG}}$ & $\SI{32.0455+-1.228}{ms}$ 
     \end{tabular}
   \captionof{table}{Parameter der Anpassung von den Maxima der Meiboom--Gill--Sequenz}
   \label{Tab:mg_para}
   \end{center}
-Das reduzierte $\chi ^2$ ist auch für diesen Fit viel zu klein; die Fehler sind allerdings passend gewählt, die Funktion trifft die Werte sehr genau.
+Das reduzierte $\chi ^2$ weicht auch hier nicht signifikant von 1 ab, der Fit modelliert bei diesem Fit die Kurve der Maxima gut.
+Im Vergleich zu Carr--Purcell erlauben die Fehler mehr Toleranz.
 Die homogene transversale Relaxationszeit ist damit
 \begin{align} 
         T_2^{\text{MG}}=\SI{32.0455+-1.228}{ms}

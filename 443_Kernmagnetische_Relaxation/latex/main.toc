@@ -4,10 +4,11 @@
 \contentsline {section}{\numberline {3}Durchführung}{1}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Justage}{1}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}Rabi-Oszillationen}{2}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Longitudinale Relaxationszeit $T_1$}{3}{subsection.3.3}%
-\contentsline {subsubsection}{\numberline {3.3.1}Sättigungszurückgewinnung}{3}{subsubsection.3.3.1}%
-\contentsline {subsubsection}{\numberline {3.3.2}Polarisationszurückgewinnung}{4}{subsubsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.4}Transversale Relaxationszeit $T_2$}{4}{subsection.3.4}%
-\contentsline {subsubsection}{\numberline {3.4.1}Effektive Transversale Relaxationszeit $T_2^*$}{5}{subsubsection.3.4.1}%
-\contentsline {subsubsection}{\numberline {3.4.2}Homogene Transversale Relaxationszeit $T_2$}{5}{subsubsection.3.4.2}%
-\contentsline {section}{\numberline {4}Fazit}{7}{section.4}%
+\contentsline {subsection}{\numberline {3.3}Fitfunktion}{3}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Longitudinale Relaxationszeit $T_1$}{4}{subsection.3.4}%
+\contentsline {subsubsection}{\numberline {3.4.1}Sättigungszurückgewinnung}{4}{subsubsection.3.4.1}%
+\contentsline {subsubsection}{\numberline {3.4.2}Polarisationszurückgewinnung}{4}{subsubsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.5}Transversale Relaxationszeit $T_2$}{5}{subsection.3.5}%
+\contentsline {subsubsection}{\numberline {3.5.1}Effektive Transversale Relaxationszeit $T_2^*$}{5}{subsubsection.3.5.1}%
+\contentsline {subsubsection}{\numberline {3.5.2}Homogene Transversale Relaxationszeit $T_2$}{6}{subsubsection.3.5.2}%
+\contentsline {section}{\numberline {4}Fazit}{8}{section.4}%
