@@ -95,7 +95,7 @@ Je länger wir nun dieses Feld angeschalten lassen, desto größer wird der Neig
 
 
   \subsection{Rabi-Oszillationen}
-  Bei der Rabi-Oszillation erhöhen wir die Pulslänge und messen die Maxima, also die Amplitude. Wir stellen sicher, dass die Periode zwischen zwei Pulsen mit \SI{1}{s} ausreichend groß ist. Neben der FID Amplitude wir auch die Amplitude des In-Signals gemessen. Wir wählen hierbei Pulslängen von zwischen \SI{0.5}{\micro s} und \SI{12}{\micro s}. Dabei erhalten wir Abb. \ref{fig:rabioszi}.
+  Bei der Rabi-Oszillation erhöhen wir die Pulslänge und messen die Maxima, also die Amplitude. Wir stellen sicher, dass die Periode zwischen zwei Pulsen mit \SI{1}{s} ausreichend groß ist. Neben der FID Amplitude haben wir auch die Amplitude des In-Signals gemessen. Wir wählen hierbei Pulslängen von zwischen \SI{0.5}{\micro s} und \SI{12}{\micro s}. Dabei erhalten wir Abb. \ref{fig:rabioszi}.
   \begin{Figure}
     \centering\resizebox{\textwidth}{!}{\input{rabi_oszi.tex}}
     \captionof{figure}{
@@ -175,7 +175,7 @@ Aus den Parametern ergibt sich dann die longitudinale Relaxationszeit zu
 \begin{align} 
         T_1=\SI{29.0361+-1.201}{ms}
 .\end{align} 
-
+Dieser Wert wird im Anschluss der PZG diskutiert.
 
 \subsubsection{Polarisationszurückgewinnung}
 Die Sequenz der PZG ist
@@ -226,17 +226,19 @@ Aus den Parametern ergibt sich dann die longitudinale Relaxationszeit zu
         T_1=\SI{47.8268+-0.4078}{ms}
 .\end{align} 
 
-Dieser Wert weicht um circa $65\%$ von $T_1$ aus der SZG ab.
-Dieses Ergebnis war nicht zu erwarten, da die Methoden zwar unterschiedlich in der Durchführung sind, allerdings auf die Bestimmung der selben physikalischen Größe aus sind.
+Dieser Wert weicht um circa $65\%$ von $T_1$ aus der SZG ab, ist aber für longitudinale Relaxationszeiten realistischer, da diese auch in der Größenordnung von Sekunden liegen können.
+Die gemessenen Zeiten können allerdings nicht mit Literaturwerten verglichen werden, da das Mineralöl nicht bekannt ist und keine weiteren Literaturwerte angegeben sind.
+
+Dieser große Unterschied war aber nicht zu erwarten, da die Methoden zwar unterschiedlich in der Durchführung sind, allerdings auf die Bestimmung der selben physikalischen Größe aus sind.
 Der Grund dieser Diskrepanz könnte in der Überanpassung des Fits der PZG sein.
 Es ist aber auch nicht auszuschließen, dass keine Fehler in der Messung unterlaufen sind.
-Die gemessenen Zeiten können nicht mit Literaturwerten verglichen werden, da das Mineralöl nicht bekannt ist und keine weiteren Literaturwerte angegeben sind.
 
 \subsection{Transversale Relaxationszeit $T_2$}
 Die transversale Relaxationszeit $T_2$ beschreibt die Spin--Spin--Relaxationszeit.
-Wenn die Spins ausgerichtet sind, dann lässt sich eine Gesamtmagnetisierung in der $xy$--Ebene messen.
+Wenn die Spins durch eine Puls ausgelenkt werden, dann lässt sich eine Gesamtmagnetisierung in der $xy$--Ebene messen.
 Nach der Zeit $T_2$ ist diese Magnetisierung verschwunden.
-Grund dafür ist, dass die Spins (die orthogonal zu den homogenen Magnetfeldlinien stehen) unterschiedlich \textsc{Lamor}--Präzessionsgeschwindigkeiten haben und so phasenverschoben werden.
+Grund dafür ist, dass die Spins (die orthogonal zu den homogenen Magnetfeldlinien stehen) unterschiedliche \textsc{Lamor}--Präzessionsgeschwindigkeiten haben und so phasenverschoben werden.
+Diese unterschiedlichen Geschwindigkeiten kommen durch kleine Inhomogenitäten im Magnetfeld zustande.
 Durch diese Fluktuationen kommt es dann nach einer gewissen Zeit zu einem Ausgleich aller präzedierenden Spins, sodass keine Gesamtmagnetisierung in der $xy$--Ebene mehr zu messen ist.
 
 Bei den transversalen Relaxationszeiten wird zwischen drei verschiedenen Zeiten unterschieden.
@@ -278,17 +280,17 @@ Die effektive transversale Relaxationszeit berechnet sich dann mit Hilfe des Fit
         T_2^*=\SI{4.63375+-0.01054}{ms}
 .\end{align} 
 Für diesen Wert existiert keine Literaturangabe.
+Allerdings ist $T_2^*$ um eine Größenordnung kleiner als $T_1$, was erwartet war.
 
 \subsubsection{Homogene Transversale Relaxationszeit $T_2$}
-Die homogene transversale Relaxationszeit $T_2$ kann mit Hilfe des \textsc{Hahn}--Spinechoeffekts berechnet werden.
-
-Die Sequenz um ein solches Echo zu erzeugen ist
+Die homogene transversale Relaxationszeit $T_2$ kann mit Hilfe drei verschiedener Verfahren berechnet werden.
+Diese Verfahren werden kurz dargestellt und die berechneten Zeiten $T_2$ am Ende diskutiert.
+Die Fitfunktion wird kurz mit der Hahn--Spinecho--Sequenz dargestellt, ist aber für alle Verfahren dieselbe.
+\\\\\textbf{Hahn--Spinecho--Sequenz}$\quad$
+Die Sequenz des Hahn--Spinecho ist
 \begin{align} 
-        \dfrac{\pi }{2}\rightarrow \tau \rightarrow \pi \rightarrow FID
+        \dfrac{\pi }{2}\rightarrow \tau \rightarrow \pi \rightarrow \text{FID}
 .\end{align} 
-Die Spins werden mit einem $\pi /2$--Puls rotiert und nach einer kurzen Zeit $\tau $ um einen weiteren $\pi $--Puls.
-Anschließend kann ein FID gemessen werden.
-
 Werden die Spins um einen $\pi /2$--Puls rotiert, so laufen ihre \textsc{Lamor}--Präzessionen aus der Phase und man kann eine abnehmende Magnetisierung in der $xy$--Ebene messen.
 Werden nach kurzer Zeit $\tau $ alle Spins um $\pi $ rotiert, dann drehen sich auch ihre Phasen um, sodass sie nach der selben Zeit $\tau $ wieder zu einer Phase zusammenlaufen.
 Diesen Rückgang zu einer einheitlichen Phase lässt sich dann durch eine steigende Gesamtmagnetisierung beobachten die auch als Spinecho bezeichnet wird.
@@ -310,14 +312,152 @@ die Zeit $T_2$ bestimmen.
 Die Fitfunktion ist charakterisiert durch folgende Parameter
   \begin{center}
     \begin{tabular}{c|c}
-    & Fit $T_2^*$\\
+    & Fit $T_2$\\
     \hline
-    $M_0$ & $\SI{1.58012+-0.002594}{V}$ \\
-    $T_2^*$ & $\SI{4.63375+-0.01054}{ms}$ 
+    red.\ $\chi ^2$ & 2.34122 \\
+    $M_0$ & $\SI{1229.42+-39.52}{V}$ \\
+    $T_2^{\text{HSE}}$ & $\SI{22.0966+-0.9622}{ms}$ 
     \end{tabular}
-  \captionof{table}{Parameter der Anpassung zum PZG}
-  \label{Tab:PZG_para}
+  \captionof{table}{Parameter der Anpassung zum Echo FID}
+  \label{Tab:echo_para}
   \end{center}
+Das reduzierte $\chi ^2$ liegt nahe an 1, die Abweichung kommen dadurch zustande, dass die Fehler bei dieser Messung relativ klein sind.
+Die homogene transversale Relaxationszeit ist damit
+\begin{align} 
+        T_2^{\text{HSE}}=\SI{22.0966+-0.9622}{ms}
+.\end{align} 
+\\
+\textbf{Carr--Purcell--Sequenz} $\quad$ 
+Die Carr--Purcell--Sequenz ist
+\begin{align} 
+        \dfrac{\pi }{2}\rightarrow \tau \rightarrow \pi \rightarrow 2\tau \rightarrow \pi \rightarrow 2\tau \rightarrow \pi \rightarrow \hdots 
+\end{align} 
+Mit dieser Sequenz lassen sich mehrere Echos hintereinander beobachten.
+Zuerst werden die Spins mit einem $\pi /2$--Puls in die $xy$--Ebene rotiert.
+Dann wird eine Zeit $\tau $ gewartet bis ein $\pi $--Puls die Spins rotiert, um ein Echo (wie bei der Hahn--Spinecho--Sequenz) zu messen.
+Wartet man $2\tau $, so werden die Ausrichtungen wieder phasenverschoben und können dann um $\pi $ rotiert werden, um ein zweites Echo zu erzeugen.
+Diese Sequenz lässt sich mehrmals widerholen, um so eine Kurve wie bei der Hahn--Spinecho--Sequenz zu erhalten.
+
+Ein Nachteil dieser Sequenz ist allerdings, dass sich die Fehler, die bei der Rotation um $\pi $ entstehen aufsummieren.
+Werden die Spins nicht perfekt um $\pi $ rotiert, sondern um $\pi \pm \Delta $, so liegt die Magnetisierung nicht vollständig in der $xy$--Ebene.
+Wird dann weiter um $\pi \pm \Delta $ rotiert, so läuft die Magnetisierung weiter aus der $xy$--Ebene heraus und der Fehler addiert sich.
+Dieses Phänomen lässt sich in dem starken Abfall der Kurve erkennen.
+
+Das Q--Signal ist über die ganze Sequenz gleichgerichtet, der Unterschied zur Meiboom--Gill--Sequenz wird im nächsten Abschnitt klar.
+  \begin{Figure}
+    \centering\resizebox{\textwidth}{!}{\input{cp.tex}}
+    \captionof{figure}{
+      Carr--Purcell Sequenz.
+    }
+    \label{fig:cp}
+  \end{Figure}
+  \begin{center}
+    \begin{tabular}{c|c}
+    & Fit $T_2$\\
+    \hline
+    red.\ $\chi ^2$ &  0.0183232\\
+    $M_0$ & $\SI{1.51687+-0.01545}{V}$ \\
+    $T_2^{\text{CP}}$ & $\SI{16.6177+-0.3026}{ms}$ 
+    \end{tabular}
+  \captionof{table}{Parameter der Anpassung von den Maxima der Carr--Purcell--Sequenz}
+  \label{Tab:mg_para}
+  \end{center}
+Das reduzierte $\chi ^2$ ist viel kleiner als 1; betrachtet man allerdings die Fitfunktion lässt sich aber erkennen, dass die Fehler groß genug sind, die Funktion nur sehr genau jeden Wert trifft.
+Die homogene transversale Relaxationszeit ist damit
+\begin{align} 
+        T_2^{\text{CP}}=\SI{16.6177+-0.3026}{ms}
+\end{align} 
+\\\textbf{Meiboom--Gill--Sequenz} $\quad$ 
+Die Meiboom--Gill--Sequenz ist 
+\begin{align} 
+        \dfrac{\pi }{2}\rightarrow \tau \rightarrow +\pi \rightarrow 2\tau \rightarrow -\pi \rightarrow 2\tau \rightarrow +\pi \rightarrow \hdots 
+\end{align} 
+Diese Sequenz ist analog zu der Carr--Purcell--Sequenz, gleicht aber durch die alternierenden Rotationsrichtungen (dargestellt durch $\pm \pi $) die Aufsummierung des Fehlers auf.
+Die Rotation ist auch hier nicht perfekt, man rotiert also um $\pi \pm \Delta $, allerdings kann dieser Fehler minimiert werden, indem man anschließend in die andere Richtung rotiert.
+Die Auswirkung lassen sich an der Kurve erkennen, die eine signifikant kleinere Steigung hat; die Magnetisierung in der $xy$--Ebene nimmt also langsamer ab.
+
+Das Q--Signal ist bei der Meiboom--Gill--Sequenz alternierend.
+Man erkennt klar den Unterschied zur Carr--Purcell--Sequenz.
+  \begin{Figure}
+    \centering\resizebox{\textwidth}{!}{\input{mg.tex}}
+    \captionof{figure}{
+      Meiboom--Gill Sequenz.
+    }
+    \label{fig:mg}
+  \end{Figure}
+  \begin{center}
+    \begin{tabular}{c|c}
+    & Fit $T_2$\\
+    \hline
+    red.\ $\chi ^2$ &  0.0446407\\
+    $M_0$ & $\SI{1.42096+-0.02117}{V}$ \\
+    $T_2^{\text{MG}}$ & $\SI{32.0455+-1.228}{ms}$ 
+    \end{tabular}
+  \captionof{table}{Parameter der Anpassung von den Maxima der Meiboom--Gill--Sequenz}
+  \label{Tab:mg_para}
+  \end{center}
+Das reduzierte $\chi ^2$ ist auch für diesen Fit viel zu klein; die Fehler sind allerdings passend gewählt, die Funktion trifft die Werte sehr genau.
+Die homogene transversale Relaxationszeit ist damit
+\begin{align} 
+        T_2^{\text{MG}}=\SI{32.0455+-1.228}{ms}
+.\end{align} 
+\\\textbf{Vergleich} $\quad$ 
+Die aus den drei Verfahren berechneten Werte sind
+\begin{align} 
+        T_2^{\text{HSE}}&=\SI{22.0966+-0.9622}{ms}\\
+        T_2^{\text{CP}}&=\SI{16.6177+-0.3026}{ms}\\
+        T_2^{\text{MG}}&=\SI{32.0455+-1.228}{ms}\\
+        \overline{T_2}&=\SI{23.5866+-0.5297}{ms}
+\end{align} 
+Diese Werte haben sehr große Abweichungen voneinander; man erkennt $T_2^{\text{MG}}\approx 2T_2^{\text{CP}}$. Grund für diese unterschiedlichen Werte könnte folgender sein.
+
+Da bei der Carr--Purcell--Sequenz die Fehler, die durch nicht exakte $\pi $--Pulse entstehen, aufsummiert werden, fällt die Kurve zu schnell ab.
+Der Wert für $T_2$ wird dadurch verfälscht und hängt noch von der Größe der Fehler ab.
+Diese Annahme basiert darauf, dass bei der Meiboom--Gill--Sequenz eine wesentlich höhere Zeit gemessen worden ist.
+Diese Sequenz verwendet alternierende $\pi $--Pulse, wodurch sich der Fehler stark minimiert, was dazu führt dass die Kurve weniger stark abfällt und der Wert für $T_2$ näher am echten Wert liegt.
+Vergleicht man beide Werte mit der Hahn--Spinecho--Sequenz, so erkennt man, dass sie ungefähr gleich stark von der gemessenen Zeit $T_2^{\text{HSE}}$ abweichen.
+$T_2^{\text{HSE}}$ liegt also unweigerlich nah an dem Mittelwert.
+$T_2^{\text{HSE}}$ wird wahrscheinlich näher am echten Wert für $T_2$ liegen, da die Zeit $\tau $ zwischen den Pulsen variiert werden kann und damit jedes Echo einzeln gemessen wird.
+So erlangt man eine höhere Genauigkeit.
+
+Dieser Wert scheint sehr nah an dem Wert von $T_1$ zu liegen, was eigentlich nicht der Fall sein sollte, da der Ausgleich durch die Phasenverschiedenheit schneller sein ist, als die Ausrichtung entlang der Feldlinien.
+Da aber hier und im Folgenden kein Literaturwert gegeben und die Zusammensetzung des Mineralöls nicht bekannt ist, können die Werte nur untereinander verglichen werden.
+
+Die Relaxationszeit, die sich aufgrund der Inhomogenitäten im Magnetfeld ergibt, kann jetzt berechnet werden mit
+\begin{align} 
+        \dfrac{1}{T_2^*}=\dfrac{1}{T_{2,\text{inhom}}}+\dfrac{1}{\overline{T_2}}\quad \Leftrightarrow \quad T_{2,\text{inhom}}=-\dfrac{T_2^*\overline{T_2}}{T_2^*-\overline{T_2}}
+,\end{align} 
+und Fehler 
+\begin{align} 
+        \Delta T_{2,\text{inhom}}=\,\sqrt[]{\left(\dfrac{\overline{T_2}^2}{\left(T_2^*-\overline{T_2}\right)^2}\Delta T_2^*\right)^2+\left(-\dfrac{T_2^{*2}}{\left(T_2^*-\overline{T_2}\right)^2}\Delta \overline{T_2}\right)^2}
+.\end{align} 
+Es ergibt sich ein Wert von
+\begin{align} 
+        T_{2,\text{inhom}}=\SI{5.76665+-.03562}{ms}
+.\end{align} 
+Man erkennt, dass die Inhomogenitäten des Magnetfeldes nicht unerheblich zur transversalen Relaxationszeit beitragen.
+
+\section{Fazit}
+In diesem Versuch wurden die Protonen in einer Mineralölprobe auf ihre longitudinalen und transversalen Relaxationszeiten untersucht.
+
+Hierfür wurde die Probe in ein homogenes Magnetfeld eingeführt, sodass sich die Protonenspins entlang der Feldlinien ausrichten, und mit Hilfe von magnetischen Wechselfeldern konnten diese Ausgelenkt werden, um so eine Gesamtmagnetisierung in der orthogonalen Ebene zu messen.
+
+Diese magnetischen Wechselfelder, genauer die Pulslängen der Felder, wurden mit Hilfe der \textsc{Rabi}--Oszillation eingestellt.
+Trägt man die Magnetisierung in der Ebene gegen die Pulslänge auf, so konnte erfolgreich die Länge des Pulses abgelesen werden, bei der die Magnetisierung am größten ist (dies entspricht einem $\pi /2$--Puls), bzw.\ bei der die Magnetisierung verschwindet (dies entspricht einem $\pi $--Puls).
+
+Die Gesamtmagnetisierung in der Ebene klingt nach einer gewissen Zeit ab.
+Das geschieht einerseits durch die longitudinale Relaxation, bei der sich die Spins wieder entlang der homogenen Magnetfeldlinien ausrichten.
+Die Dauer dieses Prozesses wurde berechnet, indem man den Free Induction Decay gemessen hat.
+Der Wert liegt bei
+\begin{align} 
+        T_1=\SI{29.0361+-1.201}{ms}
+.\end{align} 
+Andererseits nimmt die Magnetisierung auch mit den unterschiedlichen \textsc{Lamor}--Präzessionsgeschwindigkeiten in der Ebene ab.
+Die Zeit bis sich alle Spin aufgrund ihrer verschiedenen Phasen ausgeglichen haben wurde berechnet zu
+\begin{align} 
+        \overline{T_2}&=\SI{23.5866+-0.5297}{ms}
+.\end{align} 
+
 
 \end{multicols}
 \printbibliography

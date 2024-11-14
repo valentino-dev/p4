@@ -10,3 +10,4 @@
 \contentsline {subsection}{\numberline {3.4}Transversale Relaxationszeit $T_2$}{4}{subsection.3.4}%
 \contentsline {subsubsection}{\numberline {3.4.1}Effektive Transversale Relaxationszeit $T_2^*$}{5}{subsubsection.3.4.1}%
 \contentsline {subsubsection}{\numberline {3.4.2}Homogene Transversale Relaxationszeit $T_2$}{5}{subsubsection.3.4.2}%
+\contentsline {section}{\numberline {4}Fazit}{7}{section.4}%
