@@ -1,0 +1,10 @@
+#winkel_B = 130.0+-0.5 Grad
+#winkel_Gerr = 0.5, derr = 0.05
+#Linsenabstand Okular: 25.5+-0.5, eigentlich 30 / für CCD: 27.0+-0.5
+#Linsenabstand Spalt: 14.0+-0.1, eigentlich 15
+#farbe d winkel_G wellenlänge
+rot 0.20 89.5 
+türkis 0.10 68.5 
+violet nan 64.0
+violet 0.05 63.5 
+violet nan 61.5
