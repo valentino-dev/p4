@@ -1,0 +1,8 @@
+!.gitignore
+*.aux
+*.fdb_latexmk 
+*.fls 
+*.log 
+*.gz 
+*.toc
+*-inc.pdf*
