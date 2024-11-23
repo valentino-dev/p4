@@ -1,4 +1,63 @@
 % GNUPLOT: LaTeX picture with Postscript
+\documentclass{minimal}
+% Set font size
+\makeatletter
+\def\@ptsize{1}
+\InputIfFileExists{size11.clo}{}{%
+   \GenericError{(gnuplot) \space\space\space\@spaces}{%
+      Gnuplot Error: File `size11.clo' not found! Could not set font size%
+   }{See the gnuplot documentation for explanation.%
+   }{For using a font size a file `size<fontsize>.clo' has to exist.
+        Falling back ^^Jto default fontsize 10pt.}%
+  \def\@ptsize{0}
+  \input{size10.clo}%
+}%
+\makeatother
+% Load packages
+\usepackage{calc}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{transparent}
+\makeatletter
+% Select an appropriate default driver (from TeXLive graphics.cfg)
+\begingroup
+  \chardef\x=0 %
+  % check pdfTeX
+  \@ifundefined{pdfoutput}{}{%
+    \ifcase\pdfoutput
+    \else
+      \chardef\x=1 %
+    \fi
+  }%
+  % check VTeX
+  \@ifundefined{OpMode}{}{%
+    \chardef\x=2 %
+  }%
+\expandafter\endgroup
+\ifcase\x
+  % default case
+  \PassOptionsToPackage{dvips}{geometry}
+\or
+  % pdfTeX is running in pdf mode
+  \PassOptionsToPackage{pdftex}{geometry}
+\else
+  % VTeX is running
+  \PassOptionsToPackage{vtex}{geometry}
+\fi
+\makeatother
+% Set papersize
+\usepackage[papersize={360.00bp,216.00bp},text={360.00bp,216.00bp}]{geometry}
+% No page numbers and no paragraph indentation
+\pagestyle{empty}
+\setlength{\parindent}{0bp}%
+% Load configuration file
+\InputIfFileExists{gnuplot.cfg}{%
+  \typeout{Using configuration file gnuplot.cfg}%
+}{%
+ \typeout{No configuration file gnuplot.cfg found.}%
+}%
+\usepackage{siunitx}
+\begin{document}
 \begingroup
   \makeatletter
   \providecommand\color[2][]{%
@@ -83,46 +142,55 @@
 \begin{picture}(7200.00,4320.00)%
     \gplgaddtomacro\gplbacktext{%
       \csname LTb\endcsname%%
-      \put(536,766){\makebox(0,0)[r]{\strut{}$0$}}%
+      \put(536,619){\makebox(0,0)[r]{\strut{}$-8$}}%
       \csname LTb\endcsname%%
-      \put(536,1357){\makebox(0,0)[r]{\strut{}$2$}}%
+      \put(536,963){\makebox(0,0)[r]{\strut{}$-6$}}%
       \csname LTb\endcsname%%
-      \put(536,1947){\makebox(0,0)[r]{\strut{}$4$}}%
+      \put(536,1308){\makebox(0,0)[r]{\strut{}$-4$}}%
       \csname LTb\endcsname%%
-      \put(536,2538){\makebox(0,0)[r]{\strut{}$6$}}%
+      \put(536,1652){\makebox(0,0)[r]{\strut{}$-2$}}%
       \csname LTb\endcsname%%
-      \put(536,3128){\makebox(0,0)[r]{\strut{}$8$}}%
+      \put(536,1997){\makebox(0,0)[r]{\strut{}$0$}}%
+      \csname LTb\endcsname%%
+      \put(536,2341){\makebox(0,0)[r]{\strut{}$2$}}%
+      \csname LTb\endcsname%%
+      \put(536,2686){\makebox(0,0)[r]{\strut{}$4$}}%
+      \csname LTb\endcsname%%
+      \put(536,3030){\makebox(0,0)[r]{\strut{}$6$}}%
+      \csname LTb\endcsname%%
+      \put(536,3374){\makebox(0,0)[r]{\strut{}$8$}}%
       \csname LTb\endcsname%%
       \put(536,3719){\makebox(0,0)[r]{\strut{}$10$}}%
       \csname LTb\endcsname%%
       \put(634,425){\makebox(0,0){\strut{}$-2.5$}}%
       \csname LTb\endcsname%%
-      \put(1836,425){\makebox(0,0){\strut{}$-2$}}%
+      \put(1884,425){\makebox(0,0){\strut{}$-2$}}%
       \csname LTb\endcsname%%
-      \put(3038,425){\makebox(0,0){\strut{}$-1.5$}}%
+      \put(3134,425){\makebox(0,0){\strut{}$-1.5$}}%
       \csname LTb\endcsname%%
-      \put(4241,425){\makebox(0,0){\strut{}$-1$}}%
+      \put(4385,425){\makebox(0,0){\strut{}$-1$}}%
       \csname LTb\endcsname%%
-      \put(5443,425){\makebox(0,0){\strut{}$-0.5$}}%
+      \put(5635,425){\makebox(0,0){\strut{}$-0.5$}}%
       \csname LTb\endcsname%%
-      \put(6645,425){\makebox(0,0){\strut{}$0$}}%
+      \put(6886,425){\makebox(0,0){\strut{}$0$}}%
     }%
     \gplgaddtomacro\gplfronttext{%
       \csname LTb\endcsname%%
-      \put(4354,3545){\makebox(0,0)[r]{\strut{}quadratische Datenpunkte}}%
+      \put(6123,1180){\makebox(0,0)[r]{\strut{}quadratische Datenpunkte}}%
       \csname LTb\endcsname%%
-      \put(4354,3351){\makebox(0,0)[r]{\strut{}nicht quadratische Datenpunkte}}%
+      \put(6123,986){\makebox(0,0)[r]{\strut{}nicht quadratische Datenpunkte}}%
       \csname LTb\endcsname%%
-      \put(4354,3158){\makebox(0,0)[r]{\strut{}$f(U_G)=\SI{20.88 +- 0.77}{}\cdot U_G + \SI{8.108 +- 0.075}{\milli V}$}}%
+      \put(6123,793){\makebox(0,0)[r]{\strut{}Anpassung: f(x)=$\SI{7.197 +- 0.050}{}\cdot x + \SI{8.498 +- 0.018}{\milli V}$}}%
       \csname LTb\endcsname%%
       \put(170,2169){\rotatebox{-270.00}{\makebox(0,0){\strut{}$\sqrt{I-I_0}$/mV}}}%
       \csname LTb\endcsname%%
       \put(3760,135){\makebox(0,0){\strut{}$U_G$/V}}%
       \csname LTb\endcsname%%
-      \put(3760,4009){\makebox(0,0){\strut{}$\lambda=\SI{578}{\nano m}$: $U_0=\SI{-0.388 +- 0.015}{V}$ und $\chi^2/\text{ddof}=\SI{0.850}{}$}}%
+      \put(3760,4009){\makebox(0,0){\strut{}$U_0=\SI{-1.1808 +- 0.0085}{V}$}}%
     }%
     \gplbacktext
-    \put(0,0){\includegraphics[width={360.00bp},height={216.00bp}]{578nm}}%
+    \put(0,0){\includegraphics[width={360.00bp},height={216.00bp}]{U0_305nm-inc}}%
     \gplfronttext
   \end{picture}%
 \endgroup
+\end{document}

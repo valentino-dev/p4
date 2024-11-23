@@ -1,4 +1,4 @@
-set term cairolatex standalone header '\usepackage{siunitx}'
+set term cairolatex# standalone header '\usepackage{siunitx}'
 
 array data[6]
 data[1] = '../data/ps_305nm.dat'
@@ -209,3 +209,91 @@ plot '../data/Balmer_Justage.dat' using 4:(sin($2/180*3.14)+sin((-180+winkel_B+$
   f(x) title sprintf('$f(\lambda)=\frac{\lambda}{\SI{%.0f +- %.0f}{\angstrom}}$', g*1e1, g_err*1e1)
 
 
+set output "ccdrot.tex"
+set xrange [-0.1:0.1]
+set yrange [0:100]
+set title 'Isotopieaufspaltung von Wasserstoff und Deuterium bei $\lambda=\SI{656}{\nano m}$'
+set key top left box opaque width +2
+set grid
+set xlabel 'relativer Winkel $\Delta\omega_G/\SI{}{\degree}$'
+set ylabel 'Intensität $I/\%$'
+g=10
+b1=90
+b2=70
+a1=1e-4
+a2=1e-4
+c1=-0.01
+c2=0.025
+
+f(x)=(b1*exp(-(x-c1)**2/a1)+b2*exp(-(x-c2)**2/a2))+g
+data_path = '../data/ccd_rot.dat'
+fit f(x) data_path via a1, a2, b1, b2, c1, c2, g
+plot data_path using 1:2 w lines title 'Rote Aufspaltung',\
+  f(x)
+
+
+set output "ccdtuerkies.tex"
+set xrange [-0.1:0.1]
+set yrange [0:100]
+set title 'Isotopieaufspaltung von Wasserstoff und Deuterium bei $\lambda=\SI{656}{\nano m}$'
+set key top left box opaque width +2
+set grid
+set xlabel 'relativer Winkel $\Delta\omega_G/\SI{}{\degree}$'
+set ylabel 'Intensität $I/\%$'
+g=10
+b1=90
+b2=70
+a1=1e-4
+a2=1e-4
+c1=-0.01
+c2=0.025
+
+f(x)=(b1*exp(-(x-c1)**2/a1)+b2*exp(-(x-c2)**2/a2))+g
+data_path = '../data/ccd_tuerkis.dat'
+fit f(x) data_path via a1, a2, b1, b2, c1, c2, g
+plot data_path using 1:2 w lines title 'Rote Aufspaltung',\
+  f(x)
+
+set output "ccdvioletschwach.tex"
+set xrange [-0.1:0.1]
+set yrange [0:100]
+set title 'Isotopieaufspaltung von Wasserstoff und Deuterium bei $\lambda=\SI{656}{\nano m}$'
+set key top left box opaque width +2
+set grid
+set xlabel 'relativer Winkel $\Delta\omega_G/\SI{}{\degree}$'
+set ylabel 'Intensität $I/\%$'
+g=10
+b1=90
+b2=70
+a1=1e-4
+a2=1e-4
+c1=-0.01
+c2=0.025
+
+f(x)=(b1*exp(-(x-c1)**2/a1)+b2*exp(-(x-c2)**2/a2))+g
+data_path = '../data/ccd_violet_schwach.dat'
+fit f(x) data_path via a1, a2, b1, b2, c1, c2, g
+plot data_path using 1:2 w lines title 'Rote Aufspaltung',\
+  f(x)
+
+set output "ccdvioletstark.tex"
+set xrange [-0.1:0.1]
+set yrange [0:100]
+set title 'Isotopieaufspaltung von Wasserstoff und Deuterium bei $\lambda=\SI{656}{\nano m}$'
+set key top left box opaque width +2
+set grid
+set xlabel 'relativer Winkel $\Delta\omega_G/\SI{}{\degree}$'
+set ylabel 'Intensität $I/\%$'
+g=10
+b1=90
+b2=70
+a1=1e-4
+a2=1e-4
+c1=-0.01
+c2=0.025
+
+f(x)=(b1*exp(-(x-c1)**2/a1)+b2*exp(-(x-c2)**2/a2))+g
+data_path = '../data/ccd_violet_stark.dat'
+fit f(x) data_path via a1, a2, b1, b2, c1, c2, g
+plot data_path using 1:2 w lines title 'Rote Aufspaltung',\
+  f(x)
