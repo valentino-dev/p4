@@ -17,6 +17,8 @@ filename[5] = '546nm.tex'
 filename[6] = '578nm.tex'
 
 
+set pointintervalbox 0 # https://stackoverflow.com/questions/77344492/white-background-in-gnuplot-data-points ; removes white space around point which is drawn over the errorbar making it invisible for small errors
+
 
 i = 1
 set output filename[i]
@@ -172,7 +174,7 @@ plot data_path using ($1<threashhold?$1*(-1):1/0):(sqrt($2-I0)):($4):(sqrt(($3)*
 
 
 
-set output 'Austritsarbeit.tex'
+set output 'Austrittsarbeit.tex'
 set grid
 set ylabel '$U_0/\SI{}{V}$'
 set xlabel '$\nu / \SI{}{10^{14} Hz}$'
@@ -184,7 +186,7 @@ f(x)=m*x+b
 set fit errorvariables
 fit f(x) '../data/ps_U0.dat' using (3e8/$1*1e-14):2:3 yerrors via m, b
 set title sprintf('$W_A=\SI{%.2f +- %.2f}{eV}$, $\text{h}=\SI{%.4f +- %.4f }{eVs} \cdot 10^{-15} $ und $\chi^2/\text{ddof}=%.3f$', b, b_err, m*1e-1, m_err*1e-1, FIT_STDFIT**2)
-plot '../data/ps_U0.dat' using (3e8/$1*1e-14):2:3 w yerrorbars title '$U_0$ Datenpunkte',\
+plot '../data/ps_U0.dat' using (3e8/$1*1e-14):2:3 w yerrorbars title '$U_0$ Datenpunkte' pt 0,\
   f(x)>0?f(x):1/0 title sprintf('$f(\nu)=\SI{%.3f +- %.3f}{V/\ 10^{14} Hz}\cdot \nu \SI{%.2f +- %.2f}{V}$', m, m_err, b, b_err)
 
 
