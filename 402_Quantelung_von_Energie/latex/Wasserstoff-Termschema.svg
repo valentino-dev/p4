@@ -1,0 +1,178 @@
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" version="1.0" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 656 496">
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <marker id="Arrow1Mstart" refY="0" refX="0" orient="auto" overflow="visible">
+   <path d="m0 0l5-5-17.5 5 17.5 5-5-5z" fill-rule="evenodd" transform="matrix(.4 0 0 .4 4 0)" stroke="#000" stroke-width="1pt"/>
+  </marker>
+  <marker id="Arrow1Mend" refY="0" refX="0" orient="auto" overflow="visible">
+   <path d="m0 0l5-5-17.5 5 17.5 5-5-5z" fill-rule="evenodd" transform="matrix(-.4 0 0 -.4 -4 0)" stroke="#000" stroke-width="1pt"/>
+  </marker>
+ </defs>
+ <g>
+  <path opacity=".6" d="m563.66 68.484h8.4503m-535-26h535m-535 2.9827h535m-535 3.0173h535m-535 6.9827h535m-535 13.017h430.32m-430.32 21.31h448.68m60.07 0h26.251m-535 54.69h535m-535 304.98h535" stroke="#000" stroke-width="1px" fill="none"/>
+  <path d="m613.79 42.484h-40.686m40.686 2.9827h-40.686m40.686 3.0173h-40.686m40.686 6.9827h-40.686m40.686 13.017h-40.686m40.686 21.234h-40.686m40.686 54.766h-40.686m40.686 304.98h-40.686" stroke="#000" stroke-dasharray="1, 2" fill="none"/>
+  <g stroke="#000" stroke-width="1px" fill="none">
+   <path marker-end='url(&quot;#Arrow1Mend&quot;)' d="m24.179 448.47v-426.21"/>
+   <path d="m24.124 41.329h-5.967"/>
+   <path d="m24.124 44.529h-5.967"/>
+   <path d="m24.124 47.551h-5.967"/>
+   <path d="m24.124 54.484h-5.967"/>
+   <path d="m24.124 67.505h-5.967"/>
+   <path d="m24.124 89.758h-5.9676"/>
+   <path d="m24.124 143.42h-5.967"/>
+   <path d="m24.124 448.48h-5.967"/>
+  </g>
+  <g font-size="36px" font-family="DejaVu Sans">
+   <text style="text-anchor:middle;text-align:center" xml:space="preserve" y="454.294" x="10.7162" fill="rgb(0, 0, 0)"><tspan font-size="18px" y="454.294" x="10.7162">1</tspan></text>
+   <text style="text-anchor:middle;text-align:center" xml:space="preserve" y="149.85" x="10.7162" fill="rgb(0, 0, 0)"><tspan font-size="18px" y="149.85" x="10.7162">2</tspan></text>
+   <text style="text-anchor:middle;text-align:center" xml:space="preserve" y="94.764977" x="10.7162" fill="#000000"><tspan font-size="18px" y="94.764977" x="10.7162">3</tspan></text>
+   <g fill="rgb(0, 0, 0)">
+    <text style="text-anchor:middle;text-align:center" xml:space="preserve" y="76.2491" x="10.7162"><tspan font-size="18px" y="76.2491" x="10.7162">4</tspan></text>
+    <text style="text-anchor:middle;text-align:center" xml:space="preserve" y="60.2491" x="10.7162"><tspan font-size="18px" y="60.2491" x="10.7162">5</tspan></text>
+    <text style="text-anchor:middle;text-align:center" xml:space="preserve" y="44.2491" x="10.7162"><tspan font-size="18px" y="44.2491" x="10.7162">∞</tspan></text>
+   </g>
+  </g>
+  <text style="text-anchor:middle;text-align:center" xml:space="preserve" font-size="18px" y="16.9958" x="11.2996" font-family="DejaVu Sans" fill="rgb(0, 0, 0)"><tspan x="11.2996" y="16.9958">m</tspan></text>
+  <g transform="matrix(-1 0 0 1 606.09 0)" stroke="#000" stroke-width="1px" fill="none">
+   <path marker-end='url(&quot;#Arrow1Mend&quot;)' d="m24.179 448.47v-426.21"/>
+   <path d="m24.124 90.477h-5.967"/>
+   <path d="m24.124 150.47h-5.967"/>
+   <path d="m24.124 448.48h-5.967"/>
+   <path d="m24.124 210.47h-5.967"/>
+   <path d="m24.124 270.47h-5.967"/>
+   <path d="m24.124 330.47h-5.967"/>
+   <path d="m24.124 390.47h-5.967"/>
+   <path d="m24.124 449.42h-5.967"/>
+  </g>
+  <text style="text-anchor:middle;text-align:center" xml:space="preserve" font-size="14px" y="149.006" x="634.489" font-family="DejaVu Sans" fill="rgb(0, 0, 0)"><tspan x="634.489" y="149.006">10,20</tspan></text>
+  <g font-size="18px" transform="translate(2)" font-family="DejaVu Sans" fill="rgb(0, 0, 0)">
+   <text style="text-anchor:end;text-align:end" xml:space="preserve" y="456.304" x="609.196"><tspan y="456.304" x="609.196">0</tspan></text>
+   <text style="text-anchor:end;text-align:end" xml:space="preserve" y="397.494" x="609.803"><tspan y="397.494" x="609.803">2</tspan></text>
+   <text style="text-anchor:end;text-align:end" xml:space="preserve" y="337.289" x="609.012"><tspan y="337.289" x="609.012">4</tspan></text>
+   <text style="text-anchor:end;text-align:end" xml:space="preserve" y="277.156" x="609.135"><tspan y="277.156" x="609.135">6</tspan></text>
+   <text style="text-anchor:end;text-align:end" xml:space="preserve" y="215.25" x="609.231"><tspan y="215.25" x="609.231">8</tspan></text>
+   <text style="text-anchor:end;text-align:end" xml:space="preserve" y="160.993" x="609.196"><tspan y="160.993" x="609.196">10</tspan></text>
+   <text style="text-anchor:end;text-align:end" xml:space="preserve" y="92.2247" x="609.803"><tspan y="92.2247" x="609.803">12</tspan></text>
+  </g>
+  <text style="text-anchor:end;text-align:end" xml:space="preserve" font-size="14px" y="93.959602" x="654.54602" font-family="DejaVu Sans" fill="#000000"><tspan x="654.54602" y="93.959602">12,09</tspan></text>
+  <g font-size="14px" font-family="DejaVu Sans" fill="rgb(0, 0, 0)">
+   <text style="text-anchor:end;text-align:end" xml:space="preserve" y="72.7676" x="654.84"><tspan x="654.84" y="72.7676">12,75</tspan></text>
+   <text style="text-anchor:end;text-align:end" xml:space="preserve" y="59.7902" x="654.573"><tspan x="654.573" y="59.7902">13,18</tspan></text>
+   <text style="text-anchor:end;text-align:end" xml:space="preserve" y="46.3268" x="654.546"><tspan x="654.546" y="46.3268">13,60</tspan></text>
+  </g>
+  <g transform="translate(-2.3438)">
+   <g font-size="14px" font-family="DejaVu Sans" fill="rgb(0, 0, 128)">
+    <text style="text-anchor:middle;text-align:center" xml:space="preserve" transform="rotate(-90)" y="143.641" x="-33.7655"><tspan y="143.641" x="-33.7655">3</tspan></text>
+    <text style="text-anchor:middle;text-align:center" xml:space="preserve" transform="rotate(-90)" y="158.817" x="-33.7348"><tspan y="158.817" x="-33.7348">4</tspan></text>
+    <text style="text-anchor:middle;text-align:center" xml:space="preserve" transform="rotate(-90)" y="173.857" x="-33.7084"><tspan y="173.857" x="-33.7084">5</tspan></text>
+    <text style="text-anchor:middle;text-align:center" xml:space="preserve" transform="rotate(-90)" y="189.143" x="-33.8622"><tspan y="189.143" x="-33.8622">6</tspan></text>
+   </g>
+   <g fill="#000080">
+    <text style="text-anchor:middle;text-align:center" xml:space="preserve" transform="rotate(-90)" font-size="14px" y="232.09415" x="-33.805099" font-family="&apos;DejaVu Sans&apos;"><tspan y="232.09415" x="-33.805099">∞</tspan></text>
+    <g fill-rule="evenodd" stroke="#f00">
+     <g stroke-width="1px">
+      <path d="m137.09 143.69v-53.987" marker-start="url(#Arrow1Mstart)"/>
+      <path d="m152.26 143.69v-75.156" marker-start='url(&quot;#Arrow1Mstart&quot;)'/>
+      <path d="m167.42 143.69v-88.423" marker-start='url(&quot;#Arrow1Mstart&quot;)'/>
+      <path d="m182.59 143.69v-95.34" marker-start='url(&quot;#Arrow1Mstart&quot;)'/>
+      <path d="m197.76 143.69v-98.24" marker-start='url(&quot;#Arrow1Mstart&quot;)'/>
+     </g>
+     <path d="m226.7 143.69v-101.38" marker-start="url(#Arrow1Mstart)" stroke-dashoffset="0pt" stroke-dasharray="2, 2"/>
+    </g>
+   </g>
+   <text style="text-anchor:middle;text-align:center" xml:space="preserve" transform="rotate(-90)" font-size="14px" y="204.32" x="-33.7963" font-family="DejaVu Sans" fill="rgb(0, 0, 128)"><tspan x="-33.7963" y="204.32">7</tspan></text>
+   <g font-size="14px" font-family="DejaVu Sans" fill="rgb(0, 0, 0)">
+    <text style="text-anchor:middle;text-align:center" xml:space="preserve" y="160.892" x="136.907"><tspan x="136.907" y="160.892">α</tspan></text>
+    <text style="text-anchor:middle;text-align:center" xml:space="preserve" y="160.892" x="152.1"><tspan x="152.1" y="160.892">β</tspan></text>
+    <text style="text-anchor:middle;text-align:center" xml:space="preserve" y="160.788" x="167.26"><tspan x="167.26" y="160.788">γ</tspan></text>
+    <text style="text-anchor:middle;text-align:center" xml:space="preserve" y="160.914" x="182.334"><tspan x="182.334" y="160.914">δ</tspan></text>
+    <text style="text-anchor:middle;text-align:center" xml:space="preserve" y="160.927" x="197.575"><tspan y="160.927" x="197.575">ε</tspan></text>
+   </g>
+   <text style="text-anchor:middle;text-align:center" xml:space="preserve" font-size="16px" y="179.557" x="180.971" font-family="DejaVu Sans" fill="rgb(255, 0, 0)"><tspan y="179.557" x="180.971">Balmer-Serie</tspan><tspan y="199.557" x="180.971">m = 2</tspan></text>
+  </g>
+  <g transform="translate(-16.875)">
+   <text style="text-anchor:middle;text-align:center" xml:space="preserve" transform="rotate(-90)" font-size="14px" y="401.857" x="-33.7084" font-family="DejaVu Sans" fill="rgb(0, 0, 128)"><tspan x="-33.7084" y="401.857">5</tspan></text>
+   <text style="text-anchor:middle;text-align:center" xml:space="preserve" transform="rotate(-90)" font-size="14px" y="417.143" x="-33.8622" font-family="DejaVu Sans" fill="rgb(0, 0, 128)"><tspan x="-33.8622" y="417.143">6</tspan></text>
+   <g fill="#000080">
+    <text style="text-anchor:middle;text-align:center" xml:space="preserve" transform="rotate(-90)" font-size="14px" y="461.48596" x="-33.805099" font-family="&apos;DejaVu Sans&apos;"><tspan x="-33.805099" y="461.48596">∞</tspan></text>
+    <g fill-rule="evenodd" stroke="#00f">
+     <g stroke-width="1px">
+      <path d="m395.42 67.684v-12.345" marker-start="url(#Arrow1Mstart)"/>
+      <path d="m410.59 67.684v-19.334" marker-start="url(#Arrow1Mstart)"/>
+      <path d="m425.76 67.684v-22.347" marker-start="url(#Arrow1Mstart)"/>
+     </g>
+     <path d="m456.09 67.99v-25.687" marker-start='url(&quot;#Arrow1Mstart&quot;)' stroke-dashoffset="0pt" stroke-dasharray="2, 2"/>
+    </g>
+   </g>
+   <text style="text-anchor:middle;text-align:center" xml:space="preserve" transform="rotate(-90)" font-size="14px" y="432.32" x="-33.7963" font-family="DejaVu Sans" fill="rgb(0, 0, 128)"><tspan y="432.32" x="-33.7963">7</tspan></text>
+   <text style="text-anchor:middle;text-align:center" xml:space="preserve" font-size="16px" y="85.5568" x="424.971" font-family="DejaVu Sans" fill="rgb(0, 0, 128)"><tspan y="85.5568" x="424.971">Brackett-Serie</tspan><tspan y="105.557" x="424.971">m = 4</tspan></text>
+  </g>
+  <g transform="translate(-.000030518)">
+   <g fill="#000080">
+    <text style="text-anchor:middle;text-align:center" xml:space="preserve" transform="rotate(-90)" font-size="14px" y="509.47803" x="-33.796299" font-family="&apos;DejaVu Sans&apos;"><tspan y="509.47803" x="-33.796299">7</tspan></text>
+    <text style="text-anchor:middle;text-align:center" xml:space="preserve" transform="rotate(-90)" font-size="14px" y="535.48602" x="-33.805099" font-family="&apos;DejaVu Sans&apos;"><tspan y="535.48602" x="-33.805099">∞</tspan></text>
+    <g fill-rule="evenodd" stroke="#f00">
+     <path d="m487.76 54.908v-6.7126" marker-start="url(#Arrow1Mstart)" stroke-width="1px"/>
+     <path d="m502.93 54.908v-9.6076" marker-start="url(#Arrow1Mstart)" stroke-width="1px"/>
+     <path d="m530.09 55.06v-12.757" marker-start='url(&quot;#Arrow1Mstart&quot;)' stroke-dashoffset="0pt" stroke-dasharray="2, 2"/>
+    </g>
+    <text style="text-anchor:middle;text-align:center" xml:space="preserve" transform="rotate(-90)" font-size="14px" y="494.32001" x="-33.796299" font-family="&apos;DejaVu Sans&apos;"><tspan x="-33.796299" y="494.32001">6</tspan></text>
+   </g>
+   <text style="text-anchor:middle;text-align:center" xml:space="preserve" font-size="16px" y="71.5568" x="514.971" font-family="DejaVu Sans" fill="rgb(255, 0, 0)"><tspan y="71.5568" x="514.971">Pfund-Serie</tspan><tspan y="91.5568" x="514.971">m = 5</tspan></text>
+  </g>
+  <g transform="translate(-14.266)">
+   <g font-size="14px" font-family="DejaVu Sans" fill="rgb(0, 0, 128)">
+    <text style="text-anchor:middle;text-align:center" xml:space="preserve" transform="rotate(-90)" y="274.817" x="-33.7348"><tspan x="-33.7348" y="274.817">4</tspan></text>
+    <text style="text-anchor:middle;text-align:center" xml:space="preserve" transform="rotate(-90)" y="289.857" x="-33.7084"><tspan x="-33.7084" y="289.857">5</tspan></text>
+    <text style="text-anchor:middle;text-align:center" xml:space="preserve" transform="rotate(-90)" y="305.143" x="-33.8622"><tspan x="-33.8622" y="305.143">6</tspan></text>
+   </g>
+   <g fill="#000080">
+    <text style="text-anchor:middle;text-align:center" xml:space="preserve" transform="rotate(-90)" font-size="14px" y="349.48596" x="-33.805099" font-family="&apos;DejaVu Sans&apos;"><tspan x="-33.805099" y="349.48596">∞</tspan></text>
+    <g fill-rule="evenodd" stroke="#0f0">
+     <g stroke-width="1px">
+      <path d="m268.26 88.141v-19.656" marker-start="url(#Arrow1Mstart)"/>
+      <path d="m283.42 88.141v-32.666" marker-start="url(#Arrow1Mstart)"/>
+      <path d="m298.59 88.141v-39.641" marker-start="url(#Arrow1Mstart)"/>
+      <path d="m313.76 88.141v-42.695" marker-start="url(#Arrow1Mstart)"/>
+     </g>
+     <path d="m344.09 88.141v-45.838" marker-start="url(#Arrow1Mstart)" stroke-dasharray="2, 2"/>
+    </g>
+    <text style="text-anchor:middle;text-align:center" xml:space="preserve" transform="rotate(-90)" font-size="14px" y="320.32001" x="-33.796299" font-family="&apos;DejaVu Sans&apos;"><tspan y="320.32001" x="-33.796299">7</tspan></text>
+   </g>
+   <text style="text-anchor:middle;text-align:center" xml:space="preserve" font-size="16px" y="109.557" x="304.971" font-family="DejaVu Sans" fill="rgb(0, 255, 0)"><tspan y="109.557" x="304.971">Paschen-Serie</tspan><tspan y="129.557" x="304.971">m = 3</tspan></text>
+  </g>
+  <text style="text-anchor:middle;text-align:center" xml:space="preserve" font-size="18px" y="18.5316" x="300.937" font-family="DejaVu Sans" fill="rgb(0, 0, 0)"><tspan x="300.937" y="18.5316">n</tspan></text>
+  <text style="text-anchor:middle;text-align:center" xml:space="preserve" transform="rotate(-90)" font-size="14px" y="55.1432" x="-33.8622" font-family="DejaVu Sans" fill="rgb(0, 0, 128)"><tspan x="-33.8622" y="55.1432">2</tspan></text>
+  <text style="text-anchor:middle;text-align:center" xml:space="preserve" transform="rotate(-90)" font-size="14px" y="85.4783" x="-33.7963" font-family="DejaVu Sans" fill="rgb(0, 0, 128)"><tspan x="-33.7963" y="85.4783">4</tspan></text>
+  <g fill="#000080">
+   <text style="text-anchor:middle;text-align:center" xml:space="preserve" transform="rotate(-90)" font-size="14px" y="113.4857" x="-33.805099" font-family="&apos;DejaVu Sans&apos;"><tspan x="-33.805099" y="113.4857">∞</tspan></text>
+   <g fill-rule="evenodd" stroke="#000080">
+    <g stroke-width="1px">
+     <path d="m48.591 448.15v-304.15" marker-start='url(&quot;#Arrow1Mstart&quot;)'/>
+     <path d="m63.759 448.08v-358.38" marker-start="url(#Arrow1Mstart)"/>
+     <path d="m78.926 448.03v-380.19" marker-start='url(&quot;#Arrow1Mstart&quot;)'/>
+    </g>
+    <path d="m108.09 448v-405.7" marker-start="url(#Arrow1Mstart)" stroke-dashoffset="0pt" stroke-dasharray="2, 2"/>
+   </g>
+  </g>
+  <text style="text-anchor:middle;text-align:center" xml:space="preserve" transform="rotate(-90)" font-size="14px" y="70.3195" x="-33.7963" font-family="DejaVu Sans" fill="rgb(0, 0, 128)"><tspan y="70.3195" x="-33.7963">3</tspan></text>
+  <text style="text-anchor:middle;text-align:center" xml:space="preserve" font-size="16px" y="469.557" x="72.9708" font-family="DejaVu Sans" fill="rgb(0, 0, 128)"><tspan y="469.557" x="72.9708">Lyman-Serie</tspan><tspan y="489.557" x="72.9708">m = 1</tspan></text>
+  <text style="text-anchor:middle;text-align:center" xml:space="preserve" transform="rotate(-90)" font-size="18px" y="637.438" x="-270.292" font-family="DejaVu Sans" fill="rgb(0, 0, 0)"><tspan x="-270.292" y="637.438">Anregungsenergie in eV</tspan></text>
+  <g fill="#000080">
+   <path d="m89.084 33.301v1.502h1.5v-1.502h-1.5zm4.1602 0v1.502h1.5v-1.502h-1.5zm4.1602 0v1.502h1.5v-1.502h-1.5zm4.1602 0v1.502h1.5v-1.502h-1.5z"/>
+   <path d="m205.47 33.301v1.502h1.5v-1.502h-1.5zm4.1602 0v1.502h1.5v-1.502h-1.5zm4.1602 0v1.502h1.5v-1.502h-1.5zm4.1602 0v1.502h1.5v-1.502h-1.5z"/>
+   <path d="m310.24 33.301v1.502h1.5v-1.502h-1.5zm4.1602 0v1.502h1.5v-1.502h-1.5zm4.1602 0v1.502h1.5v-1.502h-1.5zm4.1602 0v1.502h1.5v-1.502h-1.5z"/>
+   <path d="m419.63 33.301v1.502h1.5v-1.502h-1.5zm4.1602 0v1.502h1.5v-1.502h-1.5zm4.1602 0v1.502h1.5v-1.502h-1.5zm4.1602 0v1.502h1.5v-1.502h-1.5z"/>
+   <path d="m512.08 33.301v1.502h1.5v-1.502h-1.5zm4.1602 0v1.502h1.5v-1.502h-1.5zm4.1602 0v1.502h1.5v-1.502h-1.5zm4.1602 0v1.502h1.5v-1.502h-1.5z"/>
+  </g>
+ </g>
+</svg>

@@ -54,6 +54,34 @@ Diese Energie ist gequantelt in Vielfache des \textsc{Planck}'schen Wirkungsquan
 Um die Größe der Quantelung zu bestimmen wird der Photoeffekt und die Messung der \textsc{Balmer}--Serie von Hg verwendet.
 
 \section{Photoelektrische Bestimmung von $h$.}
+\subsection{Theoretischer Hintergrund}
+Das \textsc{Fermi}--Niveau beschreibt das höchste Energieniveau in einem Atom im Grundzustand, welches aufgrund des \textsc{Pauli}--Prinzips noch besetzt werden darf.
+Die Austrittsarbeit ist die Arbeit die benötigt wird, um ein Elektron aus diesem Energieniveau zu heben und vom dem Atoms zu lösen.
+Für verschiedene Atome ist dieses Level, wegen ihrer unterschiedlichen Elektronanzahl, nicht gleich.
+Makroskopisch zeigt sich dies in unterschiedlichen Austrittsarbeiten für verschiedene Materialien, wie z.B.\ für die Anode und die Kathode im experimentellen Aufbau.
+
+Solche Energieniveaus können mit dem Bänderschema verdeutlicht werden.
+Eine mögliche Anordnung ist in Abb.\ (\ref{fig:bänderschema}) gezeigt.
+Die gestrichelten Linien unten mit den schrägen Linien darunter geben die jeweiligen \textsc{Fermi}--Niveaus an.
+$W_\text{K}$ und $W_\text{A}$ geben die Austrittsarbeit an.
+Die alleinstehende gestrichelte Linie ist das Vakuumniveau.
+
+Werden Anode und Kathode miteinander verbunden, so gleichen sich ihre \textsc{Fermi}--Niveaus aus und es entsteht eine Potentialdifferenz von $U_\text{KA}$ zum Vakuumsniveau zwischen Anode und Kathode.
+Wird eine Spannung zwischen Anode und Kathode aufgebaut, so verschieben sich die \textsc{Fermi}--Niveaus und es baut sich eine weitere Potentialdifferenz $U_\text{G}$ auf.
+
+Der Photoeffekt beschreibt folgendes Phänomen: Trifft ein Photon auf die Kathode, so lässt sich eine Gleichung zwischen der Energie des Photons und der Energie des Elektrons aufstellen, mit $eU_0$ der kinetischen Energie der Elektronen
+\begin{align} 
+        \Leftrightarrow && E_\gamma =h\nu &=eU_0-eU_\text{KA}+W_\text{K}=E_{e^-}&&\\
+        \Leftrightarrow &&&=eU_0-\left(W_\text{K}-W_\text{A}\right)+W_\text{K}&&\\
+        \Leftrightarrow &&&=eU_0+W_\text{A}.&&
+\end{align} 
+Dem Photon ist es also bei einer ausgezeichneten Energie möglich das Elektron aus dem \textsc{Fermi}--Niveau zu heben.
+\begin{figure}[h]
+        \centering
+        \includegraphics[width=.5\textwidth]{402_austrittsarbeit.png}
+        \caption{Bänderschema der Anode und Kathode bei anlegen einer äußeren Spannung.\cite{Anleitung402}} \label{fig:bänderschema}
+\end{figure}
+
 \subsection{Experimenteller Aufbau}
 Der experimentelle Aufbau ist in Abb.\ (\ref{fig:aufbau_photoeffekt}) zu sehen.
 Die Hg--Lampe diente als Lichtquelle.
@@ -68,33 +96,6 @@ Da die Spannnug, die für das Gegenfeld zur Verfügung stand, bis zu $\SI{12}{V}
         \centering
         \includegraphics[width=.5\textwidth]{402_aufbau_photoeffekt.png}
         \caption{Experimenteller Aufbau zum Photoeffekt.} \label{fig:aufbau_photoeffekt}
-\end{figure}
-
-\subsection{Theoretischer Hintergrund}
-Das \textsc{Fermi}--Niveau beschreibt das höchste noch besetzte Energieniveau in einem Atom, welches aufgrund des \textsc{Pauli}--Prinzips noch besetzt werden darf.
-Die Austrittsarbeit ist die Arbeit die benötigt wird, um ein Elektron aus diesem Energieniveau zu heben und vom dem Atoms zu lösen.
-Für verschiedene Atome ist dieses Level, wegen ihrer unterschiedlichen Elektronanzahl, nicht gleich.
-Makroskopisch zeigt sich dies in unterschiedlichen Austrittsarbeiten für verschiedene Materialien, wie z.B.\ für die Anode und die Kathode im experimentellen Aufbau.
-
-Solche Energieniveaus können mit dem Bänderschema verdeutlicht werden.
-Eine mögliche Anordnung ist in Abb.\ (\ref{fig:bänderschema}) gezeigt.
-Die gestrichelten Linien unten mit den schrägen Linien darunter geben die jeweiligen \textsc{Fermi}--Niveaus an.
-$W_\text{K}$ und $W_\text{A}$ geben die Austrittsarbeit an.
-Die alleinstehende gestrichelte Linie ist das Vakuumniveau.
-
-Werden Anode und Kathode miteinander verbunden, so gleichen sich ihre \textsc{Fermi}--Niveaus aus und es entsteht eine Potentialdifferenz von $U_\text{KA}$ zum Vakuumsniveau zwischen Anode und Kathode.
-Wird eine Spannung zwischen Anode und Kathode aufgebaut, so verschieben sich die \textsc{Fermi}--Niveaus und es baut sich eine weitere Potentialdifferenz $U_\text{G}$ auf.
-
-Trifft ein Photon auf die Kathode, so lässt sich folgende Gleichung zwischen der Energie des Photons und der Energie des Elektrons aufstellen, mit $eU_0$ der kinetischen Energie der Elektronen
-\begin{align} 
-        \Leftrightarrow && E_\gamma =h\nu &=eU_0-eU_\text{KA}+W_\text{K}=E_{e^-}&&\\
-        \Leftrightarrow &&&=eU_0-\left(W_\text{K}-W_\text{A}\right)+W_\text{K}&&\\
-        \Leftrightarrow &&&=eU_0+W_\text{A}&&
-.\end{align} 
-\begin{figure}[h]
-        \centering
-        \includegraphics[width=.5\textwidth]{402_austrittsarbeit.png}
-        \caption{Bänderschema der Anode und Kathode bei anlegen einer äußeren Spannung.\cite{Anleitung402}} \label{fig:bänderschema}
 \end{figure}
 
 \subsection{Durchführung \& Auswertung}
@@ -129,11 +130,12 @@ Die Nullstelle der Fitgeraden liefert genau den Wert der Gegenspannung, bei der 
 Trägt man diese Werte gegen die jeweilige Frequenz des Lichts auf, so lässt sich ein Geradenfit durchführen, dessen Steigung genau gleich dem \textsc{Planck}'schen Wirkungsquantum ist.
 Dieser Plot ist in Abb.\ (\ref{fig:austrittsarbeit}) zu sehen.
 $\chi ^2/\text{ddof}$ ist viel größer als 1, weil sich die Fehler, durch die kleinen Messfehler, in der Fehlerfortpflanzung minimiert haben.
-\begin{figure*}[t]
+
+\begin{figure}[h]
         \centering
-        \input{Austritsarbeit.tex}
-        \caption{a} \label{fig:austrittsarbeit}
-\end{figure*}
+        \resizebox{.5\textwidth}{!}{\input{Austrittsarbeit.tex}}
+        \caption{Gemessene Gegenspannung $U_0$ gegen die Frequenz der auf die Kathode treffenden Photonen. Der Achsenabschnitt ist $W_\text{A}$ und die Steigung ist $h$.} \label{fig:austrittsarbeit}
+\end{figure}
 Es ergibt sich ein Wert von
 \begin{align} 
         h=\SI{0.0228+-0.002e-15}{eVs}
@@ -142,39 +144,98 @@ Der aktuelle CODATA Wert (letzer Zugriff: 2024-11-23) ist
 \begin{align} 
         h'\approx \SI{4.136e-15}{eVs}
 .\end{align} 
-Die Abweichung des gemessenen Werts liegt daher bei ca.\ $100\%$.
+Die Abweichung des gemessenen Werts liegt bei ca.\ $100\%$.
 
-\section{\textsc{Balmer}--Serie}
+\section{\textsc{Balmer}--Serie: Gitterkonstante \& Isotopieaufspaltung}
+Es wird die Gitterkonstante des verwendeten Refelxionsgitters berechnet und die Breite der Isotopieaufspaltung bestimmt.
+
+\subsection{Theoretischer Hintergrund}
+Trifft ein eingehender Strahl $i$ kohärenten Lichts im Winkel $\varphi _i$ auf ein Stufengitter wie in Abb.\ (\ref{fig:blazegitter}), so kommt es zu Interferenz zwischen allen im Winkel $\varphi _f$ ausgehenden Strahlen $f$.
+Diese Interferenzmaxima kommen durch den Gangunterschied $\Delta $ zwischen dem einfallenden und ausgehenden Strahl zustande.
+Dieser berechnet sich separat für beide Strahlen zu $\Delta =\Delta _i+\Delta _f=g\left(\sin \varphi _i+\sin \varphi _f\right)=g\left(\sin \alpha +\sin \beta \right)$.
+Die Winkel $\alpha $ und $\beta $ sind identisch mit den Winkeln $\alpha $ und $\beta $ aus Abb.\ (\ref{fig:blazegitter}).
+$g$ ist die Giterkonstante.
+
+Ein Interferenzmaximum entsteht durch eine Überlagerung von Wellen, die um Vielfache ihrer Wellenlänge, $n \lambda $, voneinander verschoben sind.
+
+Die Interferenzmaxima verhalten sich also in Abhängigkeit der Wellenlänge wie
+\begin{align} 
+        n \lambda =g\left(\sin \alpha +\sin \beta \right)=\Delta 
+.\end{align} 
+\begin{figure}[h]
+        \centering
+        \includegraphics[width=.5\textwidth]{402_stufengitter.png}
+        \caption{Schematische Darstellung des im Versuch verwendeten Gitters. Hier in der \textsc{Littrow}--Anordnung.\cite{WikipediaBlazegitter}} \label{fig:blazegitter}
+\end{figure}
+
+\subsection{Experimenteller Aufbau}
+\subsection{Durchführung \& Auswertung}
+
+\begin{figure}[h]
+        \centering
+        \resizebox{.5\textwidth}{!}{\input{Gitterkonstante.tex}}
+        \caption{Gitterkonstante}
+\end{figure}
+
+\section{\textsc{Balmer}--Serie: \textsc{Planck}'sches Wirkungsquantum \& \textsc{Rydberg}--Konstante}
+Mit Hilfe der \textsc{Balmer}--Serie wird die \textsc{Rydberg}--Konstante $R$ und daraus das \textsc{Planck}'sche Wirkungsquantum $h$ bestimmt.
+
+\subsection{Theoretischer Hintergrund}
+Diskrete Spektrallinien lassen sich aufgrund der Quantelung von Energie verstehen.
+Im Orbitalmodell ist es Elektronen möglich diese gequantelte Energie in Form eines Photons aufzunehmen und abzugeben.
+Dabei ändert es für jeden Übergang seinen Zustand (Energieniveau) beschrieben durch die Hauptquantenzahl $n$.
+Die Energie in abhängigkeit vom Niveau ist beschrieben durch $E_n=-\tfrac{\SI{13.6}{eV}}{n^2}$.
+Der Energieunterschied zwischen zwei Niveaus kann mit der \textsc{Rydberg}--Formel für Wasserstoffähnliche Atome als 
+\begin{align} 
+        E_{n_<,n_>}=hcRZ^2\left(\dfrac{1}{n_<^2}-\dfrac{1}{n_>^2}\right)=\dfrac{hc}{\lambda _\text{vac}}
+\end{align} 
+geschrieben werden.
+Hier ist $n_<$ das niedrigere Niveau und $n_>$ das höhere Niveau, $Z$ die Protonenzahl und $R$ die \textsc{Rydberg}--Konstante für das jeweilige Atom.
+
+Für ausgezeichente Übergänge wird eine Namenskonvention eingeführt.
+Alle Übergänge auf $n_<=1$ werden \textsc{Lyman} genannt; auf $n_<=2$ \textsc{Balmer}; auf $n_<=3$ \textsc{Paschen}; etc.\ .
+Diese Übergänge werden weiter verfeinert in $n_>=n_<+i$ mit $i=1\equiv \alpha $, $i=2\equiv \beta $, $i=3\equiv \gamma $, etc.\ .
+Diese Konvention ist in Abb.\ (\ref{fig:serien}) dargestellt.
+Die \textsc{Balmer} Übergange sind insofern besonders, als dass sie im sichtbaren Spektrum liegen.
+
+\begin{figure}[h]
+        \centering
+        \includegraphics[width=.5\textwidth]{402_serien.png}
+        \caption{Energieniveaus des Wasserstoffs mit benannten Serien (Übergängen).\cite{WikipediaSerien}} \label{fig:serien}
+\end{figure}
+\subsection{Experimenteller Aufbau}
+\subsection{Durchführung \& Auswertung}
+
+\section{Fazit}
 
 \clearpage
 \section{Appendix}
-\begin{figure*}[h]
+\begin{figure}[h]
         \centering
-        \input{305nm.tex}
-        \caption{a} \label{fig:photo_auswertung_305}
-\end{figure*}
-\begin{figure*}[h]
+        \resizebox{.5\textwidth}{!}{\input{305nm.tex}}
+        \caption{Photostrom abzüglich des Anodenstroms gegen Gegenspannung für $\lambda =\SI{305}{n m}$. Fit nur an Messdaten quadratisch ab $U_0$ und in quadratischer Abhängigkeit.} \label{fig:photo_auswertung_305}
+\end{figure}
+\begin{figure}[h]
         \centering
-        \input{365nm.tex}
-        \caption{a}
-\end{figure*}
-\begin{figure*}[h]
+        \resizebox{.5\textwidth}{!}{\input{365nm.tex}}
+        \caption{Photostrom abzüglich des Anodenstroms gegen Gegenspannung für $\lambda =\SI{365}{n m}$. Fit nur an Messdaten quadratisch ab $U_0$ und in quadratischer Abhängigkeit.}
+\end{figure}
+\begin{figure}[h]
         \centering
-        \input{436nm.tex}
-        \caption{a}
-\end{figure*}
-\begin{figure*}[]
+        \resizebox{.5\textwidth}{!}{\input{436nm.tex}}
+        \caption{Photostrom abzüglich des Anodenstroms gegen Gegenspannung für $\lambda =\SI{436}{n m}$. Fit nur an Messdaten quadratisch ab $U_0$ und in quadratischer Abhängigkeit.}
+\end{figure}
+\begin{figure}[]
         \centering
-        \input{546nm.tex}
-        \caption{a}
-\end{figure*}
-\begin{figure*}[]
+        \resizebox{.5\textwidth}{!}{\input{546nm.tex}}
+        \caption{Photostrom abzüglich des Anodenstroms gegen Gegenspannung für $\lambda =\SI{546}{n m}$. Fit nur an Messdaten quadratisch ab $U_0$ und in quadratischer Abhängigkeit.}
+\end{figure}
+\begin{figure}[]
         \centering
-        \input{578nm.tex}
-        \caption{a} \label{fig:photo_auswertung_578}
-\end{figure*}
+        \resizebox{.5\textwidth}{!}{\input{578nm.tex}}
+        \caption{Photostrom abzüglich des Anodenstroms gegen Gegenspannung für $\lambda =\SI{578}{n m}$. Fit nur an Messdaten quadratisch ab $U_0$ und in quadratischer Abhängigkeit.} \label{fig:photo_auswertung_578}
+\end{figure}
 
-\clearpage
 \bibliography{refs}
 
 \end{document}
