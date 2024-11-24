@@ -206,9 +206,9 @@ winkel_B_err = 0.5
 f(x)=x/g
 set fit errorvariables
 fit f(x) '../data/Balmer_Justage.dat' using 4:(sin($2/180*3.14)+sin((-180+winkel_B+$2)/180*3.14)):(sqrt(((cos($2/180*3.14)+cos((-180+$2+winkel_B)/180*3.14))*$3/180*3.14)**2+(cos((180-$2-winkel_B)/180*3.14)*winkel_B_err/180*3.14)**2)) yerrors via g
-set title sprintf('$g=\SI{%.0f +- %.0f}{\angstrom}$ und $\chi^2/\text{ddof}=%.3f$', g*1e1, g_err*1e1, FIT_STDFIT**2)
+set title sprintf('$g=\SI{%.0f +- %.0f}{\text{\r{A}}^{-1}}$ und $\chi^2/\text{ddof}=%.3f$', g*1e1, g_err*1e1, FIT_STDFIT**2)
 plot '../data/Balmer_Justage.dat' using 4:(sin($2/180*3.14)+sin((-180+winkel_B+$2)/180*3.14)):(sqrt(((cos($2/180*3.14)+cos((-180+$2+winkel_B)/180*3.14))*$3/180*3.14)**2+(cos((180-$2-winkel_B)/180*3.14)*winkel_B_err/180*3.14)**2)) w yerrorbars title 'data' pt 0,\
-  f(x) title sprintf('$f(\lambda)=\frac{\lambda}{\SI{%.0f +- %.0f}{\angstrom}}$', g*1e1, g_err*1e1)
+  f(x) title sprintf('$f(\lambda)=\frac{\lambda}{\SI{%.0f +- %.0f}{\text{\r{A}}}}$', g*1e1, g_err*1e1)
 
 
 set output "ccdrot.tex"

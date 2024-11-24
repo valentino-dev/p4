@@ -37,6 +37,7 @@
 \newcommand{\td}{\text{d}}
 
 \titleformat{\subsection}{}{\thesubsection}{1em}{\itshape}
+\titleformat{\subsubsection}{}{\thesubsubsection}{1em}{\itshape}
 
 \begin{document}
         
@@ -76,7 +77,7 @@ Der Photoeffekt beschreibt folgendes Phänomen: Trifft ein Photon auf die Kathod
         \Leftrightarrow &&&=eU_0+W_\text{A}.&&
 \end{align} 
 Dem Photon ist es also bei einer ausgezeichneten Energie möglich das Elektron aus dem \textsc{Fermi}--Niveau zu heben.
-\begin{figure}[h]
+\begin{figure}[t]
         \centering
         \includegraphics[width=.5\textwidth]{402_austrittsarbeit.png}
         \caption{Bänderschema der Anode und Kathode bei anlegen einer äußeren Spannung.\cite{Anleitung402}} \label{fig:bänderschema}
@@ -92,7 +93,7 @@ Mit Hilfe des Filterrades wählte man verschiedene Wellenlängen zur Beobachtung
 
 Das Gegenfeld konnte mit einer separaten Spannung eingestellt und variiert werden.
 Da die Spannnug, die für das Gegenfeld zur Verfügung stand, bis zu $\SI{12}{V}$ ausgeben kann, wurde diese mit einem Spannungsteiler auf $U'=\tfrac{R_1}{R_1+R_2}U=\tfrac{\SI{100}{\ohm}}{\SI{100}{\ohm}+\SI{333}{\ohm}}12V=\SI{2.77}{V}$ gedrosselt.
-\begin{figure}[h]
+\begin{figure}[t]
         \centering
         \includegraphics[width=.5\textwidth]{402_aufbau_photoeffekt.png}
         \caption{Experimenteller Aufbau zum Photoeffekt.} \label{fig:aufbau_photoeffekt}
@@ -116,7 +117,7 @@ $\chi ^2/\text{ddof}$ ist für alle Geraden viel kleiner als der ideale Wert 1.
 Diese Diskrepanz ist hier nicht zu kleiner Fehler sondern einer Überfittung der Geraden zuzuordnen.
 Die Nullstelle der Fitgeraden liefert genau den Wert der Gegenspannung, bei der kein Photostrom fließt.
 
-\begin{table}[h]
+\begin{table}[t]
         \begin{tabular}{cc}
                 $\lambda $ & $U_0$ \\
                 \hline
@@ -131,7 +132,7 @@ Trägt man diese Werte gegen die jeweilige Frequenz des Lichts auf, so lässt si
 Dieser Plot ist in Abb.\ (\ref{fig:austrittsarbeit}) zu sehen.
 $\chi ^2/\text{ddof}$ ist viel größer als 1, weil sich die Fehler, durch die kleinen Messfehler, in der Fehlerfortpflanzung minimiert haben.
 
-\begin{figure}[h]
+\begin{figure}[t]
         \centering
         \resizebox{.5\textwidth}{!}{\input{Austrittsarbeit.tex}}
         \caption{Gemessene Gegenspannung $U_0$ gegen die Frequenz der auf die Kathode treffenden Photonen. Der Achsenabschnitt ist $W_\text{A}$ und die Steigung ist $h$.} \label{fig:austrittsarbeit}
@@ -146,12 +147,13 @@ Der aktuelle CODATA Wert (letzer Zugriff: 2024-11-23) ist
 .\end{align} 
 Die Abweichung des gemessenen Werts liegt bei ca.\ $100\%$.
 
-\section{\textsc{Balmer}--Serie: Gitterkonstante \& Isotopieaufspaltung}
-Es wird die Gitterkonstante des verwendeten Refelxionsgitters berechnet und die Breite der Isotopieaufspaltung bestimmt.
+\section{\textsc{Balmer}--Serie}
+Mit Hilfe der \textsc{Balmer}--Serie wird die Gitterkonstante des verwendeten Refelxionsgitters berechnet und die Breite der Isotopieaufspaltung bestimmt.
+Es wird die \textsc{Rydberg}--Konstante $R$ und daraus das \textsc{Planck}'sche Wirkungsquantum $h$ bestimmt.
 
-\subsection{Theoretischer Hintergrund}
-Trifft ein eingehender Strahl $i$ kohärenten Lichts im Winkel $\varphi _i$ auf ein Stufengitter wie in Abb.\ (\ref{fig:blazegitter}), so kommt es zu Interferenz zwischen allen im Winkel $\varphi _f$ ausgehenden Strahlen $f$.
-Diese Interferenzmaxima kommen durch den Gangunterschied $\Delta $ zwischen dem einfallenden und ausgehenden Strahl zustande.
+\subsection{Theoretischer Hintergrund: Gitterkonstante \& Interferenz}
+Trifft ein einlaufender Strahl $i$ kohärenten Lichts im Winkel $\varphi _i$ auf ein Stufengitter wie in Abb.\ (\ref{fig:blazegitter}), so kommt es zu Interferenz zwischen allen im Winkel $\varphi _f$ auslaufenden Strahlen $f$.
+Diese Interferenzmaxima kommen durch den Gangunterschied $\Delta $ zwischen dem einlaufende und auslaufenden Strahl zustande.
 Dieser berechnet sich separat für beide Strahlen zu $\Delta =\Delta _i+\Delta _f=g\left(\sin \varphi _i+\sin \varphi _f\right)=g\left(\sin \alpha +\sin \beta \right)$.
 Die Winkel $\alpha $ und $\beta $ sind identisch mit den Winkeln $\alpha $ und $\beta $ aus Abb.\ (\ref{fig:blazegitter}).
 $g$ ist die Giterkonstante.
@@ -162,29 +164,18 @@ Die Interferenzmaxima verhalten sich also in Abhängigkeit der Wellenlänge wie
 \begin{align} 
         n \lambda =g\left(\sin \alpha +\sin \beta \right)=\Delta 
 .\end{align} 
-\begin{figure}[h]
+\begin{figure}[t]
         \centering
         \includegraphics[width=.5\textwidth]{402_stufengitter.png}
         \caption{Schematische Darstellung des im Versuch verwendeten Gitters. Hier in der \textsc{Littrow}--Anordnung.\cite{WikipediaBlazegitter}} \label{fig:blazegitter}
 \end{figure}
 
-\subsection{Experimenteller Aufbau}
-\subsection{Durchführung \& Auswertung}
-
-\begin{figure}[h]
-        \centering
-        \resizebox{.5\textwidth}{!}{\input{Gitterkonstante.tex}}
-        \caption{Gitterkonstante}
-\end{figure}
-
-\section{\textsc{Balmer}--Serie: \textsc{Planck}'sches Wirkungsquantum \& \textsc{Rydberg}--Konstante}
-Mit Hilfe der \textsc{Balmer}--Serie wird die \textsc{Rydberg}--Konstante $R$ und daraus das \textsc{Planck}'sche Wirkungsquantum $h$ bestimmt.
-
-\subsection{Theoretischer Hintergrund}
+\subsection{Theoretischer Hintergrund: Spektrallinien}
+\subsubsection{Energieniveaus \& Spektrallinien}
 Diskrete Spektrallinien lassen sich aufgrund der Quantelung von Energie verstehen.
 Im Orbitalmodell ist es Elektronen möglich diese gequantelte Energie in Form eines Photons aufzunehmen und abzugeben.
 Dabei ändert es für jeden Übergang seinen Zustand (Energieniveau) beschrieben durch die Hauptquantenzahl $n$.
-Die Energie in abhängigkeit vom Niveau ist beschrieben durch $E_n=-\tfrac{\SI{13.6}{eV}}{n^2}$.
+Die Energie in Abhängigkeit des Niveaus ist beschrieben durch $E_n=-\tfrac{\SI{13.6}{eV}}{n^2}$.
 Der Energieunterschied zwischen zwei Niveaus kann mit der \textsc{Rydberg}--Formel für Wasserstoffähnliche Atome als 
 \begin{align} 
         E_{n_<,n_>}=hcRZ^2\left(\dfrac{1}{n_<^2}-\dfrac{1}{n_>^2}\right)=\dfrac{hc}{\lambda _\text{vac}}
@@ -198,29 +189,104 @@ Diese Übergänge werden weiter verfeinert in $n_>=n_<+i$ mit $i=1\equiv \alpha 
 Diese Konvention ist in Abb.\ (\ref{fig:serien}) dargestellt.
 Die \textsc{Balmer} Übergange sind insofern besonders, als dass sie im sichtbaren Spektrum liegen.
 
-\begin{figure}[h]
+\begin{figure}[t]
         \centering
         \includegraphics[width=.5\textwidth]{402_serien.png}
         \caption{Energieniveaus des Wasserstoffs mit benannten Serien (Übergängen).\cite{WikipediaSerien}} \label{fig:serien}
 \end{figure}
+
+\subsubsection{Linienverbreiterung \& Isotopieaufspaltung}
+Spektrallinien sind nicht exakt einer Wellenlänge zuzuordnen, da sie eine gewisse Linienbreite besitzen.
+Die natürliche Linienbreite $\Gamma $ ist auf die quantenmechanische Unschärferelation $\Delta _E\Delta _t \geq \tfrac{\hbar }{2}$ zurückzuführen.
+Sie verhält sich wie $\Gamma \tau =\hbar $, mit $\tau =\tfrac{1}{\lambda }$ der Lebensdauer des Zustands und $\lambda $ der Zerfallskonstante.
+
+Es kann zur Linienverbreiterung durch den \textsc{Doppler}--Effekt kommen.
+In Abhängigkeit davon, wie schnell sich die Atome im Gas bewegen, sind ihre Energieniveaus \textsc{Doppler}--verschoben was dazu führt, dass Photonen emittiert werden, die eine Verteilung um die theoretisch exakte Wellenlänge der Spektrallinie besitzen.
+
+Isotope eines Elements besitzen aufgrund gleicher Protonenzahl aber verschiedener Neutronenzahl eine unterschiedliche Masse.
+Dieser Massenunterschied führt dazu, dass die Spektrallinien eines Elements von denen ihrer Isotope verschoben sind.
+Die Größe der Aufspaltung berechnet sich mit 
+\begin{align} 
+         &&&& \partial _\beta \lambda  &= \partial _\beta\dfrac{g}{n}\left(\sin \alpha +\sin \beta \right)  &&&& \\
+          &&&&  &= \dfrac{g}{n}\left(\sin \alpha +\beta \cos \beta \right).  &&&& 
+\end{align} 
+
 \subsection{Experimenteller Aufbau}
-\subsection{Durchführung \& Auswertung}
+Der experimentelle Aufbau ist in Abb.\ (\ref{fig:aufbau_spektrallinie}) zu sehen.
+a ist die Gasentladungslampe (Hg--Lampe, oder \textsc{Balmer}--Lampe mit einem Anteil Deuterium); b der Abbildespalt um möglichst scharfe Linien zu erzeugen; c eine Linse die auf das Objektiv d fokussiert, um ein paralleles Strahlenbündel auf das Reflexionsgitter e zu richten; f eine Linse, die die auslaufenden paralellen Strahlen des Gitters auf das Objektiv g oder die CCD h fokussiert.
+
+Alle optischen Bauteile werden so justiert, dass am Objektiv oder der CCD eine scharfe Spektrallinie zu erkennen ist.
+\begin{figure}[t]
+        \centering
+        \includegraphics[width=.5\textwidth]{402_aufbau_spektrallinie.png}
+        \caption{Der Aufbau zur Bestimmung der Gitterkonstanten, $R$, $h$ und der Linienverbreiterung sowie Isotopieaufspaltung.\cite{Anleitung402}} \label{fig:aufbau_spektrallinie}
+\end{figure}
+
+\subsection{Durchführung \& Auswertung: Gitterkonstante}
+Der Strahlengang ist schematisch in Abb.\ (\ref{fig:strahlengang}) dargestellt.
+Für jede Spektrallinie der Hg--Lampe wurde der Gitterwinkel $\omega _G$ gemessen, unter dem die Spektrallinie genau mittig auf das Okular oder die CCD trifft.
+$\omega _B$ war für die gesamte Durchführung $\ang{130+-.5}$.
+Die Farbe der Linie wurde mit einer Spektraltabelle \cite{Anleitung402} verglichen und so die Wellenlänge $\lambda $ bestimmt.
+
+Die Gitterkonstante wird berechnet durch
+\begin{align} 
+        &&n\lambda &=g\left(\sin \alpha +\sin \beta \right)&&\\
+        \Leftrightarrow &&g&=\dfrac{n\lambda }{\sin \alpha +\sin \beta },&&
+\end{align} 
+mit $\alpha =\omega _G$ und $\beta =\omega _B+\omega _G-\ang{180}$.
+Der Fehler auf $g$ verhält sich aufgrund des Fehlers von $\omega _G$ und $\omega _B$ wie
+\begin{align} 
+        \Delta g &= \,\sqrt[]{\left(\partial _{\omega _G}g\Delta \omega _G\right)^2+\left(\partial _{\omega _B}g\Delta \omega _B\right)^2}
+,\end{align} 
+mit
+\begin{align} 
+        \partial _{\omega _G}g\Delta \omega _G &= \dfrac{n\lambda \Delta \omega _G\left(\cos \left(\omega _G\right)-\cos \left(\omega _B+\omega _G\right)\right)}{\left(\sin \left(\omega _G\right)-\sin \left(\omega _B+\omega _G\right)\right)^2}\\
+        \partial _{\omega _B}g\Delta \omega _B &= \dfrac{n\lambda \Delta \omega _B\cos \left(\omega _B+\omega _G\right)}{\left(\sin \left(\omega _G\right)-\sin \left(\omega _B+\omega _G\right)\right)^2}
+.\end{align} 
+Trägt man $\sin \left(\omega _G\right)+\sin \left(\omega _B+\omega _B-\ang{180}\right)$ gegen die Wellenlänge $\lambda $ auf, so ergibt sich aus der Steigung der Fitgeraden die Gitterkonstante $g$.
+Dies ist in Abb.\ (\ref{fig:gitterkonstante}) dargestellt.
+
+Der Wert von $g$ ist damit
+\begin{align} 
+        g=\SI{4527+-47}{\text{\r{A}}^{-1}}
+.\end{align} 
+Da kein Literaturwert angegeben ist findet kein Vergleich statt.
+Typische Werte für Reflexionsgitter sind allerdings in dieser Größenordnung angesiedelt.
+
+Das relativ zu 1 große $\chi ^2/\text{ddof}$ ist den kleinen Fehlern geschuldet.
+Die Fitgerade modelliert die Werte passend.
+
+\begin{figure}[t]
+        \centering
+        \includegraphics[width=.5\textwidth]{402_reflexion.png}
+        \caption{Schematische Darstellung der Reflexion am Stufengitter.\cite{Anleitung402}} \label{fig:strahlengang}
+\end{figure}
+\begin{figure}[t] 
+        \centering
+        \resizebox{.5\textwidth}{!}{\input{Gitterkonstante.tex}}
+        \caption{Der Gangunterschied geteilt durch die Gitterkonstante gegen die Wellenlänge aufgetragen ergibt aus der Steigung der Fitgeraden die Gitterkonstante.} \label{fig:gitterkonstante}
+\end{figure}
+
+\subsection{Durchführung \& Auswertung: Spektrallinien}
+Die Hg--Lampe wurde gegen die \textsc{Balmer}--Lampe getauscht, um die Spektrallinien der \textsc{Balmer}--Serie zu vermessen; sonst bleibt der Aufbau identisch.
+Die Messung wurde mit Okular und CCD durchgeführt.
+Die \textsc{Balmer}--Lampe besteht aus einem Gemisch von 10 Teilen Wasserstoff auf 1 Teil Deuterium.
 
 \section{Fazit}
 
 \clearpage
 \section{Appendix}
-\begin{figure}[h]
+\begin{figure}[t]
         \centering
         \resizebox{.5\textwidth}{!}{\input{305nm.tex}}
         \caption{Photostrom abzüglich des Anodenstroms gegen Gegenspannung für $\lambda =\SI{305}{n m}$. Fit nur an Messdaten quadratisch ab $U_0$ und in quadratischer Abhängigkeit.} \label{fig:photo_auswertung_305}
 \end{figure}
-\begin{figure}[h]
+\begin{figure}[t]
         \centering
         \resizebox{.5\textwidth}{!}{\input{365nm.tex}}
         \caption{Photostrom abzüglich des Anodenstroms gegen Gegenspannung für $\lambda =\SI{365}{n m}$. Fit nur an Messdaten quadratisch ab $U_0$ und in quadratischer Abhängigkeit.}
 \end{figure}
-\begin{figure}[h]
+\begin{figure}[t]
         \centering
         \resizebox{.5\textwidth}{!}{\input{436nm.tex}}
         \caption{Photostrom abzüglich des Anodenstroms gegen Gegenspannung für $\lambda =\SI{436}{n m}$. Fit nur an Messdaten quadratisch ab $U_0$ und in quadratischer Abhängigkeit.}
