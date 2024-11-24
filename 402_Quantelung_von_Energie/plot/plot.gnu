@@ -237,8 +237,8 @@ plot data_path using 1:2 w lines title 'Rote Aufspaltung',\
 set output "ccdtuerkies.tex"
 set xrange [-0.1:0.1]
 set yrange [0:100]
-set title 'Isotopieaufspaltung von Wasserstoff und Deuterium bei $\lambda=\SI{656}{\nano m}$'
-set key top left box opaque width +2
+set title 'Isotopieaufspaltung von Wasserstoff und Deuterium bei $\lambda=\SI{486}{\nano m}$'
+set key bottom center box opaque width +1
 set grid
 set xlabel 'relativer Winkel $\Delta\omega_G/\SI{}{\degree}$'
 set ylabel 'Intensität $I/\%$'
@@ -253,14 +253,14 @@ c2=0.025
 f(x)=(b1*exp(-(x-c1)**2/a1)+b2*exp(-(x-c2)**2/a2))+g
 data_path = '../data/ccd_tuerkis.dat'
 fit f(x) data_path via a1, a2, b1, b2, c1, c2, g
-plot data_path using 1:2 w lines title 'Rote Aufspaltung',\
+plot data_path using 1:2 w lines title 'Turkisfarbene Aufspaltung',\
   f(x)
 
 set output "ccdvioletschwach.tex"
 set xrange [-0.1:0.1]
 set yrange [0:100]
-set title 'Isotopieaufspaltung von Wasserstoff und Deuterium bei $\lambda=\SI{656}{\nano m}$'
-set key top left box opaque width +2
+set title 'Isotopieaufspaltung von Wasserstoff und Deuterium bei $\lambda=\SI{434}{\nano m}$'
+set key top left box opaque
 set grid
 set xlabel 'relativer Winkel $\Delta\omega_G/\SI{}{\degree}$'
 set ylabel 'Intensität $I/\%$'
@@ -275,14 +275,14 @@ c2=0.025
 f(x)=(b1*exp(-(x-c1)**2/a1)+b2*exp(-(x-c2)**2/a2))+g
 data_path = '../data/ccd_violet_schwach.dat'
 fit f(x) data_path via a1, a2, b1, b2, c1, c2, g
-plot data_path using 1:2 w lines title 'Rote Aufspaltung',\
+plot data_path using 1:2 w lines title 'Violetfarbene (schwache) Aufspaltung',\
   f(x)
 
 set output "ccdvioletstark.tex"
 set xrange [-0.1:0.1]
 set yrange [0:100]
-set title 'Isotopieaufspaltung von Wasserstoff und Deuterium bei $\lambda=\SI{656}{\nano m}$'
-set key top left box opaque width +2
+set title 'Isotopieaufspaltung von Wasserstoff und Deuterium bei $\lambda=\SI{410}{\nano m}$'
+set key top left box opaque
 set grid
 set xlabel 'relativer Winkel $\Delta\omega_G/\SI{}{\degree}$'
 set ylabel 'Intensität $I/\%$'
@@ -297,5 +297,5 @@ c2=0.025
 f(x)=(b1*exp(-(x-c1)**2/a1)+b2*exp(-(x-c2)**2/a2))+g
 data_path = '../data/ccd_violet_stark.dat'
 fit f(x) data_path via a1, a2, b1, b2, c1, c2, g
-plot data_path using 1:2 w lines title 'Rote Aufspaltung',\
+plot data_path using 1:2 w lines title 'Violetfarbene (starke) Aufspaltung',\
   f(x)

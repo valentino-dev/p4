@@ -117,7 +117,7 @@ $\chi ^2/\text{ddof}$ ist für alle Geraden viel kleiner als der ideale Wert 1.
 Diese Diskrepanz ist hier nicht zu kleiner Fehler sondern einer Überfittung der Geraden zuzuordnen.
 Die Nullstelle der Fitgeraden liefert genau den Wert der Gegenspannung, bei der kein Photostrom fließt.
 
-\begin{table}[t]
+\begin{table}[h]
         \begin{tabular}{cc}
                 $\lambda $ & $U_0$ \\
                 \hline
@@ -128,7 +128,7 @@ Die Nullstelle der Fitgeraden liefert genau den Wert der Gegenspannung, bei der 
                 $\SI{578}{n m}$ & $\SI{-0.388+-0.015}{V}$ 
         \end{tabular}
 \end{table}
-Trägt man diese Werte gegen die jeweilige Frequenz des Lichts auf, so lässt sich ein Geradenfit durchführen, dessen Steigung genau gleich dem \textsc{Planck}'schen Wirkungsquantum ist.
+Trägt man diese Werte gegen die jeweilige Frequenz des Lichts auf, so lässt sich ein Geradenfit durchführen, dessen Steigung gleich dem \textsc{Planck}'schen Wirkungsquantum und dessen Achsenabschnitt gleich der Austrittsarbeit ist.
 Dieser Plot ist in Abb.\ (\ref{fig:austrittsarbeit}) zu sehen.
 $\chi ^2/\text{ddof}$ ist viel größer als 1, weil sich die Fehler, durch die kleinen Messfehler, in der Fehlerfortpflanzung minimiert haben.
 
@@ -146,6 +146,34 @@ Der aktuelle CODATA Wert (letzer Zugriff: 2024-11-23) ist
         h'\approx \SI{4.136e-15}{eVs}
 .\end{align} 
 Die Abweichung des gemessenen Werts liegt bei ca.\ $100\%$.
+FEHLERDISKUSSION
+
+Die Austrittsarbeit wurde bestimmt zu
+\begin{align} 
+        W_\text{A}=\SI{-0.90+-0.45}{eV}
+.\end{align} 
+Für diesen Wert existiert kein Literaturwert zum Vergleich.
+Der Fehler ist mit $\Delta W_\text{A}\approx \tfrac{W_\text{A}}{2}$ unerwartet groß, da die gemessenen Photoströme einheitliche Ergebnisse liefern und die Fitgeraden die Datenpunkte passend modellieren.
+Weiterführende Aussagen können aufgrund fehlenden Vergleichs nicht getätigt werden.
+
+Die Intensität des Lichtstrahl in der Theorie keine Auswirkung auf die kinetische Energie der Elektronen, also auch auf die Gegenspannung, da die Energie der Photonen nur abhängig von der Wellenlänge ist.
+Die Erwartung ist also keine Abweichung der Gegenspannung.
+
+Zur Kontrolle wurde für die Wellenlänge $\SI{365}{\nano m}$ eine Messung mit höherer Intensität durchgeführt.
+Das Ergebnis ist in Abb.\ (\ref{fig:photostrom_hohe_intensität}) zu sehen.
+Es ergibt sich eine Gegenspannung von $U_0^h=-\SI{1.87+-.1}{V}$.
+Die Gegenspannung bei niedriger Intensität liegt bei $U_0^n=\SI{-1.509+-.017}{V}$.
+Das entspricht einer Abweichung von $U_0^h$ von $U_0^n$ von ca.\ $24\%$.
+Diese Abweichung entspricht nicht der Erwartung.
+Eine Abweichung ist hier allerdings keine Anfechtung der Theorie, sondern eine ungenaue Messung.
+Die Fitgerade für die Datenpunkte bei hoher Intensität hat eine Güte von $\chi ^2/\text{ddof}\approx 21$, was für einen passenden Geradenfit zu hoch ist.
+Die Fehler der Messdaten wurden hier zu klein gewählt, was zu Abweichungen der Nullstelle der Geraden geführt hat.
+
+\begin{figure}[t]
+        \centering
+        \resizebox{.5\textwidth}{!}{\input{365nmGB.tex}}
+        \caption{Photostrom abzüglich des Anodenstroms gegen Gegenspannung für $\lambda =\SI{365}{n m}$. Fit nur an Messdaten quadratisch ab $U_0$ und in quadratischer Abhängigkeit. Höhere Intensität als bei allen anderen Plots zum Photostrom.} \label{fig:photostrom_hohe_intensität}
+\end{figure}
 
 \section{\textsc{Balmer}--Serie}
 Mit Hilfe der \textsc{Balmer}--Serie wird die Gitterkonstante des verwendeten Refelxionsgitters berechnet und die Breite der Isotopieaufspaltung bestimmt.
@@ -208,8 +236,13 @@ Dieser Massenunterschied führt dazu, dass die Spektrallinien eines Elements von
 Die Größe der Aufspaltung berechnet sich mit 
 \begin{align} 
          &&&& \partial _\beta \lambda  &= \partial _\beta\dfrac{g}{n}\left(\sin \alpha +\sin \beta \right)  &&&& \\
-          &&&&  &= \dfrac{g}{n}\left(\sin \alpha +\beta \cos \beta \right).  &&&& 
+          &&&&  &= \dfrac{g}{n}\beta \cos \beta .  &&&& 
 \end{align} 
+Näherungsweise gilt dann die Formel
+\begin{align} 
+        \Delta \lambda =\dfrac{g}{n}\Delta \beta \cos \beta
+,\end{align} 
+mit $\Delta \beta =\tfrac{d}{f}$, wobei $d$ der Abstand der Linien und $f$ die Brennweite des Okulars ist.
 
 \subsection{Experimenteller Aufbau}
 Der experimentelle Aufbau ist in Abb.\ (\ref{fig:aufbau_spektrallinie}) zu sehen.
@@ -268,40 +301,71 @@ Die Fitgerade modelliert die Werte passend.
 \end{figure}
 
 \subsection{Durchführung \& Auswertung: Spektrallinien}
-Die Hg--Lampe wurde gegen die \textsc{Balmer}--Lampe getauscht, um die Spektrallinien der \textsc{Balmer}--Serie zu vermessen; sonst bleibt der Aufbau identisch.
+Die Hg--Lampe wurde gegen die \textsc{Balmer}--Lampe getauscht, um die Spektrallinien, genauer die Isotopieaufspaltung, der \textsc{Balmer}--Serie zu vermessen; sonst bleibt der Aufbau identisch.
 Die Messung wurde mit Okular und CCD durchgeführt.
 Die \textsc{Balmer}--Lampe besteht aus einem Gemisch von 10 Teilen Wasserstoff auf 1 Teil Deuterium.
+
+Für jede Isotopieaufspaltung wurde die Distanz $d$ zwischen den Linien gemessen, um so den Wellenlängenunterschied bestimmen zu können.
+
+\subsubsection{Okular}
+Die gemessenen Abstände liegen bei
+\begin{table}
+        \begin{tabular}{ccc}
+                Farbe & $\omega _G$ & /iso
+        \end{tabular}
+\end{table}
 
 \section{Fazit}
 
 \clearpage
 \section{Appendix}
-\begin{figure}[t]
+\begin{figure}[h]
         \centering
         \resizebox{.5\textwidth}{!}{\input{305nm.tex}}
         \caption{Photostrom abzüglich des Anodenstroms gegen Gegenspannung für $\lambda =\SI{305}{n m}$. Fit nur an Messdaten quadratisch ab $U_0$ und in quadratischer Abhängigkeit.} \label{fig:photo_auswertung_305}
 \end{figure}
-\begin{figure}[t]
+\begin{figure}[h]
         \centering
         \resizebox{.5\textwidth}{!}{\input{365nm.tex}}
         \caption{Photostrom abzüglich des Anodenstroms gegen Gegenspannung für $\lambda =\SI{365}{n m}$. Fit nur an Messdaten quadratisch ab $U_0$ und in quadratischer Abhängigkeit.}
 \end{figure}
-\begin{figure}[t]
+\begin{figure}[h]
         \centering
         \resizebox{.5\textwidth}{!}{\input{436nm.tex}}
         \caption{Photostrom abzüglich des Anodenstroms gegen Gegenspannung für $\lambda =\SI{436}{n m}$. Fit nur an Messdaten quadratisch ab $U_0$ und in quadratischer Abhängigkeit.}
 \end{figure}
-\begin{figure}[]
+\begin{figure}[h]
         \centering
         \resizebox{.5\textwidth}{!}{\input{546nm.tex}}
         \caption{Photostrom abzüglich des Anodenstroms gegen Gegenspannung für $\lambda =\SI{546}{n m}$. Fit nur an Messdaten quadratisch ab $U_0$ und in quadratischer Abhängigkeit.}
 \end{figure}
-\begin{figure}[]
+\begin{figure}[h]
         \centering
         \resizebox{.5\textwidth}{!}{\input{578nm.tex}}
         \caption{Photostrom abzüglich des Anodenstroms gegen Gegenspannung für $\lambda =\SI{578}{n m}$. Fit nur an Messdaten quadratisch ab $U_0$ und in quadratischer Abhängigkeit.} \label{fig:photo_auswertung_578}
 \end{figure}
+\begin{figure}[h]
+        \centering
+        \resizebox{.5\textwidth}{!}{\input{ccdrot.tex}}
+        \caption{Rote Isotopieaufspaltung der \textsc{Balmer}--Lampe.}
+\end{figure}
+\begin{figure}[h]
+        \centering
+        \resizebox{.5\textwidth}{!}{\input{ccdtuerkies.tex}}
+        \caption{Türkisfarbene Isotopieaufspaltung der \textsc{Balmer}--Lampe.}
+\end{figure}
+\begin{figure}[h]
+        \centering
+        \resizebox{.5\textwidth}{!}{\input{ccdvioletschwach.tex}}
+        \caption{Schwache violetfarbene Isotopieaufspaltung der \textsc{Balmer}--Lampe.}
+\end{figure}
+\begin{figure}[h]
+        \centering
+        \resizebox{.5\textwidth}{!}{\input{ccdvioletstark.tex}}
+        \caption{Starke violetfarbene Isotopieaufspaltung der \textsc{Balmer}--Lampe.}
+\end{figure}
 
+\clearpage
 \bibliography{refs}
 
 \end{document}
