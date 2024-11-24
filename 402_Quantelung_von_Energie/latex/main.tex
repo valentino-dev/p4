@@ -40,14 +40,141 @@
 
 \begin{document}
         
-\title[Title]{title}
+\title{Praktikum 4 -- Versuch 402: Quantelung von Energie}
 \author*[1]{\fnm{Jonas} \sur{Wortmann}}\email{s02jwort@uni-bonn.de}
+\author*[1]{\fnm{Angelo} \sur{Brade}}\email{s72abrad@uni-bonn.de}
 \affil*[1]{Rheinische Friedrich--Wilhelms--Universität, Bonn}
 
 \maketitle
 
-Hello test
+\newpage
+\section{Einleitung}
+Elektronen emittieren bzw.\ absorbieren beim Übergang zwischen Orbitalen Photonen mit einer diskreten Energie.
+Diese Energie ist gequantelt in Vielfache des \textsc{Planck}'schen Wirkungsquantums $h$.
+Um die Größe der Quantelung zu bestimmen wird der Photoeffekt und die Messung der \textsc{Balmer}--Serie von Hg verwendet.
 
-%\bibliography{refs}
+\section{Photoelektrische Bestimmung von $h$.}
+\subsection{Experimenteller Aufbau}
+Der experimentelle Aufbau ist in Abb.\ (\ref{fig:aufbau_photoeffekt}) zu sehen.
+Die Hg--Lampe diente als Lichtquelle.
+Mit der Blende und der Linse wurde die Intensität und Breite des Lichtstrahls so eingestellt, dass ein fokussierter Punkt auf der Photokathode zu sehen war.
+Dabei wurde darauf geachtet, dass der Lichtstrahl nicht die Anode berührte.
+Zur Vermeidung von Streulicht wurde über die Kathode--Anode--Anordnung eine Blende gestülpt, mit einem Rohrausschnitt, welcher auf das Filterrad zeigte.
+Mit Hilfe des Filterrades wählte man verschiedene Wellenlängen zur Beobachtung aus.
+
+Das Gegenfeld konnte mit einer separaten Spannung eingestellt und variiert werden.
+Da die Spannnug, die für das Gegenfeld zur Verfügung stand, bis zu $\SI{12}{V}$ ausgeben kann, wurde diese mit einem Spannungsteiler auf $U'=\tfrac{R_1}{R_1+R_2}U=\tfrac{\SI{100}{\ohm}}{\SI{100}{\ohm}+\SI{333}{\ohm}}12V=\SI{2.77}{V}$ gedrosselt.
+\begin{figure}[h]
+        \centering
+        \includegraphics[width=.5\textwidth]{402_aufbau_photoeffekt.png}
+        \caption{Experimenteller Aufbau zum Photoeffekt.} \label{fig:aufbau_photoeffekt}
+\end{figure}
+
+\subsection{Theoretischer Hintergrund}
+Das \textsc{Fermi}--Niveau beschreibt das höchste noch besetzte Energieniveau in einem Atom, welches aufgrund des \textsc{Pauli}--Prinzips noch besetzt werden darf.
+Die Austrittsarbeit ist die Arbeit die benötigt wird, um ein Elektron aus diesem Energieniveau zu heben und vom dem Atoms zu lösen.
+Für verschiedene Atome ist dieses Level, wegen ihrer unterschiedlichen Elektronanzahl, nicht gleich.
+Makroskopisch zeigt sich dies in unterschiedlichen Austrittsarbeiten für verschiedene Materialien, wie z.B.\ für die Anode und die Kathode im experimentellen Aufbau.
+
+Solche Energieniveaus können mit dem Bänderschema verdeutlicht werden.
+Eine mögliche Anordnung ist in Abb.\ (\ref{fig:bänderschema}) gezeigt.
+Die gestrichelten Linien unten mit den schrägen Linien darunter geben die jeweiligen \textsc{Fermi}--Niveaus an.
+$W_\text{K}$ und $W_\text{A}$ geben die Austrittsarbeit an.
+Die alleinstehende gestrichelte Linie ist das Vakuumniveau.
+
+Werden Anode und Kathode miteinander verbunden, so gleichen sich ihre \textsc{Fermi}--Niveaus aus und es entsteht eine Potentialdifferenz von $U_\text{KA}$ zum Vakuumsniveau zwischen Anode und Kathode.
+Wird eine Spannung zwischen Anode und Kathode aufgebaut, so verschieben sich die \textsc{Fermi}--Niveaus und es baut sich eine weitere Potentialdifferenz $U_\text{G}$ auf.
+
+Trifft ein Photon auf die Kathode, so lässt sich folgende Gleichung zwischen der Energie des Photons und der Energie des Elektrons aufstellen, mit $eU_0$ der kinetischen Energie der Elektronen
+\begin{align} 
+        \Leftrightarrow && E_\gamma =h\nu &=eU_0-eU_\text{KA}+W_\text{K}=E_{e^-}&&\\
+        \Leftrightarrow &&&=eU_0-\left(W_\text{K}-W_\text{A}\right)+W_\text{K}&&\\
+        \Leftrightarrow &&&=eU_0+W_\text{A}&&
+.\end{align} 
+\begin{figure}[h]
+        \centering
+        \includegraphics[width=.5\textwidth]{402_austrittsarbeit.png}
+        \caption{Bänderschema der Anode und Kathode bei anlegen einer äußeren Spannung.\cite{Anleitung402}} \label{fig:bänderschema}
+\end{figure}
+
+\subsection{Durchführung \& Auswertung}
+Die Messung des Photostroms und des Gegenfeldes erfolgte über zwei DMMs.
+Jede Messung wurde zwei mal durchgeführt und jeweils der Mittelwert verwendet, da die Intensität der Hg--Lampe schwankt.
+
+Die Spannung des Gegenfeldes wurde für alle Interferenzfilter ($\SI{305}{nm}$, $\SI{365}{n m}$, $\SI{436}{n m}$, $\SI{546}{n m}$ und $\SI{578}{n m}$) von der maximalen Spannung ($\approx \SI{2.77}{V}$) bis zur minimalen Spannung $(\approx \SI{0.0006}{V}$) variiert und der Photostrom gemessen.
+Der Anodenstrom $I_0$, der von der Anode zu Kathode fließt, wenn die Gegenspannung maximal ist, wurde jeweils gesondert gemessen, um diesen in der Auswertung von der Messung zu subtrahieren.
+
+Bis zu einer gewissen Gegenfeldspannung $U_\text{G}=U_0$ fließt kein Photostrom $I$; ab $U_0$ fließt dieser mit einem quadratischen Zusammenhang zu $U_G$.
+
+Für die Auswertung wird $\,\sqrt[]{I-I_0}$ -- der Photostrom $I$ abzüglich $I_0$ unter der Wurzel -- gegen die Gegenfeldspannung $U_G$ aufgetragen.
+Die Graphen finden sich im Appendix von Abb.\ (\ref{fig:photo_auswertung_305}) bis Abb.\ (\ref{fig:photo_auswertung_578}).
+
+Ein Geradenfit wird für alle Messdaten, die im quadratischen Bereich liegen durchgeführt.
+Die Messpunkte, die kein quadratisches Verhalten zeigen, geben des Strom von der Anode zur Kathode an und werden nicht berücksichtigt.
+$\chi ^2/\text{ddof}$ ist für alle Geraden viel kleiner als der ideale Wert 1.
+Diese Diskrepanz ist hier nicht zu kleiner Fehler sondern einer Überfittung der Geraden zuzuordnen.
+Die Nullstelle der Fitgeraden liefert genau den Wert der Gegenspannung, bei der kein Photostrom fließt.
+
+\begin{table}[h]
+        \begin{tabular}{cc}
+                $\lambda $ & $U_0$ \\
+                \hline
+                $\SI{305}{n m}$ & $\SI{-1.1806+-0.0093}{V}$ \\
+                $\SI{365}{n m}$ & $\SI{-1.509+-0.017}{V}$ \\
+                $\SI{436}{n m}$ & $\SI{-0.951+-0.011}{V}$ \\
+                $\SI{546}{n m}$ & $\SI{-0.2615+-0.0057}{V}$ \\
+                $\SI{578}{n m}$ & $\SI{-0.388+-0.015}{V}$ 
+        \end{tabular}
+\end{table}
+Trägt man diese Werte gegen die jeweilige Frequenz des Lichts auf, so lässt sich ein Geradenfit durchführen, dessen Steigung genau gleich dem \textsc{Planck}'schen Wirkungsquantum ist.
+Dieser Plot ist in Abb.\ (\ref{fig:austrittsarbeit}) zu sehen.
+$\chi ^2/\text{ddof}$ ist viel größer als 1, weil sich die Fehler, durch die kleinen Messfehler, in der Fehlerfortpflanzung minimiert haben.
+\begin{figure*}[t]
+        \centering
+        \input{Austritsarbeit.tex}
+        \caption{a} \label{fig:austrittsarbeit}
+\end{figure*}
+Es ergibt sich ein Wert von
+\begin{align} 
+        h=\SI{0.0228+-0.002e-15}{eVs}
+.\end{align} 
+Der aktuelle CODATA Wert (letzer Zugriff: 2024-11-23) ist
+\begin{align} 
+        h'\approx \SI{4.136e-15}{eVs}
+.\end{align} 
+Die Abweichung des gemessenen Werts liegt daher bei ca.\ $100\%$.
+
+\section{\textsc{Balmer}--Serie}
+
+\clearpage
+\section{Appendix}
+\begin{figure*}[h]
+        \centering
+        \input{305nm.tex}
+        \caption{a} \label{fig:photo_auswertung_305}
+\end{figure*}
+\begin{figure*}[h]
+        \centering
+        \input{365nm.tex}
+        \caption{a}
+\end{figure*}
+\begin{figure*}[h]
+        \centering
+        \input{436nm.tex}
+        \caption{a}
+\end{figure*}
+\begin{figure*}[]
+        \centering
+        \input{546nm.tex}
+        \caption{a}
+\end{figure*}
+\begin{figure*}[]
+        \centering
+        \input{578nm.tex}
+        \caption{a} \label{fig:photo_auswertung_578}
+\end{figure*}
+
+\clearpage
+\bibliography{refs}
 
 \end{document}
