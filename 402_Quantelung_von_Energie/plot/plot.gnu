@@ -1,4 +1,4 @@
-set term cairolatex# standalone header '\usepackage{siunitx}'
+set term cairolatex standalone header '\usepackage{siunitx}'
 
 array data[6]
 data[1] = '../data/ps_305nm.dat'
@@ -15,6 +15,9 @@ filename[3] = '365nmGB.tex'
 filename[4] = '436nm.tex'
 filename[5] = '546nm.tex'
 filename[6] = '578nm.tex'
+
+array U0[6]
+array U0_err[6]
 
 
 
@@ -36,10 +39,13 @@ b=8
 f(x)=m*x+b
 set fit errorvariables
 fit f(x) data_path using ($1<threashhold?$1*(-1):1/0):(sqrt($2-I0)):($4):(sqrt(($3)**2+I0err**2)/sqrt($2-I0)) xyerrors via m, b
-set title sprintf('$\lambda=\SI{305}{\nano m}$: $U_0=\SI{%.4f +- %.4f}{V}$ und $\chi^2/\text{ddof}=\SI{%.3f}{}$', -b/m, sqrt((b_err/m)**2+(b/m**2*m_err)**2), FIT_STDFIT**2)
+U0[i]=-b/m
+U0_err[i]=sqrt((b_err/m)**2+(b/m**2*m_err)**2)
+set title sprintf('$\lambda=\SI{305}{\nano m}$: $U_0=\SI{%.4f +- %.4f}{V}$ und $\chi^2/\text{ddof}=\SI{%.3f}{}$', U0[i], U0_err[i], FIT_STDFIT**2)
 plot data_path using ($1<threashhold?$1*(-1):1/0):(sqrt($2-I0)):($4):(sqrt(($3)**2+I0err**2)/sqrt($2-I0)) w xyerrorbars title 'quadratische Datenpunkte' pt 0,\
   data_path using ($1>threashhold?$1*(-1):1/0):(sqrt($2-I0)):($4):(sqrt(($3)**2+I0err**2)/sqrt($2-I0)) w xyerrorbars title 'nicht quadratische Datenpunkte' pt 0,\
   f(x)>0?f(x):1/0 title sprintf('$f(x)=\SI{%.3f +- %.3f}{}\cdot U_G + \SI{%.3f +- %.3f}{\milli V}$', m, m_err, b, b_err)
+
 
 
 
@@ -62,7 +68,9 @@ b=8
 f(x)=m*x+b
 set fit errorvariables
 fit f(x) data_path using ($1<threashhold?$1*(-1):1/0):(sqrt($2-I0)):($4):(sqrt(($3)**2+I0err**2)/sqrt($2-I0)) xyerrors via m, b
-set title sprintf('$\lambda=\SI{365}{\nano m}$: $U_0=\SI{%.3f +- %.3f}{V}$ und $\chi^2/\text{ddof}=\SI{%.3f}{}$', -b/m, sqrt((b_err/m)**2+(b/m**2*m_err)**2), FIT_STDFIT**2)
+U0[i]=-b/m
+U0_err[i]=sqrt((b_err/m)**2+(b/m**2*m_err)**2)
+set title sprintf('$\lambda=\SI{365}{\nano m}$: $U_0=\SI{%.3f +- %.3f}{V}$ und $\chi^2/\text{ddof}=\SI{%.3f}{}$', U0[i], U0_err[i], FIT_STDFIT**2)
 plot data_path using ($1<threashhold?$1*(-1):1/0):(sqrt($2-I0)):($4):(sqrt(($3)**2+I0err**2)/sqrt($2-I0)) w xyerrorbars title 'quadratische Datenpunkte' pt 0,\
   data_path using ($1>threashhold?$1*(-1):1/0):(sqrt($2-I0)):($4):(sqrt(($3)**2+I0err**2)/sqrt($2-I0)) w xyerrorbars title 'nicht quadratische Datenpunkte' pt 0,\
   f(x)>0?f(x):1/0 title sprintf('$f(U_G)=\SI{%.3f +- %.3f}{}\cdot U_G + \SI{%.3f +- %.3f}{\milli V}$', m, m_err, b, b_err)
@@ -87,7 +95,9 @@ b=8
 f(x)=m*x+b
 set fit errorvariables
 fit f(x) data_path using ($1<threashhold?$1*(-1):1/0):(sqrt($2-I0)):($4):(sqrt(($3)**2+I0err**2)/sqrt($2-I0)) xyerrors via m, b
-set title sprintf('$\lambda=\SI{365}{\nano m}$(GB): $U_0=\SI{%.2f +- %.2f}{V}$ und $\chi^2/\text{ddof}=\SI{%.3f}{}$', -b/m, sqrt((b_err/m)**2+(b/m**2*m_err)**2), FIT_STDFIT**2)
+U0[i]=-b/m
+U0_err[i]=sqrt((b_err/m)**2+(b/m**2*m_err)**2)
+set title sprintf('$\lambda=\SI{365}{\nano m}$(GB): $U_0=\SI{%.2f +- %.2f}{V}$ und $\chi^2/\text{ddof}=\SI{%.3f}{}$', U0[i], U0_err[i], FIT_STDFIT**2)
 plot data_path using ($1<threashhold?$1*(-1):1/0):(sqrt($2-I0)):($4):(sqrt(($3)**2+I0err**2)/sqrt($2-I0)) w xyerrorbars title 'quadratische Datenpunkte' pt 0,\
   data_path using ($1>threashhold?$1*(-1):1/0):(sqrt($2-I0)):($4):(sqrt(($3)**2+I0err**2)/sqrt($2-I0)) w xyerrorbars title 'nicht quadratische Datenpunkte' pt 0,\
   f(x)>0?f(x):1/0 title sprintf('$f(U_G)=\SI{%.1f +- %.1f}{}\cdot U_G + \SI{%.1f +- %.1f}{\milli V}$', m, m_err, b, b_err)
@@ -113,7 +123,9 @@ b=8
 f(x)=m*x+b
 set fit errorvariables
 fit f(x) data_path using ($1<threashhold?$1*(-1):1/0):(sqrt($2-I0)):($4):(sqrt(($3)**2+I0err**2)/sqrt($2-I0)) xyerrors via m, b
-set title sprintf('$\lambda=\SI{436}{\nano m}$: $U_0=\SI{%.3f +- %.3f}{V}$ und $\chi^2/\text{ddof}=\SI{%.3f}{}$', -b/m, sqrt((b_err/m)**2+(b/m**2*m_err)**2), FIT_STDFIT**2)
+U0[i]=-b/m
+U0_err[i]=1e-3*sqrt((b_err/m)**2+(b/m**2*m_err)**2)
+set title sprintf('$\lambda=\SI{436}{\nano m}$: $U_0=\SI{%.3f +- %.3f}{V}$ und $\chi^2/\text{ddof}=\SI{%.3f}{}$', U0[i], U0_err[i], FIT_STDFIT**2)
 plot data_path using ($1<threashhold?$1*(-1):1/0):(sqrt($2-I0)):($4):(sqrt(($3)**2+I0err**2)/sqrt($2-I0)) w xyerrorbars title 'quadratische Datenpunkte' pt 0,\
   data_path using ($1>threashhold?$1*(-1):1/0):(sqrt($2-I0)):($4):(sqrt(($3)**2+I0err**2)/sqrt($2-I0)) w xyerrorbars title 'nicht quadratische Datenpunkte' pt 0,\
   f(x)>0?f(x):1/0 title sprintf('$f(U_G)=\SI{%.2f +- %.2f}{}\cdot U_G + \SI{%.3f +- %.3f}{\milli V}$', m, m_err, b, b_err)
@@ -138,7 +150,9 @@ b=8
 f(x)=m*x+b
 set fit errorvariables
 fit f(x) data_path using ($1<threashhold?$1*(-1):1/0):(sqrt($2-I0)):($4):(sqrt(($3)**2+I0err**2)/sqrt($2-I0)) xyerrors via m, b
-set title sprintf('$\lambda=\SI{546}{\nano m}$: $U_0=\SI{%.4f +- %.4f}{V}$ und $\chi^2/\text{ddof}=\SI{%.3f}{}$', -b/m, sqrt((b_err/m)**2+(b/m**2*m_err)**2), FIT_STDFIT**2)
+U0[i]=-b/m
+U0_err[i]=1e-3*sqrt((b_err/m)**2+(b/m**2*m_err)**2)
+set title sprintf('$\lambda=\SI{546}{\nano m}$: $U_0=\SI{%.4f +- %.4f}{mV}$ und $\chi^2/\text{ddof}=\SI{%.3f}{}$', U0[i], U0_err[i], FIT_STDFIT**2)
 plot data_path using ($1<threashhold?$1*(-1):1/0):(sqrt($2-I0)):($4):(sqrt(($3)**2+I0err**2)/sqrt($2-I0)) w xyerrorbars title 'quadratische Datenpunkte' pt 0,\
   data_path using ($1>threashhold?$1*(-1):1/0):(sqrt($2-I0)):($4):(sqrt(($3)**2+I0err**2)/sqrt($2-I0)) w xyerrorbars title 'nicht quadratische Datenpunkte' pt 0,\
   f(x)>0?f(x):1/0 title sprintf('$f(U_G)=\SI{%.2f +- %.2f}{}\cdot U_G + \SI{%.3f +- %.3f}{\milli V}$', m, m_err, b, b_err)
@@ -161,7 +175,9 @@ b=8
 f(x)=m*x+b
 set fit errorvariables
 fit f(x) data_path using ($1<threashhold?$1*(-1):1/0):(sqrt($2-I0)):($4):(sqrt(($3)**2+I0err**2)/sqrt($2-I0)) xyerrors via m, b
-set title sprintf('$\lambda=\SI{578}{\nano m}$: $U_0=\SI{%.3f +- %.3f}{V}$ und $\chi^2/\text{ddof}=\SI{%.3f}{}$', -b/m, sqrt((b_err/m)**2+(b/m**2*m_err)**2), FIT_STDFIT**2)
+U0[i]=-b/m
+U0_err[i]=1e-3*sqrt((b_err/m)**2+(b/m**2*m_err)**2)
+set title sprintf('$\lambda=\SI{578}{\nano m}$: $U_0=\SI{%.3f +- %.3f}{V}$ und $\chi^2/\text{ddof}=\SI{%.3f}{}$', U0[i], U0_err[i], FIT_STDFIT**2)
 plot data_path using ($1<threashhold?$1*(-1):1/0):(sqrt($2-I0)):($4):(sqrt(($3)**2+I0err**2)/sqrt($2-I0)) w xyerrorbars title 'quadratische Datenpunkte' pt 0,\
   data_path using ($1>threashhold?$1*(-1):1/0):(sqrt($2-I0)):($4):(sqrt(($3)**2+I0err**2)/sqrt($2-I0)) w xyerrorbars title 'nicht quadratische Datenpunkte' pt 0,\
   f(x)>0?f(x):1/0 title sprintf('$f(U_G)=\SI{%.2f +- %.2f}{}\cdot U_G + \SI{%.3f +- %.3f}{\milli V}$', m, m_err, b, b_err)
@@ -169,7 +185,16 @@ plot data_path using ($1<threashhold?$1*(-1):1/0):(sqrt($2-I0)):($4):(sqrt(($3)*
 
 
 
+#array wellenlängen[6]
+#wellenlängen[1] = 305e-9
+#wellenlängen[2] = 365e-9
+#wellenlängen[3] = 436e-9
+#wellenlängen[4] = 546e-9
+#wellenlängen[5] = 578e-9
 
+#set table '../data/ps_U0.dat'
+#  plot sample [i=1:6] '+' using (wellenlänge[i]):(U0[i]):(U0_err[i]) w table
+#unset table
 
 
 set output 'Austritsarbeit.tex'
@@ -183,7 +208,7 @@ unset yrange
 f(x)=m*x+b
 set fit errorvariables
 fit f(x) '../data/ps_U0.dat' using (3e8/$1*1e-14):2:3 yerrors via m, b
-set title sprintf('$W_A=\SI{%.2f +- %.2f}{eV}$, $\text{h}=\SI{%.4f +- %.4f }{eVs} \cdot 10^{-15} $ und $\chi^2/\text{ddof}=%.3f$', b, b_err, m*1e-1, m_err*1e-1, FIT_STDFIT**2)
+set title sprintf('$W_A=\SI{%.2f +- %.2f}{eV}$, $\text{h}=\SI{%.2f +- %.2f }{eVs} \cdot 10^{-15} $ und $\chi^2/\text{ddof}=%.3f$', b, b_err, m*1e1, m_err*1e1, FIT_STDFIT**2)
 plot '../data/ps_U0.dat' using (3e8/$1*1e-14):2:3 w yerrorbars title '$U_0$ Datenpunkte',\
   f(x)>0?f(x):1/0 title sprintf('$f(\nu)=\SI{%.3f +- %.3f}{V/\ 10^{14} Hz}\cdot \nu \SI{%.2f +- %.2f}{V}$', m, m_err, b, b_err)
 
