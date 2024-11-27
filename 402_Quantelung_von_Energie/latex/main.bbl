@@ -1,6 +1,6 @@
 %% BioMed_Central_Bib_Style_v1.01
 
-\begin{thebibliography}{3}
+\begin{thebibliography}{4}
 % BibTex style file: bmc-mathphys.bst (version 2.1), 2014-07-24
 \ifx \bisbn   \undefined \def \bisbn  #1{ISBN #1}\fi
 \ifx \binits  \undefined \def \binits#1{#1}\fi
@@ -68,6 +68,16 @@ Letzter Zugriff: 2024-11-24
 Lyman--Serie.
 \url{https://de.wikipedia.org/wiki/Lyman-Serie}.
 Letzter Zugriff: 2024-11-24
+\end{botherref}
+\endbibitem
+
+%%% 4
+\bibitem[\protect\citeauthoryear{Didactic}{}]{LeyboldBalmerserieBeobachtung}
+\begin{botherref}
+\oauthor{\bsnm{Didactic}, \binits{L.}}:
+Beobachtung der aufspaltung der balmerlinie an deuteriertem wasserstoff (isotopieaufspaltung).
+Atom-- und Kernphysik: Handblätter Physik.
+P6.2.1.3 (a)
 \end{botherref}
 \endbibitem
 
