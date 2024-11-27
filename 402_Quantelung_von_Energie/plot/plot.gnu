@@ -259,7 +259,7 @@ plot data_path using 1:2 w lines title 'Rote Aufspaltung',\
   f(x)
 
 
-set output "ccdtuerkies.tex"
+set output "ccdtuerkis.tex"
 set xrange [-0.1:0.1]
 set yrange [0:100]
 set title 'Isotopieaufspaltung von Wasserstoff und Deuterium bei $\lambda=\SI{486}{\nano m}$'

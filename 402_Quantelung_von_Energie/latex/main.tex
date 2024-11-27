@@ -308,27 +308,60 @@ Die \textsc{Balmer}--Lampe besteht aus einem Gemisch von 10 Teilen Wasserstoff a
 Für jede Isotopieaufspaltung wurde die Distanz $d$ zwischen den Linien gemessen, um so den Wellenlängenunterschied bestimmen zu können.
 
 \subsubsection{Okular}
-Die gemessenen Abstände liegen bei
-\begin{table}
-        \begin{tabular}{ccc}
-                Farbe & $\omega _G$ & /iso
-        \end{tabular}
-\end{table}
+Die gemessenen \textsc{Balmer}--Linien und deren Abstand zu den jeweiligen Linien des Isotops in sind Tab.\ (\ref{tab:okular}) eingetragen.
 
-
-
-\begin{table}
-        \begin{tabular}{cccc}
-          Farbe & $\lambda_{\text{lit.}}$ & $\lambda$& $\Delta \lambda$\\
+\begin{table}[h]
+        \begin{tabular}{ccccc}
+                Farbe & $\lambda_{\text{lit.}}$ & $\lambda$ & $d$\\
                 \hline
-          Rot & \SI{656}{\nano m} &\SI{741+-88}{\nano m}& \SI{0.274+-0.069}{\nano m}\\
-                Türkis & \SI{485}{\nano m} &\SI{565+-87}{\nano m} & \SI{0.168+-0.084}{\nano m}\\
-                Blau & \SI{433}{\nano m} &\SI{511+-86}{\nano m} & \SI{0.863+-0.863}{\nano m}
+                Rot & \SI{656}{\nano m} &\SI{741+-88}{\nano m}[13\%] & $\SI{0.2+-0.05}{mm}$\\
+                Türkis & \SI{485}{\nano m} &\SI{565+-87}{\nano m}[14\%] & $\SI{0.1+-0.05}{mm}$\\
+                Blau & \SI{433}{\nano m} &\SI{511+-86}{\nano m}[15\%] & $\SI{0.05+-0.05}{mm}$
         \end{tabular}
+        \caption{Messung der \textsc{Balmer}--Linien und Linienabstand mit dem Okular. Literaturwerte aus \cite{LeyboldBalmerserieBeobachtung} mit Abweichung in Klammern $[\bullet ]$.} \label{tab:okular}
 \end{table}
+\noindent Die Abweichung der beobachteten Wellenlängen unterscheiden sich nur geringfügig, liegen allerdings alle über $10\%$.
+Diese Abweichung war nicht zu erwarten, da die Linien auf dem Okular äußert scharf waren.
+Ein möglicher Grund kann die Winkelmessung gewesen sein.
+Die Auflösung der Winkelskala lag lediglich bei $\ang{1}$.
+Die Formel zur Wellenlängendifferenz der Isotopieauspaltung ist
+\begin{align} 
+        \Delta \lambda &=\dfrac{g}{n}\Delta \beta \cos \beta\\
+        \Delta \left(\Delta \lambda \right) &= \,\sqrt[]{\left(\dfrac{g}{n}\cos \beta \,\Delta \left(\Delta \beta \right)\right)^2+\left(-\dfrac{g}{n}\Delta \beta \sin \beta \,\Delta \left(\beta \right)\right)^2}
+,\end{align} 
+mit $\Delta \left(\bullet\right)$ dem Fehler und $\Delta \bullet $ der Differenz.
+Es ist $\Delta \beta =\tfrac{\Delta d}{f}$.
+Daraus ergeben sich die Wellenlängendifferenzen dargestellt in Tab.\ (\ref{tab:isotopie_okular})
 
-ccd:
-\begin{table}
+\begin{table}[h]
+        \begin{tabular}{ccc}
+                Farbe & $\Delta \lambda $ & $\Delta \lambda _\text{lit.}$ \\
+                \hline
+                Rot & $\SI{0.274+-0.069}{\nano m}[153\%]$ & $\SI{0.179}{\nano m}$ \\
+                Türkis & $\SI{0.168+-0.084}{\nano m}[27\%]$ & $\SI{0.132}{\nano m}$ \\
+                Blau & $\SI{0.863+-0.863}{\nano m}[631\%]$ & $\SI{0.118}{\nano m}$ 
+        \end{tabular}
+        \caption{Die Wellenlängendifferenz der Isotopieaufspaltung. Literaturwerte aus \cite{LeyboldBalmerserieBeobachtung} mit Abweichung in Klammern $[\bullet ]$.} \label{tab:isotopie_okular}
+\end{table}
+Der Fehler der blauen Aufspaltung ist besonders groß, weil der Linienabstand eine Größe von einem Skalenteil hatte.
+Die sehr großen Abweichungen von Rot und vor Allem Türkis waren nicht zu erwarten.
+Die rote und türkisfarbene Linie konnte sehr präzise aufgelöst werden, sodass Fehler nicht durch Unschärfe kommen konnten.
+Die Möglichkeiten einer solch geringen Aufspaltung waren durch das Okular und die Skalenteile von $\SI{0.01}{mm}$ begrenzt, was ein Grund für diese Abweichungen sein könnte.
+Die Abweichung der blauen Linie ist zu groß, als dass die Skala im Okular hier eine Rolle spielen könnte.
+Da die blaue Linie eine geringe Intensität hatte, ist die Möglichkeit einer präzisen Messung schwierig gewesen, was zu diesem großen Fehler und auch zu der großen Abweichung geführt hat.
+
+\subsubsection{CCD}
+Für die Messung mit der CCD wurde das Okular durch eine CCD--Kamera ausgetauscht.
+Die Datenentnahme erfolgte über einen PC.
+Die Messung sind in Abb.\ (\ref{fig:ccdrot}) bis Abb.\ (\ref{fig:ccdvioletstark}) zu sehen.
+
+Der Fit der Daten wurde mit zwei \textsc{Gauss}--Kurven der Form
+\begin{align} 
+        f\left(x\right)=b_1\text{exp}\left(-\dfrac{\left(x-c_1\right)^2}{a_1}\right)+b_2\text{exp}\left(-\dfrac{\left(x-c_2\right)^2}{a_2}\right)+g
+\end{align} 
+durchgeführt.
+
+\begin{table}[h]
         \begin{tabular}{cccc}
           Farbe & $\lambda_{\text{lit.}}$ & $\lambda$& $\Delta \lambda$\\
                 \hline
@@ -341,6 +374,7 @@ ccd:
 
 \section{Fazit}
 
+%{{{ appendix & bibliography
 \clearpage
 \section{Appendix}
 \begin{figure}[h]
@@ -371,25 +405,26 @@ ccd:
 \begin{figure}[h]
         \centering
         \resizebox{.5\textwidth}{!}{\input{ccdrot.tex}}
-        \caption{Rote Isotopieaufspaltung der \textsc{Balmer}--Lampe.}
+        \caption{Rote Isotopieaufspaltung der \textsc{Balmer}--Lampe gemessen mit der CCD.} \label{fig:ccdrot}
 \end{figure}
 \begin{figure}[h]
         \centering
-        \resizebox{.5\textwidth}{!}{\input{ccdtuerkies.tex}}
-        \caption{Türkisfarbene Isotopieaufspaltung der \textsc{Balmer}--Lampe.}
+        \resizebox{.5\textwidth}{!}{\input{ccdtuerkis.tex}}
+        \caption{Türkisfarbene Isotopieaufspaltung der \textsc{Balmer}--Lampe gemessen mit der CCD.} \label{fig:ccdtürkis}
 \end{figure}
 \begin{figure}[h]
         \centering
         \resizebox{.5\textwidth}{!}{\input{ccdvioletschwach.tex}}
-        \caption{Schwache violetfarbene Isotopieaufspaltung der \textsc{Balmer}--Lampe.}
+        \caption{Schwache violetfarbene Isotopieaufspaltung der \textsc{Balmer}--Lampe gemessen mit der CCD.} \label{fig:ccdvioletschwach}
 \end{figure}
 \begin{figure}[h]
         \centering
         \resizebox{.5\textwidth}{!}{\input{ccdvioletstark.tex}}
-        \caption{Starke violetfarbene Isotopieaufspaltung der \textsc{Balmer}--Lampe.}
+        \caption{Starke violetfarbene Isotopieaufspaltung der \textsc{Balmer}--Lampe gemessen mit der CCD.} \label{fig:ccdvioletstark}
 \end{figure}
 
 \clearpage
 \bibliography{refs}
+%}}}
 
 \end{document}
