@@ -1,4 +1,4 @@
-set term cairolatex standalone header '\usepackage{siunitx}'
+set term cairolatex #standalone header '\usepackage{siunitx}'
 
 array data[6]
 data[1] = '../data/ps_305nm.dat'

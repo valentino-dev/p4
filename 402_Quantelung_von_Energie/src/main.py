@@ -52,4 +52,26 @@ ccd_delta_lambda = g*np.cos(abs_beta1)*delta_alpha
 ccd_delta_lambda_err = ((g_err*np.cos(abs_beta1)*delta_alpha)**2+(g*np.sin(abs_beta1)*abs_beta1_err*delta_alpha)**2+(g*np.cos(abs_beta1)*delta_alpha_err)**2)**(1/2)
 print('ccd delta lambda: ', ccd_delta_lambda, ccd_delta_lambda_err)
 
+c=3e8
+m=np.array([3, 4, 5, 6, 7])
+n=2
+rydberg = (1/wellenlänge*(1/n**2-1/m**2)**-1)
+rydberg_err = np.linalg.norm(1/wellenlänge**2*wellenlänge_err*(1/n**2-1/m**2)**-1)
+rydberg_constant_H = rydberg.mean()
+rydberg_constant_H_err = (rydberg.std()**2+rydberg_err**2)**(1/2)
+print(rydberg.mean(), (rydberg.std()**2+rydberg_err**2)**(1/2))
+print(np.log10(rydberg.mean()), np.log10((rydberg.std()**2+rydberg_err**2)**(1/2)))
+me=9.1e-31
+mp=1.67e-27
+rydberg_constant_inf = rydberg_constant_H*(1+me/mp)
+rydberg_constant_inf_err = rydberg_constant_H_err*(1+me/mp)
+print(rydberg_constant_inf, rydberg_constant_inf_err)
+eps_0 = 8.85e-12
+e_charge = 1.6e-19
+h = (1/rydberg_constant_inf*me*e_charge**4/8/eps_0**2/c)**(1/3)
+h_err = rydberg_constant_inf**(-4/3)*(me*e_charge**4/8/eps_0**2/c)**(1/3)*rydberg_constant_inf_err
+print(h, h_err)
+
+
+
 
