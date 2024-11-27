@@ -20,6 +20,8 @@ array U0[6]
 array U0_err[6]
 
 
+set pointintervalbox 0 # https://stackoverflow.com/questions/77344492/white-background-in-gnuplot-data-points ; removes white space around point which is drawn over the errorbar making it invisible for small errors
+
 
 i = 1
 set output filename[i]
@@ -197,7 +199,7 @@ plot data_path using ($1<threashhold?$1*(-1):1/0):(sqrt($2-I0)):($4):(sqrt(($3)*
 #unset table
 
 
-set output 'Austritsarbeit.tex'
+set output 'Austrittsarbeit.tex'
 set grid
 set ylabel '$U_0/\SI{}{V}$'
 set xlabel '$\nu / \SI{}{10^{14} Hz}$'
@@ -208,8 +210,8 @@ unset yrange
 f(x)=m*x+b
 set fit errorvariables
 fit f(x) '../data/ps_U0.dat' using (3e8/$1*1e-14):2:3 yerrors via m, b
-set title sprintf('$W_A=\SI{%.2f +- %.2f}{eV}$, $\text{h}=\SI{%.2f +- %.2f }{eVs} \cdot 10^{-15} $ und $\chi^2/\text{ddof}=%.3f$', b, b_err, m*1e1, m_err*1e1, FIT_STDFIT**2)
-plot '../data/ps_U0.dat' using (3e8/$1*1e-14):2:3 w yerrorbars title '$U_0$ Datenpunkte',\
+set title sprintf('$W_A=\SI{%.2f +- %.2f}{eV}$, $\text{h}=\SI{%.4f +- %.4f }{eVs} \cdot 10^{-15} $ und $\chi^2/\text{ddof}=%.3f$', b, b_err, m*1e-1, m_err*1e-1, FIT_STDFIT**2)
+plot '../data/ps_U0.dat' using (3e8/$1*1e-14):2:3 w yerrorbars title '$U_0$ Datenpunkte' pt 0,\
   f(x)>0?f(x):1/0 title sprintf('$f(\nu)=\SI{%.3f +- %.3f}{V/\ 10^{14} Hz}\cdot \nu \SI{%.2f +- %.2f}{V}$', m, m_err, b, b_err)
 
 
@@ -229,9 +231,9 @@ winkel_B_err = 0.5
 f(x)=x/g
 set fit errorvariables
 fit f(x) '../data/Balmer_Justage.dat' using 4:(sin($2/180*3.14)+sin((-180+winkel_B+$2)/180*3.14)):(sqrt(((cos($2/180*3.14)+cos((-180+$2+winkel_B)/180*3.14))*$3/180*3.14)**2+(cos((180-$2-winkel_B)/180*3.14)*winkel_B_err/180*3.14)**2)) yerrors via g
-set title sprintf('$g=\SI{%.0f +- %.0f}{\angstrom}$ und $\chi^2/\text{ddof}=%.3f$', g*1e1, g_err*1e1, FIT_STDFIT**2)
+set title sprintf('$g=\SI{%.0f +- %.0f}{\text{\r{A}}^{-1}}$ und $\chi^2/\text{ddof}=%.3f$', g*1e1, g_err*1e1, FIT_STDFIT**2)
 plot '../data/Balmer_Justage.dat' using 4:(sin($2/180*3.14)+sin((-180+winkel_B+$2)/180*3.14)):(sqrt(((cos($2/180*3.14)+cos((-180+$2+winkel_B)/180*3.14))*$3/180*3.14)**2+(cos((180-$2-winkel_B)/180*3.14)*winkel_B_err/180*3.14)**2)) w yerrorbars title 'data' pt 0,\
-  f(x) title sprintf('$f(\lambda)=\frac{\lambda}{\SI{%.0f +- %.0f}{\angstrom}}$', g*1e1, g_err*1e1)
+  f(x) title sprintf('$f(\lambda)=\frac{\lambda}{\SI{%.0f +- %.0f}{\text{\r{A}}}}$', g*1e1, g_err*1e1)
 
 
 set output "ccdrot.tex"
@@ -260,8 +262,8 @@ plot data_path using 1:2 w lines title 'Rote Aufspaltung',\
 set output "ccdtuerkies.tex"
 set xrange [-0.1:0.1]
 set yrange [0:100]
-set title 'Isotopieaufspaltung von Wasserstoff und Deuterium bei $\lambda=\SI{656}{\nano m}$'
-set key top left box opaque width +2
+set title 'Isotopieaufspaltung von Wasserstoff und Deuterium bei $\lambda=\SI{486}{\nano m}$'
+set key bottom center box opaque width +1
 set grid
 set xlabel 'relativer Winkel $\Delta\omega_G/\SI{}{\degree}$'
 set ylabel 'Intensität $I/\%$'
@@ -276,14 +278,14 @@ c2=0.025
 f(x)=(b1*exp(-(x-c1)**2/a1)+b2*exp(-(x-c2)**2/a2))+g
 data_path = '../data/ccd_tuerkis.dat'
 fit f(x) data_path via a1, a2, b1, b2, c1, c2, g
-plot data_path using 1:2 w lines title 'Rote Aufspaltung',\
+plot data_path using 1:2 w lines title 'Turkisfarbene Aufspaltung',\
   f(x)
 
 set output "ccdvioletschwach.tex"
 set xrange [-0.1:0.1]
 set yrange [0:100]
-set title 'Isotopieaufspaltung von Wasserstoff und Deuterium bei $\lambda=\SI{656}{\nano m}$'
-set key top left box opaque width +2
+set title 'Isotopieaufspaltung von Wasserstoff und Deuterium bei $\lambda=\SI{434}{\nano m}$'
+set key top left box opaque
 set grid
 set xlabel 'relativer Winkel $\Delta\omega_G/\SI{}{\degree}$'
 set ylabel 'Intensität $I/\%$'
@@ -298,14 +300,14 @@ c2=0.025
 f(x)=(b1*exp(-(x-c1)**2/a1)+b2*exp(-(x-c2)**2/a2))+g
 data_path = '../data/ccd_violet_schwach.dat'
 fit f(x) data_path via a1, a2, b1, b2, c1, c2, g
-plot data_path using 1:2 w lines title 'Rote Aufspaltung',\
+plot data_path using 1:2 w lines title 'Violetfarbene (schwache) Aufspaltung',\
   f(x)
 
 set output "ccdvioletstark.tex"
 set xrange [-0.1:0.1]
 set yrange [0:100]
-set title 'Isotopieaufspaltung von Wasserstoff und Deuterium bei $\lambda=\SI{656}{\nano m}$'
-set key top left box opaque width +2
+set title 'Isotopieaufspaltung von Wasserstoff und Deuterium bei $\lambda=\SI{410}{\nano m}$'
+set key top left box opaque
 set grid
 set xlabel 'relativer Winkel $\Delta\omega_G/\SI{}{\degree}$'
 set ylabel 'Intensität $I/\%$'
@@ -320,5 +322,5 @@ c2=0.025
 f(x)=(b1*exp(-(x-c1)**2/a1)+b2*exp(-(x-c2)**2/a2))+g
 data_path = '../data/ccd_violet_stark.dat'
 fit f(x) data_path via a1, a2, b1, b2, c1, c2, g
-plot data_path using 1:2 w lines title 'Rote Aufspaltung',\
+plot data_path using 1:2 w lines title 'Violetfarbene (starke) Aufspaltung',\
   f(x)
