@@ -362,14 +362,26 @@ Der Fit der Daten wurde mit zwei \textsc{Gauss}--Kurven der Form
 durchgeführt.
 
 \begin{table}[h]
-        \begin{tabular}{cccc}
-          Farbe & $\lambda_{\text{lit.}}$ & $\lambda$& $\Delta \lambda$\\
+        \begin{tabular}{ccc}
+          Farbe & $\lambda_{\text{lit.}}$ & $\lambda$\\
                 \hline
-          Rot & \SI{656}{\nano m} &\SI{696+-190}{\nano m}& \SI{0.215+-0.070}{\nano m}\\
-                Türkis & \SI{485}{\nano m} &\SI{499+-221}{\nano m} & \SI{0.283+-0.319}{\nano m}\\
-                Violet Schwach & ??? &\SI{441+-225}{\nano m} & \SI{271+-291}{\nano m}\\
-                Violet Stark & ??? &\SI{435+-225}{\nano m} & \SI{286+-273}{\nano m}
+          Rot & \SI{656}{\nano m} &\SI{696+-190}{\nano m}\\
+                Türkis & \SI{485}{\nano m} &\SI{499+-221}{\nano m}\\
+                Violet Schwach & $\SI{434}{\nano m}$ &\SI{441+-225}{\nano m}\\
+                Violet Stark & $\SI{410}{\nano m}$ &\SI{435+-225}{\nano m}
         \end{tabular}
+        \caption{Wellenlängen der \textsc{Balmer}--Serie berechnet mit Hilfe der CCD. Literaturwerte aus \cite{LeyboldBalmerserieBeobachtung} mit Abweichung in Klammern $[\bullet ]$.} \label{tab:isotopie_ccd}
+\end{table}
+\begin{table}[h]
+        \begin{tabular}{ccc}
+          Farbe & $\Delta \lambda_{\text{lit.}}$ & $\Delta \lambda$\\
+                \hline
+          Rot & & \SI{0.215+-0.070}{\nano m}\\
+                Türkis & & \SI{0.283+-0.319}{\nano m}\\
+                Violet schwach & & \SI{271+-291}{\nano m}\\
+                Violet stark & & \SI{286+-273}{\nano m}
+        \end{tabular}
+        \caption{Isotopieaufspaltung berechnet mit Hilfe der CCD. Literaturwerte aus \cite{LeyboldBalmerserieBeobachtung} mit Abweichung in Klammern $[\bullet ]$.} \label{tab:isotopie_ccd}
 \end{table}
 
 \section{Fazit}
@@ -409,8 +421,18 @@ durchgeführt.
 \end{figure}
 \begin{figure}[h]
         \centering
+        \includegraphics[width=.5\textwidth]{ccdrot_params.png}
+        \caption{Fitparameter der roten Isotopieaufspaltung.}
+\end{figure}
+\begin{figure}[h]
+        \centering
         \resizebox{.5\textwidth}{!}{\input{ccdtuerkis.tex}}
         \caption{Türkisfarbene Isotopieaufspaltung der \textsc{Balmer}--Lampe gemessen mit der CCD.} \label{fig:ccdtürkis}
+\end{figure}
+\begin{figure}[h]
+        \centering
+        \includegraphics[width=.5\textwidth]{ccdtuerkis_params.png}
+        \caption{Fitparameter der türkisfarbenen Isotopieaufspaltung.}
 \end{figure}
 \begin{figure}[h]
         \centering
@@ -419,8 +441,18 @@ durchgeführt.
 \end{figure}
 \begin{figure}[h]
         \centering
+        \includegraphics[width=.5\textwidth]{ccdvioletschwach_params.png}
+        \caption{Fitparameter der schwachen violetfarbenen Isotopieaufspaltung.}
+\end{figure}
+\begin{figure}[h]
+        \centering
         \resizebox{.5\textwidth}{!}{\input{ccdvioletstark.tex}}
         \caption{Starke violetfarbene Isotopieaufspaltung der \textsc{Balmer}--Lampe gemessen mit der CCD.} \label{fig:ccdvioletstark}
+\end{figure}
+\begin{figure}[h]
+        \centering
+        \includegraphics[width=.5\textwidth]{ccdvioletstark_params.png}
+        \caption{Fitparameter der starken violetfarbenen Isotopieaufspaltung.}
 \end{figure}
 
 \clearpage
