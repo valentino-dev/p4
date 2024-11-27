@@ -1,63 +1,4 @@
 % GNUPLOT: LaTeX picture with Postscript
-\documentclass{minimal}
-% Set font size
-\makeatletter
-\def\@ptsize{1}
-\InputIfFileExists{size11.clo}{}{%
-   \GenericError{(gnuplot) \space\space\space\@spaces}{%
-      Gnuplot Error: File `size11.clo' not found! Could not set font size%
-   }{See the gnuplot documentation for explanation.%
-   }{For using a font size a file `size<fontsize>.clo' has to exist.
-        Falling back ^^Jto default fontsize 10pt.}%
-  \def\@ptsize{0}
-  \input{size10.clo}%
-}%
-\makeatother
-% Load packages
-\usepackage{calc}
-\usepackage{graphicx}
-\usepackage{color}
-\usepackage{transparent}
-\makeatletter
-% Select an appropriate default driver (from TeXLive graphics.cfg)
-\begingroup
-  \chardef\x=0 %
-  % check pdfTeX
-  \@ifundefined{pdfoutput}{}{%
-    \ifcase\pdfoutput
-    \else
-      \chardef\x=1 %
-    \fi
-  }%
-  % check VTeX
-  \@ifundefined{OpMode}{}{%
-    \chardef\x=2 %
-  }%
-\expandafter\endgroup
-\ifcase\x
-  % default case
-  \PassOptionsToPackage{dvips}{geometry}
-\or
-  % pdfTeX is running in pdf mode
-  \PassOptionsToPackage{pdftex}{geometry}
-\else
-  % VTeX is running
-  \PassOptionsToPackage{vtex}{geometry}
-\fi
-\makeatother
-% Set papersize
-\usepackage[papersize={360.00bp,216.00bp},text={360.00bp,216.00bp}]{geometry}
-% No page numbers and no paragraph indentation
-\pagestyle{empty}
-\setlength{\parindent}{0bp}%
-% Load configuration file
-\InputIfFileExists{gnuplot.cfg}{%
-  \typeout{Using configuration file gnuplot.cfg}%
-}{%
- \typeout{No configuration file gnuplot.cfg found.}%
-}%
-\usepackage{siunitx}
-\begin{document}
 \begingroup
   \makeatletter
   \providecommand\color[2][]{%
@@ -168,21 +109,20 @@
     }%
     \gplgaddtomacro\gplfronttext{%
       \csname LTb\endcsname%%
-      \put(4354,3545){\makebox(0,0)[r]{\strut{}quadratische Datenpunkte}}%
-      \csname LTb\endcsname%%
-      \put(4354,3351){\makebox(0,0)[r]{\strut{}nicht quadratische Datenpunkte}}%
-      \csname LTb\endcsname%%
-      \put(4354,3158){\makebox(0,0)[r]{\strut{}$f(U_G)=\SI{32.88 +- 0.70}{}\cdot U_G + \SI{8.599 +- 0.042}{\milli V}$}}%
-      \csname LTb\endcsname%%
-      \put(170,2169){\rotatebox{-270.00}{\makebox(0,0){\strut{}$\sqrt{I-I_0}$/mV}}}%
+      \put(170,2169){\rotatebox{-270}{\makebox(0,0){\strut{}$\sqrt{I-I_0}$/mV}}}%
       \csname LTb\endcsname%%
       \put(3760,135){\makebox(0,0){\strut{}$U_G$/V}}%
+      \csname LTb\endcsname%%
+      \put(4354,3448){\makebox(0,0)[r]{\strut{}quadratische Datenpunkte}}%
+      \csname LTb\endcsname%%
+      \put(4354,3255){\makebox(0,0)[r]{\strut{}nicht quadratische Datenpunkte}}%
+      \csname LTb\endcsname%%
+      \put(4354,3061){\makebox(0,0)[r]{\strut{}$f(U_G)=\SI{32.88 +- 0.70}{}\cdot U_G + \SI{8.599 +- 0.042}{\milli V}$}}%
       \csname LTb\endcsname%%
       \put(3760,4009){\makebox(0,0){\strut{}$\lambda=\SI{546}{\nano m}$: $U_0=\SI{-0.2615 +- 0.0000}{mV}$ und $\chi^2/\text{ddof}=\SI{0.195}{}$}}%
     }%
     \gplbacktext
-    \put(0,0){\includegraphics[width={360.00bp},height={216.00bp}]{546nm-inc}}%
+    \put(0,0){\includegraphics[width={360.00bp},height={216.00bp}]{546nm}}%
     \gplfronttext
   \end{picture}%
 \endgroup
-\end{document}

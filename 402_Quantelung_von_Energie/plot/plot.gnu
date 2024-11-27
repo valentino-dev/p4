@@ -1,4 +1,4 @@
-set term cairolatex standalone header '\usepackage{siunitx}'
+set term cairolatex #standalone header '\usepackage{siunitx}'
 
 array data[6]
 data[1] = '../data/ps_305nm.dat'
@@ -32,7 +32,7 @@ threashhold=0.7
 set grid
 set ylabel '$\sqrt{I-I_0}$/mV'
 set xlabel '$U_G$/V'
-set key top left box opaque width -6
+set key top left box opaque width -6 height 1
 set border black
 set xrange [-2.5:0.1]
 #set yrange [-0.5:80]
@@ -61,7 +61,7 @@ threashhold=1.4
 set grid
 set ylabel '$\sqrt{I-I_0}$/mV'
 set xlabel '$U_G$/V'
-set key top left box opaque width -6
+set key top left box opaque width -6 height 1
 set border black
 set xrange [-2.5:0.1]
 #set yrange [-0.5:80]
@@ -88,7 +88,7 @@ threashhold=1.4
 set grid
 set ylabel '$\sqrt{I-I_0}$/mV'
 set xlabel '$U_G$/V'
-set key top left box opaque width -6
+set key top left box opaque width -6 height 1
 set border black
 set xrange [-2.5:0.1]
 #set yrange [-0.5:80]
@@ -116,7 +116,7 @@ threashhold=0.9
 set grid
 set ylabel '$\sqrt{I-I_0}$/mV'
 set xlabel '$U_G$/V'
-set key top left box opaque width -8
+set key top left box opaque width -8 height 1
 set border black
 set xrange [-2.5:0.1]
 set yrange [-0.5:10]
@@ -143,7 +143,7 @@ threashhold=0.17
 set grid
 set ylabel '$\sqrt{I-I_0}$/mV'
 set xlabel '$U_G$/V'
-set key top left box opaque width -8
+set key top left box opaque width -8 height 1
 set border black
 set xrange [-2.5:0.1]
 set yrange [-0.5:10]
@@ -203,7 +203,7 @@ set output 'Austrittsarbeit.tex'
 set grid
 set ylabel '$U_0/\SI{}{V}$'
 set xlabel '$\nu / \SI{}{10^{14} Hz}$'
-set key bottom right box opaque width -5 height 1
+set key bottom right box opaque width -11 height 1
 #set xrange [0:600]
 unset xrange
 unset yrange
