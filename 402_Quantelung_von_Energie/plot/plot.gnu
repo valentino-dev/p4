@@ -203,20 +203,24 @@ set output 'Austrittsarbeit.tex'
 set grid
 set ylabel '$U_0/\SI{}{V}$'
 set xlabel '$\nu / \SI{}{10^{14} Hz}$'
-set key bottom right box opaque width -11 height 1
+set key top left box opaque width -6 height 1
 #set xrange [0:600]
 unset xrange
 unset yrange
-f(x)=m*x+b
+f(x)=m1*x+b1
+g(x)=m2*x+b2
 set fit errorvariables
-fit f(x) '../data/ps_U0.dat' using (3e8/$1*1e-14):2:3 yerrors via m, b
-set title sprintf('$W_A=\SI{%.2f +- %.2f}{eV}$, $\text{h}=\SI{%.2f +- %.2f }{eVs} \cdot 10^{-15} $ und $\chi^2/\text{ddof}=%.3f$', b, b_err, m*1e1, m_err*1e1, FIT_STDFIT**2)
-plot '../data/ps_U0.dat' using (3e8/$1*1e-14):2:3 w yerrorbars title '$U_0$ Datenpunkte' pt 0,\
-  f(x)>0?f(x):1/0 title sprintf('$f(\nu)=\SI{%.3f +- %.3f}{V/\ 10^{14} Hz}\cdot \nu \SI{%.2f +- %.2f}{V}$', m, m_err, b, b_err)
+fit g(x) '../data/ps_U0.dat' using (3e8/$1*1e-14):2:3 yerrors via m2, b2
+fit f(x) '../data/ps_U0.dat' using (3e8/($1>350e-9?$1:1/0)*1e-14):2:3 yerrors via m1, b1
+set title sprintf('$W_{A,f}=\SI{%.2f +- %.2f}{eV}$, $\text{h}_f=\SI{%.2f +- %.2f }{eVs} \cdot 10^{-15} $ und $\chi^2_f/\text{ddof}=\SI{%.3f}{}$', b1, b1_err, m1*1e1, m1_err*1e1, FIT_STDFIT**2)
+plot '../data/ps_U0.dat' using (3e8/($1>350e-9?$1:1/0)*1e-14):2:3 w yerrorbars title '' pt 0,\
+  '../data/ps_U0.dat' using (3e8/($1<350e-9?$1:1/0)*1e-14):2:3 w yerrorbars title '' pt 0,\
+  f(x)>0?f(x):1/0 title sprintf('$f(\nu)=\SI{%.3f +- %.3f}{V/\ 10^{14} Hz}\cdot \nu \SI{%.2f +- %.2f}{V}$', m1, m1_err, b1, b1_err),\
+  g(x)>0?g(x):1/0 title sprintf('$g(\nu)=\SI{%.3f +- %.3f}{V/\ 10^{14} Hz}\cdot \nu \SI{%.2f +- %.2f}{V}$', m2, m2_err, b2, b2_err)
 
 
 
-
+exit
 
 
 set output 'Gitterkonstante.tex'

@@ -77,8 +77,8 @@ rydberg = (1/wellenlänge*(1/n**2-1/m**2)**-1)
 rydberg_err = np.linalg.norm(1/wellenlänge**2*wellenlänge_err*(1/n**2-1/m**2)**-1)
 rydberg_constant_H = rydberg.mean()
 rydberg_constant_H_err = (rydberg.std()**2+rydberg_err**2)**(1/2)
-#print(rydberg.mean(), (rydberg.std()**2+rydberg_err**2)**(1/2))
-#print(np.log10(rydberg.mean()), np.log10((rydberg.std()**2+rydberg_err**2)**(1/2)))
+print(rydberg.mean(), (rydberg.std()**2+rydberg_err**2)**(1/2))
+print(np.log10(rydberg.mean()), np.log10((rydberg.std()**2+rydberg_err**2)**(1/2)))
 me=9.1e-31
 mp=1.67e-27
 rydberg_constant_inf = rydberg_constant_H*(1+me/mp)
