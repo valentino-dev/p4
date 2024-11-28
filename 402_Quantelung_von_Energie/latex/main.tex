@@ -371,7 +371,7 @@ Daraus ergeben sich die Wellenlängendifferenzen dargestellt in Tab.\ (\ref{tab:
                 \hline
                 Rot & $\SI{0.179}{\nano m}$& $\SI{0.274+-0.069}{\nano m}[153\%]$  & $\SI{0.2+-0.05}{mm}$ \\
                 Türkis& $\SI{0.132}{\nano m}$ & $\SI{0.168+-0.084}{\nano m}[27\%]$  & $\SI{0.1+-0.05}{mm}$ \\
-                Blau & $\SI{0.118}{\nano m}$& $\SI{0.863+-0.863}{\nano m}[631\%]$  & $\SI{0.05+-0.05}{mm}$ 
+                Blau & $\SI{0.118}{\nano m}$& $\SI{0.086+-0.086}{\nano m}[27\%]$  & $\SI{0.05+-0.05}{mm}$ 
         \end{tabular}
         \caption{Die Wellenlängendifferenz der Isotopieaufspaltung. Literaturwerte aus \cite{LeyboldBalmerserieBeobachtung} mit Abweichung in Klammern $[\bullet ]$.} \label{tab:isotopie_okular}
 \end{table}
@@ -464,6 +464,30 @@ Grund hierfür sind die großen Abweichungen von der Literatur der gemessenen We
 Obwohl die Abweichung nicht unerheblich ist, liegt sie bei dem \textsc{Planck}'schen Wirkungsquantum nur bei $6\%$.
 Vergleicht man diesen Wert mit dem aus Kapitel (\ref{sec:photoeffekt}) zum Photoeffekt, so weicht dieser Wert um nur 2\% ab.
 Dies spricht für sehr konsistente Messergebnisse innerhalb der Fehlergrenzen.
+
+%tabelle richtig machen
+Dopplerverbreiterung
+\begin{table}[h]
+        \begin{tabular}{ccc}
+                $\lambda$ & $\delta\lambda_{\text{H, Gauß.}}$ & $\delta\lambda_{\text{H, Dopp.}}$\\
+                \hline
+                \SI{656}{\nano m} & \SI{0.000271+-1.22e-8}{\nano m} & \SI{1.48e-11}{\nano m}\\
+                \SI{485}{\nano m} & \SI{0.001008+-1.09e-8}{\nano m} & \SI{1.09e-11}{\nano m}\\
+                \SI{434}{\nano m} & \SI{0.001015+-1.059e-8}{\nano m} & \SI{9.89e-12}{\nano m}\\
+                \SI{410}{\nano m} & \SI{0.001259+-1.055e-8}{\nano m} & \SI{9.25e-12}{\nano m}
+        \end{tabular}
+\end{table}
+
+\begin{table}[h]
+        \begin{tabular}{ccc}
+                $\lambda$ & $\delta\lambda_{\text{D, Gauß.}}$ & $\delta\lambda_{\text{D, Dopp.}}$\\
+                \hline
+                \SI{656}{\nano m} & \SI{0.000118+-1.22e-8}{\nano m} & \SI{1.05e-11}{\nano m}\\
+                \SI{485}{\nano m} & \SI{0.002318+-1.09e-8}{\nano m} & \SI{7.73e-12}{\nano m}\\
+                \SI{434}{\nano m} & \SI{0.001614+-1.059e-8}{\nano m} & \SI{6.92e-12}{\nano m}\\
+                \SI{410}{\nano m} & \SI{0.002374+-1.055e-8}{\nano m} & \SI{6.54e-12}{\nano m}
+        \end{tabular}
+\end{table}
 
 \section{Fazit}
 Das \textsc{Plack}'sche Wirkungsquantum $h$ wurde mit Hilfe des Photoeffekt bestimmt, indem für verschiedene Frequenzen der Photonen die Gegenspannung bestimmt wurde.
