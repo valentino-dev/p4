@@ -72,6 +72,7 @@ print('deuterium ccd lambda: ', "\n", ccd_lambda, "\n", ccd_lambda_err)
 c=3e8
 m=np.array([3, 4, 5, 6, 7])
 n=2
+print("teeeeest: ", wellenlänge)
 rydberg = (1/wellenlänge*(1/n**2-1/m**2)**-1)
 rydberg_err = np.linalg.norm(1/wellenlänge**2*wellenlänge_err*(1/n**2-1/m**2)**-1)
 rydberg_constant_H = rydberg.mean()
@@ -82,7 +83,7 @@ me=9.1e-31
 mp=1.67e-27
 rydberg_constant_inf = rydberg_constant_H*(1+me/mp)
 rydberg_constant_inf_err = rydberg_constant_H_err*(1+me/mp)
-#print(rydberg_constant_inf, rydberg_constant_inf_err)
+print(rydberg_constant_inf, rydberg_constant_inf_err)
 eps_0 = 8.85e-12
 e_charge = 1.6e-19
 h = (1/rydberg_constant_inf*me*e_charge**4/8/eps_0**2/c)**(1/3)
@@ -94,11 +95,11 @@ h_err = rydberg_constant_inf**(-4/3)*(me*e_charge**4/8/eps_0**2/c)**(1/3)*rydber
 a = np.array([0.0001516, 0.0003768, 0.0003569, 0.0004403])/180*3.14
 a_err = np.array([6.6e-6, 1.4e-5, 5e-5, 4.4e-5])/180*3.14
 halbwertsbreite_grad = a/2*2*(2*np.log(2))**(1/2)
-halbwertsbreite_gard_err = a_err/2*2*(2*np.log(2))**(1/2)
-lower_lambda = g*(np.sin(abs_alpha1)+np.sin(abs_beta1-a))
-lower_lambda_err = ((g_err*(np.sin(abs_alpha1)+np.sin(abs_beta1-a)))**2+(g*np.cos(abs_alpha1)*abs_alpha1_err)**2+(g*np.cos(abs_beta1-a)*abs_beta1_err)**2+(g*np.cos(abs_beta1-a)*a_err)**2)**(1/2)
-heigher_lambda = g*(np.sin(abs_alpha1)+np.sin(abs_beta1+a))
-heigher_lambda_err = ((g_err*(np.sin(abs_alpha1)+np.sin(abs_beta1+a)))**2+(g*np.cos(abs_alpha1)*abs_alpha1_err)**2+(g*np.cos(abs_beta1+a)*abs_beta1_err)**2+(g*np.cos(abs_beta1+a)*a_err)**2)**(1/2)
+halbwertsbreite_grad_err = a_err/2*2*(2*np.log(2))**(1/2)
+lower_lambda = g*(np.sin(abs_alpha1-halbwertsbreite_grad)+np.sin(abs_beta1-halbwertsbreite_grad))
+lower_lambda_err = ((g_err*(np.sin(abs_alpha1-halbwertsbreite_grad)+np.sin(abs_beta1-halbwertsbreite_grad)))**2+(g*np.cos(abs_alpha1-halbwertsbreite_grad)*abs_alpha1_err)**2+(g*(np.cos(abs_beta1-halbwertsbreite_grad))*abs_beta1_err)**2+(g*(np.cos(abs_alpha1-halbwertsbreite_grad)+np.cos(abs_beta1-halbwertsbreite_grad))*halbwertsbreite_grad_err)**2)**(1/2)
+heigher_lambda = g*(np.sin(abs_alpha1+halbwertsbreite_grad)+np.sin(abs_beta1+halbwertsbreite_grad))
+heigher_lambda_err = ((g_err*(np.sin(abs_alpha1+halbwertsbreite_grad)+np.sin(abs_beta1+halbwertsbreite_grad)))**2+(g*np.cos(abs_alpha1+halbwertsbreite_grad)*abs_alpha1_err)**2+(g*np.cos(abs_beta1+halbwertsbreite_grad)*abs_beta1_err)**2+(g*(np.cos(abs_alpha1+halbwertsbreite_grad)+np.cos(abs_beta1+halbwertsbreite_grad))*halbwertsbreite_grad_err)**2)**(1/2)
 fwhm = heigher_lambda - lower_lambda
 fwhm_err = (heigher_lambda_err**2+lower_lambda_err**2)**(1/2)
 print("wasserstoff halbwertsbreite: ", "\n", fwhm, "\n", fwhm_err)
@@ -110,11 +111,22 @@ a = np.array([6.645e-5, 0.0008668, 0.0005679, 0.0008303])/180*3.14
 a_err = np.array([4.3e-6, 3.0e-5, 0.00012, 0.00011])/180*3.14
 halbwertsbreite_grad = a/2*2*(2*np.log(2))**(1/2)
 halbwertsbreite_gard_err = a_err/2*2*(2*np.log(2))**(1/2)
-lower_lambda = g*(np.sin(abs_alpha1)+np.sin(abs_beta1-a))
-lower_lambda_err = ((g_err*(np.sin(abs_alpha1)+np.sin(abs_beta1-a)))**2+(g*np.cos(abs_alpha1)*abs_alpha1_err)**2+(g*np.cos(abs_beta1-a)*abs_beta1_err)**2+(g*np.cos(abs_beta1-a)*a_err)**2)**(1/2)
-heigher_lambda = g*(np.sin(abs_alpha1)+np.sin(abs_beta1+a))
-heigher_lambda_err = ((g_err*(np.sin(abs_alpha1)+np.sin(abs_beta1+a)))**2+(g*np.cos(abs_alpha1)*abs_alpha1_err)**2+(g*np.cos(abs_beta1+a)*abs_beta1_err)**2+(g*np.cos(abs_beta1+a)*a_err)**2)**(1/2)
+lower_lambda = g*(np.sin(abs_alpha2-halbwertsbreite_grad)+np.sin(abs_beta2-halbwertsbreite_grad))
+lower_lambda_err = ((g_err*(np.sin(abs_alpha2-halbwertsbreite_grad)+np.sin(abs_beta2-halbwertsbreite_grad)))**2+(g*np.cos(abs_alpha2-halbwertsbreite_grad)*abs_alpha2_err)**2+(g*np.cos(abs_beta2-halbwertsbreite_grad)*abs_beta2_err)**2+(g*(np.cos(abs_alpha2-halbwertsbreite_grad) + np.cos(abs_beta2-halbwertsbreite_grad))*halbwertsbreite_grad_err)**2)**(1/2)
+heigher_lambda = g*(np.sin(abs_alpha2+halbwertsbreite_grad)+np.sin(abs_beta2+halbwertsbreite_grad))
+heigher_lambda_err = ((g_err*(np.sin(abs_alpha2+halbwertsbreite_grad)+np.sin(abs_beta2+halbwertsbreite_grad)))**2+(g*np.cos(abs_alpha2+halbwertsbreite_grad)*abs_alpha2_err)**2+(g*np.cos(abs_beta2+halbwertsbreite_grad)*abs_beta2_err)**2+(g*(np.cos(abs_alpha2+halbwertsbreite_grad)+np.cos(abs_beta2+halbwertsbreite_grad))*halbwertsbreite_grad_err)**2)**(1/2)
 fwhm = heigher_lambda - lower_lambda
 fwhm_err = (heigher_lambda_err**2+lower_lambda_err**2)**(1/2)
 print("deuterium halbwertsbreite: ", "\n", fwhm, "\n", fwhm_err)
+
+
+#Dopplerverbreiterung
+lit_wellenlängen = np.array([656, 485, 434, 410])*1e-9
+T = 1000
+k_b=1.38e-23
+dop_fwhm = lit_wellenlängen/c*(8*k_b*T*np.log(2)/mp)**(1/2)
+print("dop fwhm: ", dop_fwhm)
+
+dop_fwhm = lit_wellenlängen/c*(8*k_b*T*np.log(2)/mp/2)**(1/2)
+print("dop fwhm: ", dop_fwhm)
 
