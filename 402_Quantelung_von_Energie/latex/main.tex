@@ -53,7 +53,7 @@ Elektronen emittieren bzw.\ absorbieren beim Übergang zwischen Orbitalen Photon
 Diese Energie ist gequantelt in Vielfache des \textsc{Planck}'schen Wirkungsquantums $h$.
 Um die Größe der Quantelung zu bestimmen wird der Photoeffekt und die Messung der \textsc{Balmer}--Serie von Hg verwendet.
 
-\section{Photoelektrische Bestimmung von $h$.}
+\section{Photoelektrische Bestimmung von $h$.} \label{sec:photoeffekt}
 \subsection{Theoretischer Hintergrund}
 Das \textsc{Fermi}--Niveau beschreibt das höchste Energieniveau in einem Atom im Grundzustand, welches aufgrund des \textsc{Pauli}--Prinzips noch besetzt werden darf.
 Die Austrittsarbeit ist die Arbeit die benötigt wird, um ein Elektron aus diesem Energieniveau zu heben und vom dem Atoms zu lösen.
@@ -138,22 +138,30 @@ $\chi ^2/\text{ddof}$ ist viel größer als 1, weil sich die Fehler, durch die k
 \end{figure}
 Es ergibt sich ein Wert von
 \begin{align} 
-        h=\SI{0.0228+-0.002e-15}{eVs}
+        h=\SI{4.46+-0.64e-15}{eVs}
 .\end{align} 
-Der aktuelle CODATA Wert (letzer Zugriff: 2024-11-23) ist
+Der aktuelle CODATA\cite{CODATA} Wert ist
 \begin{align} 
-        h'\approx \SI{4.136e-15}{eVs}
+        h_\text{CODATA}\approx \SI{4.136e-15}{eVs}
 .\end{align} 
-Die Abweichung des gemessenen Werts liegt bei ca.\ $100\%$.
-FEHLERDISKUSSION
+Die Abweichung des gemessenen Werts liegt bei ca.\ $8\%$.
+Dieser Wert liegt unter $10\%$ Abweichung, was aufgrund der passenden Geradenfits und guten Messwerte erwartet war.
+Geringe Abweichung können sich auch durch das relativ hohes $\chi ^2/\text{ddof}$ ergeben haben.
 
 Die Austrittsarbeit wurde bestimmt zu
 \begin{align} 
-        W_\text{A}=\SI{-0.90+-0.45}{eV}
+        W_\text{A}=\SI{-2.15+-0.38}{eV}
 .\end{align} 
-Für diesen Wert existiert kein Literaturwert zum Vergleich.
-Der Fehler ist mit $\Delta W_\text{A}\approx \tfrac{W_\text{A}}{2}$ unerwartet groß, da die gemessenen Photoströme einheitliche Ergebnisse liefern und die Fitgeraden die Datenpunkte passend modellieren.
-Weiterführende Aussagen können aufgrund fehlenden Vergleichs nicht getätigt werden.
+Aus \cite{LeyboldPhotoeffekt} lässt sich entnehmen, dass die Anode aus Platin besteht, welche eine Austrittsarbeit von 
+\begin{align} 
+        W_\text{lit.}=\SI{-5.32}{eV}
+\end{align} 
+bestitzt.
+Der Wert ist \cite{SpektrumPhysik} entnommen.
+Die Abweichung liegt bei $60\%$.
+Dies war nicht erwartet, da die Abweichung von $h$ vom Literaturwert sehr gering ist.
+Es ist allerdings nicht klar, ob die Anode vollständig aus Platin besteht, oder ein Gemisch aus Platin und anderen Materialien ist bzw.\ noch eine Legierung besitzt.
+Wäre das der Fall, dann wäre die Abweichung verständlich.
 
 Die Intensität des Lichtstrahl in der Theorie keine Auswirkung auf die kinetische Energie der Elektronen, also auch auf die Gegenspannung, da die Energie der Photonen nur abhängig von der Wellenlänge ist.
 Die Erwartung ist also keine Abweichung der Gegenspannung.
@@ -183,7 +191,7 @@ Trifft ein einlaufender Strahl $i$ kohärenten Lichts im Winkel $\varphi _i$ auf
 Diese Interferenzmaxima kommen durch den Gangunterschied $\Delta $ zwischen dem einlaufende und auslaufenden Strahl zustande.
 Dieser berechnet sich separat für beide Strahlen zu $\Delta =\Delta _i+\Delta _f=g\left(\sin \varphi _i+\sin \varphi _f\right)=g\left(\sin \alpha +\sin \beta \right)$.
 Die Winkel $\alpha $ und $\beta $ sind identisch mit den Winkeln $\alpha $ und $\beta $ aus Abb.\ (\ref{fig:blazegitter}).
-$g$ ist die Giterkonstante.
+$g$ ist die Gitterkonstante.
 
 Ein Interferenzmaximum entsteht durch eine Überlagerung von Wellen, die um Vielfache ihrer Wellenlänge, $n \lambda $, voneinander verschoben sind.
 
@@ -209,6 +217,17 @@ Der Energieunterschied zwischen zwei Niveaus kann mit der \textsc{Rydberg}--Form
 \end{align} 
 geschrieben werden.
 Hier ist $n_<$ das niedrigere Niveau und $n_>$ das höhere Niveau, $Z$ die Protonenzahl und $R$ die \textsc{Rydberg}--Konstante für das jeweilige Atom.
+
+Für Wasserstoff lässt sich aus Leybold Didactic \cite{LeyboldBalmerserieBeobachtung} folgende Formel entnehmen (diese wird für die Auswertung verwendet):
+\begin{align} 
+        R_\text{H}=\mu R_{\infty}=\mu \dfrac{m_e e^4}{8\varepsilon _0^2h^3c}
+,\end{align} 
+mit $R_\text{H}$ der spezifischen \textsc{Rydberg}--Konstante für Wasserstoff und $\mu =\tfrac{m_em_K}{m_e+m_K}$ der reduzierten Masse.
+Der Zusammenhang mit der Energie ist
+\begin{align} 
+        E_{n_<,n_>}=hR_\infty\left(\dfrac{1}{n_<^2}-\dfrac{1}{n_>^2}\right)=h\nu 
+,\end{align} 
+mit $\nu $ der Wellenlänge des emittierten Photons aus Wasserstoff.
 
 Für ausgezeichente Übergänge wird eine Namenskonvention eingeführt.
 Alle Übergänge auf $n_<=1$ werden \textsc{Lyman} genannt; auf $n_<=2$ \textsc{Balmer}; auf $n_<=3$ \textsc{Paschen}; etc.\ .
@@ -254,7 +273,7 @@ Alle optischen Bauteile werden so justiert, dass am Objektiv oder der CCD eine s
         \caption{Der Aufbau zur Bestimmung der Gitterkonstanten, $R$, $h$ und der Linienverbreiterung sowie Isotopieaufspaltung.\cite{Anleitung402}} \label{fig:aufbau_spektrallinie}
 \end{figure}
 
-\subsection{Durchführung \& Auswertung: Gitterkonstante}
+\subsection{Durchführung \& Auswertung:\\Gitterkonstante} \label{sec:d&a:gitterkonstante}
 Der Strahlengang ist schematisch in Abb.\ (\ref{fig:strahlengang}) dargestellt.
 Für jede Spektrallinie der Hg--Lampe wurde der Gitterwinkel $\omega _G$ gemessen, unter dem die Spektrallinie genau mittig auf das Okular oder die CCD trifft.
 $\omega _B$ war für die gesamte Durchführung $\ang{130+-.5}$.
@@ -268,12 +287,12 @@ Die Gitterkonstante wird berechnet durch
 mit $\alpha =\omega _G$ und $\beta =\omega _B+\omega _G-\ang{180}$.
 Der Fehler auf $g$ verhält sich aufgrund des Fehlers von $\omega _G$ und $\omega _B$ wie
 \begin{align} 
-        \Delta g &= \,\sqrt[]{\left(\partial _{\omega _G}g\Delta \omega _G\right)^2+\left(\partial _{\omega _B}g\Delta \omega _B\right)^2}
+        \Delta g &= \,\sqrt[]{\left((\partial _{\omega _G}g)\Delta \omega _G\right)^2+\left((\partial _{\omega _B}g)\Delta \omega _B\right)^2}
 ,\end{align} 
 mit
 \begin{align} 
-        \partial _{\omega _G}g\Delta \omega _G &= \dfrac{n\lambda \Delta \omega _G\left(\cos \left(\omega _G\right)-\cos \left(\omega _B+\omega _G\right)\right)}{\left(\sin \left(\omega _G\right)-\sin \left(\omega _B+\omega _G\right)\right)^2}\\
-        \partial _{\omega _B}g\Delta \omega _B &= \dfrac{n\lambda \Delta \omega _B\cos \left(\omega _B+\omega _G\right)}{\left(\sin \left(\omega _G\right)-\sin \left(\omega _B+\omega _G\right)\right)^2}
+        (\partial _{\omega _G}g)\Delta \omega _G &= \dfrac{n\lambda \Delta \omega _G\left(\cos \left(\omega _G\right)-\cos \left(\omega _B+\omega _G\right)\right)}{\left(\sin \left(\omega _G\right)-\sin \left(\omega _B+\omega _G\right)\right)^2}\\
+        (\partial _{\omega _B}g)\Delta \omega _B &= \dfrac{n\lambda \Delta \omega _B\cos \left(\omega _B+\omega _G\right)}{\left(\sin \left(\omega _G\right)-\sin \left(\omega _B+\omega _G\right)\right)^2}
 .\end{align} 
 Trägt man $\sin \left(\omega _G\right)+\sin \left(\omega _B+\omega _B-\ang{180}\right)$ gegen die Wellenlänge $\lambda $ auf, so ergibt sich aus der Steigung der Fitgeraden die Gitterkonstante $g$.
 Dies ist in Abb.\ (\ref{fig:gitterkonstante}) dargestellt.
@@ -282,8 +301,12 @@ Der Wert von $g$ ist damit
 \begin{align} 
         g=\SI{4527+-47}{\text{\r{A}}^{-1}}
 .\end{align} 
-Da kein Literaturwert angegeben ist findet kein Vergleich statt.
-Typische Werte für Reflexionsgitter sind allerdings in dieser Größenordnung angesiedelt.
+Der Literaturwert ist angegeben in \cite{LeyboldBalmerserieBeobachtung} und liegt bei
+\begin{align} 
+        g_\text{lit.}=\SI{4170}{\text{\r{A}^{-1}}}
+.\end{align} 
+Die Abweichung liegt bei $9\%$, also noch im akzeptablen Fehlerbereich.
+Mögliche Fehler könnten durch das Ablesen des Winkels an der Winkelskala des Gitters entstanden sein, da die Einteilung nur in $\ang{1}$--Schritten angegeben ist.
 
 Das relativ zu 1 große $\chi ^2/\text{ddof}$ ist den kleinen Fehlern geschuldet.
 Die Fitgerade modelliert die Werte passend.
@@ -302,22 +325,32 @@ Die Fitgerade modelliert die Werte passend.
 \subsection{Durchführung \& Auswertung: Spektrallinien}
 Die Hg--Lampe wurde gegen die \textsc{Balmer}--Lampe getauscht, um die Spektrallinien, genauer die Isotopieaufspaltung, der \textsc{Balmer}--Serie zu vermessen; sonst bleibt der Aufbau identisch.
 Die Messung wurde mit Okular und CCD durchgeführt.
-Die \textsc{Balmer}--Lampe besteht aus einem Gemisch von 10 Teilen Wasserstoff auf 1 Teil Deuterium.
+Die \textsc{Balmer}--Lampe besteht aus einem Gemisch von 10 Teilen Wasserstoff zu 1 Teil Deuterium.
 
 Für jede Isotopieaufspaltung wurde die Distanz $d$ zwischen den Linien gemessen, um so den Wellenlängenunterschied bestimmen zu können.
 
 \subsubsection{Okular}
-Die gemessenen \textsc{Balmer}--Linien und deren Abstand zu den jeweiligen Linien des Isotops in sind Tab.\ (\ref{tab:okular}) eingetragen.
-
+Die Wellenlängen wurden analog zu Kapitel (\ref{sec:d&a:gitterkonstante}) berechnet mit 
+\begin{align} 
+        \lambda  &= g\left(\sin \left(\omega _G\right)+\sin \left(\omega _B+\omega _G-\ang{180}\right)\right)\\
+        \Delta \lambda  &= \,\sqrt[]{\left((\partial _{\omega _G}\lambda )\Delta \omega _G\right)^2+\left( (\partial _{\omega _B}\lambda) \Delta \omega _B\right)^2},
+\end{align} 
+mit
+\begin{align} 
+        (\partial _{\omega _G}\lambda)\Delta \omega _G &= g\left(\cos \omega _G+\cos \left(\omega _B+\omega _G-\ang{180}\right)\right)\Delta \omega _G\\
+        (\partial _{\omega _B}\lambda )\Delta \omega _B &= g\left(\cos \left(\omega _B+\omega _G-\ang{180}\right)\right)\Delta \omega _B
+\end{align} 
+Die gemessenen \textsc{Balmer}--Linien sind in Tab.\ (\ref{tab:okular}) eingetragen.
+Die Messung des Winkels erfolgte durch Ablesen der Stellung des Gitters an einer Winkelskala, wenn die Linie genau im Nullpunkt der Skala des Okulars ist.
 \begin{table}[h]
-        \begin{tabular}{ccccc}
-                Farbe & $\lambda_{\text{lit.}}$ & $\lambda$ & $d$\\
+        \begin{tabular}{cccc}
+                Farbe & $\lambda_{\text{lit.}}$ & $\lambda$ & $\omega _G$ \\
                 \hline
-                Rot & \SI{656}{\nano m} &\SI{741+-88}{\nano m}[13\%] & $\SI{0.2+-0.05}{mm}$\\
-                Türkis & \SI{485}{\nano m} &\SI{565+-87}{\nano m}[14\%] & $\SI{0.1+-0.05}{mm}$\\
-                Blau & \SI{433}{\nano m} &\SI{511+-86}{\nano m}[15\%] & $\SI{0.05+-0.05}{mm}$
+                Rot & \SI{656}{\nano m} &\SI{741+-88}{\nano m}[13\%] & $\ang{89.5+-0.5}$ \\
+                Türkis & \SI{485}{\nano m} &\SI{565+-87}{\nano m}[14\%] & $\ang{68.5+-0.5}$ \\
+                Blau & \SI{433}{\nano m} &\SI{511+-86}{\nano m}[15\%] & $\ang{63.5+-0.5}$
         \end{tabular}
-        \caption{Messung der \textsc{Balmer}--Linien und Linienabstand mit dem Okular. Literaturwerte aus \cite{LeyboldBalmerserieBeobachtung} mit Abweichung in Klammern $[\bullet ]$.} \label{tab:okular}
+        \caption{$\omega _B=\ang{130}$. Messung der \textsc{Balmer}--Linien und Linienabstand mit dem Okular. Literaturwerte aus \cite{LeyboldBalmerserieBeobachtung} mit Abweichung in Klammern $[\bullet ]$.} \label{tab:okular}
 \end{table}
 \noindent Die Abweichung der beobachteten Wellenlängen unterscheiden sich nur geringfügig, liegen allerdings alle über $10\%$.
 Diese Abweichung war nicht zu erwarten, da die Linien auf dem Okular äußert scharf waren.
@@ -333,12 +366,12 @@ Es ist $\Delta \beta =\tfrac{\Delta d}{f}$.
 Daraus ergeben sich die Wellenlängendifferenzen dargestellt in Tab.\ (\ref{tab:isotopie_okular})
 
 \begin{table}[h]
-        \begin{tabular}{ccc}
-                Farbe & $\Delta \lambda $ & $\Delta \lambda _\text{lit.}$ \\
+        \begin{tabular}{cccc}
+                Farbe & $\Delta \lambda _\text{lit.}$ & $\Delta \lambda $ &  $d$ \\
                 \hline
-                Rot & $\SI{0.274+-0.069}{\nano m}[153\%]$ & $\SI{0.179}{\nano m}$ \\
-                Türkis & $\SI{0.168+-0.084}{\nano m}[27\%]$ & $\SI{0.132}{\nano m}$ \\
-                Blau & $\SI{0.863+-0.863}{\nano m}[631\%]$ & $\SI{0.118}{\nano m}$ 
+                Rot & $\SI{0.179}{\nano m}$& $\SI{0.274+-0.069}{\nano m}[153\%]$  & $\SI{0.2+-0.05}{mm}$ \\
+                Türkis& $\SI{0.132}{\nano m}$ & $\SI{0.168+-0.084}{\nano m}[27\%]$  & $\SI{0.1+-0.05}{mm}$ \\
+                Blau & $\SI{0.118}{\nano m}$& $\SI{0.863+-0.863}{\nano m}[631\%]$  & $\SI{0.05+-0.05}{mm}$ 
         \end{tabular}
         \caption{Die Wellenlängendifferenz der Isotopieaufspaltung. Literaturwerte aus \cite{LeyboldBalmerserieBeobachtung} mit Abweichung in Klammern $[\bullet ]$.} \label{tab:isotopie_okular}
 \end{table}
@@ -359,22 +392,77 @@ Der Fit der Daten wurde mit zwei \textsc{Gauss}--Kurven der Form
         f\left(x\right)=b_1\text{exp}\left(-\dfrac{\left(x-c_1\right)^2}{a_1}\right)+b_2\text{exp}\left(-\dfrac{\left(x-c_2\right)^2}{a_2}\right)+g
 \end{align} 
 durchgeführt.
+Die Parameter, die sich aus dem Fit ergeben haben sind in einer Tabelle unter jedem Plot im Appendix zu finden.
+Die Wellenlängen berechnen sich analog zum Okular.
+Die Nulllage ist die Nulllinie der CCD, die auf dem PC zu beobachten war.
+Es ergaben sich die Wellenlängen aus Tab.\ (\ref{tab:isotopie_ccd}).
 
 \begin{table}[h]
         \begin{tabular}{cccc}
-          Farbe & $\lambda_{\text{lit.}}$ & $\lambda$& $\Delta \lambda$\\
+                Farbe & $\lambda_{\text{lit.}}$ & $\lambda$ & $\omega _G$ \\
                 \hline
-          Rot & \SI{656}{\nano m} &\SI{695.7+-8.6}{\nano m}& \SI{0.2150+-0.0033}{\nano m}\\
-                Türkis & \SI{485}{\nano m} &\SI{499.1+-7.7}{\nano m} & \SI{0.2830+-0.0057}{\nano m}\\
-                Violet Schwach & ??? &\SI{440.5+-7.5}{\nano m} & \SI{0.271+-0.023}{\nano m}\\
-                Violet Stark & ??? &\SI{434.5+-7.5}{\nano m} & \SI{0.286+-0.021}{\nano m}
+                Rot & \SI{656}{\nano m} &\SI{695.7+-8.6}{\nano m}[6\%] & $\ang{83.0+-0.5}$ \\
+                Türkis & \SI{485}{\nano m} &\SI{499.1+-7.7}{\nano m}[3\%] & $\ang{62.5+-0.5}$ \\
+                Violet Schwach & $\SI{434}{\nano m}$ &\SI{440.5+-7.5}{\nano m}[2\%] & $\ang{57.5+-0.5}$ \\
+        Violet Stark & $\SI{410}{\nano m}$ &\SI{434.5+-7.5}{\nano m}[6\%] & $\ang{57.0+-0.5}$ 
         \end{tabular}
+        \caption{$\omega _B=\ang{130}$. Wellenlängen der \textsc{Balmer}--Serie berechnet mit Hilfe der CCD. Literaturwerte aus \cite{LeyboldBalmerserieBeobachtung} mit Abweichung in Klammern $[\bullet ]$.} \label{tab:isotopie_ccd}
 \end{table}
+Zu erkennen ist, dass die Abweichung aller Wellenlängen unter $10\%$ liegt.
+Dieses Ergebnis ist im Vergleich zum Okular viel besser, was daran liegt, dass mit der CCD eine viel größere Auflösung für die Nulllage erreicht werden kann.
 
-$R_{H}=\SI{0.923+-0.047}{10^{-7}/m}$
-$R_{\text{inf}}=\SI{0.923+-0.047}{10^{-7}/m}$
-$h=\SI{7.01+-0.35}{10^{-34}/m}$
+Die Isotopieaufspaltung berechnet sich aus dem Abstand der Maxima der \textsc{Gauss}--Kurven, der Winkeldifferenz.
+
+\begin{table}[h]
+        \begin{tabular}{ccc}
+                Farbe & $\Delta \lambda_{\text{lit.}}$ & $\Delta \lambda$\\
+                \hline
+                Rot & $\SI{0.179}{\nano m}$ & \SI{0.215+-0.070}{\nano m}[20\%]\\
+                Türkis & $\SI{0.132}{\nano m}$ & \SI{0.283+-0.319}{\nano m}[114\%]\\
+                Violet schwach & $\SI{0.118}{\nano m}$ & \SI{0.271+-0.291}{\nano m}[130\%]\\
+                Violet stark & $\SI{0.112}{\nano m}$ & \SI{0.286+-0.273}{\nano m}[155\%]
+        \end{tabular}
+        \caption{Isotopieaufspaltung berechnet mit Hilfe der CCD. Literaturwerte aus \cite{LeyboldBalmerserieBeobachtung} mit Abweichung in Klammern $[\bullet ]$.} \label{tab:isotopie_ccd}
+\end{table}
+Die Fehler sind, für die Präzision mit der die Wellenlängen der \textsc{Balmer}--Serie gemessen worden sind, unerwartet.
+Die Fehler steigen mit kleiner werdender Wellenlänge, da für diese Wellenlängen die Intensitäten geringer und die Linien breiter wurden, wodurch die Bestimmung des Maximums erschwert worden ist.
+Eine Steigerung war also zu erwarten, allerdings nicht in dieser Größenordnung.
+Der Fehler für die rote Linie ist im Vergleich noch akzeptabel.
+
+\subsubsection{Durchführung \& Auswertung: \textsc{Rydberg}--Konstante}
+Die \textsc{Rydberg}--Konstante bestimmt sich aus der Energiedifferenz der \textsc{Balmer}--$\alpha $, --$\beta $, --$\gamma $ und --$\delta $ Übergänge.
+Die gemessene Wellenlänge ist mit der Energie über $E=h\tfrac{c}{\lambda }$ verknüpft.
+Man berechnet für jede Wellenlänge die \textsc{Rydberg}--Konstante mit
+\begin{align} 
+        R_\infty=\dfrac{\tfrac{c}{\lambda }}{\tfrac{1}{n_<^2}-\tfrac{1}{n_>^2}}=\dfrac{\tfrac{c}{\lambda }n_<^2n_>^2}{n_>^2-n_<^2}
+.\end{align} 
+Das \textsc{Plack}'sche Wirkungsquantum wird dann über die \textsc{Rydberg}--Konstante bestimmt, mit
+\begin{align} 
+        h=\,\sqrt[3]{\dfrac{m_e e^4}{8\varepsilon _0^2R_\infty c}}
+.\end{align} 
+Die spezifische \textsc{Rydberg}--Konstante für Wasserstoff liegt dann mit der reduzierten Masse $\mu =\tfrac{m_em_K}{m_e+m_K}\approx m_e$, da $m_e\ll m_K$, bei
+\begin{align} 
+        R_\infty=\dfrac{R_\text{H}}{\mu }
+.\end{align} 
+Es ergeben sich folgende Größen
+\begin{align} 
+        R_\infty&=\SI{0.923+-0.047}{10^{-7}/m}[16\%]\\
+        R_{H}&=\SI{0.923+-0.047}{10^{-7}/m}\\
+        h_R&=\SI{7.01+-0.35}{10^{-34}J/Hz}[6\%]\approx \SI{4.38e-15}{J/Hz}
+\end{align} 
+In Klammern ist die Abweichung vom CODATA\cite{CODATA} Wert
+\begin{align} 
+        R_{\infty,\text{CODATA}}&\approx \SI{1.0973e-7}{1/m}\\
+        h_\text{CODATA}&\approx \SI{6.626}{J/Hz}
+.\end{align} 
+Der Wert der \textsc{Rydberg}--Konstante ist über den $10\%$ Toleranz.
+Grund hierfür sind die großen Abweichungen von der Literatur der gemessenen Wellenlängen.
+Obwohl die Abweichung nicht unerheblich ist, liegt sie bei dem \textsc{Planck}'schen Wirkungsquantum nur bei $6\%$.
+Vergleicht man diesen Wert mit dem aus Kapitel (\ref{sec:photoeffekt}) zum Photoeffekt, so weicht dieser Wert um nur 2\% ab.
+Dies spricht für sehr konsistente Messergebnisse innerhalb der Fehlergrenzen.
+
 %Warum ist der Wert so schlecht, wenn R_H doch so gut ist????? jonas
+%ich glaub die sind gar nicht so schlecht 
 
 
 
@@ -415,8 +503,18 @@ $h=\SI{7.01+-0.35}{10^{-34}/m}$
 \end{figure}
 \begin{figure}[h]
         \centering
+        \includegraphics[width=.5\textwidth]{ccdrot_params.png}
+        \caption{Fitparameter der roten Isotopieaufspaltung.}
+\end{figure}
+\begin{figure}[h]
+        \centering
         \resizebox{.5\textwidth}{!}{\input{ccdtuerkis.tex}}
         \caption{Türkisfarbene Isotopieaufspaltung der \textsc{Balmer}--Lampe gemessen mit der CCD.} \label{fig:ccdtürkis}
+\end{figure}
+\begin{figure}[h]
+        \centering
+        \includegraphics[width=.5\textwidth]{ccdtuerkis_params.png}
+        \caption{Fitparameter der türkisfarbenen Isotopieaufspaltung.}
 \end{figure}
 \begin{figure}[h]
         \centering
@@ -425,8 +523,18 @@ $h=\SI{7.01+-0.35}{10^{-34}/m}$
 \end{figure}
 \begin{figure}[h]
         \centering
+        \includegraphics[width=.5\textwidth]{ccdvioletschwach_params.png}
+        \caption{Fitparameter der schwachen violetfarbenen Isotopieaufspaltung.}
+\end{figure}
+\begin{figure}[h]
+        \centering
         \resizebox{.5\textwidth}{!}{\input{ccdvioletstark.tex}}
         \caption{Starke violetfarbene Isotopieaufspaltung der \textsc{Balmer}--Lampe gemessen mit der CCD.} \label{fig:ccdvioletstark}
+\end{figure}
+\begin{figure}[h]
+        \centering
+        \includegraphics[width=.5\textwidth]{ccdvioletstark_params.png}
+        \caption{Fitparameter der starken violetfarbenen Isotopieaufspaltung.}
 \end{figure}
 
 \clearpage
