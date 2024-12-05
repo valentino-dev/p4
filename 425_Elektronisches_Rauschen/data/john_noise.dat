@@ -1,0 +1,9 @@
+#rf=1k ohm, f_l=1e2 Hz, f_h=1e5 Hz
+#r_in[Ohm] G_2 V_meter[V] V_meter_err[V]
+1e0 2e3 1 2e-3
+1e1 2e3 1.002 2e-3
+1e2 2e3 1.027 2e-3
+1e3 1.5e3 0.714 3e-3
+1e4 1e3 0.920 2e-3
+1e5 4e2 0.828 2e-3
+1e6 3e2 0.856 4e-3

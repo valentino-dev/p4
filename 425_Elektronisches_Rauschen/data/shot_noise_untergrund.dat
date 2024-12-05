@@ -1,0 +1,5 @@
+#andere Rauschquellen: V_meter=1.075+-0.005V, G2=6e3
+#offset-spannung: V_monitor=-0.4mV+-0.1mV
+#Feedback: ohne DMM V_meter=1.075+-0.002V
+
+
