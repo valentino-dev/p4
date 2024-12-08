@@ -1,4 +1,4 @@
-set term cairolatex #standalone header '\usepackage{siunitx}'
+set term cairolatex standalone header '\usepackage{siunitx}'
 
 array data[6]
 data[1] = '../data/ps_305nm.dat'
@@ -47,7 +47,6 @@ set title sprintf('$\lambda=\SI{305}{\nano m}$: $U_0=\SI{%.4f +- %.4f}{V}$ und $
 plot data_path using ($1<threashhold?$1*(-1):1/0):(sqrt($2-I0)):($4):(sqrt(($3)**2+I0err**2)/sqrt($2-I0)) w xyerrorbars title 'quadratische Datenpunkte' pt 0,\
   data_path using ($1>threashhold?$1*(-1):1/0):(sqrt($2-I0)):($4):(sqrt(($3)**2+I0err**2)/sqrt($2-I0)) w xyerrorbars title 'nicht quadratische Datenpunkte' pt 0,\
   f(x)>0?f(x):1/0 title sprintf('$f(x)=\SI{%.3f +- %.3f}{}\cdot U_G + \SI{%.3f +- %.3f}{\milli V}$', m, m_err, b, b_err)
-
 
 
 
@@ -212,7 +211,7 @@ g(x)=m2*x+b2
 set fit errorvariables
 fit g(x) '../data/ps_U0.dat' using (3e8/$1*1e-14):2:3 yerrors via m2, b2
 fit f(x) '../data/ps_U0.dat' using (3e8/($1>350e-9?$1:1/0)*1e-14):2:3 yerrors via m1, b1
-set title sprintf('$W_{A,f}=\SI{%.2f +- %.2f}{eV}$, $\text{h}_f=\SI{%.2f +- %.2f }{eVs} \cdot 10^{-15} $ und $\chi^2_f/\text{ddof}=\SI{%.3f}{}$', b1, b1_err, m1*1e1, m1_err*1e1, FIT_STDFIT**2)
+set title sprintf('$W_{A,f}=\SI{%.2f +- %.2f}{eV}$, $\text{h}_f=\SI{%.2f +- %.2f }{eVs} \cdot 10^{-15} $ und $\chi^2_f/\text{ddof}=\SI{%.3f}{}$', b1, b1_err, m2*1e1, m2_err*1e1, FIT_STDFIT**2)
 plot '../data/ps_U0.dat' using (3e8/($1>350e-9?$1:1/0)*1e-14):2:3 w yerrorbars title '' pt 0,\
   '../data/ps_U0.dat' using (3e8/($1<350e-9?$1:1/0)*1e-14):2:3 w yerrorbars title '' pt 0,\
   f(x)>0?f(x):1/0 title sprintf('$f(\nu)=\SI{%.3f +- %.3f}{V/\ 10^{14} Hz}\cdot \nu \SI{%.2f +- %.2f}{V}$', m1, m1_err, b1, b1_err),\
@@ -220,8 +219,8 @@ plot '../data/ps_U0.dat' using (3e8/($1>350e-9?$1:1/0)*1e-14):2:3 w yerrorbars t
 
 
 
-exit
 
+exit
 
 set output 'Gitterkonstante.tex'
 set grid
