@@ -1,8 +1,8 @@
 #f_gr_l=1e2 f_gr_h=10e3, f_err=10mV
-#f[Hz] U_rms[V] U_rms_err[V] U_0_rms[V] U_0_rms_err[V]
+#f[Hz] U0_rms[V] U0_rms_err[V] U_rms[V] U_rms_err[V]
 2 5.95 0.01 6e-3 10e-3
 8 7.35 0.01 45e-3 10e-3
-2e1 7.4 0.1 295e-3 10e-3
+2e1 7.4 0.01 295e-3 10e-3
 8e1 7.50 0.01 4.01 0.05
 2e2 7.50 0.01 7.27 0.05
 8e2 7.50 0.05 7.51 0.05
