@@ -1,4 +1,4 @@
-set term cairolatex standalone
+set term cairolatex #standalone
 set pointintervalbox 0
 
 file = '../data/john_noise.dat'
