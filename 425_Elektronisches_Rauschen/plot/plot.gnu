@@ -1,4 +1,4 @@
-set term cairolatex standalone header '\usepackage{siunitx}'
+set term cairolatex #standalone
 set pointintervalbox 0
 
 

@@ -1,0 +1,144 @@
+\RequirePackage{amsthm} %https://tex.stackexchange.com/questions/687324/unknown-theoremstyle-warning-with-springer-nature-template
+\documentclass[sn-mathphys-num,iicol]{sn-jnl}
+
+%\usepackage{sn-jnl.sty}
+\usepackage{graphicx}%
+\usepackage{multirow}%
+\usepackage{amsmath,amssymb,amsfonts}%
+\usepackage{amsthm}%
+\usepackage{physics}
+\usepackage{siunitx}
+\usepackage{mathrsfs}%
+\usepackage[title]{appendix}%
+\usepackage{xcolor}%
+\usepackage{textcomp}%
+\usepackage{manyfoot}%
+\usepackage{booktabs}%
+\usepackage{algorithm}%
+\usepackage{algorithmicx}%
+\usepackage{algpseudocode}%
+\usepackage{listings}%
+\usepackage{newtxmath}%
+\usepackage[tiny]{titlesec}%
+\usepackage[ngerman]{babel}
+
+\theoremstyle{thmstyleone}
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}[theorem]{Proposition}
+
+\theoremstyle{thmstyletwo}
+\newtheorem{remark}{Remark}
+
+\theoremstyle{thmstylethree}
+\newtheorem{definition}{Definition}
+
+\raggedbottom
+
+\newcommand{\td}{\text{d}}
+
+\titleformat{\subsection}{}{\thesubsection}{1em}{\itshape}
+\titleformat{\subsubsection}{}{\thesubsubsection}{1em}{\itshape}
+
+\begin{document}
+        
+\title[]{Praktikum 4 -- Versuch 425: Elektronisches Rauschen}
+\author*[1]{\fnm{Jonas} \sur{Wortmann}}\email{s02jwort@uni-bonn.de}
+\author*[1]{\fnm{Angelo} \sur{Brade}}\email{s72abrad@uni-bonn.de}
+\affil*[1]{Rheinische Friedrich--Wilhelms--Universität, Bonn}
+
+\maketitle
+
+\section{Einleitung}
+In jedem elektrischen Schaltkreis ist ein elektronisches Rauschen vorhanden.
+Dieses Rauschen setzt sich aus dem \textsc{Johnson}--Rauschen und dem Schrotrauschen zusammen.
+Das \textsc{Johnson}--Rauschen ist temperaturabhängig, daraus lässt sich die \textsc{Boltzmann}--Konstante bestimmen.
+Das Schrotrauschen wird durch die Quantelung der Elementarladung hervorgerufen. 
+Die Größe der Elementarladung lässt sich damit bestimmen.
+
+\section{Bandbreite}
+\subsection{Theoretischer Hintergrund}
+Die Bandbreite gibt die Breite eines Frequenzsbands an.
+Da das elektronische Rauschen von der Bandbreite abhängig ist, wird diese mit einem Bandpass vorgegeben.
+Ein Frequenzband einer bestimmten Breite kann mit einem Hoch-- und Tiefpass in Serie (auch Bandpass) erzeugt werden.
+Die im Versuch verwendete Anordnung ist in Abb.\ (\ref{fig:schaltplan_bandpass}) gezeigt.
+
+\begin{figure}[t]
+        \centering
+        \includegraphics[width=.5\textwidth]{425_schaltplan_bandpass.png}
+        \caption{Schaltplan des Bandpass.\cite{anleitung425}} \label{fig:schaltplan_bandpass}
+\end{figure}
+
+Die effektive Bandbreite wird mit der Verstärkung 
+\begin{align} 
+        G(f)=\dfrac{V^\textsc{rms}_\text{output}}{V^\textsc{rms}_\text{input}}
+\end{align}
+bestimmt
+\begin{align} 
+        \Delta f_\text{eff}=\int_{}^{}\td fG^2(f)=\int_{}^{}\td fG_\text{LP}^2(f)G_\text{HP}^2(f)
+,\end{align} 
+mit der Tiefpassverstärkung $G_\text{LP}(f)=\left(1+(f/f_\text{l})^4\right)^{-1/2}$ und der Hochpassverstärkung $g_\text{HP}\left(f\right)=\left(f/f_\text{h}\right)^2\left(1+(f/f_\text{h})^4\right)^{-1/2}$.
+$f_\text{h}$ und $f_\text{l}$ sind die eingestellten Grenzfrequenzen von Hoch-- und Tiefpass.
+
+\subsection{Durchführung \& Auswertung}
+Die Bandbreite wird für $f_\text{h}=\SI{1}{kHz}$ und $f_\text{l}=\SI{10}{kHz}$ bestimmt.
+Mit dem Frequenzgenerator werden, für eine konstante Eingangsspannung, verschiedene Frequenzen von $\SI{2}{Hz}$ bis $\SI{8}{MHz}$ eingestellt und die Ausgangsspannung gemessen.
+Daraus bestimmt sich jeweils die Verstärkung und damit die Bandbreite.
+
+\iffalse\begin{figure}[t]
+        \centering
+        \resizebox{.5\textwidth}{!}{\input{eff_band.tex}}
+        \caption{Effektive Bandbreite.}
+\end{figure}\fi 
+%TODO file not found error wtf
+
+\section{\textsc{Johnson}--Rauschen}
+\subsection{Theoretischer Hintergrund}
+Das \textsc{Johnson}--Rauschen\footnote{auch thermisches Rauschen} entsteht durch thermodynamische Fluktuationen der Elektronen im Leitungsband. 
+Dies geschieht, im Vergleich zum Schortrauschen, ohne, dass eine Spannung angelegt ist
+Elektronen bewegen sich im thermischen Gleichgewicht ungeordnet aufgrund ihrer thermischen Energie wodurch sie kurze Spannungs-- bzw.\ Strompulse erzeugen.
+Mit Hilfe von sensitiven Messgeräten kann dieses Rauschen untersucht werden.
+
+Der formale Zusammenhang der mittleren quadratischen Rauschspannung in einem Widerstand $R$ ist
+\begin{align} 
+        \overline{V^2}=4k_\text{B}TR\Delta f
+,\end{align} 
+mit der Temperatur $T$ und der Bandbreite $\Delta f$.  
+
+\subsection{Durchführung \& Auswertung: Beobachtung des \textsc{Johnson}--Rauschens}
+Das \textsc{Johnson}--Rauschen wird im Vorverstärkerschaltkreis aus Abb.\ (\ref{fig:vorverstärker}) beobachtet.
+Diese Schaltung befindet sich in der LLE--Box Abb.\ (\ref{fig:johnson_lle}), welche entsprechend verkabelt werden muss.
+Zur Beobachtung wurden folgende Werte eingestellt
+\begin{align} 
+        R_\text{in}=\SI{100}{k\ohm},R_\text{f}=\SI{1}{k\ohm}
+.\end{align} 
+Die LLE--Box wurde dann mit der HLE--Box Abb.\ (\ref{fig:johnson_hle}) verbunden.
+Die Einstellung der HLE--Box war
+\begin{align} 
+        f_\text{h}=\SI{.1}{kHz},f_\text{l}=\SI{100}{kHz},\text{Gain}=300,\text{AC}
+.\end{align} 
+
+\begin{figure}[t]
+        \centering
+        \includegraphics[width=.5\textwidth]{425_schaltplan_vorverstärker_LLE.png}
+        \caption{Vorverstärkerschaltkreis zur Beobachtung des \textsc{Johnson}--Rauschen.\cite{anleitung425}} \label{fig:vorverstärker}
+\end{figure}
+
+\begin{figure}[t]
+        \centering
+        \includegraphics[width=.5\textwidth]{425_schaltplan_johnson_LLE.png}
+        \caption{Die LLE--Box zur Messung und Beobachtung des \textsc{Johnson}--Rauschen.\cite{anleitung425}} \label{fig:johnson_lle}
+\end{figure}
+
+\begin{figure}[t]
+        \centering
+        \includegraphics[width=.5\textwidth]{425_schaltplan_visualisierung_johnson_HLE.png}
+        \caption{HLE--Box zur Messung und Beobachtung des \textsc{Johnson}--Rauschen.\cite{anleitung425}} \label{fig:johnson_hle}
+\end{figure}
+
+\section{Schortrauschen}
+\subsection{Theoretischer Hintergrund}
+
+
+\bibliography{refs}
+
+\end{document}

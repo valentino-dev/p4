@@ -1,63 +1,4 @@
 % GNUPLOT: LaTeX picture with Postscript
-\documentclass{minimal}
-% Set font size
-\makeatletter
-\def\@ptsize{1}
-\InputIfFileExists{size11.clo}{}{%
-   \GenericError{(gnuplot) \space\space\space\@spaces}{%
-      Gnuplot Error: File `size11.clo' not found! Could not set font size%
-   }{See the gnuplot documentation for explanation.%
-   }{For using a font size a file `size<fontsize>.clo' has to exist.
-        Falling back ^^Jto default fontsize 10pt.}%
-  \def\@ptsize{0}
-  \input{size10.clo}%
-}%
-\makeatother
-% Load packages
-\usepackage{calc}
-\usepackage{graphicx}
-\usepackage{color}
-\usepackage{transparent}
-\makeatletter
-% Select an appropriate default driver (from TeXLive graphics.cfg)
-\begingroup
-  \chardef\x=0 %
-  % check pdfTeX
-  \@ifundefined{pdfoutput}{}{%
-    \ifcase\pdfoutput
-    \else
-      \chardef\x=1 %
-    \fi
-  }%
-  % check VTeX
-  \@ifundefined{OpMode}{}{%
-    \chardef\x=2 %
-  }%
-\expandafter\endgroup
-\ifcase\x
-  % default case
-  \PassOptionsToPackage{dvips}{geometry}
-\or
-  % pdfTeX is running in pdf mode
-  \PassOptionsToPackage{pdftex}{geometry}
-\else
-  % VTeX is running
-  \PassOptionsToPackage{vtex}{geometry}
-\fi
-\makeatother
-% Set papersize
-\usepackage[papersize={360.00bp,216.00bp},text={360.00bp,216.00bp}]{geometry}
-% No page numbers and no paragraph indentation
-\pagestyle{empty}
-\setlength{\parindent}{0bp}%
-% Load configuration file
-\InputIfFileExists{gnuplot.cfg}{%
-  \typeout{Using configuration file gnuplot.cfg}%
-}{%
- \typeout{No configuration file gnuplot.cfg found.}%
-}%
-\usepackage{siunitx}
-\begin{document}
 \begingroup
   \makeatletter
   \providecommand\color[2][]{%
@@ -142,55 +83,48 @@
 \begin{picture}(7200.00,4320.00)%
     \gplgaddtomacro\gplbacktext{%
       \csname LTb\endcsname%%
-      \put(731,619){\makebox(0,0)[r]{\strut{}$-0.2$}}%
+      \put(538,387){\makebox(0,0)[r]{\strut{}$-0.2$}}%
       \csname LTb\endcsname%%
-      \put(731,1117){\makebox(0,0)[r]{\strut{}$0$}}%
+      \put(538,918){\makebox(0,0)[r]{\strut{}$0$}}%
       \csname LTb\endcsname%%
-      \put(731,1615){\makebox(0,0)[r]{\strut{}$0.2$}}%
+      \put(538,1449){\makebox(0,0)[r]{\strut{}$0.2$}}%
       \csname LTb\endcsname%%
-      \put(731,2113){\makebox(0,0)[r]{\strut{}$0.4$}}%
+      \put(538,1981){\makebox(0,0)[r]{\strut{}$0.4$}}%
       \csname LTb\endcsname%%
-      \put(731,2611){\makebox(0,0)[r]{\strut{}$0.6$}}%
+      \put(538,2512){\makebox(0,0)[r]{\strut{}$0.6$}}%
       \csname LTb\endcsname%%
-      \put(731,3110){\makebox(0,0)[r]{\strut{}$0.8$}}%
+      \put(538,3043){\makebox(0,0)[r]{\strut{}$0.8$}}%
       \csname LTb\endcsname%%
-      \put(731,3608){\makebox(0,0)[r]{\strut{}$1$}}%
+      \put(538,3575){\makebox(0,0)[r]{\strut{}$1$}}%
       \csname LTb\endcsname%%
-      \put(731,4106){\makebox(0,0)[r]{\strut{}$1.2$}}%
+      \put(538,4106){\makebox(0,0)[r]{\strut{}$1.2$}}%
       \csname LTb\endcsname%%
-      \put(829,425){\makebox(0,0){\strut{}$1$}}%
+      \put(636,193){\makebox(0,0){\strut{}$1$}}%
       \csname LTb\endcsname%%
-      \put(1695,425){\makebox(0,0){\strut{}$10$}}%
+      \put(1529,193){\makebox(0,0){\strut{}$10$}}%
       \csname LTb\endcsname%%
-      \put(2560,425){\makebox(0,0){\strut{}$100$}}%
+      \put(2422,193){\makebox(0,0){\strut{}$100$}}%
       \csname LTb\endcsname%%
-      \put(3425,425){\makebox(0,0){\strut{}$1000$}}%
+      \put(3314,193){\makebox(0,0){\strut{}$1000$}}%
       \csname LTb\endcsname%%
-      \put(4290,425){\makebox(0,0){\strut{}$10000$}}%
+      \put(4207,193){\makebox(0,0){\strut{}$10000$}}%
       \csname LTb\endcsname%%
-      \put(5155,425){\makebox(0,0){\strut{}$100000$}}%
+      \put(5100,193){\makebox(0,0){\strut{}$100000$}}%
       \csname LTb\endcsname%%
-      \put(6021,425){\makebox(0,0){\strut{}$1\times10^{6}$}}%
+      \put(5993,193){\makebox(0,0){\strut{}$1\times10^{6}$}}%
       \csname LTb\endcsname%%
-      \put(6886,425){\makebox(0,0){\strut{}$1\times10^{7}$}}%
+      \put(6886,193){\makebox(0,0){\strut{}$1\times10^{7}$}}%
     }%
     \gplgaddtomacro\gplfronttext{%
       \csname LTb\endcsname%%
-      \put(6123,3932){\makebox(0,0)[r]{\strut{}Hochpass Dominiert}}%
+      \put(6123,3932){\makebox(0,0)[r]{\strut{}file using 1:2:3}}%
       \csname LTb\endcsname%%
-      \put(6123,3738){\makebox(0,0)[r]{\strut{}Tiefpass Dominiert}}%
+      \put(6123,3738){\makebox(0,0)[r]{\strut{}$f(x)$}}%
       \csname LTb\endcsname%%
-      \put(6123,3545){\makebox(0,0)[r]{\strut{}Hochpass Modell $f_h=\SI{10}{\kilo Hz}$}}%
-      \csname LTb\endcsname%%
-      \put(6123,3351){\makebox(0,0)[r]{\strut{}Tiefpass Modell $f_l=\SI{100}{Hz}$}}%
-      \csname LTb\endcsname%%
-      \put(170,2362){\rotatebox{-270.00}{\makebox(0,0){\strut{}Verstärkung $\frac{U_{\text{RMS}}}{U_{0\text{, RMS}}}$}}}%
-      \csname LTb\endcsname%%
-      \put(3858,135){\makebox(0,0){\strut{}Frequenz $f/\SI{}{Hz}$}}%
+      \put(6123,3545){\makebox(0,0)[r]{\strut{}$g(x)$}}%
     }%
     \gplbacktext
-    \put(0,0){\includegraphics[width={360.00bp},height={216.00bp}]{eff_band-inc}}%
+    \put(0,0){\includegraphics[width={360.00bp},height={216.00bp}]{eff_band}}%
     \gplfronttext
   \end{picture}%
 \endgroup
-\end{document}

@@ -9,4 +9,5 @@ plot:
 	cd plot;\
 		gnuplot plot.gnu
 
-
+copy:
+	cp plot/*.tex plot/*.pdf latex/
