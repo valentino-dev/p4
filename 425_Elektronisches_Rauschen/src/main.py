@@ -21,5 +21,20 @@ red_chi_sq[0] = chi_sq/(x.shape[0] - len(p0)) # reduced chisq
 '''
 
 
+# 4.1
+b=100.49
+b_err = 0.17
+a=10103
+a_err=54
+df=a**4*3.141*(a-b)/2**(3/2)/((a**4)-(b**4))
+print(df) # 11107
+df_err = (((4/a*df+df/(a-b)-df/(a**4-b**4)*4*a**3)*a_err)**2+((-df/(a-b)+df/(a**4-b**4)*4*b**3)*b_err)**2)**(1/2)
+print(df_err) # 60
+
+
+a=100e3
+df=3.141*a/2**(3/2)
+print(df)
+
 
 
