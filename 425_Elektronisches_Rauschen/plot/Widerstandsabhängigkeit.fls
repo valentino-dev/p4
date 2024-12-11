@@ -2,5 +2,5 @@ PWD /home/angelo/Documents/p4/425_Elektronisches_Rauschen/plot
 INPUT /usr/local/texlive/2024/texmf.cnf
 INPUT /usr/local/texlive/2024/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT eff_band.tex
-OUTPUT eff_band.log
+INPUT Widerstandsabhängigkeit.tex
+OUTPUT Widerstandsabhängigkeit.log

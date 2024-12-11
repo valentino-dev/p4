@@ -1,4 +1,4 @@
-.PHONY: run plot copy
+.PHONY: run plot copy pa
 
 
 run:
