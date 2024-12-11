@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1733925232.98084 "main.aux" "main.bbl" "main" 1733925233.91533 0
-  "./refs.bib" 1733776096.82984 172 4b564bb0fd472f4f5ee2940656d42a88 ""
+["bibtex main"] 1733943135.37929 "main.aux" "main.bbl" "main" 1733943136.40619 0
+  "./refs.bib" 1733930991.65142 342 11c12594c8a383fc28c48ae4b0a71b20 ""
   "./sn-mathphys-num.bst" 1733774891.98899 64141 2560fd4f8e8321a304f732d035eb1b51 ""
-  "main.aux" 1733925233.73275 7028 926b93f4b5ea1191a36a31812e79e20e "pdflatex"
+  "main.aux" 1733943136.21532 10576 56ebcb158080b3d5058867849174cb55 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1733925233.02898 "main.tex" "main.pdf" "main" 1733925233.91546 0
+["pdflatex"] 1733943135.42974 "main.tex" "main.pdf" "main" 1733943136.40632 0
   "../data/4_0F01.PNG" 1733774700.44363 17673 ff012db75f8d8c07b6f56fdf4c1e6b92 ""
   "../data/4_0F02.PNG" 1733774700.44363 8786 5ce5d8926945edb4aa31b8ed03925841 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1727349926 2900 1537cc8184ad1792082cd229ecc269f4 ""
@@ -32,6 +32,7 @@
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmr8.tfm" 1727349926 1292 21c1c5bfeaebccffdb478fd231a0997d ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmr9.tfm" 1727349926 1292 6b21b9c2c7bebb38aa2273f7ca0fb3af ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmti10.tfm" 1727349926 1480 aa8e34af0eb6a2941b776984cf1dfdc4 ""
+  "/usr/share/texmf-dist/fonts/tfm/public/cm/cmti7.tfm" 1727349926 1492 86331993fe614793f5e7e755835c31c5 ""
   "/usr/share/texmf-dist/fonts/tfm/public/newtx/NewTXMI.tfm" 1727349926 1408 ef71a9098da4d5a1a85b5920860b6731 ""
   "/usr/share/texmf-dist/fonts/tfm/public/newtx/NewTXMI5.tfm" 1727349926 1608 3b4f5db1bef3c1dab5d5687ad287108b ""
   "/usr/share/texmf-dist/fonts/tfm/public/newtx/NewTXMI7.tfm" 1727349926 1556 4df22ac3e5cc03ff0898d83d8817c6cf ""
@@ -78,6 +79,7 @@
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1727349926 32726 0a1aea6fcd6468ee2cf64d891f5c43c8 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb" 1727349926 33993 9b89b85fd2d9df0482bd47194d1d3bf3 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb" 1727349926 37944 359e864bd06cde3b1cf57bb20757fb06 ""
+  "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb" 1727349926 36607 d654cb3f2bc54f57509240071db3bffa ""
   "/usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb" 1727349926 138258 6525c253f16cededa14c7fd0da7f67b2 ""
   "/usr/share/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb" 1727349926 32409 1452fa0ce4fabfb48acd5d077e296f6d ""
   "/usr/share/texmf-dist/fonts/type1/public/newtx/NewTXMI5.pfb" 1727349926 35776 3cf3205badc1a3a38b65b34f4cef78d9 ""
@@ -208,7 +210,10 @@
   "425_schaltplan_bandpass.png" 1733776030.41812 37035 e2f4689bd1823e549017495fb3faafd9 ""
   "425_schaltplan_johnson_LLE.png" 1733778341.49842 149308 a6b1efb930be6de5c1cd4776cc4cbbbd ""
   "425_schaltplan_messung_johnson.png" 1733778424.87201 110234 884f271bc1aeb5fe1a89ffc1257dab33 ""
+  "425_schaltplan_messung_schrot.png" 1733778527.14436 120359 750c394c852693a25ef685294ee76a6d ""
+  "425_schaltplan_messung_schrot_LLE.png" 1733778498.40772 95095 6c81abd0a7f2ee1599f6075d59f00a20 ""
   "425_schaltplan_visualisierung_johnson_HLE.png" 1733778364.31066 76679 0581eb105d857294ca3a529391264fd0 ""
+  "425_schaltplan_visualisierung_schort_LLE.png" 1733778446.43825 84368 f043e9ec868726b86fc627b6e11389d3 ""
   "425_schaltplan_vorverstärker_LLE.png" 1733778312.57344 25305 86c4bd39f48bbbd8f8911fabea1a1525 ""
   "Bandbreitenabhängigkeit.pdf" 1733925226.35604 3803 5b05031117eefb2cb206a414482518cc ""
   "Bandbreitenabhängigkeit.tex" 1733925226.35604 4562 3a65a146d69cd54f043995476193db0e ""
@@ -220,10 +225,10 @@
   "eff_band.tex" 1733925226.35604 5481 3c8701ba10c655894f65a62c42c03b9f ""
   "idc.pdf" 1733925226.35604 3162 526eb4a0c5f8148adf7d83c119b60fbd ""
   "idc.tex" 1733925226.35604 5734 c52dc98e9eb48dab92814660ec20bc39 ""
-  "main.aux" 1733925233.73275 7028 926b93f4b5ea1191a36a31812e79e20e "pdflatex"
-  "main.bbl" 1733925233.02275 2393 3501d378cadf5bf635b2f4f88b4a60bd "bibtex main"
-  "main.out" 1733925233.73275 1907 5e901a7c3dde2c9f0027ce71bf3774e3 "pdflatex"
-  "main.tex" 1733925140.41221 11155 3f55feb27aa0f20458f52721c69d133c ""
+  "main.aux" 1733943136.21532 10576 56ebcb158080b3d5058867849174cb55 "pdflatex"
+  "main.bbl" 1733943135.42201 2591 6ea9c8c180f4690bf879947fc3db1e86 "bibtex main"
+  "main.out" 1733943136.21865 3871 b77c6afec592f2d43c6625de6b11b3cd "pdflatex"
+  "main.tex" 1733943133.22208 20088 2847188166865388217a6543f0c64d68 ""
   "shot_freq.pdf" 1733925226.35604 4140 0935ff20f3fe88e1a6892a73e4eb72ad ""
   "shot_freq.tex" 1733925226.35604 4748 2b9768a37b96b296e2393b6aa543f5c8 ""
   "sn-jnl.cls" 1733774891.98899 55331 2adf3041e7f64a0f542a04760be0043f ""

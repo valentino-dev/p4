@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.11.19)  11 DEC 2024 14:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.11.19)  11 DEC 2024 19:52
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -686,20 +686,7 @@ Package babel Info: Importing font and identification data for ngerman
 \c@theorem=\count348
 \c@remark=\count349
 \c@definition=\count350
- (./main.aux
-
-LaTeX Warning: Label `tab:parameter' multiply defined.
-
-
-LaTeX Warning: Label `tab:parameter' multiply defined.
-
-
-LaTeX Warning: Label `tab:parameter' multiply defined.
-
-
-LaTeX Warning: Label `tab:parameter' multiply defined.
-
-)
+ (./main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 43.
@@ -868,11 +855,19 @@ LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <5.52065> not available
 (Font)              size <6> substituted on input line 51.
 
 
-Underfull \hbox (badness 5490) in paragraph at lines 61--65
-\OT1/cmr/m/n/10 Die Band-brei-te gibt die Brei-te ei-nes Fre-
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <5.5> not available
+(Font)              size <5> substituted on input line 61.
+
+
+LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <5.5> not available
+(Font)              size <5> substituted on input line 61.
+
+
+Underfull \hbox (badness 3769) in paragraph at lines 61--65
+[][][][][]\OT1/cmr/m/n/10 Die Band-brei-te gibt die Brei-te ei-nes Fre-
  []
 
-<425_schaltplan_bandpass.png, id=45, 600.2425pt x 474.77374pt>
+<425_schaltplan_bandpass.png, id=82, 600.2425pt x 474.77374pt>
 File: 425_schaltplan_bandpass.png Graphic file (type png)
 <use 425_schaltplan_bandpass.png>
 Package pdftex.def Info: 425_schaltplan_bandpass.png  used on input line 68.
@@ -888,36 +883,29 @@ Underfull \hbox (badness 10000) in paragraph at lines 72--73
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 79--82
+Underfull \hbox (badness 10000) in paragraph at lines 79--83
 \OT1/cmr/m/n/10 mit der Tief-pass-verst[]arkung $\OML/ntxmi/m/it/10.03749 G[]\LMS/ntxsy/m/n/10.03749 �\OML/ntxmi/m/it/10.03749 f\LMS/ntxsy/m/n/10.03749 � \U/ntxmia/m/it/10.03749 =
  []
 
 
-Underfull \hbox (badness 1454) in paragraph at lines 79--82
+Underfull \hbox (badness 1454) in paragraph at lines 79--83
 [][]$ \OT1/cmr/m/n/10 und der Hoch-pass-verst[]arkung
  []
 
 
-Underfull \hbox (badness 1226) in paragraph at lines 84--87
+Underfull \hbox (badness 3482) in paragraph at lines 79--83
+\OT1/cmr/m/n/10 und Tief-pass. Das ana-ly-ti-sche Er-geb-nis des
+ []
+
+
+Underfull \hbox (badness 1226) in paragraph at lines 88--91
 \OT1/cmr/m/n/10 10 []$ be-stimmt. Mit dem Fre-quenz-ge-ne-ra-tor
  []
 
 
-Underfull \hbox (badness 1502) in paragraph at lines 84--87
+Underfull \hbox (badness 1502) in paragraph at lines 88--91
 \OT1/cmr/m/n/10 ge-stellt und die Aus-gangs-span-nung ge-mes-sen.
  []
-
-
-LaTeX Font Warning: Font shape `OT1/cmr/bx/sc' undefined
-(Font)              using `OT1/cmr/bx/n' instead on input line 95.
-
-
-LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 97.
-
-
-LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 97.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -934,65 +922,85 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.101 
-       <./425_schaltplan_bandpass.png (PNG copy)>]
+l.91 
+      <./425_schaltplan_bandpass.png (PNG copy)>] (./eff_band.tex
+\gptboxheight=\skip76
+\gptboxwidth=\skip77
+\gptboxtext=\box89
+
+
+pdfTeX warning: pdflatex (file ./eff_band.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<eff_band.pdf, id=111, 361.35pt x 216.81pt>
+File: eff_band.pdf Graphic file (type pdf)
+<use eff_band.pdf>
+Package pdftex.def Info: eff_band.pdf  used on input line 133.
+(pdftex.def)             Requested size: 361.35463pt x 216.81938pt.
+)
+Overfull \hbox (11.38869pt too wide) in paragraph at lines 100--101
+ [][] 
+ []
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/bx/sc' undefined
+(Font)              using `OT1/cmr/bx/n' instead on input line 104.
+
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/scit' undefined
-(Font)              using `OT1/cmr/m/sc' instead on input line 108.
+(Font)              using `OT1/cmr/m/sc' instead on input line 117.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 109--112
+Underfull \hbox (badness 10000) in paragraph at lines 118--121
 \OT1/cmr/m/n/10 Das \OT1/cmr/m/sc/10 John-son\OT1/cmr/m/n/10 --Rauschen wird im Vor-
  []
 
 
-Underfull \hbox (badness 1092) in paragraph at lines 109--112
-\OT1/cmr/m/n/10 verst[]arkerschaltkreis aus Abb. ([][]3[][]) be-ob-ach-tet.
+Underfull \hbox (badness 1092) in paragraph at lines 118--121
+\OT1/cmr/m/n/10 verst[]arkerschaltkreis aus Abb. ([][]4[][]) be-ob-ach-tet.
  []
 
-<../data/4_0F01.png, id=75, 642.4pt x 521.95pt>
+<../data/4_0F01.png, id=117, 642.4pt x 521.95pt>
 File: ../data/4_0F01.png Graphic file (type png)
 <use ../data/4_0F01.png>
-Package pdftex.def Info: ../data/4_0F01.png  used on input line 126.
+Package pdftex.def Info: ../data/4_0F01.png  used on input line 135.
 (pdftex.def)             Requested size: 227.62204pt x 184.93913pt.
 
-Overfull \hbox (11.3811pt too wide) in paragraph at lines 126--127
+Overfull \hbox (11.3811pt too wide) in paragraph at lines 135--136
  [][] 
  []
 
-<425_schaltplan_vorverstärker_LLE.png, id=76, 489.83pt x 374.39874pt>
+<425_schaltplan_vorverstärker_LLE.png, id=118, 489.83pt x 374.39874pt>
 File: 425_schaltplan_vorverstärker_LLE.png Graphic file (type png)
 <use 425_schaltplan_vorverstärker_LLE.png>
-Package pdftex.def Info: 425_schaltplan_vorverstärker_LLE.png  used on input line 132.
+Package pdftex.def Info: 425_schaltplan_vorverstärker_LLE.png  used on input line 141.
 (pdftex.def)             Requested size: 227.62204pt x 173.97935pt.
 
-Overfull \hbox (11.3811pt too wide) in paragraph at lines 132--133
+Overfull \hbox (11.3811pt too wide) in paragraph at lines 141--142
  [][] 
  []
 
-<425_schaltplan_johnson_LLE.png, id=78, 1232.605pt x 916.42375pt>
+<425_schaltplan_johnson_LLE.png, id=120, 1232.605pt x 916.42375pt>
 File: 425_schaltplan_johnson_LLE.png Graphic file (type png)
 <use 425_schaltplan_johnson_LLE.png>
-Package pdftex.def Info: 425_schaltplan_johnson_LLE.png  used on input line 138.
+Package pdftex.def Info: 425_schaltplan_johnson_LLE.png  used on input line 147.
 (pdftex.def)             Requested size: 227.62204pt x 169.2281pt.
 
-Overfull \hbox (11.3811pt too wide) in paragraph at lines 138--139
+Overfull \hbox (11.3811pt too wide) in paragraph at lines 147--148
  [][] 
  []
 
-<425_schaltplan_visualisierung_johnson_HLE.png, id=80, 1105.12875pt x 692.5875pt>
+<425_schaltplan_visualisierung_johnson_HLE.png, id=122, 1105.12875pt x 692.5875pt>
 File: 425_schaltplan_visualisierung_johnson_HLE.png Graphic file (type png)
 <use 425_schaltplan_visualisierung_johnson_HLE.png>
-Package pdftex.def Info: 425_schaltplan_visualisierung_johnson_HLE.png  used on input line 144.
+Package pdftex.def Info: 425_schaltplan_visualisierung_johnson_HLE.png  used on input line 153.
 (pdftex.def)             Requested size: 227.62204pt x 142.64714pt.
 
-Overfull \hbox (11.3811pt too wide) in paragraph at lines 144--145
+Overfull \hbox (11.3811pt too wide) in paragraph at lines 153--154
  [][] 
  []
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/scit' undefined
-(Font)              using `OT1/cmr/m/sc' instead on input line 148.
+(Font)              using `OT1/cmr/m/sc' instead on input line 157.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1006,177 +1014,77 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.163 
-      
+l.162 .\end{align}
+                  
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.163 
-       <../data/4_0F01.PNG> <./425_schaltplan_vorverstärker_LLE.png (PNG copy)>]
-<425_schaltplan_messung_johnson.png, id=101, 1421.31pt x 751.80875pt>
+l.162 .\end{align}
+                   <./eff_band.pdf> <../data/4_0F01.PNG>]
+<425_schaltplan_messung_johnson.png, id=146, 1421.31pt x 751.80875pt>
 File: 425_schaltplan_messung_johnson.png Graphic file (type png)
 <use 425_schaltplan_messung_johnson.png>
-Package pdftex.def Info: 425_schaltplan_messung_johnson.png  used on input line 166.
+Package pdftex.def Info: 425_schaltplan_messung_johnson.png  used on input line 186.
 (pdftex.def)             Requested size: 227.62204pt x 120.3951pt.
 
-Overfull \hbox (11.3811pt too wide) in paragraph at lines 166--167
+Overfull \hbox (11.3811pt too wide) in paragraph at lines 186--187
  [][] 
  []
 
 
-Underfull \hbox (badness 1184) in paragraph at lines 167--167
-[]\OT1/cmr/bx/n/8 Abbildung 6 []\OT1/cmr/m/n/8 HLE--Box zur Mes-sung des \OT1/cmr/m/sc/8 John-son\OT1/cmr/m/n/8 --
+Underfull \hbox (badness 1184) in paragraph at lines 187--187
+[]\OT1/cmr/bx/n/8 Abbildung 7 []\OT1/cmr/m/n/8 HLE--Box zur Mes-sung des \OT1/cmr/m/sc/8 John-son\OT1/cmr/m/n/8 --
  []
 
-<../data/4_0F02.png, id=103, 642.4pt x 521.95pt>
+<../data/4_0F02.png, id=148, 642.4pt x 521.95pt>
 File: ../data/4_0F02.png Graphic file (type png)
 <use ../data/4_0F02.png>
-Package pdftex.def Info: ../data/4_0F02.png  used on input line 172.
+Package pdftex.def Info: ../data/4_0F02.png  used on input line 192.
 (pdftex.def)             Requested size: 227.62204pt x 184.93913pt.
 
-Overfull \hbox (11.3811pt too wide) in paragraph at lines 172--173
+Overfull \hbox (11.3811pt too wide) in paragraph at lines 192--193
  [][] 
  []
 
 (./Widerstandsabhängigkeit.tex
-\gptboxheight=\skip76
-\gptboxwidth=\skip77
-\gptboxtext=\box89
-
 
 pdfTeX warning: pdflatex (file ./Widerstandsabhängigkeit.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Widerstandsabhängigkeit.pdf, id=104, 361.35pt x 216.81pt>
+<Widerstandsabhängigkeit.pdf, id=151, 361.35pt x 216.81pt>
 File: Widerstandsabhängigkeit.pdf Graphic file (type pdf)
 <use Widerstandsabhängigkeit.pdf>
 Package pdftex.def Info: Widerstandsabhängigkeit.pdf  used on input line 119.
 (pdftex.def)             Requested size: 361.35463pt x 216.81938pt.
 )
-Overfull \hbox (11.38869pt too wide) in paragraph at lines 179--180
+Overfull \hbox (11.38869pt too wide) in paragraph at lines 201--202
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--180
-[]\OT1/cmr/bx/n/8 Abbildung 8 []\OT1/cmr/m/n/8 Widerstandsabh[]angigkeit mit
+Underfull \hbox (badness 10000) in paragraph at lines 202--202
+[]\OT1/cmr/bx/n/8 Abbildung 9 []\OT1/cmr/m/n/8 Widerstandsabh[]angigkeit mit
  []
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-LaTeX Font Info:    Calculating math sizes for size <8.03> on input line 184.
+LaTeX Font Info:    Calculating math sizes for size <8.03> on input line 206.
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <4.41652> not available
-(Font)              size <5> substituted on input line 184.
+(Font)              size <5> substituted on input line 206.
 
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <4.41652> not available
-(Font)              size <5> substituted on input line 184.
+(Font)              size <5> substituted on input line 206.
 
 (./Widerstandsresiduen.tex
 
 pdfTeX warning: pdflatex (file ./Widerstandsresiduen.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Widerstandsresiduen.pdf, id=105, 361.35pt x 216.81pt>
+<Widerstandsresiduen.pdf, id=152, 361.35pt x 216.81pt>
 File: Widerstandsresiduen.pdf Graphic file (type pdf)
 <use Widerstandsresiduen.pdf>
 Package pdftex.def Info: Widerstandsresiduen.pdf  used on input line 125.
 (pdftex.def)             Requested size: 361.35463pt x 216.81938pt.
 )
-Overfull \hbox (11.38869pt too wide) in paragraph at lines 196--197
+Overfull \hbox (11.38869pt too wide) in paragraph at lines 217--218
  [][] 
  []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-(./eff_band.tex
-
-pdfTeX warning: pdflatex (file ./eff_band.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<eff_band.pdf, id=106, 361.35pt x 216.81pt>
-File: eff_band.pdf Graphic file (type pdf)
-<use eff_band.pdf>
-Package pdftex.def Info: eff_band.pdf  used on input line 133.
-(pdftex.def)             Requested size: 361.35463pt x 216.81938pt.
-)
-Overfull \hbox (11.38869pt too wide) in paragraph at lines 203--204
- [][] 
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-(./Bandbreitenabhängigkeit.tex
-
-pdfTeX warning: pdflatex (file ./Bandbreitenabhängigkeit.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Bandbreitenabhängigkeit.pdf, id=107, 361.35pt x 216.81pt>
-File: Bandbreitenabhängigkeit.pdf Graphic file (type pdf)
-<use Bandbreitenabhängigkeit.pdf>
-Package pdftex.def Info: Bandbreitenabhängigkeit.pdf  used on input line 111.
-(pdftex.def)             Requested size: 361.35463pt x 216.81938pt.
-)
-Overfull \hbox (11.38869pt too wide) in paragraph at lines 220--221
- [][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 221--221
-[]\OT1/cmr/bx/n/8 Abbildung 11 []\OT1/cmr/m/n/8 Bandbreitenabh[]angkeit mit
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-(./idc.tex
-
-pdfTeX warning: pdflatex (file ./idc.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<idc.pdf, id=108, 361.35pt x 216.81pt>
-File: idc.pdf Graphic file (type pdf)
-<use idc.pdf>
-Package pdftex.def Info: idc.pdf  used on input line 141.
-(pdftex.def)             Requested size: 361.35463pt x 216.81938pt.
-)
-Overfull \hbox (11.38869pt too wide) in paragraph at lines 237--238
- [][] 
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-(./shot_freq.tex
-
-pdfTeX warning: pdflatex (file ./shot_freq.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<shot_freq.pdf, id=109, 361.35pt x 216.81pt>
-File: shot_freq.pdf Graphic file (type pdf)
-<use shot_freq.pdf>
-Package pdftex.def Info: shot_freq.pdf  used on input line 117.
-(pdftex.def)             Requested size: 361.35463pt x 216.81938pt.
-)
-Overfull \hbox (11.38869pt too wide) in paragraph at lines 254--255
- [][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 255--255
-[]\OT1/cmr/bx/n/8 Abbildung 13 []\OT1/cmr/m/n/8 Frequenzabh[]angigkeit mit $[] \U/ntxmia/m/it/8 =
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-(./main.bbl
-
-LaTeX Warning: Text page 3 contains only floats.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1190,38 +1098,41 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.56 \end{thebibliography}
-                          
+l.227 ,\end{align}
+                  
 pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.56 \end{thebibliography}
-                          
-pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.56 \end{thebibliography}
-                          
+l.227 ,\end{align}
+                  
 pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.56 \end{thebibliography}
-                          
-pdfTeX warning (ext4): destination with the same identifier (name{figure.7}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.56 \end{thebibliography}
-                          
-pdfTeX warning (ext4): destination with the same identifier (name{table.2}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.56 \end{thebibliography}
-                          
-pdfTeX warning (ext4): destination with the same identifier (name{table.3}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.56 \end{thebibliography}
-                           <./425_schaltplan_johnson_LLE.png (PNG copy)> <./425_schaltplan_visualisierung_johnson_HLE.png (PNG copy)> <./425_schaltplan_messung_johnson.png (PNG copy)> <../data/4_0F02.PNG>])
+l.227 ,\end{align}
+                   <./425_schaltplan_vorverstärker_LLE.png (PNG copy)> <./425_schaltplan_johnson_LLE.png (PNG copy)> <./425_schaltplan_visualisierung_johnson_HLE.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 237--240
+\OT1/cmr/m/n/10 Der Li-te-ra-tur-wert ist ent-nom-men von
+ []
+
+(./Bandbreitenabhängigkeit.tex
+
+pdfTeX warning: pdflatex (file ./Bandbreitenabhängigkeit.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Bandbreitenabhängigkeit.pdf, id=166, 361.35pt x 216.81pt>
+File: Bandbreitenabhängigkeit.pdf Graphic file (type pdf)
+<use Bandbreitenabhängigkeit.pdf>
+Package pdftex.def Info: Bandbreitenabhängigkeit.pdf  used on input line 111.
+(pdftex.def)             Requested size: 361.35463pt x 216.81938pt.
+)
+Overfull \hbox (11.38869pt too wide) in paragraph at lines 247--248
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 248--248
+[]\OT1/cmr/bx/n/8 Abbildung 11 []\OT1/cmr/m/n/8 Bandbreitenabh[]angkeit mit
+ []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -1229,46 +1140,85 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []| []
  []
 
-[4{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}
+[4
+pdfTeX warning (ext4): destination with the same identifier (name{figure.7}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.268 ,\end{align}
+                  
 pdfTeX warning (ext4): destination with the same identifier (name{figure.8}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.274 \end{document}
-                    
+l.268 ,\end{align}
+                  
+pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.268 ,\end{align}
+                  {/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}
 pdfTeX warning (ext4): destination with the same identifier (name{figure.9}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.274 \end{document}
-                    
-pdfTeX warning (ext4): destination with the same identifier (name{table.4}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.274 \end{document}
-                    
-pdfTeX warning (ext4): destination with the same identifier (name{table.5}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.274 \end{document}
-                    
+l.268 ,\end{align}
+                  
 pdfTeX warning (ext4): destination with the same identifier (name{figure.10}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.274 \end{document}
-                    
-pdfTeX warning (ext4): destination with the same identifier (name{figure.11}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.274 \end{document}
-                     <./Widerstandsabhängigkeit.pdf> <./Widerstandsresiduen.pdf
+l.268 ,\end{align}
+                   <./425_schaltplan_messung_johnson.png (PNG copy)> <../data/4_0F02.PNG> <./Widerstandsabhängigkeit.pdf> <./Widerstandsresiduen.pdf
 
 pdfTeX warning: pdflatex (file ./Widerstandsresiduen.pdf): PDF inclusion: multiple pdfs with page group included in a single page
-> <./eff_band.pdf
-
-pdfTeX warning: pdflatex (file ./eff_band.pdf): PDF inclusion: multiple pdfs with page group included in a single page
-> <./Bandbreitenabhängigkeit.pdf
-
-pdfTeX warning: pdflatex (file ./Bandbreitenabhängigkeit.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
+Underfull \hbox (badness 10000) in paragraph at lines 278--281
+\OT1/cmr/m/n/10 Der Li-te-ra-tur-wert ist ent-nom-men von
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 283--284
+\OT1/cmr/m/n/10 Vergleicht man die bei-den \OT1/cmr/m/sc/10 Boltz-mann\OT1/cmr/m/n/10 --
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 283--284
+\OT1/cmr/m/n/10 Konstanten so liegt die Ab-wei-chung
+ []
+
+<425_schaltplan_visualisierung_schort_LLE.png, id=191, 1448.41125pt x 762.85pt>
+File: 425_schaltplan_visualisierung_schort_LLE.png Graphic file (type png)
+<use 425_schaltplan_visualisierung_schort_LLE.png>
+Package pdftex.def Info: 425_schaltplan_visualisierung_schort_LLE.png  used on input line 315.
+(pdftex.def)             Requested size: 227.62204pt x 119.88179pt.
+
+Overfull \hbox (11.3811pt too wide) in paragraph at lines 315--316
+ [][] 
+ []
+
+<425_schaltplan_messung_schrot_LLE.png, id=193, 925.4575pt x 933.4875pt>
+File: 425_schaltplan_messung_schrot_LLE.png Graphic file (type png)
+<use 425_schaltplan_messung_schrot_LLE.png>
+Package pdftex.def Info: 425_schaltplan_messung_schrot_LLE.png  used on input line 320.
+(pdftex.def)             Requested size: 227.62204pt x 229.59668pt.
+
+Overfull \hbox (11.3811pt too wide) in paragraph at lines 320--321
+ [][] 
+ []
+
+<425_schaltplan_messung_schrot.png, id=195, 1499.6025pt x 809.0225pt>
+File: 425_schaltplan_messung_schrot.png Graphic file (type png)
+<use 425_schaltplan_messung_schrot.png>
+Package pdftex.def Info: 425_schaltplan_messung_schrot.png  used on input line 325.
+(pdftex.def)             Requested size: 227.62204pt x 122.79247pt.
+
+Overfull \hbox (11.3811pt too wide) in paragraph at lines 325--326
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 326--326
+[]\OT1/cmr/bx/n/8 Abbildung 14 []\OT1/cmr/m/n/8 Schaltplan zur Mes-sung des
+ []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -1277,18 +1227,145 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [5
+pdfTeX warning (ext4): destination with the same identifier (name{figure.11}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.333 \begin{align}
+                   
+pdfTeX warning (ext4): destination with the same identifier (name{table.2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.333 \begin{align}
+                   
 pdfTeX warning (ext4): destination with the same identifier (name{figure.12}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.274 \end{document}
-                    
+l.333 \begin{align}
+                    <./Bandbreitenabhängigkeit.pdf> <./425_schaltplan_visualisierung_schort_LLE.png (PNG copy)>]
+Underfull \hbox (badness 1910) in paragraph at lines 343--344
+\OT1/cmr/m/n/10 Das ge-mes-se-ne Rau-schen ent-steht nicht aus-
+ []
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/it' in size <5.52065> not available
+(Font)              size <6> substituted on input line 360.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 360.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 360.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 360.
+
+(./idc.tex
+
+pdfTeX warning: pdflatex (file ./idc.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<idc.pdf, id=217, 361.35pt x 216.81pt>
+File: idc.pdf Graphic file (type pdf)
+<use idc.pdf>
+Package pdftex.def Info: idc.pdf  used on input line 141.
+(pdftex.def)             Requested size: 361.35463pt x 216.81938pt.
+)
+Overfull \hbox (11.38869pt too wide) in paragraph at lines 369--370
+ [][] 
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 383.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\Delta' on input line 383.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 383.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 383.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]| []
+ []
+
+[6
 pdfTeX warning (ext4): destination with the same identifier (name{figure.13}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.274 \end{document}
-                    
+l.390 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{figure.14}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.390 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{table.3}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.390 
+       <./425_schaltplan_messung_schrot_LLE.png (PNG copy)> <./425_schaltplan_messung_schrot.png (PNG copy)>] (./shot_freq.tex
 
- <./idc.pdf> <./shot_freq.pdf
+pdfTeX warning: pdflatex (file ./shot_freq.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<shot_freq.pdf, id=231, 361.35pt x 216.81pt>
+File: shot_freq.pdf Graphic file (type pdf)
+<use shot_freq.pdf>
+Package pdftex.def Info: shot_freq.pdf  used on input line 117.
+(pdftex.def)             Requested size: 361.35463pt x 216.81938pt.
+)
+Overfull \hbox (11.38869pt too wide) in paragraph at lines 393--394
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 394--394
+[]\OT1/cmr/bx/n/8 Abbildung 16 []\OT1/cmr/m/n/8 Frequenzabh[]angigkeit mit $[] \U/ntxmia/m/it/8 =
+ []
+
+(./main.bbl
+Underfull \hbox (badness 4096) in paragraph at lines 59--64
+[]\OT1/cmr/m/n/10 CODATA Boltz-mann Kon-stan-te. [][]$https : / /
+ []
+
+)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]| []
+ []
+
+[7
+pdfTeX warning (ext4): destination with the same identifier (name{figure.15}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.424 \end{document}
+                    
+pdfTeX warning (ext4): destination with the same identifier (name{figure.16}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.424 \end{document}
+                    
+pdfTeX warning (ext4): destination with the same identifier (name{table.4}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.424 \end{document}
+                    
+pdfTeX warning (ext4): destination with the same identifier (name{table.5}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.424 \end{document}
+                     <./idc.pdf> <./shot_freq.pdf
 
 pdfTeX warning: pdflatex (file ./shot_freq.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >] (./main.aux)
@@ -1304,25 +1381,22 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 5E901A7C3DDE2C9F0027CE71BF3774E3;1907.
+(rerunfilecheck)             Checksum: B77C6AFEC592F2D43C6625DE6B11B3CD;3871.
  ) 
 Here is how much of TeX's memory you used:
- 22681 strings out of 476023
- 394831 string characters out of 5791581
- 1954187 words of memory out of 5000000
- 44361 multiletter control sequences out of 15000+600000
- 635844 words of font info for 246 fonts, out of 8000000 for 9000
+ 22776 strings out of 476023
+ 397007 string characters out of 5791581
+ 1950187 words of memory out of 5000000
+ 44416 multiletter control sequences out of 15000+600000
+ 637138 words of font info for 250 fonts, out of 8000000 for 9000
  24 hyphenation exceptions out of 8191
- 90i,14n,93p,541b,1085s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/NewTXMI5.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/NewTXMI7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/txexs.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/txsys.pfb>
-Output written on main.pdf (5 pages, 676100 bytes).
+ 90i,14n,93p,541b,939s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/NewTXMI5.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/NewTXMI7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/txexs.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/txsys.pfb>
+Output written on main.pdf (7 pages, 1008534 bytes).
 PDF statistics:
- 240 PDF objects out of 1000 (max. 8388607)
- 178 compressed objects within 2 object streams
- 43 named destinations out of 1000 (max. 500000)
- 146 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 350 PDF objects out of 1000 (max. 8388607)
+ 280 compressed objects within 3 object streams
+ 80 named destinations out of 1000 (max. 500000)
+ 233 words of extra memory for PDF output out of 10000 (max. 10000000)
 
