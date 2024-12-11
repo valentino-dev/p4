@@ -1,6 +1,10 @@
-set term cairolatex #standalone
+set term cairolatex #standalone header '\usepackage{siunitx}'
 set pointintervalbox 0
 
+set grid xtics
+set grid ytics
+set grid mytics
+set grid mxtics
 
 # Voreinschätzung für 5.4
 file = '../data/john_noise.dat'
@@ -28,12 +32,12 @@ fit g(x) file using ($1<1000?$1:1/0):2:3 yerrors via f2
 unset logscale xy
 set logscale x 10
 set grid
-set ylabel 'Verstärkung $\frac{U_{\text{RMS}}}{U_{0\text{, RMS}}}$'
-set xlabel 'Frequenz $f/\SI{}{Hz}$'
+set ylabel '$G$'
+set xlabel '$f/\SI{}{Hz}$'
 plot file using ($1<1000?$1:1/0):2:3 with yerrorbars title 'Hochpass Dominiert' pt 0,\
   file using ($1>1000?$1:1/0):2:3 with yerrorbars title 'Tiefpass Dominiert' pt 0,\
-  f(x) title 'Hochpass Modell $f_h=\SI{10}{\kilo Hz}$',\
-  (g(x)<1?g(x):1/0) title 'Tiefpass Modell $f_l=\SI{100}{Hz}$'
+  (g(x)<1?g(x):1/0) title 'Hochpass Modell $G_{\text{HP}}(f)$',\
+  f(x) title 'Tiefpass Modell $G_{\text{LP}}(f)$'
 
 
 
@@ -44,44 +48,60 @@ set output 'Widerstandsabhängigkeit.tex'
 unset logscale xy
 set logscale xy 10
 
-set grid
 set key bottom right opaque box width +2
-set xlabel 'Widerstand $R/\SI{}{\Omega}$'
-set ylabel 'Spannungsquadrat $V_{\text{meter}}\frac{\SI{10}{V}}{(600\cdot G_2)^2}/\SI{}{V^2}$'
-m=0
-b=0
+set xlabel '$R/\SI{}{\Omega}$'
+set ylabel '$\overline{V_J^2(t)+V_N^2(t)}/\SI{}{\micro V^2}$'
+m=1
+b=1
 f(x)=m*x+b
 fit f(x) file using ($1<=1e5?$1:1/0):($3/600**2/$2**2*10):($4/600**2/$2**2*10) yerrors via m,b
 #fit f(x) file using 1:($3/600**2/$2**2*10):($4/600**2/$2**2*10) yerrors via m,b
 
-plot file using 1:($3/600**2/$2**2*10):($4/600**2/$2**2*10) w yerrorbars title 'Daten' pt 0,\
-  (f(x)<4e-10?f(x):1/0) title 'Anpassung'
+plot file using 1:($3/600**2/$2**2*10*1e12):($4/600**2/$2**2*10*1e12) w yerrorbars title 'Daten' pt 0,\
+  (f(x)<4e-10?f(x)*1e12:1/0) title 'Anpassung'
 
 T=20.8+273.15
-T_err=0.2
-df=11107
+T_err=0.5
+df=11109
 #df=1e4-1e2
 df_err=60
 print 'kb'
 print m/T/4/df # k_b
 print sqrt((m_err/T/4/df)**2+(m/T**2/4/df*T_err)**2+(m/T/4/df**2*df_err)**2) # k_b_err
+print 'V_N'
+print b
+print b_err
 
+
+# Residuen
+set output 'Widerstandsresiduen.tex'
+unset logscale
+set logscale x 10
+unset ylabel
+unset xlabel
+set ylabel '$\text{res}/\SI{}{\micro V^2}$'
+set xlabel '$R/\SI{}{\Omega}$'
+plot file using 1:(($3/600**2/$2**2*10-f(x))*1e12):($4/600**2/$2**2*10-f(x)*1e12) w yerrorbars title 'Residuen' pt 0
 
 # 5.4
 file = '../data/john_band.dat'
 set output 'Bandbreitenabhängigkeit.tex'
+#set ls 100 lt 50 lc rgb 'blue' lw 1
+#set ls 101 lt 50 lc rgb 'red' lw 1
+#set grid mytics ytics ls 101, ls 101
+#set grid mxtics xtics ls 101, ls 101
 set logscale xy 10
 unset ylabel
 unset xlabel
-set xlabel '$\Delta f_{\text{eff}}=\frac{f_l^4\pi (f_l-f_h)}{2^{3/2}(f_l^4-f_h^4)}/\SI{}{Hz}$'
-set ylabel 'Spannungsquadrat $V_{\text{meter}}\frac{\SI{10}{V}}{(600\cdot G_2)^2}/\SI{}{V^2}$'
+set xlabel '$\Delta f_{\text{eff}}/\SI{}{Hz}$'
+set ylabel '$\overline{V_J^2(t)+V_N^2(t)}/\SI{}{\micro V^2}$'
 
 df(a, b)=a**4*3.141*(a-b)/(sqrt(2**3)*(a**4-b**4))
 f(x)=m*x+b
 fit f(x) file using (df($1, $2)):($4/600**2/$3**2*10):($5/600**2/$3**2*10) yerrors via m, b
 
-plot file using (df($1, $2)):($4/600**2/$3**2*10):($5/600**2/$3**2*10) w yerrorbars title '$V_\text{Rauschen}$',\
-  f(x) title 'Anpassung'
+plot file using (df($1, $2)):($4/600**2/$3**2*10*1e12):($5/600**2/$3**2*10*1e12) w yerrorbars title '$V_\text{Rauschen}$',\
+  f(x)*1e12 title 'Anpassung'
 R=1e3
 print 'kb'
 print m/4/T/R # k_b
@@ -95,27 +115,29 @@ set output 'idc.tex'
 unset logscale
 unset ylabel
 unset xlabel
-set xlabel '$i_{\text{dc}}=-\frac{V_{\text{monitor}}}{R_f}$'
+set xlabel '$i_{\text{dc}}/\SI{}{\micro A}$'
+set ylabel '$\overline{\delta i^2}/\SI{}{\nano A^2}$'
 set key bottom right opaque box width +2
 
 R_f=10e3
 
 f(x) = m*x+b
 fit f(x) file using (-$1/R_f):($3*10/(100*$2*R_f)**2):($4*10/(100*$2*R_f)**2) yerrors via m, b
-plot file using (-$1/R_f):($3*10/(100*$2*R_f)**2):($4*10/(100*$2*R_f)**2) w yerrorbars title 'Daten',\
-  f(x) title 'Anpassung'
+plot file using (-$1/R_f*1e6):($3*10/(100*$2*R_f)**2*1e18):($4*10/(100*$2*R_f)**2*1e18) w yerrorbars title 'Daten',\
+  f(x*1e-6)*1e18 title 'Anpassung'
 
 df= 111051
 print 'e'
 print m/2/df
+print m_err/2/df
 
 
 
 # 6.4
 file = '../data/shot_noise_frequency.dat'
 set output 'shot_freq.tex'
-set xlabel 'Frequenz $f/\SI{}{\kilo Hz}$'
-set ylabel '$\frac{V_{\text{meter}}\SI{10}{V}}{(100G_2R_f)^2}/\SI{}{\nano V^2}$'
+set xlabel '$f/\SI{}{\kilo Hz}$'
+set ylabel '$\overline{\delta i^2}/\SI{}{\nano V^2}$'
 set logscale yx 10
 #unset logscale
 set key opaque box bottom right width +2
@@ -126,8 +148,10 @@ plot file using (3.141*$1/sqrt(2)**3*1e-3):($3*10/(100*$2*R_f)**2*1e18):($4*10/(
   f(x*1e3)*1e18 title 'Anpassung'
 
 I=0.711/R_f
+I_err=0.001/R_f
 print 'e'
 print m/2/I
+print sqrt((m_err/2/I)**2+(m/2/I**2*I_err)**2)
 
 
 
