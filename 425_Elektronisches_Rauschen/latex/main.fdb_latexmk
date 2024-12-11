@@ -1,13 +1,15 @@
 # Fdb version 4
-["bibtex main"] 1733779181.97035 "main.aux" "main.bbl" "main" 1733779182.76316 0
+["bibtex main"] 1733827321.24075 "main.aux" "main.bbl" "main" 1733827322.08951 0
   "./refs.bib" 1733776096.82984 172 4b564bb0fd472f4f5ee2940656d42a88 ""
   "./sn-mathphys-num.bst" 1733774891.98899 64141 2560fd4f8e8321a304f732d035eb1b51 ""
-  "main.aux" 1733779182.59616 2934 fe45fadf025a25651d611ae724662fcc "pdflatex"
+  "main.aux" 1733827321.92768 3982 d22d221d1b60bd7d9d80e59adb97a7ee "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1733779182.02162 "main.tex" "main.pdf" "main" 1733779182.76329 0
+["pdflatex"] 1733827321.28833 "main.tex" "main.pdf" "main" 1733827322.08964 0
+  "../data/4_0F01.PNG" 1733774700.44363 17673 ff012db75f8d8c07b6f56fdf4c1e6b92 ""
+  "../data/4_0F02.PNG" 1733774700.44363 8786 5ce5d8926945edb4aa31b8ed03925841 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1727349926 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1727349926 916 f87d7c45f9c908e672703b83b72241a3 ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm" 1727349926 924 9904cf1d39e9767e7a3622f2a125a565 ""
@@ -192,12 +194,13 @@
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1732049984 7603434 0655c5f74d7da13f369c939e580b05cd ""
   "425_schaltplan_bandpass.png" 1733776030.41812 37035 e2f4689bd1823e549017495fb3faafd9 ""
   "425_schaltplan_johnson_LLE.png" 1733778341.49842 149308 a6b1efb930be6de5c1cd4776cc4cbbbd ""
+  "425_schaltplan_messung_johnson.png" 1733778424.87201 110234 884f271bc1aeb5fe1a89ffc1257dab33 ""
   "425_schaltplan_visualisierung_johnson_HLE.png" 1733778364.31066 76679 0581eb105d857294ca3a529391264fd0 ""
   "425_schaltplan_vorverstärker_LLE.png" 1733778312.57344 25305 86c4bd39f48bbbd8f8911fabea1a1525 ""
-  "main.aux" 1733779182.59616 2934 fe45fadf025a25651d611ae724662fcc "pdflatex"
-  "main.bbl" 1733779182.01626 2393 3501d378cadf5bf635b2f4f88b4a60bd "bibtex main"
-  "main.out" 1733779182.59616 1546 dc798e36cad30ea03a9dc1dabfe40b55 "pdflatex"
-  "main.tex" 1733779181.16974 6017 33d9ab331c6923be9370b6f5c4dba047 ""
+  "main.aux" 1733827321.92768 3982 d22d221d1b60bd7d9d80e59adb97a7ee "pdflatex"
+  "main.bbl" 1733827321.28431 2393 3501d378cadf5bf635b2f4f88b4a60bd "bibtex main"
+  "main.out" 1733827321.92768 1907 5e901a7c3dde2c9f0027ce71bf3774e3 "pdflatex"
+  "main.tex" 1733827319.15087 7767 dcefcbc98ebd4ab4332a0ccb29c3b255 ""
   "sn-jnl.cls" 1733774891.98899 55331 2adf3041e7f64a0f542a04760be0043f ""
   (generated)
   "main.aux"

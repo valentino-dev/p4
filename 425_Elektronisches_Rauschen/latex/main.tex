@@ -76,7 +76,7 @@ bestimmt
 \begin{align} 
         \Delta f_\text{eff}=\int_{}^{}\td fG^2(f)=\int_{}^{}\td fG_\text{LP}^2(f)G_\text{HP}^2(f)
 ,\end{align} 
-mit der Tiefpassverstärkung $G_\text{LP}(f)=\left(1+(f/f_\text{l})^4\right)^{-1/2}$ und der Hochpassverstärkung $g_\text{HP}\left(f\right)=\left(f/f_\text{h}\right)^2\left(1+(f/f_\text{h})^4\right)^{-1/2}$.
+mit der Tiefpassverstärkung $G_\text{LP}(f)=\left(1+(f/f_\text{l})^4\right)^{-1/2}$ und der Hochpassverstärkung $G_\text{HP}\left(f\right)=\left(f/f_\text{h}\right)^2\left(1+(f/f_\text{h})^4\right)^{-1/2}$.
 $f_\text{h}$ und $f_\text{l}$ sind die eingestellten Grenzfrequenzen von Hoch-- und Tiefpass.
 
 \subsection{Durchführung \& Auswertung}
@@ -94,7 +94,7 @@ Daraus bestimmt sich jeweils die Verstärkung und damit die Bandbreite.
 \section{\textsc{Johnson}--Rauschen}
 \subsection{Theoretischer Hintergrund}
 Das \textsc{Johnson}--Rauschen\footnote{auch thermisches Rauschen} entsteht durch thermodynamische Fluktuationen der Elektronen im Leitungsband. 
-Dies geschieht, im Vergleich zum Schortrauschen, ohne, dass eine Spannung angelegt ist
+Dies geschieht, im Vergleich zum Schortrauschen, ohne, dass eine Spannung angelegt ist.
 Elektronen bewegen sich im thermischen Gleichgewicht ungeordnet aufgrund ihrer thermischen Energie wodurch sie kurze Spannungs-- bzw.\ Strompulse erzeugen.
 Mit Hilfe von sensitiven Messgeräten kann dieses Rauschen untersucht werden.
 
@@ -106,7 +106,7 @@ mit der Temperatur $T$ und der Bandbreite $\Delta f$.
 
 \subsection{Durchführung \& Auswertung: Beobachtung des \textsc{Johnson}--Rauschens}
 Das \textsc{Johnson}--Rauschen wird im Vorverstärkerschaltkreis aus Abb.\ (\ref{fig:vorverstärker}) beobachtet.
-Diese Schaltung befindet sich in der LLE--Box Abb.\ (\ref{fig:johnson_lle}), welche entsprechend verkabelt werden muss.
+Diese Schaltung befand sich in der LLE--Box Abb.\ (\ref{fig:johnson_lle}), welche entsprechend verkabelt werden musste.
 Zur Beobachtung wurden folgende Werte eingestellt
 \begin{align} 
         R_\text{in}=\SI{100}{k\ohm},R_\text{f}=\SI{1}{k\ohm}
@@ -116,23 +116,60 @@ Die Einstellung der HLE--Box war
 \begin{align} 
         f_\text{h}=\SI{.1}{kHz},f_\text{l}=\SI{100}{kHz},\text{Gain}=300,\text{AC}
 .\end{align} 
+Das Rauschen ließ sich dann auf dem Oszillographen beobachten Abb.\ (\ref{fig:johnson_oszi}).
+Es ist klar zu erkennen, dass das Rauschen starken Fluktuationen unterliegt und ungeordnet ist.
+Im Mittel bleibt es allerdings konstant.
+
+\begin{figure}[t]
+        \centering
+        \includegraphics[width=.5\textwidth]{../data/4_0F01.png}
+        \caption{Oszillogramm des \textsc{Johnson}--Rauschen.} \label{fig:johnson_oszi}
+\end{figure}
 
 \begin{figure}[t]
         \centering
         \includegraphics[width=.5\textwidth]{425_schaltplan_vorverstärker_LLE.png}
-        \caption{Vorverstärkerschaltkreis zur Beobachtung des \textsc{Johnson}--Rauschen.\cite{anleitung425}} \label{fig:vorverstärker}
+        \caption{Vorverstärkerschaltkreis zur Beobachtung des \textsc{Johnson}--Rauschens.\cite{anleitung425}} \label{fig:vorverstärker}
 \end{figure}
 
 \begin{figure}[t]
         \centering
         \includegraphics[width=.5\textwidth]{425_schaltplan_johnson_LLE.png}
-        \caption{Die LLE--Box zur Messung und Beobachtung des \textsc{Johnson}--Rauschen.\cite{anleitung425}} \label{fig:johnson_lle}
+        \caption{Die LLE--Box zur Messung und Beobachtung des \textsc{Johnson}--Rauschens.\cite{anleitung425}} \label{fig:johnson_lle}
 \end{figure}
 
 \begin{figure}[t]
         \centering
         \includegraphics[width=.5\textwidth]{425_schaltplan_visualisierung_johnson_HLE.png}
-        \caption{HLE--Box zur Messung und Beobachtung des \textsc{Johnson}--Rauschen.\cite{anleitung425}} \label{fig:johnson_hle}
+        \caption{HLE--Box zur Messung und Beobachtung des \textsc{Johnson}--Rauschens.\cite{anleitung425}} \label{fig:johnson_hle}
+\end{figure}
+
+\subsection{Durchführung \& Auswertung: Messung des \textsc{Johnson}--Rauschens}
+Zur Messung der mittleren Spannung des Rauschens wird die Schaltung aus Abb.\ (\ref{fig:johnson_hle_messung}) verwendet.
+Die Einstellungen waren zusätzlich
+\begin{align} 
+        \text{Multiplier}:\text{A}\times \text{A},\text{Zeitkonst.}=\SI{1}{s}
+.\end{align} 
+Durch den Multiplier ist das Ausgangssignal der HLE--Box
+\begin{align} 
+        V_\text{out}=\dfrac{\overline{\left(V_\text{in}(t)\right)^2}}{\SI{10}{V}}
+.\end{align} 
+Dieses Signal wird dann über die Zeitkonstante von $\SI{1}{s}$ gemittelt.
+
+Um zu überprüfen, ob der Multiplier wie erwartet funktioniert, kann der Output der HLE--Box gegen den Multiplier aufgetragen werden.
+Es ergibt sich Abb.\ (\ref{fig:multiplier}).
+Der quadratische Zusammenhang mit Verschiebung ist klar zu erkennen.
+
+\begin{figure}[t]
+        \centering
+        \includegraphics[width=.5\textwidth]{425_schaltplan_messung_johnson.png}
+        \caption{HLE--Box zur Messung des \textsc{Johnson}--Rauschens.\cite{anleitung425}} \label{fig:johnson_hle_messung}
+\end{figure}
+
+\begin{figure}[t]
+        \centering
+        \includegraphics[width=.5\textwidth]{../data/4_0F02.png}
+        \caption{Output der HLE--Box (Kanal 1) gegen Multiplier (Kanal 2).} \label{fig:multiplier}
 \end{figure}
 
 \section{Schortrauschen}
