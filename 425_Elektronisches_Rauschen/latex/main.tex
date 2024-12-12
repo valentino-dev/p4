@@ -40,7 +40,10 @@
 \titleformat{\subsection}{}{\thesubsection}{1em}{\itshape}
 \titleformat{\subsubsection}{}{\thesubsubsection}{1em}{\itshape}
 
+
 \begin{document}
+
+\let\c@figure\c@table
 
 \title[]{Praktikum 4 -- Versuch 425: Elektronisches Rauschen}
 \author*[1]{\fnm{Jonas} \sur{Wortmann}}\email{s02jwort@uni-bonn.de}
@@ -82,24 +85,38 @@ $f_\text{h}$ und $f_\text{l}$ sind die eingestellten Grenzfrequenzen von Hoch-- 
 Das analytische Ergebnis des Integrals ist
 \begin{align}
 	\Delta f_\text{eff}=\dfrac{f_\text{l}^4\pi \left(f_\text{h}-f_\text{l}\right)}{2^{3/2}\left(f_\text{h}^4-f_\text{l}^4\right)}
-	.\end{align}
+.\end{align}
 
 \subsection{Durchführung \& Auswertung}
-Die Bandbreite wird für $f_\text{h}=\SI{1}{kHz}$ und $f_\text{l}=\SI{10}{kHz}$ bestimmt.
+Die Bandbreite wird für $f_\text{h}=\SI{100}{Hz}$ und $f_\text{l}=\SI{10}{kHz}$ bestimmt.
 Mit dem Frequenzgenerator werden, für eine konstante Eingangsspannung, verschiedene Frequenzen von $\SI{2}{Hz}$ bis $\SI{8}{MHz}$ eingestellt und die Ausgangsspannung gemessen.
 Daraus bestimmt sich jeweils die Verstärkung und damit die Bandbreite.
 
 Abb.\ (\ref{fig:bandpass}) zeigt die Verstärkung gegen die eingestellte Frequenz.
 Die Bandbreite berechnet sich dann zu
 \begin{align}
-	\Delta f_\text{eff}\approx \SI{9997}{Hz}
-	.\end{align}
+	\Delta f_\text{eff}\approx \SI{11109+-60}{Hz}
+.\end{align}
+Aus Abb.\ (\ref{fig:bandpass}) lassen sich auch die Grenzfrequenzen von Hoch-- und Tiefpass bestimmen.
+Diese sind in Tab.\ (\ref{tab:bandpass_parameter}) eingetragen.
+Sie stimmen mit den eingestellten Frequenzen überein und die resultierende Bandbreite ist die Differenz zwischen den Werten.
 
 \begin{figure}[t]
 	\centering
 	\resizebox{.5\textwidth}{!}{\input{eff_band.tex}}
-	\caption{Gemessene Verstärkung $G=\frac{U_{\text{RMS}}}{U_{0\text{, RMS}}}$ im Bandpass.} \label{fig:bandpass}
+	\caption{Gemessene Verstärkung $G=\frac{U_{\textsc{rms}}}{U_{0\textsc{, rms}}}$ im Bandpass.} \label{fig:bandpass}
 \end{figure}
+\begin{table}[t]
+	\centering
+	\begin{tabular}{cc}
+		\textbf{Parameter} & {\textbf{Wert(Fehler)}} \\
+		\hline
+		$f_l$              & \SI{10104 \pm 56}{}     \\
+		$f_h$              & \SI{100.50 \pm 0.17}{}  \\
+	\end{tabular}
+	\label{tab:bandpass_parameter}
+	\caption{Frequenzabhängigkeit modelliert mit $G_\text{LP}(f)=\left[1+(f/f_l)^4\right]^{-1/2}$ und $G_\text{HP}(f)=(f/f_h)^2\left[1+(f/f_h)^4\right]^{-1/2}$}
+\end{table}
 
 \section{\textsc{Johnson}--Rauschen}
 \subsection{Theoretischer Hintergrund}
@@ -229,7 +246,7 @@ sodass
 \begin{align}
 	k_B^R=\dfrac{m}{4T\Delta f_\text{eff}}\qquad \overline{V_\text{N}^2}=b
 	.\end{align}
-Die Temperatur war $T=\SI{252.3+-0.2}{K}$ und die Bandbreite $\Delta f_\text{eff}\approx \SI{110961.001}{Hz}$.
+Die Temperatur war $T=\SI{293.95+-0.5}{K}$ und die Bandbreite $\Delta f_\text{eff}\approx \SI{110961.001}{Hz}$.
 Damit ist die \textsc{Boltzmann}--Konstante
 \begin{align}
 	k_B^R          & =\SI{11.53+-0.09e-23}{J/K}[836\%] \\
@@ -240,29 +257,15 @@ DISKUSSION (+ RESIDUEN)
 
 \subsubsection{Variation der Bandbreite}
 Dieses Verfahren ist analog zur Variation des Widerstands.
-Wird die Bandbreite Variiert, um so das \textsc{Johnson}--Rauschen zu bestimmen, ergeben sich Abb.\ (\ref{fig:johnson_bandbreite_plot}) mit Tab.\ (\ref{tab:johnson_bandbreite_parameter}).
+Für den Widerstand wird der größtmögliche Widerstand verwendet, bei dem das Rauschen noch lineares Verhalten zeigt: $R_\text{in}=\SI{1}{k\ohm}$.
+Dies bewirkt, dass das Gesamtrauschen vom \textsc{Johnson}--Rauschen dominiert wird.
 
-\begin{figure}[h]
-	\centering
-	\resizebox{.5\textwidth}{!}{\input{eff_band.tex}}
-	\caption{$G=\frac{U_{\text{RMS}}}{U_{0\text{, RMS}}}$}
-\end{figure}
-\begin{table}[h!]
-	\centering
-	\begin{tabular}{cc}
-		\textbf{Parameter} & {\textbf{Wert(Fehler)}} \\
-		\hline
-		$f_l$              & \SI{10104 \pm 56}{}     \\
-		$f_h$              & \SI{100.50 \pm 0.17}{}  \\
-	\end{tabular}
-	\label{tab:parameter}
-	\caption{Frequenzabhängigkeit modelliert mit $G_\text{LP}(f)=\left[1+(f/f_l)^4\right]^{-1/2}$ und $G_\text{HP}(f)=(f/f_h)^2\left[1+(f/f_h)^4\right]^{-1/2}$}
-\end{table}
+Wird die Bandbreite variiert, um so das \textsc{Johnson}--Rauschen zu bestimmen, ergeben sich Abb.\ (\ref{fig:johnson_bandbreite_plot}) mit Tab.\ (\ref{tab:johnson_bandbreite_parameter}).
 
 \begin{figure}[h]
 	\centering
 	\resizebox{.5\textwidth}{!}{\input{Bandbreitenabhängigkeit.tex}}
-	\caption{Bandbreitenabhängkeit mit $\overline{V_J^2(t)+V_N^2(t)}=V_{\text{meter}}\frac{\SI{10}{V}}{(600\cdot G_2)^2}$ und $\Delta f_{\text{eff}}=\frac{f_l^4\pi (f_l-f_h)}{2^{3/2}(f_l^4-f_h^4)}$}
+	\caption{Bandbreitenabhängkeit mit $\overline{V_J^2(t)+V_N^2(t)}=V_{\text{meter}}\frac{\SI{10}{V}}{(600\cdot G_2)^2}$ und $\Delta f_{\text{eff}}=\frac{f_l^4\pi (f_l-f_h)}{2^{3/2}(f_l^4-f_h^4)}$} \label{fig:johnson_bandbreite_plot}
 \end{figure}
 \begin{table}[h!]
 	\centering
@@ -273,7 +276,7 @@ Wird die Bandbreite Variiert, um so das \textsc{Johnson}--Rauschen zu bestimmen,
 		b                  & \SI{7.5 \pm 4.5e-15}{}     \\
 	\end{tabular}
 	\label{tab:parameter}
-	\caption{Bandbreitenabhängigkeit modelliert mit $\overline{V_J^2(t)+V_N^2(t)}(\Delta f_{\text{eff}})=m\cdot \Delta f_{\text{eff}}+b$}
+	\caption{Bandbreitenabhängigkeit modelliert mit $\overline{V_J^2(t)+V_N^2(t)}(\Delta f_{\text{eff}})=m\cdot \Delta f_{\text{eff}}+b$} \label{tab:johnson_bandbreite_parameter}
 \end{table}
 Es ist
 \begin{align}
@@ -314,9 +317,13 @@ Diese Spannung wird als Schrotrauschen auf sensitiven Messgeräten wahrgenommen.
 
 Formal ist das mittlere Rauschstromquadrat
 \begin{align}
-	\overline{i^2}=2ei_\text{dc}\Delta f_\text{eff}
+	\overline{\delta i^2}=2ei_\text{dc}\Delta f_\text{eff}
 	,\end{align}
 mit $i_\text{dc}$ der angelegten Stromstärke.
+Da in der verwendeten Anordnung kein Hochpass verbaut ist, ist 
+\begin{align} 
+  \Delta f_\text{eff}=\int_{0}^{\infty}\td fG_\text{LP}\underbrace{G_\text{HP}}_{=1}=\dfrac{\pi f_\text{l}}{2^{3/2}}
+.\end{align}
 
 \subsection{Durchführung \& Auswertung: Beobachtung des Schrotrauschens}
 Das Schrotrauschen wurde innerhalb Abb.\ (\ref{fig:schrot_lle_beob}) bei einer Photodiode beobachtet.
@@ -378,8 +385,20 @@ Diese Beiträge werden in den folgenden Berechnungen berücksichtigt.
 Für unterschiedliche Spannungen der Glühlampe stellte sich ein unterschiedlich starkes Rauschen ein, da dieses linear von $i_\text{dc}$ abhängt.
 $\overline{\delta i^2}$ gegen $i_\text{dc}$ ist in Abb.\ (\ref{fig:abhängig_idc}) dargestellt.
 Die Parameter der Anpassung sind in Tab. (\ref{tab:abhängig_idc_parameter}) eingetragen.
-Es ist $R_f=\SI{10}{k\ohm}$.
+Es ist $R_f=\SI{10}{k\ohm}$ und $\Delta f_\text{eff}=\SI{111051}{Hz}$.
 Der lineare Zusammenhang lässt sich klar erkennen. %TODO chi² oder ist nur guide für auge?
+
+Die Elementarladung bestimmt sich über den Geradenfit
+\begin{align} 
+e^{i_\text{dc}}=\dfrac{m}{2\Delta f_\text{eff}}
+.\end{align} 
+Damit
+\begin{align} 
+  e^{i_\text{dc}}&=\SI{1.823+-0.017e-19}{C}[14\%]\\
+  e^\text{lit}&=\SI{1.602e-19}{C}
+.\end{align} 
+Der Literaturwert ist CODATA\cite{codataElementarladung} entnommen.
+DISKUSSION
 
 \begin{figure}[t]
 	\centering
@@ -403,7 +422,23 @@ Die Weißheit gibt an, wie sich das Rauschen bei unterschiedlichen Frequenzen ve
 Es ist weiß, wenn es frequenzunabhängig ist.
 $\overline{\Delta i^2}$ ist gegen $f$ in Abb.\ (\ref{fig:abhängig_f}) aufgetragen.
 Die Parameter für den Fit sind in Tab.\ (\ref{tab:abhängig_f_parameter}) eingetragen. %TODO chi² oder auch nur guide?
-Es ist zu erkennen, dass der Rauschstrom linear mit der Frequenz des Tiefpasses steigt.
+Es ist zu erkennen, dass der Rauschstrom linear mit der Bandbreite steigt.
+Das bedeutet, dass das für die Vergrößerung der Bandbreite immer eine konstante Rauschspannung addiert wird.
+Das Rauschen ist also nur abhängig von der Bandbreite und unabhängig von der Frequenz selbst.
+Dieses Verhalten war zu erwarten, weil das Schrotrauschen weißes Rauschen ist.
+
+Die Elementarladung bestimmt sich über den Geradenfit
+\begin{align} 
+  e^{\Delta f_\text{eff}}=\dfrac{m}{2i_\text{dc}}
+.\end{align} 
+Damit
+\begin{align} 
+  e^{\Delta f_\text{eff}}&=\SI{1.958+-0.039e-19}{C}[22\%]\{10\sigma \}\\
+  e^{\Delta f_\text{eff}}&=\SI{1.958+-0.039e-19}{C}[22\%,10\sigma ]\\
+  e^\text{lit}&=\SI{1.602e-19}{C}
+\end{align} 
+Der Literaturwert ist CODATA\cite{codataElementarladung} entnommen.
+DISKUSSION
 
 \begin{figure}[t]
 	\centering
@@ -421,10 +456,10 @@ Es ist zu erkennen, dass der Rauschstrom linear mit der Frequenz des Tiefpasses 
 	\caption{Frequenzabhängigkeit modelliert mit $\overline{\delta i^2}(f)=m\cdot f+b$} \label{tab:abhängig_f_parameter}
 \end{table}
 
-\subsubsection{Elementarladung}
+\subsubsection{Vergleich $i_\text{dc}$ und $\Delta f_\text{eff}$}
 
 \begin{table}[t]
-	\centering
+  \centering
 	\begin{tabular}{cc}
 		\textbf{Parameter} & {\textbf{Wert(Fehler)}} \\
 		\hline
