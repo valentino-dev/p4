@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.11.19)  12 DEC 2024 15:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.11.19)  12 DEC 2024 18:59
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -686,51 +686,47 @@ Package babel Info: Importing font and identification data for ngerman
 \c@theorem=\count348
 \c@remark=\count349
 \c@definition=\count350
- (./main.aux
-
-LaTeX Warning: Label `tab:parameter' multiply defined.
-
-)
+ (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 47.
-LaTeX Font Info:    Trying to load font information for OML+ntxmi on input line 47.
+LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 43.
+LaTeX Font Info:    Trying to load font information for OML+ntxmi on input line 43.
  (/usr/share/texmf-dist/tex/latex/newtx/omlntxmi.fd
 File: omlntxmi.fd 2015/08/25 Fontinst v1.933 font definitions for OML/ntxmi.
 )
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 47.
-LaTeX Font Info:    Trying to load font information for U+ntxexa on input line 47.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 43.
+LaTeX Font Info:    Trying to load font information for U+ntxexa on input line 43.
  (/usr/share/texmf-dist/tex/latex/newtx/untxexa.fd
 File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
 )
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 47.
-LaTeX Font Info:    Trying to load font information for LMS+ntxsy on input line 47.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 43.
+LaTeX Font Info:    Trying to load font information for LMS+ntxsy on input line 43.
  (/usr/share/texmf-dist/tex/latex/newtx/lmsntxsy.fd
 File: lmsntxsy.fd 2016/07/02 Fontinst v1.933 font definitions for LMS/ntxsy.
 )
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 47.
-LaTeX Font Info:    Trying to load font information for LMX+ntxexx on input line 47.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 43.
+LaTeX Font Info:    Trying to load font information for LMX+ntxexx on input line 43.
  (/usr/share/texmf-dist/tex/latex/newtx/lmxntxexx.fd
 File: lmxntxexx.fd 2016/07/03 Fontinst v1.933 font definitions for LMX/ntxexx.
 )
-LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    ... okay on input line 43.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -792,19 +788,19 @@ Package grfext Info: Graphics extension search list:
  (/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-LaTeX Info: Redefining \S on input line 47.
-LaTeX Font Info:    Redeclaring symbol font `AMSa' on input line 47.
+LaTeX Info: Redefining \S on input line 43.
+LaTeX Font Info:    Redeclaring symbol font `AMSa' on input line 43.
 LaTeX Font Info:    Overwriting symbol font `AMSa' in version `normal'
-(Font)                  U/msa/m/n --> U/msa/m/n on input line 47.
+(Font)                  U/msa/m/n --> U/msa/m/n on input line 43.
 LaTeX Font Info:    Overwriting symbol font `AMSa' in version `bold'
-(Font)                  U/msa/m/n --> U/msa/m/n on input line 47.
-Package hyperref Info: Link coloring ON on input line 47.
+(Font)                  U/msa/m/n --> U/msa/m/n on input line 43.
+Package hyperref Info: Link coloring ON on input line 43.
  (./main.out) (./main.out)
 \@outlinefile=\write3
 \openout3 = `main.out'.
 
-LaTeX Info: Command `\dddot' is already robust on input line 47.
-LaTeX Info: Command `\ddddot' is already robust on input line 47.
+LaTeX Info: Command `\dddot' is already robust on input line 43.
+LaTeX Info: Command `\ddddot' is already robust on input line 43.
 
 
 Package siunitx Warning: Detected the "physics" package:
@@ -820,94 +816,94 @@ Package siunitx Warning: Detected the "physics" package:
 (/usr/share/texmf-dist/tex/latex/translations/translations-basic-dictionary-german.trsl
 File: translations-basic-dictionary-german.trsl (german translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `german'. on input line 47.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `german'. on input line 43.
 \c@lstlisting=\count357
-LaTeX Font Info:    Calculating math sizes for size <12.045> on input line 55.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 55.
+LaTeX Font Info:    Calculating math sizes for size <12.045> on input line 51.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 51.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 55.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 51.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 55.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 51.
  (/usr/share/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Trying to load font information for U+ntxmia on input line 55.
+LaTeX Font Info:    Trying to load font information for U+ntxmia on input line 51.
  (/usr/share/texmf-dist/tex/latex/newtx/untxmia.fd
 File: untxmia.fd 2018/04/14 Fontinst v1.933 font definitions for U/ntxmia.
 )
-LaTeX Font Info:    Trying to load font information for U+ntxsym on input line 55.
+LaTeX Font Info:    Trying to load font information for U+ntxsym on input line 51.
  (/usr/share/texmf-dist/tex/latex/newtx/untxsym.fd
 File: untxsym.fd 2023/08/16 Fontinst v1.933 font definitions for U/ntxsym.
 )
-LaTeX Font Info:    Trying to load font information for U+ntxsyc on input line 55.
+LaTeX Font Info:    Trying to load font information for U+ntxsyc on input line 51.
  (/usr/share/texmf-dist/tex/latex/newtx/untxsyc.fd
 File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
 )
-LaTeX Font Info:    Calculating math sizes for size <11.04124> on input line 55.
-LaTeX Font Info:    Calculating math sizes for size <10.03749> on input line 55.
+LaTeX Font Info:    Calculating math sizes for size <11.04124> on input line 51.
+LaTeX Font Info:    Calculating math sizes for size <10.03749> on input line 51.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <5.52065> not available
-(Font)              size <6> substituted on input line 55.
+(Font)              size <6> substituted on input line 51.
 
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <5.52065> not available
-(Font)              size <6> substituted on input line 55.
+(Font)              size <6> substituted on input line 51.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 65.
+(Font)              size <5> substituted on input line 61.
 
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 65.
+(Font)              size <5> substituted on input line 61.
 
 
-Underfull \hbox (badness 3769) in paragraph at lines 65--69
+Underfull \hbox (badness 3769) in paragraph at lines 61--65
 [][][][][]\OT1/cmr/m/n/10 Die Band-brei-te gibt die Brei-te ei-nes Fre-
  []
 
-<425_schaltplan_bandpass.png, id=82, 600.2425pt x 474.77374pt>
+<425_schaltplan_bandpass.png, id=86, 600.2425pt x 474.77374pt>
 File: 425_schaltplan_bandpass.png Graphic file (type png)
 <use 425_schaltplan_bandpass.png>
-Package pdftex.def Info: 425_schaltplan_bandpass.png  used on input line 72.
+Package pdftex.def Info: 425_schaltplan_bandpass.png  used on input line 68.
 (pdftex.def)             Requested size: 227.62204pt x 180.03918pt.
 
-Overfull \hbox (11.3811pt too wide) in paragraph at lines 72--73
+Overfull \hbox (11.3811pt too wide) in paragraph at lines 68--69
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 76--77
+Underfull \hbox (badness 10000) in paragraph at lines 72--73
 []\OT1/cmr/m/n/10 Die ef-fek-ti-ve Band-brei-te wird mit der
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 83--87
+Underfull \hbox (badness 10000) in paragraph at lines 79--83
 \OT1/cmr/m/n/10 mit der Tief-pass-verst[]arkung $\OML/ntxmi/m/it/10.03749 G[]\LMS/ntxsy/m/n/10.03749 �\OML/ntxmi/m/it/10.03749 f\LMS/ntxsy/m/n/10.03749 � \U/ntxmia/m/it/10.03749 =
  []
 
 
-Underfull \hbox (badness 1454) in paragraph at lines 83--87
+Underfull \hbox (badness 1454) in paragraph at lines 79--83
 [][]$ \OT1/cmr/m/n/10 und der Hoch-pass-verst[]arkung
  []
 
 
-Underfull \hbox (badness 3482) in paragraph at lines 83--87
+Underfull \hbox (badness 3482) in paragraph at lines 79--83
 \OT1/cmr/m/n/10 und Tief-pass. Das ana-ly-ti-sche Er-geb-nis des
  []
 
 
-Underfull \hbox (badness 1226) in paragraph at lines 92--95
+Underfull \hbox (badness 1226) in paragraph at lines 88--91
 \OT1/cmr/m/n/10 10 []$ be-stimmt. Mit dem Fre-quenz-ge-ne-ra-tor
  []
 
 
-Underfull \hbox (badness 1502) in paragraph at lines 92--95
+Underfull \hbox (badness 1502) in paragraph at lines 88--91
 \OT1/cmr/m/n/10 ge-stellt und die Aus-gangs-span-nung ge-mes-sen.
  []
 
@@ -926,7 +922,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.95 
+l.91 
       <./425_schaltplan_bandpass.png (PNG copy)>] (./eff_band.tex
 \gptboxheight=\skip76
 \gptboxwidth=\skip77
@@ -934,86 +930,86 @@ l.95
 
 
 pdfTeX warning: pdflatex (file ./eff_band.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<eff_band.pdf, id=113, 361.35pt x 216.81pt>
+<eff_band.pdf, id=118, 361.35pt x 216.81pt>
 File: eff_band.pdf Graphic file (type pdf)
 <use eff_band.pdf>
 Package pdftex.def Info: eff_band.pdf  used on input line 133.
 (pdftex.def)             Requested size: 361.35463pt x 216.81938pt.
 )
-Overfull \hbox (11.38869pt too wide) in paragraph at lines 107--108
+Overfull \hbox (11.38869pt too wide) in paragraph at lines 103--104
  [][] 
  []
 
-LaTeX Font Info:    Calculating math sizes for size <8.03> on input line 112.
+LaTeX Font Info:    Calculating math sizes for size <8.03> on input line 107.
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <4.41652> not available
-(Font)              size <5> substituted on input line 112.
+(Font)              size <5> substituted on input line 107.
 
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <4.41652> not available
-(Font)              size <5> substituted on input line 112.
+(Font)              size <5> substituted on input line 107.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/sc' undefined
-(Font)              using `OT1/cmr/bx/n' instead on input line 122.
+(Font)              using `OT1/cmr/bx/n' instead on input line 119.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/scit' undefined
-(Font)              using `OT1/cmr/m/sc' instead on input line 135.
+(Font)              using `OT1/cmr/m/sc' instead on input line 132.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 136--139
+Underfull \hbox (badness 10000) in paragraph at lines 133--136
 \OT1/cmr/m/n/10 Das \OT1/cmr/m/sc/10 John-son\OT1/cmr/m/n/10 --Rauschen wird im Vor-
  []
 
 
-Underfull \hbox (badness 1092) in paragraph at lines 136--139
-\OT1/cmr/m/n/10 verst[]arkerschaltkreis aus Abb. ([][]5[][]) be-ob-ach-tet.
+Underfull \hbox (badness 1092) in paragraph at lines 133--136
+\OT1/cmr/m/n/10 verst[]arkerschaltkreis aus Abb. ([][]4[][]) be-ob-ach-tet.
  []
 
-<../data/4_0F01.png, id=119, 642.4pt x 521.95pt>
+<../data/4_0F01.png, id=123, 642.4pt x 521.95pt>
 File: ../data/4_0F01.png Graphic file (type png)
 <use ../data/4_0F01.png>
-Package pdftex.def Info: ../data/4_0F01.png  used on input line 153.
+Package pdftex.def Info: ../data/4_0F01.png  used on input line 150.
 (pdftex.def)             Requested size: 227.62204pt x 184.93913pt.
 
-Overfull \hbox (11.3811pt too wide) in paragraph at lines 153--154
+Overfull \hbox (11.3811pt too wide) in paragraph at lines 150--151
  [][] 
  []
 
-<425_schaltplan_vorverstärker_LLE.png, id=120, 489.83pt x 374.39874pt>
+<425_schaltplan_vorverstärker_LLE.png, id=124, 489.83pt x 374.39874pt>
 File: 425_schaltplan_vorverstärker_LLE.png Graphic file (type png)
 <use 425_schaltplan_vorverstärker_LLE.png>
-Package pdftex.def Info: 425_schaltplan_vorverstärker_LLE.png  used on input line 159.
+Package pdftex.def Info: 425_schaltplan_vorverstärker_LLE.png  used on input line 156.
 (pdftex.def)             Requested size: 227.62204pt x 173.97935pt.
 
-Overfull \hbox (11.3811pt too wide) in paragraph at lines 159--160
+Overfull \hbox (11.3811pt too wide) in paragraph at lines 156--157
  [][] 
  []
 
-<425_schaltplan_johnson_LLE.png, id=122, 1232.605pt x 916.42375pt>
+<425_schaltplan_johnson_LLE.png, id=126, 1232.605pt x 916.42375pt>
 File: 425_schaltplan_johnson_LLE.png Graphic file (type png)
 <use 425_schaltplan_johnson_LLE.png>
-Package pdftex.def Info: 425_schaltplan_johnson_LLE.png  used on input line 165.
+Package pdftex.def Info: 425_schaltplan_johnson_LLE.png  used on input line 162.
 (pdftex.def)             Requested size: 227.62204pt x 169.2281pt.
 
-Overfull \hbox (11.3811pt too wide) in paragraph at lines 165--166
+Overfull \hbox (11.3811pt too wide) in paragraph at lines 162--163
  [][] 
  []
 
-<425_schaltplan_visualisierung_johnson_HLE.png, id=124, 1105.12875pt x 692.5875pt>
+<425_schaltplan_visualisierung_johnson_HLE.png, id=128, 1105.12875pt x 692.5875pt>
 File: 425_schaltplan_visualisierung_johnson_HLE.png Graphic file (type png)
 <use 425_schaltplan_visualisierung_johnson_HLE.png>
-Package pdftex.def Info: 425_schaltplan_visualisierung_johnson_HLE.png  used on input line 171.
+Package pdftex.def Info: 425_schaltplan_visualisierung_johnson_HLE.png  used on input line 168.
 (pdftex.def)             Requested size: 227.62204pt x 142.64714pt.
 
-Overfull \hbox (11.3811pt too wide) in paragraph at lines 171--172
+Overfull \hbox (11.3811pt too wide) in paragraph at lines 168--169
  [][] 
  []
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/scit' undefined
-(Font)              using `OT1/cmr/m/sc' instead on input line 175.
+(Font)              using `OT1/cmr/m/sc' instead on input line 172.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1027,12 +1023,12 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.180 	.\end{align}
+l.181 	.\end{align}
                    
-pdfTeX warning (ext4): destination with the same identifier (name{table.3}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.180 	.\end{align}
+l.181 	.\end{align}
                     <./eff_band.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1042,80 +1038,85 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [3
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.199 
+      
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.201 
+l.199 
       
 pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.201 
+l.199 
       
 pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.201 
-      
-pdfTeX warning (ext4): destination with the same identifier (name{figure.7}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.201 
+l.199 
        <../data/4_0F01.PNG> <./425_schaltplan_vorverstärker_LLE.png (PNG copy)> <./425_schaltplan_johnson_LLE.png (PNG copy)> <./425_schaltplan_visualisierung_johnson_HLE.png (PNG copy)>]
-<425_schaltplan_messung_johnson.png, id=158, 1421.31pt x 751.80875pt>
+<425_schaltplan_messung_johnson.png, id=160, 1421.31pt x 751.80875pt>
 File: 425_schaltplan_messung_johnson.png Graphic file (type png)
 <use 425_schaltplan_messung_johnson.png>
-Package pdftex.def Info: 425_schaltplan_messung_johnson.png  used on input line 204.
+Package pdftex.def Info: 425_schaltplan_messung_johnson.png  used on input line 202.
 (pdftex.def)             Requested size: 227.62204pt x 120.3951pt.
 
-Overfull \hbox (11.3811pt too wide) in paragraph at lines 204--205
+Overfull \hbox (11.3811pt too wide) in paragraph at lines 202--203
  [][] 
  []
 
 
-Underfull \hbox (badness 1184) in paragraph at lines 205--205
-[]\OT1/cmr/bx/n/8 Abbildung 8 []\OT1/cmr/m/n/8 HLE--Box zur Mes-sung des \OT1/cmr/m/sc/8 John-son\OT1/cmr/m/n/8 --
+Underfull \hbox (badness 1184) in paragraph at lines 203--203
+[]\OT1/cmr/bx/n/8 Abbildung 7 []\OT1/cmr/m/n/8 HLE--Box zur Mes-sung des \OT1/cmr/m/sc/8 John-son\OT1/cmr/m/n/8 --
  []
 
-<../data/4_0F02.png, id=160, 642.4pt x 521.95pt>
+<../data/4_0F02.png, id=162, 642.4pt x 521.95pt>
 File: ../data/4_0F02.png Graphic file (type png)
 <use ../data/4_0F02.png>
-Package pdftex.def Info: ../data/4_0F02.png  used on input line 210.
+Package pdftex.def Info: ../data/4_0F02.png  used on input line 208.
 (pdftex.def)             Requested size: 227.62204pt x 184.93913pt.
 
-Overfull \hbox (11.3811pt too wide) in paragraph at lines 210--211
+Overfull \hbox (11.3811pt too wide) in paragraph at lines 208--209
  [][] 
  []
 
 (./Widerstandsabhängigkeit.tex
 
 pdfTeX warning: pdflatex (file ./Widerstandsabhängigkeit.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Widerstandsabhängigkeit.pdf, id=163, 361.35pt x 216.81pt>
+<Widerstandsabhängigkeit.pdf, id=166, 361.35pt x 216.81pt>
 File: Widerstandsabhängigkeit.pdf Graphic file (type pdf)
 <use Widerstandsabhängigkeit.pdf>
 Package pdftex.def Info: Widerstandsabhängigkeit.pdf  used on input line 119.
 (pdftex.def)             Requested size: 361.35463pt x 216.81938pt.
 )
-Overfull \hbox (11.38869pt too wide) in paragraph at lines 219--220
+Overfull \hbox (11.38869pt too wide) in paragraph at lines 221--222
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 220--220
-[]\OT1/cmr/bx/n/8 Abbildung 10 []\OT1/cmr/m/n/8 Widerstandsabh[]angigkeit mit
+Underfull \hbox (badness 10000) in paragraph at lines 222--222
+[]\OT1/cmr/bx/n/8 Abbildung 9 []\OT1/cmr/m/n/8 Widerstandsabh[]angigkeit mit
  []
 
 (./Widerstandsresiduen.tex
 
 pdfTeX warning: pdflatex (file ./Widerstandsresiduen.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Widerstandsresiduen.pdf, id=164, 361.35pt x 216.81pt>
+<Widerstandsresiduen.pdf, id=167, 361.35pt x 216.81pt>
 File: Widerstandsresiduen.pdf Graphic file (type pdf)
 <use Widerstandsresiduen.pdf>
 Package pdftex.def Info: Widerstandsresiduen.pdf  used on input line 125.
 (pdftex.def)             Requested size: 361.35463pt x 216.81938pt.
 )
-Overfull \hbox (11.38869pt too wide) in paragraph at lines 235--236
+Overfull \hbox (11.38869pt too wide) in paragraph at lines 238--239
  [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 239--239
+[]\OT1/cmr/bx/n/8 Abbildung 10 []\OT1/cmr/m/n/8 Die Re-si-du-en zur Wi-der-stand-s-
  []
 
 
@@ -1127,74 +1128,90 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [4
+pdfTeX warning (ext4): destination with the same identifier (name{figure.7}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.248 	,\end{align}
+                   
 pdfTeX warning (ext4): destination with the same identifier (name{figure.8}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.249 	.\end{align}
-                   
+l.248 	,\end{align}
+                   {/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}
 pdfTeX warning (ext4): destination with the same identifier (name{figure.9}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.249 	.\end{align}
-                   {/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}
+l.248 	,\end{align}
+                   
+pdfTeX warning (ext4): destination with the same identifier (name{table.2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.248 	,\end{align}
+                   
 pdfTeX warning (ext4): destination with the same identifier (name{figure.10}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.249 	.\end{align}
-                   
-pdfTeX warning (ext4): destination with the same identifier (name{table.11}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.249 	.\end{align}
-                   
-pdfTeX warning (ext4): destination with the same identifier (name{figure.12}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.249 	.\end{align}
+l.248 	,\end{align}
                     <./425_schaltplan_messung_johnson.png (PNG copy)> <../data/4_0F02.PNG> <./Widerstandsabhängigkeit.pdf> <./Widerstandsresiduen.pdf
 
 pdfTeX warning: pdflatex (file ./Widerstandsresiduen.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-Underfull \hbox (badness 10000) in paragraph at lines 255--258
+Underfull \hbox (badness 10000) in paragraph at lines 258--263
 \OT1/cmr/m/n/10 Der Li-te-ra-tur-wert ist ent-nom-men von
  []
 
 
-Underfull \hbox (badness 3049) in paragraph at lines 260--263
+Underfull \hbox (badness 1881) in paragraph at lines 258--263
+\OT1/cmr/m/n/10 sys-te-ma-ti-schen Feh-ler und nicht auf sta-tis-ti-
+ []
+
+
+Underfull \hbox (badness 1436) in paragraph at lines 258--263
+\OT1/cmr/m/n/10 sche Un-si-cher-hei-ten hin. Ei-ne Ur-sa-che wa-ren
+ []
+
+
+Underfull \hbox (badness 1292) in paragraph at lines 258--263
+\OT1/cmr/m/n/10 ha-ben, dass sich die ge-mes-se-nen Span-nun-gen
+ []
+
+
+Underfull \hbox (badness 2753) in paragraph at lines 258--263
+[]\OT1/cmr/m/n/10 anderten. Da die-ses Ph[]anomen nicht er-war-
+ []
+
+
+Underfull \hbox (badness 3049) in paragraph at lines 265--268
 \OT1/cmr/m/n/10 Wi-der-stands. F[]ur den Wi-der-stand wird der
  []
 
 (./Bandbreitenabhängigkeit.tex
 
 pdfTeX warning: pdflatex (file ./Bandbreitenabhängigkeit.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Bandbreitenabhängigkeit.pdf, id=183, 361.35pt x 216.81pt>
+<Bandbreitenabhängigkeit.pdf, id=185, 361.35pt x 216.81pt>
 File: Bandbreitenabhängigkeit.pdf Graphic file (type pdf)
 <use Bandbreitenabhängigkeit.pdf>
 Package pdftex.def Info: Bandbreitenabhängigkeit.pdf  used on input line 111.
 (pdftex.def)             Requested size: 361.35463pt x 216.81938pt.
 )
-Overfull \hbox (11.38869pt too wide) in paragraph at lines 268--269
+Overfull \hbox (11.38869pt too wide) in paragraph at lines 276--277
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 269--269
-[]\OT1/cmr/bx/n/8 Abbildung 13 []\OT1/cmr/m/n/8 Bandbreitenabh[]angkeit mit
+Underfull \hbox (badness 10000) in paragraph at lines 277--277
+[]\OT1/cmr/bx/n/8 Abbildung 11 []\OT1/cmr/m/n/8 Bandbreitenabh[]angkeit mit
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 299--302
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 308--311
 \OT1/cmr/m/n/10 Der Li-te-ra-tur-wert ist ent-nom-men von
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 304--305
-\OT1/cmr/m/n/10 Vergleicht man die bei-den \OT1/cmr/m/sc/10 Boltz-mann\OT1/cmr/m/n/10 --
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 304--305
-\OT1/cmr/m/n/10 Konstanten so liegt die Ab-wei-chung
  []
 
 
@@ -1206,54 +1223,49 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [5
-pdfTeX warning (ext4): destination with the same identifier (name{figure.13}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{figure.11}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.325 \begin{align}
-                   
-pdfTeX warning (ext4): destination with the same identifier (name{table.14}) has been already used, duplicate ignored
+l.317 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{table.3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.325 \begin{align}
-                    <./Bandbreitenabhängigkeit.pdf>]
-<425_schaltplan_visualisierung_schort_LLE.png, id=209, 1448.41125pt x 762.85pt>
+l.317 
+       <./Bandbreitenabhängigkeit.pdf>]
+<425_schaltplan_visualisierung_schort_LLE.png, id=208, 1448.41125pt x 762.85pt>
 File: 425_schaltplan_visualisierung_schort_LLE.png Graphic file (type png)
 <use 425_schaltplan_visualisierung_schort_LLE.png>
-Package pdftex.def Info: 425_schaltplan_visualisierung_schort_LLE.png  used on input line 340.
+Package pdftex.def Info: 425_schaltplan_visualisierung_schort_LLE.png  used on input line 345.
 (pdftex.def)             Requested size: 227.62204pt x 119.88179pt.
-
-Overfull \hbox (11.3811pt too wide) in paragraph at lines 340--341
- [][] 
- []
-
-<425_schaltplan_messung_schrot_LLE.png, id=211, 925.4575pt x 933.4875pt>
-File: 425_schaltplan_messung_schrot_LLE.png Graphic file (type png)
-<use 425_schaltplan_messung_schrot_LLE.png>
-Package pdftex.def Info: 425_schaltplan_messung_schrot_LLE.png  used on input line 345.
-(pdftex.def)             Requested size: 227.62204pt x 229.59668pt.
 
 Overfull \hbox (11.3811pt too wide) in paragraph at lines 345--346
  [][] 
  []
 
-<425_schaltplan_messung_schrot.png, id=213, 1499.6025pt x 809.0225pt>
-File: 425_schaltplan_messung_schrot.png Graphic file (type png)
-<use 425_schaltplan_messung_schrot.png>
-Package pdftex.def Info: 425_schaltplan_messung_schrot.png  used on input line 350.
-(pdftex.def)             Requested size: 227.62204pt x 122.79247pt.
+<425_schaltplan_messung_schrot_LLE.png, id=210, 925.4575pt x 933.4875pt>
+File: 425_schaltplan_messung_schrot_LLE.png Graphic file (type png)
+<use 425_schaltplan_messung_schrot_LLE.png>
+Package pdftex.def Info: 425_schaltplan_messung_schrot_LLE.png  used on input line 350.
+(pdftex.def)             Requested size: 227.62204pt x 229.59668pt.
 
 Overfull \hbox (11.3811pt too wide) in paragraph at lines 350--351
  [][] 
  []
 
+<425_schaltplan_messung_schrot.png, id=212, 1499.6025pt x 809.0225pt>
+File: 425_schaltplan_messung_schrot.png Graphic file (type png)
+<use 425_schaltplan_messung_schrot.png>
+Package pdftex.def Info: 425_schaltplan_messung_schrot.png  used on input line 355.
+(pdftex.def)             Requested size: 227.62204pt x 122.79247pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 351--351
-[]\OT1/cmr/bx/n/8 Abbildung 17 []\OT1/cmr/m/n/8 Schaltplan zur Mes-sung des
+Overfull \hbox (11.3811pt too wide) in paragraph at lines 355--356
+ [][] 
  []
 
 
-Underfull \hbox (badness 1910) in paragraph at lines 368--369
-\OT1/cmr/m/n/10 Das ge-mes-se-ne Rau-schen ent-steht nicht aus-
+Underfull \hbox (badness 10000) in paragraph at lines 356--356
+[]\OT1/cmr/bx/n/8 Abbildung 14 []\OT1/cmr/m/n/8 Schaltplan zur Mes-sung des
  []
 
 
@@ -1265,111 +1277,64 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [6
-pdfTeX warning (ext4): destination with the same identifier (name{figure.15}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{figure.12}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.373 \begin{align}
+l.369 	,\end{align}
                    
-pdfTeX warning (ext4): destination with the same identifier (name{figure.16}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{figure.13}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.373 \begin{align}
-                   
-pdfTeX warning (ext4): destination with the same identifier (name{figure.17}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.373 \begin{align}
-                    <./425_schaltplan_visualisierung_schort_LLE.png (PNG copy)> <./425_schaltplan_messung_schrot_LLE.png (PNG copy)> <./425_schaltplan_messung_schrot.png (PNG copy)>]
+l.369 	,\end{align}
+                    <./425_schaltplan_visualisierung_schort_LLE.png (PNG copy)> <./425_schaltplan_messung_schrot_LLE.png (PNG copy)>]
+Underfull \hbox (badness 1910) in paragraph at lines 373--374
+\OT1/cmr/m/n/10 Das ge-mes-se-ne Rau-schen ent-steht nicht aus-
+ []
+
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/it' in size <5.52065> not available
-(Font)              size <6> substituted on input line 385.
+(Font)              size <6> substituted on input line 390.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 385.
+(hyperref)                removing `math shift' on input line 390.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 385.
+(hyperref)                removing `subscript' on input line 390.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 385.
+(hyperref)                removing `math shift' on input line 390.
 
 (./idc.tex
 
 pdfTeX warning: pdflatex (file ./idc.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<idc.pdf, id=228, 361.35pt x 216.81pt>
+<idc.pdf, id=227, 361.35pt x 216.81pt>
 File: idc.pdf Graphic file (type pdf)
 <use idc.pdf>
 Package pdftex.def Info: idc.pdf  used on input line 141.
 (pdftex.def)             Requested size: 361.35463pt x 216.81938pt.
 )
-Overfull \hbox (11.38869pt too wide) in paragraph at lines 406--407
+Overfull \hbox (11.38869pt too wide) in paragraph at lines 413--414
  [][] 
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 420.
+(hyperref)                removing `math shift' on input line 428.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\Delta' on input line 420.
+(hyperref)                removing `\Delta' on input line 428.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 420.
+(hyperref)                removing `subscript' on input line 428.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 420.
-
-(./shot_freq.tex
-
-pdfTeX warning: pdflatex (file ./shot_freq.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<shot_freq.pdf, id=232, 361.35pt x 216.81pt>
-File: shot_freq.pdf Graphic file (type pdf)
-<use shot_freq.pdf>
-Package pdftex.def Info: shot_freq.pdf  used on input line 117.
-(pdftex.def)             Requested size: 361.35463pt x 216.81938pt.
-)
-Overfull \hbox (11.38869pt too wide) in paragraph at lines 446--447
- [][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 447--447
-[]\OT1/cmr/bx/n/8 Abbildung 20 []\OT1/cmr/m/n/8 Frequenzabh[]angigkeit mit $[] \U/ntxmia/m/it/8 =
- []
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 460.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 460.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 460.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 460.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\Delta' on input line 460.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 460.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 460.
+(hyperref)                removing `math shift' on input line 428.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1380,21 +1345,194 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [7
-pdfTeX warning (ext4): destination with the same identifier (name{table.19}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{figure.14}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.471 \end{table}
-                 
-pdfTeX warning (ext4): destination with the same identifier (name{figure.18}) has been already used, duplicate ignored
+l.438 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{figure.15}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.471 \end{table}
-                 
-pdfTeX warning (ext4): destination with the same identifier (name{table.21}) has been already used, duplicate ignored
+l.438 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{table.4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.471 \end{table}
-                  <./idc.pdf>] (./main.bbl
+l.438 
+       <./425_schaltplan_messung_schrot.png (PNG copy)> <./idc.pdf>] (./shot_freq.tex
+
+pdfTeX warning: pdflatex (file ./shot_freq.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<shot_freq.pdf, id=248, 361.35pt x 216.81pt>
+File: shot_freq.pdf Graphic file (type pdf)
+<use shot_freq.pdf>
+Package pdftex.def Info: shot_freq.pdf  used on input line 117.
+(pdftex.def)             Requested size: 361.35463pt x 216.81938pt.
+)
+Overfull \hbox (11.38869pt too wide) in paragraph at lines 455--456
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 456--456
+[]\OT1/cmr/bx/n/8 Abbildung 16 []\OT1/cmr/m/n/8 Frequenzabh[]angigkeit mit $[] \U/ntxmia/m/it/8 =
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 470.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 470.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 470.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 470.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\Delta' on input line 470.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 470.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 470.
+
+
+Underfull \hbox (badness 2080) in paragraph at lines 485--486
+[]\OT1/cmr/m/n/10 Das \OT1/cmr/m/sc/10 John-son\OT1/cmr/m/n/10 --Rauschen, oder ther-mi-sches
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]| []
+ []
+
+[8
+pdfTeX warning (ext4): destination with the same identifier (name{figure.16}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.499 \begin{align}
+                   
+pdfTeX warning (ext4): destination with the same identifier (name{table.5}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.499 \begin{align}
+                    <./shot_freq.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]| []
+ []
+
+[9
+
+]
+Overfull \hbox (4.25006pt too wide) detected at line 521
+$\OT1/cmr/m/n/8 10$
+ []
+
+
+Overfull \hbox (4.25006pt too wide) detected at line 521
+$\OT1/cmr/m/n/8 45$
+ []
+
+
+Overfull \hbox (4.25006pt too wide) detected at line 522
+$\OT1/cmr/m/n/8 10$
+ []
+
+
+Overfull \hbox (8.50012pt too wide) detected at line 522
+$\OT1/cmr/m/n/8 295$
+ []
+
+
+Overfull \hbox (4.25006pt too wide) detected at line 523
+$\OT1/cmr/m/n/8 10$
+ []
+
+
+Overfull \hbox (8.50012pt too wide) detected at line 529
+$\OT1/cmr/m/n/8 119$
+ []
+
+
+Overfull \hbox (4.25006pt too wide) detected at line 530
+$\OT1/cmr/m/n/8 20$
+ []
+
+
+Overfull \hbox (11.33943pt too wide) in paragraph at lines 515--538
+ [] 
+ []
+
+
+Overfull \hbox (29.62901pt too wide) in paragraph at lines 540--562
+ [] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (8.50012pt too wide) detected at line 586
+$\OT1/cmr/m/n/8 330$
+ []
+
+
+Overfull \hbox (4.25006pt too wide) detected at line 586
+$\OT1/cmr/m/n/8 10$
+ []
+
+
+Overfull \hbox (4.25006pt too wide) detected at line 587
+$\OT1/cmr/m/n/8 10$
+ []
+
+
+Overfull \hbox (4.25006pt too wide) detected at line 588
+$\OT1/cmr/m/n/8 10$
+ []
+
+
+Overfull \hbox (4.25006pt too wide) detected at line 589
+$\OT1/cmr/m/n/8 10$
+ []
+
+
+Overfull \hbox (4.25006pt too wide) detected at line 590
+$\OT1/cmr/m/n/8 33$
+ []
+
+
+Overfull \hbox (8.50012pt too wide) detected at line 591
+$\OT1/cmr/m/n/8 100$
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (4.25006pt too wide) detected at line 612
+$\LMS/ntxsy/m/n/8.03 ^^@\OT1/cmr/m/n/8 1014$
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+(./main.bbl
 Underfull \hbox (badness 4096) in paragraph at lines 59--64
 []\OT1/cmr/m/n/10 CODATA Boltz-mann Kon-stan-te. [][]$https : / /
  []
@@ -1407,19 +1545,34 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []| []
  []
 
-[8
-pdfTeX warning (ext4): destination with the same identifier (name{figure.20}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.477 \end{document}
-                    
-pdfTeX warning (ext4): destination with the same identifier (name{table.22}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.477 \end{document}
-                    
+[10
 
- <./shot_freq.pdf>] (./main.aux)
+
+pdfTeX warning (ext4): destination with the same identifier (name{table.6}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.620 \end{document}
+                    
+pdfTeX warning (ext4): destination with the same identifier (name{table.7}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.620 \end{document}
+                    
+pdfTeX warning (ext4): destination with the same identifier (name{table.8}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.620 \end{document}
+                    
+pdfTeX warning (ext4): destination with the same identifier (name{table.9}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.620 \end{document}
+                    
+pdfTeX warning (ext4): destination with the same identifier (name{table.10}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.620 \end{document}
+                    ] (./main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
@@ -1432,25 +1585,22 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 9B52048BA82216203A95716D36A86753;3915.
+(rerunfilecheck)             Checksum: DB60E0C0FB8F65D6BCCD267434F02CFF;3822.
  ) 
 Here is how much of TeX's memory you used:
- 22796 strings out of 476023
- 397328 string characters out of 5791581
- 1956187 words of memory out of 5000000
- 44423 multiletter control sequences out of 15000+600000
- 638054 words of font info for 253 fonts, out of 8000000 for 9000
+ 22817 strings out of 476023
+ 397525 string characters out of 5791581
+ 2020187 words of memory out of 5000000
+ 44428 multiletter control sequences out of 15000+600000
+ 639454 words of font info for 257 fonts, out of 8000000 for 9000
  24 hyphenation exceptions out of 8191
- 90i,17n,93p,541b,967s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 90i,17n,93p,541b,937s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/NewTXMI5.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/NewTXMI7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/txexs.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/txsys.pfb>
-Output written on main.pdf (8 pages, 1011917 bytes).
+Output written on main.pdf (10 pages, 1024134 bytes).
 PDF statistics:
- 374 PDF objects out of 1000 (max. 8388607)
- 302 compressed objects within 4 object streams
- 91 named destinations out of 1000 (max. 500000)
- 233 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 398 PDF objects out of 1000 (max. 8388607)
+ 324 compressed objects within 4 object streams
+ 103 named destinations out of 1000 (max. 500000)
+ 241 words of extra memory for PDF output out of 10000 (max. 10000000)
 

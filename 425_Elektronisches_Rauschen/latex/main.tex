@@ -7,7 +7,7 @@
 \usepackage{amsmath,amssymb,amsfonts}%
 \usepackage{amsthm}%
 \usepackage{physics}
-\usepackage[locale=DE]{siunitx}
+\usepackage{siunitx}
 \usepackage{mathrsfs}%
 \usepackage[title]{appendix}%
 \usepackage{xcolor}%
@@ -40,10 +40,6 @@
 \titleformat{\subsection}{}{\thesubsection}{1em}{\itshape}
 \titleformat{\subsubsection}{}{\thesubsubsection}{1em}{\itshape}
 
-\makeatletter
-\let\c@figure\c@table
-\makeatother
-
 \begin{document}
 
 \title[]{Praktikum 4 -- Versuch 425: Elektronisches Rauschen}
@@ -62,7 +58,7 @@ Die Größe der Elementarladung lässt sich damit bestimmen.
 
 \section{Bandbreite}
 \subsection{Theoretischer Hintergrund}
-\footnote{Die Abweichung der Messwerte von der Literatur wird immer in $[\cdot ]$ hinter dem Messwert angegeben.}Die Bandbreite gibt die Breite eines Frequenzsbands an.
+\footnote{Die relative Abweichung des Fehlers vom Messwert und die Abweichung vom Literaturwert in $\sigma $ wird immer hinter dem Messwert wie $[\cdot \%,\cdot \sigma ]$ angegeben.}Die Bandbreite gibt die Breite eines Frequenzsbands an.
 Da das elektronische Rauschen von der Bandbreite abhängig ist, wird diese mit einem Bandpass vorgegeben.
 Ein Frequenzband einer bestimmten Breite kann mit einem Hoch-- und Tiefpass in Serie (auch Bandpass) erzeugt werden.
 Die im Versuch verwendete Anordnung ist in Abb.\ (\ref{fig:schaltplan_bandpass}) gezeigt.
@@ -88,7 +84,7 @@ Das analytische Ergebnis des Integrals ist
 	\Delta f_\text{eff}=\dfrac{f_\text{l}^4\pi \left(f_\text{h}-f_\text{l}\right)}{2^{3/2}\left(f_\text{h}^4-f_\text{l}^4\right)}
 .\end{align}
 
-\subsection{Durchführung \& Auswertung}
+\subsection{Durchführung \& Auswertung} \label{sec:bandbreite}
 Die Bandbreite wird für $f_\text{h}=\SI{100}{Hz}$ und $f_\text{l}=\SI{10}{kHz}$ bestimmt.
 Mit dem Frequenzgenerator werden, für eine konstante Eingangsspannung, verschiedene Frequenzen von $\SI{2}{Hz}$ bis $\SI{8}{MHz}$ eingestellt und die Ausgangsspannung gemessen.
 Daraus bestimmt sich jeweils die Verstärkung und damit die Bandbreite.
@@ -96,7 +92,7 @@ Daraus bestimmt sich jeweils die Verstärkung und damit die Bandbreite.
 Abb.\ (\ref{fig:bandpass}) zeigt die Verstärkung gegen die eingestellte Frequenz.
 Die Bandbreite berechnet sich dann zu
 \begin{align}
-	\Delta f_\text{eff}\approx \SI{11109+-60}{Hz}
+  \Delta f_\text{eff}\approx \SI{11109+-60}{Hz}[1\%]
 .\end{align}
 Aus Abb.\ (\ref{fig:bandpass}) lassen sich auch die Grenzfrequenzen von Hoch-- und Tiefpass bestimmen.
 Diese sind in Tab.\ (\ref{tab:bandpass_parameter}) eingetragen.
@@ -108,12 +104,13 @@ Sie stimmen mit den eingestellten Frequenzen überein und die resultierende Band
 	\caption{Gemessene Verstärkung $G=\frac{U_{\textsc{rms}}}{U_{0\textsc{, rms}}}$ im Bandpass.} \label{fig:bandpass}
 \end{figure}
 \begin{table}[t]
-	\centering
 	\begin{tabular}{cc}
+    \toprule
 		\textbf{Parameter} & {\textbf{Wert(Fehler)}} \\
-		\hline
+    \midrule
 		$f_l$              & \SI{10104 \pm 56}{}     \\
 		$f_h$              & \SI{100.50 \pm 0.17}{}  \\
+    \bottomrule
 	\end{tabular}
 	\label{tab:bandpass_parameter}
 	\caption{Frequenzabhängigkeit modelliert mit $G_\text{LP}(f)=\left[1+(f/f_l)^4\right]^{-1/2}$ und $G_\text{HP}(f)=(f/f_h)^2\left[1+(f/f_h)^4\right]^{-1/2}$}
@@ -121,7 +118,7 @@ Sie stimmen mit den eingestellten Frequenzen überein und die resultierende Band
 
 \section{\textsc{Johnson}--Rauschen}
 \subsection{Theoretischer Hintergrund}
-Das \textsc{Johnson}--Rauschen\footnote{auch thermisches Rauschen} entsteht durch thermodynamische Fluktuationen der Elektronen im Leitungsband.
+Das \textsc{Johnson}--Rauschen, auch thermisches Rauschen, entsteht durch thermodynamische Fluktuationen der Elektronen im Leitungsband.
 Dies geschieht, im Vergleich zum Schrotrauschen, ohne, dass eine Spannung angelegt ist.
 Elektronen bewegen sich im thermischen Gleichgewicht ungeordnet aufgrund ihrer thermischen Energie wodurch sie kurze Spannungs-- bzw.\ Strompulse erzeugen.
 Mit Hilfe von sensitiven Messgeräten kann dieses Rauschen untersucht werden.
@@ -195,8 +192,9 @@ Der Zusammenhang zwischen der am DMM abgelesenen Spannung ist modelliert durch
 	,\end{align}
 wobei das Rauschen in die beiden Anteile $V_\text{J}$ und $V_\text{N}$ aufgeteilt werden muss.
 $V_\text{J}$ ist das \textsc{Johnson}--Rauschen und $V_\text{N}$ ist der Anteil des Rauschens, der innerhalb der Verstärker entsteht.
-Eine Korrelation zwischen diesen beiden Rauschtypen gibt es nicht, da sie in unterschiedlichen Bauteilen beobachtet werden. % TODO: Die Erklärung scheint mir etwas zu einfach. Anderes Phänomen, welches nicht Termperaturabhängig ist.
-Diese Tatsache erlaubt daher die Bestimmung von $V_\text{J}$ über die Variation des Widerstands $R_\text{in}$, da $V_\text{J}=V_\text{J}(R_\text{in})$ und $V_\text{N}\neq V_\text{N}(R_\text{in})$.
+Eine Korrelation zwischen diesen beiden Rauschtypen gibt es nicht, da sie auf unterschiedlichen Phänomenen beruhen.
+Das \textsc{Johnson}--Rauschen ist abhängig von der Temperatur und dem Widerstand, das Verstärkerrauschen nicht.
+Diese Tatsache erlaubt daher die Bestimmung von $V_\text{J}$ über die Variation des Widerstands $R_\text{in}$ (da $V_\text{J}=V_\text{J}(R_\text{in})$ und $V_\text{N}\neq V_\text{N}(R_\text{in})$).
 Das \textsc{Johnson}--Rauschen kann zusätzlich über die Variation der Bandbreite erfolgen, da es von der Verstärkung $G_2$ abhängt.
 
 \begin{figure}[t]
@@ -214,18 +212,23 @@ Das \textsc{Johnson}--Rauschen kann zusätzlich über die Variation der Bandbrei
 \subsubsection{Variation des Widerstands}
 Wird der Widerstand variiert, um so das \textsc{Johnson}--Rauschen zu bestimmen, ergeben sich Abb.\ (\ref{fig:johnson_widerstand_messung}) mit Tab.\ (\ref{tab:johnson_widerstand_parameter}).
 
+Der Messpunkt für den größten Widerstand folgt offensichtlich nicht dem linearen Verhalten der restlichen Datenpunkte, insofern wird dieser Punkt für die Anpassung ausgelassen.
+
+Es lässt sich an der Darstellung der Residuen Abb.\ (\ref{fig:residuen}) erkennen, dass sie mit größer werdendem Widerstand steigen, was bedeutet, dass das lineare Verhalten für große Widerstände nicht passend ist.
+
 \begin{figure}[t]
 	\centering
 	\resizebox{.5\textwidth}{!}{\input{Widerstandsabhängigkeit.tex}}
 	\caption{Widerstandsabhängigkeit mit $\overline{V_J^2(t)+V_N^2(t)}=V_{\text{meter}}\frac{\SI{10}{V}}{(600\cdot G_2)^2}$} \label{fig:johnson_widerstand_messung}
 \end{figure}
 \begin{table}[t]
-	\centering
 	\begin{tabular}{cc}
+    \toprule
 		\textbf{Parameter} & {\textbf{Wert(Fehler)}}  \\
-		\hline
+    \midrule
 		m                  & \SI{1.51 \pm 0.11e-15}{} \\
 		b                  & \SI{7.04 \pm 0.29e-12}{} \\
+    \bottomrule
 	\end{tabular}
 	\label{tab:johnson_widerstand_parameter}
 	\caption{Widerstandsabhängigkeit modelliert mit $\overline{V_J^2(t)+V_N^2(t)}(R_\text{in})=m\cdot R+b$}
@@ -233,7 +236,7 @@ Wird der Widerstand variiert, um so das \textsc{Johnson}--Rauschen zu bestimmen,
 \begin{figure}[t]
 	\centering
 	\resizebox{.5\textwidth}{!}{\input{Widerstandsresiduen.tex}}
-	\caption{$\text{res}=\overline{u^2}-\hat{\overline{u^2}}$}
+	\caption{Die Residuen zur Widerstandsabhängigkeit; $\text{res}=\overline{u^2}-\hat{\overline{u^2}}$.} \label{fig:residuen}
 \end{figure}
 Es ist
 \begin{align}
@@ -250,11 +253,13 @@ sodass
 Die Temperatur war $T=\SI{293.95+-0.5}{K}$ und die Bandbreite $\Delta f_\text{eff}\approx \SI{11109+-60}{Hz}$.
 Damit ist die \textsc{Boltzmann}--Konstante
 \begin{align}
-	k_B^R          & =\SI{11.53+-0.09e-23}{J/K}[836\%] \\
+  k_B^R          & =\SI{11.53+-0.09e-23}{J/K}[1\%,112.7\sigma] \\
 	k_B^\text{lit} & =\SI{1.380e-23}{J/K}
 \end{align}
 Der Literaturwert ist entnommen von CODATA\cite{codataBoltzmann}.
-DISKUSSION (+ RESIDUEN)
+Die Abweichung dieses Werts von der Literatur ist sehr groß, da aber der relative Fehler sehr klein ist, deutet dies auf einen systematischen Fehler und nicht auf statistische Unsicherheiten hin.
+Eine Ursache waren überraschenderweise Gräusche -- wie Dialog oder das Tippen auf der Tastatur -- die dazu geführt haben, dass sich die gemessenen Spannungen änderten.
+Da dieses Phänomen nicht erwartet war, ist davon auszugehen, dass es weitere Ursachen gibt, deren Ursprung nicht klar war.
 
 \subsubsection{Variation der Bandbreite}
 Dieses Verfahren ist analog zur Variation des Widerstands.
@@ -262,6 +267,9 @@ Für den Widerstand wird der größtmögliche Widerstand verwendet, bei dem das 
 Dies bewirkt, dass das Gesamtrauschen vom \textsc{Johnson}--Rauschen dominiert wird.
 
 Wird die Bandbreite variiert, um so das \textsc{Johnson}--Rauschen zu bestimmen, ergeben sich Abb.\ (\ref{fig:johnson_bandbreite_plot}) mit Tab.\ (\ref{tab:johnson_bandbreite_parameter}).
+Es lässt sich erkennen, dass das \textsc{Johnson}--Rauschen linear mit der Bandbreite steigt.
+Mit der Erhöhung der Frequenz kommt also immer ein konstanter Anteil des Rauschen dazu, was bedeutet, dass das Rauschen nicht abhängig von der Frequenz ist.
+Das \textsc{Johnson}--Rauschen ist also weißes Rauschen.
 
 \begin{figure}[h]
 	\centering
@@ -269,12 +277,13 @@ Wird die Bandbreite variiert, um so das \textsc{Johnson}--Rauschen zu bestimmen,
 	\caption{Bandbreitenabhängkeit mit $\overline{V_J^2(t)+V_N^2(t)}=V_{\text{meter}}\frac{\SI{10}{V}}{(600\cdot G_2)^2}$ und $\Delta f_{\text{eff}}=\frac{f_l^4\pi (f_l-f_h)}{2^{3/2}(f_l^4-f_h^4)}$} \label{fig:johnson_bandbreite_plot}
 \end{figure}
 \begin{table}[h!]
-	\centering
 	\begin{tabular}{cc}
+    \toprule
 		\textbf{Parameter} & {\textbf{Wert(Fehler)}}    \\
-		\hline
+    \midrule
 		m                  & \SI{7.943 \pm 0.069e-17}{} \\
 		b                  & \SI{7.5 \pm 4.5e-15}{}     \\
+    \bottomrule
 	\end{tabular}
 	\label{tab:parameter}
 	\caption{Bandbreitenabhängigkeit modelliert mit $\overline{V_J^2(t)+V_N^2(t)}(\Delta f_{\text{eff}})=m\cdot \Delta f_{\text{eff}}+b$} \label{tab:johnson_bandbreite_parameter}
@@ -294,21 +303,17 @@ sodass
 Der Widerstand lag bei $R_\text{in}=\SI{1}{k\ohm}$.
 Damit ist die \textsc{Boltzmann}--Konstante
 \begin{align}
-	k_B^f          & =\SI{6.756+-0.06e-23}{J/K}[390\%] \\
+  k_B^f          & =\SI{6.756+-0.06e-23}{J/K}[1\%,89.6\sigma] \\
 	k_B^\text{lit} & =\SI{1.380e-23}{J/K}
 \end{align}
 Der Literaturwert ist entnommen von CODATA\cite{codataBoltzmann}.
-DISKUSSION
+Hier ist die Abweichung von der Literatur nicht so groß wie bei der Variation des Widerstands, es sind allerdings die selben Begründungen für die Abweichung.
 
-\subsubsection{Vergleich Widerstand \& Bandbreite}
-Vergleicht man die beiden \textsc{Boltzmann}--Konstanten so liegt die Abweichung bei
-\begin{align}
-	k_B^R         & =\SI{11.53+-0.09e-23}{J/K}[836\%] \\
-	k_B^f         & =\SI{6.756+-0.06e-23}{J/K}[390\%] \\
-	|k_B^f-k_B^R| & =\SI{4.774+-0.90e-23}{J/K}        % TODO: Was ist das?
-\end{align}
-DISKUSSION
-
+Beide Verfahren liefern Werte, die sehr stark von der Literatur abweichen; $k_B^f$ ist näher an der Literatur als $k_B^R$.
+Grund für den Unterschied zwischen $k_B^f$ und $k_B^R$ könnte sein, dass das \textsc{Johnson}--Rauschen weißes Rauschen ist -- daher unabhängig von der Frequenz -- aber abhängig von der Temperatur.
+Das bedeutet, dass die Variation der Frequenz selbst keinen Einfluss hat, die Temperatur im Widerstand allerdings schon.
+Deshalb ist die Abweichung bei der Frequenz geringer, da eine nicht unerhebliche Abweichung durch die Temperatur im Widerstand zustande kommen kann.
+Die absolute Abweichung beider Verfahren von der Literatur sind dann auf systematische Fehler zurückzuführen.
 
 \section{Schrotrauschen}
 \subsection{Theoretischer Hintergrund}
@@ -332,7 +337,7 @@ Dafür wurde dieser Schaltkreis in Abb.\ (\ref{fig:schrot_lle_mess}) zusammenges
 Die Elektronen aus der Photodiode wurden von einer Glühlampe herausgelöst, damit diese möglichst unkorreliert sind, um kein gleichmäßiges Rauschen zu erhalten.
 
 Beobachtet wurde der Rauschstrom bzw.\ die Rauschspannung mit Abb.\ (\ref{fig:schaltplan_schrot_mess}).
-Damit dies sichtbar war, wurde die Einstellung $f_\text{l}=\SI{100}{kHz}$ für die HLE--Box getroffen. %TODO: Effektive Bandbreite? integral über G_l
+Damit dies sichtbar war, wurde die Einstellung $f_\text{l}=\SI{100}{kHz}$ für die HLE--Box getroffen.
 Es ergab sich ein ähnliches Bild zum \textsc{Johnson}--Rauschen. %TODO kein bild schrotrauschen beob??
 
 \begin{figure}[t]
@@ -371,12 +376,12 @@ Das \textsc{Johnson}--Rauschen im $R_f$ Widerstand liefert einen Beitrag.
 Um diesen zu berechnen wurde die Ausgabe von $\overline{V_\text{meter}(t)}$ bei ausgeschalteter Lampe gemessen.
 Diese liegt bei
 \begin{align}
-	V_\text{meter}^\text{J}=\SI{1.075+-0.005}{V}\qquad G_2=6000
+  V_\text{meter}^\text{J}=\SI{1.075+-0.005}{V}[1\%]\qquad G_2=6000
 	.\end{align}
 Der Operationsverstärker hat eine gewisse Offset--Spannung bei ausgeschalteter Lampe für $i_\text{dc}=\SI{0}{V}$.
 Diese beträgt
 \begin{align}
-	V_\text{monitor}^\text{OpAmp}=\SI{-0.4+-0.1}{mV} % TODO: Wenn wir hier die Differenz nehmen, bekommmen wir noch den Anteil von dem Bauteil dazwischen
+  V_\text{monitor}^\text{OpAmp}=\SI{-0.4+-0.1}{mV}[25\%] % TODO: Wenn wir hier die Differenz nehmen, bekommmen wir noch den Anteil von dem Bauteil dazwischen
 	.\end{align}
 Das Aus-- und Einstecken des DMMs ist eine mögliche Quelle für ein weiteres Rauschen, allderdings zeigte dies keinen Effekt an $V_\text{monitor}$.
 
@@ -395,11 +400,13 @@ e^{i_\text{dc}}=\dfrac{m}{2\Delta f_\text{eff}}
 .\end{align} 
 Damit
 \begin{align} 
-  e^{i_\text{dc}}&=\SI{1.823+-0.017e-19}{C}[14\%]\\
+  e^{i_\text{dc}}&=\SI{1.823+-0.017e-19}{C}[1\%,12.9\sigma]\\
   e^\text{lit}&=\SI{1.602e-19}{C}
 .\end{align} 
 Der Literaturwert ist CODATA\cite{codataElementarladung} entnommen.
-DISKUSSION
+Die Abweichung von dem Literaturwert ist groß und der relative Fehler sehr klein.
+Das bedeutet, dass kein statistischer Fehler sondern ein systematischer Fehler für diese große Abweichung gesorgt hat.
+Auch hier gilt die selbe Begründung wie bei der Bestimmung von $k_B$.
 
 \begin{figure}[t]
 	\centering
@@ -407,12 +414,13 @@ DISKUSSION
 	\caption{Stromabhängigkeit mit $\overline{\delta i^2}=\frac{V_{\text{meter}}\SI{10}{V}}{(100G_2R_f)^2}$ und $i_{\text{dc}}=-\frac{V_{\text{monitor}}}{R_f}$} \label{fig:abhängig_idc}
 \end{figure}
 \begin{table}[t]
-	\centering
 	\begin{tabular}{cc}
+    \toprule
 		\textbf{Parameter} & {\textbf{Wert(Fehler)}}    \\
-		\hline
+    \midrule
 		m                  & \SI{4.049 \pm 0.038e-14}{} \\
 		b                  & \SI{2.690 \pm 0.087e-19}{} \\
+    \bottomrule
 	\end{tabular}
 	\caption{Stromabhängigkeit modelliert mit $\overline{\delta i^2}(i_{\text{dc}})=m\cdot i_{\text{dc}}+b$} \label{tab:abhängig_idc_parameter}
 \end{table}
@@ -434,12 +442,13 @@ Die Elementarladung bestimmt sich über den Geradenfit
 .\end{align} 
 Damit
 \begin{align} 
-  e^{\Delta f_\text{eff}}&=\SI{1.958+-0.039e-19}{C}[22\%]\{10\sigma \}\\
-  e^{\Delta f_\text{eff}}&=\SI{1.958+-0.039e-19}{C}[22\%,10\sigma ]\\
+  e^{\Delta f_\text{eff}}&=\SI{1.958+-0.039e-19}{C}[2\%,10\sigma]\\
   e^\text{lit}&=\SI{1.602e-19}{C}
 \end{align} 
 Der Literaturwert ist CODATA\cite{codataElementarladung} entnommen.
-DISKUSSION
+Die Abweichung von dem Literaturwert ist auch für dieses Verfahren groß und die relative Fehler klein.
+Dieser Wert unterscheidet sich nicht stark von $e^{i_\text{dc}}$; da der relative Fehler größer ist, ist die Abweichung kleiner.
+Hier gilt die selbe Diskussion.
 
 \begin{figure}[t]
 	\centering
@@ -447,30 +456,164 @@ DISKUSSION
 	\caption{Frequenzabhängigkeit mit $\overline{\delta i^2}=\frac{V_{\text{meter}}\SI{10}{V}}{(100G_2R_f)^2}$ und $\Delta f_{\text{eff}}=\frac{f_l\pi}{2^{3/2}}$} \label{fig:abhängig_f}
 \end{figure}
 \begin{table}[t]
-	\centering
 	\begin{tabular}{cc}
+    \toprule
 		\textbf{Parameter} & {\textbf{Wert(Fehler)}}    \\
-		\hline
+    \midrule
 		m                  & \SI{2.784 \pm 0.056e-23}{} \\
 		b                  & \SI{-2.2 \pm 3.0e-21}{}    \\
+    \bottomrule
 	\end{tabular}
 	\caption{Frequenzabhängigkeit modelliert mit $\overline{\delta i^2}(f)=m\cdot f+b$} \label{tab:abhängig_f_parameter}
 \end{table}
 
 \subsubsection{Vergleich $i_\text{dc}$ und $\Delta f_\text{eff}$}
+Vergleicht man die berechneten Elementarladungen so liegt die Abweichung bei
+\begin{align} 
+  e^{i_\text{dc}}&=\SI{1.823+-0.017e-19}{C}[1\%,12.9\sigma ]\\
+  e^{\Delta f_\text{eff}}&=\SI{1.958+-0.039e-19}{C}[2\%,9.1\sigma ]\\
+  |e^{i_\text{dc}}-e^{\Delta f_\text{eff}}|&=\SI{-0.135+-0.043e-19}{C}
+.\end{align} 
 
-\begin{table}[t]
-  \centering
-	\begin{tabular}{cc}
-		\textbf{Parameter} & {\textbf{Wert(Fehler)}} \\
-		\hline
-		$f_l$              & \SI{10104 \pm 56}{}     \\
-		$f_h$              & \SI{100.50 \pm 0.17}{}  \\
-	\end{tabular}
-	\caption{Frequenzabhängigkeit modelliert mit $G_\text{LP}(f)=\left[1+(f/f_l)^4\right]^{-1/2}$ und $G_\text{HP}(f)=(f/f_h)^2\left[1+(f/f_h)^4\right]^{-1/2}$} \label{tab:parameter}
+\section{Fazit}
+Ein Bandpass liefert eine Bandbreite von
+\begin{align} 
+  \Delta f_\text{eff}=\int_{0}^{\infty}\td fG_\text{HP}^2(f)G_\text{LP}^2(f)=\dfrac{f_\text{l}^4\pi \left(f_\text{h}-f_\text{l}\right)}{2^{3/2}\left(f_\text{h}^4-f_\text{l}^4\right)}
+.\end{align}
+Dieser Formel stimmt gut mit der gemessenen Bandbreite überein und konnte für diesen Versuch verwendet werden.
+
+Das \textsc{Johnson}--Rauschen, oder thermisches Rauschen, beschreibt das Rauschen in einem Widerstand $R$ bei Temperatur $T$ für eine gewissen Bandbreite $\Delta f_\text{eff}$
+\begin{align} 
+  \overline{V_\text{J}^2}=4k_BTR\Delta _\text{eff}
+.\end{align} 
+Hieraus lässt sich, mit Variation des Widerstands oder der Bandbreite, die \textsc{Boltzmann}--Konstante bestimmen, zu
+\begin{align} 
+  k_B^R &= \SI{11.53+-0.09e-23}{J/K}[1\%,112.7\sigma ]\\
+  k_B^f &= \SI{6.756+-0.06e-23}{J/K}[1\%,89.6\sigma ]
+.\end{align} 
+Die Abweichung von der Literatur sind bei sehr kleinem relativem Fehler sehr groß, was auf systematische Fehler hinweist, wie die Änderung der gemessenen Spannung bei einer Geräuschkulisse(!).
+
+Das Schrotrauschen entsteht durch die Quantelung der Elementarladung in $e$.
+Wenn Ladungsträger eine Potentialbarriere überwinden, dann ist die transferierte Ladung nicht kontinuierlich, was zu Strom-- und Spannungsimpulsen führt.
+Das Rauschen hängt also von der Ladung $e$, dem angelegten Gleichstrom $i_\text{dc}$ und der Bandbreite $\Delta f_\text{eff}$ ab, wie
+\begin{align} 
+  \overline{\delta i^2}=2ei_\text{dc}\Delta f_\text{eff}
+.\end{align} 
+Da hier nur ein Tiefpass verwendet worden ist, ist $\Delta f_\text{eff}=\tfrac{\pi f_\text{l}}{2^{3/2}}$.
+Die Elementarladung kann dann über Variation von $i_\text{dc}$ oder $\Delta f_\text{eff}$ berechnet werden, zu
+\begin{align} 
+  e^{i_\text{dc}} &= \SI{1.823+-0.017e-19}{C}[1\%,12.9\sigma ]\\
+  e^{\Delta f_\text{eff}} &= \SI{1.958+-0.039e-19}{C}[2\%,10\sigma ]
+.\end{align} 
+Die Abweichung von der Literatur ist zwar signifikant kleiner als bei der \textsc{Boltzmann}--Konstante, allerdings nicht im erwarteten Intervall.
+Da hier auch die statistischen Fehler sehr gering sind, muss es sich hier um die selben systematischen Fehler, wie bei der \textsc{Boltzmann}--Konstante handeln.
+
+Beide Rauschtypen sind weißes Rauschen, was mit einem linearen Zusammenhang zwischen der Rauschspannung und der Bandbreite gezeigt wurde.
+
+\clearpage
+\section{Appendix}
+\begin{table}[h]
+    \begin{tabular}{S[table-format=1.2e1] S[table-format=1.2] S[table-format=1.2] S[table-format=1.2e1] S[table-format=1.2e1]}
+        \toprule
+        {\(f\,[\si{\hertz}]\)} & {\(U_0\,[\si{\volt}]\)} & {\(\Delta U_0\,[\si{\volt}]\)} & {\(U\,[\si{\volt}]\)} & {\(\Delta U\,[\si{\volt}]\)} \\
+        \midrule
+        2        & 5.95 & 0.01 & 6e-3   & 10e-3 \\
+        8        & 7.35 & 0.01 & 45e-3  & 10e-3 \\
+        2e1      & 7.40 & 0.01 & 295e-3 & 10e-3 \\
+        8e1      & 7.50 & 0.01 & 4.01   & 0.05  \\
+        2e2      & 7.50 & 0.01 & 7.27   & 0.05  \\
+        8e2      & 7.50 & 0.05 & 7.51   & 0.05  \\
+        2e3      & 7.50 & 0.05 & 7.51   & 0.05  \\
+        8e3      & 7.47 & 0.05 & 6.33   & 0.05  \\
+        2e4      & 7.44 & 0.05 & 1.83   & 0.05  \\
+        8e4      & 7.45 & 0.05 & 119e-3 & 5e-3  \\
+        2e5      & 7.45 & 0.05 & 20e-3  & 2e-3  \\
+        8e5      & 7.45 & 0.05 & 1.5e-3 & 1e-3  \\
+        2e6      & 7.40 & 0.04 & 1e-3   & 1e-3  \\
+        8e6      & 7.70 & 0.10 & 1e-3   & 1e-3  \\
+        \bottomrule
+    \end{tabular}
+    \caption{Messdaten zur Vermessung der Bandbreite (\ref{sec:bandbreite}).}
+    \label{tab:frequency_data}
 \end{table}
-%TODO was ist die tabelle?
 
+\begin{table}[h]
+  \begin{tabular}{S[table-format=3.1e1] S[table-format=3e1] S[table-format=1e1] S[table-format=1.2] S[table-format=2e1]}
+    \toprule
+    $f_\text{l}[\SI{}{Hz}]$ & $f_\text{h}[\SI{}{Hz}]$ & $G_{2}$ & $V_\text{meter}\left[\SI{}{V}\right]$ & $\Delta V_\text{meter}\left[\SI{}{V}\right]$ \\
+    \midrule
+    3.3e3&1e1&1e4&1.05&10e-3\\
+    3.3e3&1e2&1e4&1.01&1e-2\\
+    3.3e3&3e2&1e4&0.95&1e-2\\
+    3.3e3&1e3&1e4&0.73&1e-2\\
+    10e3&1e3&6e3&1.01&1e-2\\
+    10e3&4e3&6e3&0.79&1e-2\\
+    33e3&100&3e3&0.93&1e-2\\
+    33e3&300&3e3&0.92&1e-2\\
+    33e3&1e3&3e3&0.91&1e-2\\
+    33e3&3e3&3e3&0.86&1e-2\\
+    100e3&100&2e3&1.27&1e-2\\
+    100e3&300&2e3&1.26&1e-2\\
+    100e3&1e3&2e3&1.26&1e-2\\
+    100e3&3e3&2e3&1.24&1e-2\\
+    \bottomrule
+  \end{tabular}
+  \caption{Messdaten zur Vermessung des \textsc{Johnson}--Rauschens mit der Variation der Bandbreite.}
+\end{table}
+
+\begin{table}[h]
+    \begin{tabular}{S[table-format=1e1]S[table-format=1.1e1]S[table-format=1.3]S[table-format=2e1]}
+    \toprule
+    $R_\text{in}[\SI{}{\ohm}]$ & $G_{2}$ & $V_\text{meter}[\SI{}{V}]$ & $\Delta V_\text{meter}[\SI{}{V}]$ \\
+    \midrule
+    1e0&2e3&1&12e-3\\
+    1e1&2e3&1.002&12e-3\\
+    1e2&2e3&1.027&12e-3\\
+    1e3&1.5e3&0.714&13e-3\\
+    1e4&1e3&0.920&12e-3\\
+    1e5&4e2&0.828&12e-3\\
+    1e6&3e2&0.856&14e-3\\
+    \bottomrule
+  \end{tabular}
+  \caption{Messdaten zur Vermessung des \textsc{Johnson}--Rauschens mit der Variation des Widerstands.}
+\end{table}
+
+\begin{table}[h]
+  \begin{tabular}{S[table-format=1.1e1]S[table-format=1.1e2]S[table-format=1.3]S[table-format=1.3]}
+    \toprule
+    $f_\text{l}[\SI{}{Hz}]$ & $G_{2}$ & $V_\text{meter}[\SI{}{V}]$ & $\Delta V_\text{meter}[\SI{}{Hz}]$ \\
+    \midrule
+    330&10e3&0.125&0.040\\
+    1e3&10e3&0.28&0.04\\
+    3.3e3&10e3&1.0&0.02\\
+    10e3&6e3&1.07&0.02\\
+    33e3&3e3&0.93&0.02\\
+    100e3&1.5e3&0.731&0.02\\
+    \bottomrule
+  \end{tabular}
+  \caption{Messdaten zur Vermessung des Schrotrauschens in Abhängigkeit von $\Delta f_\text{eff}$.}
+\end{table}
+
+\begin{table}[h]
+  \begin{tabular}{S[table-format=-3.1e1]S[table-format=1.1e1]S[table-format=1.3]S[table-format=1.3]}
+    \toprule
+    $i_\text{dc}[\SI{}{V}]$ & $G_{2}$ & $I[\SI{}{A}]$ & $\Delta I[\SI{}{V}]$ \\
+    \midrule
+    -86.9e-3&4e3&1.008&0.012\\
+    -109.8e-3&4e3&1.147&0.012\\
+    -211.5e-3&3e3&0.977&0.014\\
+    -303.2e-3&3e3&1.328&0.014\\
+    -408e-3&2e3&0.755&0.015\\
+    -514e-3&2e3&0.936&0.014\\
+    -574e-3&2e3&1.036&0.015\\
+    -739e-3&2e3&1.312&0.015\\
+    -812e-3&1.5e3&0.812&0.015\\
+    -928e-3&1.5e3&0.923&0.015\\
+    -1014e-3&1.5e3&1.004&0.015\\
+    \bottomrule
+  \end{tabular}
+  \caption{Messdaten zur Vermessung des Schrotrauschens in Abhängigkeit von $i_\text{dc}$.}
+\end{table}
 
 \bibliography{refs}
 
