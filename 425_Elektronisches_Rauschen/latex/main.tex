@@ -40,10 +40,11 @@
 \titleformat{\subsection}{}{\thesubsection}{1em}{\itshape}
 \titleformat{\subsubsection}{}{\thesubsubsection}{1em}{\itshape}
 
+\makeatletter
+\let\c@figure\c@table
+\makeatother
 
 \begin{document}
-
-\let\c@figure\c@table
 
 \title[]{Praktikum 4 -- Versuch 425: Elektronisches Rauschen}
 \author*[1]{\fnm{Jonas} \sur{Wortmann}}\email{s02jwort@uni-bonn.de}
@@ -54,7 +55,7 @@
 
 \section{Einleitung}
 In jedem elektrischen Schaltkreis ist ein elektronisches Rauschen vorhanden.
-Dieses Rauschen setzt sich aus dem \textsc{Johnson}--Rauschen und dem Schrotrauschen zusammen.
+Dieses Rauschen setzt sich aus dem \textsc{Johnson}--Rauschen und dem Schrotrauschen zusammen. % TODO: Eigentlich noch aus anderen Rauschen, wie dem des Verstärkers
 Das \textsc{Johnson}--Rauschen ist temperaturabhängig, daraus lässt sich die \textsc{Boltzmann}--Konstante bestimmen.
 Das Schrotrauschen wird durch die Quantelung der Elementarladung hervorgerufen.
 Die Größe der Elementarladung lässt sich damit bestimmen.
@@ -185,16 +186,16 @@ Dieses Signal wird dann über die Zeitkonstante von $\SI{1}{s}$ gemittelt.
 
 Um zu überprüfen, ob der Multiplier wie erwartet funktioniert, kann der Output der HLE--Box gegen den Multiplier aufgetragen werden.
 Es ergibt sich Abb.\ (\ref{fig:multiplier}).
-Der quadratische Zusammenhang mit Verschiebung ist klar zu erkennen.
+Der quadratische Zusammenhang mit Verschiebung ist klar zu erkennen. % TODO: Warum?
 
 Da das Ausgangssignal nur in einem kleinen Bereich -- zwischen $\SI{0.6}{V}$ und $\SI{1.2}{V}$ -- stabil und linear zum Eingangsrauschen ist, wird das DMM mit Hilfe der Verstärkung in diesem Bereich gehalten.
 Der Zusammenhang zwischen der am DMM abgelesenen Spannung ist modelliert durch
 \begin{align}
 	V_\text{meter}=\overline{V_\text{J}^2(t)+V_\text{N}^2(t)}\dfrac{\left(600G_2\right)^2}{\SI{10}{V}}
 	,\end{align}
-wobei das Rauschen in die beiden Anteile $V_\text{J}$ und $V_\text{N}$ aufteilt werden muss.
+wobei das Rauschen in die beiden Anteile $V_\text{J}$ und $V_\text{N}$ aufgeteilt werden muss.
 $V_\text{J}$ ist das \textsc{Johnson}--Rauschen und $V_\text{N}$ ist der Anteil des Rauschens, der innerhalb der Verstärker entsteht.
-Eine Korrelation zwischen diesen beiden Rauschtypen gibt es nicht, da sie in unterschiedlichen Bauteilen beobachtet werden.
+Eine Korrelation zwischen diesen beiden Rauschtypen gibt es nicht, da sie in unterschiedlichen Bauteilen beobachtet werden. % TODO: Die Erklärung scheint mir etwas zu einfach. Anderes Phänomen, welches nicht Termperaturabhängig ist.
 Diese Tatsache erlaubt daher die Bestimmung von $V_\text{J}$ über die Variation des Widerstands $R_\text{in}$, da $V_\text{J}=V_\text{J}(R_\text{in})$ und $V_\text{N}\neq V_\text{N}(R_\text{in})$.
 Das \textsc{Johnson}--Rauschen kann zusätzlich über die Variation der Bandbreite erfolgen, da es von der Verstärkung $G_2$ abhängt.
 
@@ -246,7 +247,7 @@ sodass
 \begin{align}
 	k_B^R=\dfrac{m}{4T\Delta f_\text{eff}}\qquad \overline{V_\text{N}^2}=b
 	.\end{align}
-Die Temperatur war $T=\SI{293.95+-0.5}{K}$ und die Bandbreite $\Delta f_\text{eff}\approx \SI{110961.001}{Hz}$.
+Die Temperatur war $T=\SI{293.95+-0.5}{K}$ und die Bandbreite $\Delta f_\text{eff}\approx \SI{11109+-60}{Hz}$.
 Damit ist die \textsc{Boltzmann}--Konstante
 \begin{align}
 	k_B^R          & =\SI{11.53+-0.09e-23}{J/K}[836\%] \\
@@ -304,7 +305,7 @@ Vergleicht man die beiden \textsc{Boltzmann}--Konstanten so liegt die Abweichung
 \begin{align}
 	k_B^R         & =\SI{11.53+-0.09e-23}{J/K}[836\%] \\
 	k_B^f         & =\SI{6.756+-0.06e-23}{J/K}[390\%] \\
-	|k_B^f-k_B^R| & =\SI{4.774+-0.90e-23}{J/K}
+	|k_B^f-k_B^R| & =\SI{4.774+-0.90e-23}{J/K}        % TODO: Was ist das?
 \end{align}
 DISKUSSION
 
@@ -331,7 +332,7 @@ Dafür wurde dieser Schaltkreis in Abb.\ (\ref{fig:schrot_lle_mess}) zusammenges
 Die Elektronen aus der Photodiode wurden von einer Glühlampe herausgelöst, damit diese möglichst unkorreliert sind, um kein gleichmäßiges Rauschen zu erhalten.
 
 Beobachtet wurde der Rauschstrom bzw.\ die Rauschspannung mit Abb.\ (\ref{fig:schaltplan_schrot_mess}).
-Damit dies sichtbar war, wurde die Einstellung $f_\text{l}=\SI{100}{kHz}$ für die HLE--Box getroffen.
+Damit dies sichtbar war, wurde die Einstellung $f_\text{l}=\SI{100}{kHz}$ für die HLE--Box getroffen. %TODO: Effektive Bandbreite? integral über G_l
 Es ergab sich ein ähnliches Bild zum \textsc{Johnson}--Rauschen. %TODO kein bild schrotrauschen beob??
 
 \begin{figure}[t]
@@ -375,7 +376,7 @@ Diese liegt bei
 Der Operationsverstärker hat eine gewisse Offset--Spannung bei ausgeschalteter Lampe für $i_\text{dc}=\SI{0}{V}$.
 Diese beträgt
 \begin{align}
-	V_\text{monitor}^\text{OpAmp}=\SI{-0.4+-0.1}{mV}
+	V_\text{monitor}^\text{OpAmp}=\SI{-0.4+-0.1}{mV} % TODO: Wenn wir hier die Differenz nehmen, bekommmen wir noch den Anteil von dem Bauteil dazwischen
 	.\end{align}
 Das Aus-- und Einstecken des DMMs ist eine mögliche Quelle für ein weiteres Rauschen, allderdings zeigte dies keinen Effekt an $V_\text{monitor}$.
 
@@ -420,7 +421,7 @@ DISKUSSION
 Für $i_\text{dc}=\text{const.}$ wurde durch Variation der Bandbreite die Weißheit des Rauschens überprüft.
 Die Weißheit gibt an, wie sich das Rauschen bei unterschiedlichen Frequenzen verhält.
 Es ist weiß, wenn es frequenzunabhängig ist.
-$\overline{\Delta i^2}$ ist gegen $f$ in Abb.\ (\ref{fig:abhängig_f}) aufgetragen.
+$\overline{\Delta i^2}$ ist gegen $\Delta f_{\text{eff}}$ in Abb.\ (\ref{fig:abhängig_f}) aufgetragen.
 Die Parameter für den Fit sind in Tab.\ (\ref{tab:abhängig_f_parameter}) eingetragen. %TODO chi² oder auch nur guide?
 Es ist zu erkennen, dass der Rauschstrom linear mit der Bandbreite steigt.
 Das bedeutet, dass das für die Vergrößerung der Bandbreite immer eine konstante Rauschspannung addiert wird.
@@ -443,7 +444,7 @@ DISKUSSION
 \begin{figure}[t]
 	\centering
 	\resizebox{.5\textwidth}{!}{\input{shot_freq.tex}}
-	\caption{Frequenzabhängigkeit mit $\overline{\delta i^2}=\frac{V_{\text{meter}}\SI{10}{V}}{(100G_2R_f)^2}$} \label{fig:abhängig_f}
+	\caption{Frequenzabhängigkeit mit $\overline{\delta i^2}=\frac{V_{\text{meter}}\SI{10}{V}}{(100G_2R_f)^2}$ und $\Delta f_{\text{eff}}=\frac{f_l\pi}{2^{3/2}}$} \label{fig:abhängig_f}
 \end{figure}
 \begin{table}[t]
 	\centering

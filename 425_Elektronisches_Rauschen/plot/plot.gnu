@@ -139,7 +139,7 @@ print m_err/2/df
 # 6.4
 file = '../data/shot_noise_frequency.dat'
 set output 'shot_freq.tex'
-set xlabel '$f/\SI{}{\kilo Hz}$'
+set xlabel '$\Delta f_{\text{eff}}/\SI{}{\kilo Hz}$'
 set ylabel '$\overline{\delta i^2}/\SI{}{\nano V^2}$'
 set logscale yx 10
 #unset logscale

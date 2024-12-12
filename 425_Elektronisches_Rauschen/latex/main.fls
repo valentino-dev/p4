@@ -358,7 +358,6 @@ INPUT /usr/share/texmf-dist/fonts/tfm/public/newtx/ntxsyc.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/newtx/ntxexa.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/newtx/ntxexa.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/newtx/ntxexa.tfm
-INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmcsc10.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
@@ -389,6 +388,7 @@ INPUT ./425_schaltplan_bandpass.png
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmbx8.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmcsc10.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmcsc10.tfm
+INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
 INPUT /usr/share/texmf-dist/fonts/vf/public/newtx/ntxmi.vf
 INPUT /usr/share/texmf-dist/fonts/tfm/public/newtx/NewTXMI.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/newtx/stxscr.tfm
