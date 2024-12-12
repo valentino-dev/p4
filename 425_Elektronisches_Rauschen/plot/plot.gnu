@@ -17,7 +17,7 @@ plot file using 1:($3/(600*$2)**2*10)
 # 5.2
 file = '../data/processed_eff_band.dat'
 set output 'eff_band.tex'
-#plot x**2
+set print 'eff_band.dat'
 
 set fit errorvariables
 
@@ -38,6 +38,11 @@ plot file using ($1<1000?$1:1/0):2:3 with yerrorbars title 'Hochpass Dominiert' 
   file using ($1>1000?$1:1/0):2:3 with yerrorbars title 'Tiefpass Dominiert' pt 0,\
   (g(x)<1?g(x):1/0) title 'Hochpass Modell $G_{\text{HP}}(f)$',\
   f(x) title 'Tiefpass Modell $G_{\text{LP}}(f)$'
+
+print file using 1:2:3 with yerrorbars title 'Hochpass Dominiert' pt 0,\
+
+unset print
+
 
 
 
