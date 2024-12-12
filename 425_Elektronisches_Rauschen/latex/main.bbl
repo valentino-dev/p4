@@ -1,6 +1,6 @@
 %% BioMed_Central_Bib_Style_v1.01
 
-\begin{thebibliography}{2}
+\begin{thebibliography}{3}
 % BibTex style file: bmc-mathphys.bst (version 2.1), 2014-07-24
 \ifx \bisbn   \undefined \def \bisbn  #1{ISBN #1}\fi
 \ifx \binits  \undefined \def \binits#1{#1}\fi
@@ -54,10 +54,19 @@ Universität Bonn
 \endbibitem
 
 %%% 2
-\bibitem[\protect\citeauthoryear{}{2022}]{codataBoltzmann}
+\bibitem[\protect\citeauthoryear{}{2022a}]{codataBoltzmann}
 \begin{botherref}
 CODATA Boltzmann Konstante.
 \url{https://physics.nist.gov/cgi-bin/cuu/Value?k}
+(2022)
+\end{botherref}
+\endbibitem
+
+%%% 3
+\bibitem[\protect\citeauthoryear{}{2022b}]{codataElementarladung}
+\begin{botherref}
+CODATA Elementarladung.
+\url{https://physics.nist.gov/cgi-bin/cuu/Value?e}
 (2022)
 \end{botherref}
 \endbibitem
