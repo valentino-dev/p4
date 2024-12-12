@@ -7,7 +7,7 @@
 \usepackage{amsmath,amssymb,amsfonts}%
 \usepackage{amsthm}%
 \usepackage{physics}
-\usepackage{siunitx}
+\usepackage[locale=DE]{siunitx}
 \usepackage{mathrsfs}%
 \usepackage[title]{appendix}%
 \usepackage{xcolor}%
@@ -58,7 +58,7 @@ Die Größe der Elementarladung lässt sich damit bestimmen.
 
 \section{Bandbreite}
 \subsection{Theoretischer Hintergrund}
-Die Bandbreite gibt die Breite eines Frequenzsbands an.
+\footnote{Die Abweichung der Messwerte von der Literatur wird immer in $[\cdot ]$ hinter dem Messwert angegeben.}Die Bandbreite gibt die Breite eines Frequenzsbands an.
 Da das elektronische Rauschen von der Bandbreite abhängig ist, wird diese mit einem Bandpass vorgegeben.
 Ein Frequenzband einer bestimmten Breite kann mit einem Hoch-- und Tiefpass in Serie (auch Bandpass) erzeugt werden.
 Die im Versuch verwendete Anordnung ist in Abb.\ (\ref{fig:schaltplan_bandpass}) gezeigt.
@@ -75,35 +75,44 @@ Die effektive Bandbreite wird mit der Verstärkung
 \end{align}
 bestimmt
 \begin{align}
-	\Delta f_\text{eff}=\int_{}^{}\td fG^2(f)=\int_{}^{}\td fG_\text{LP}^2(f)G_\text{HP}^2(f)
+	\Delta f_\text{eff}=\int_{0}^{\infty}\td fG^2(f)=\int_{0}^{\infty}\td fG_\text{LP}^2(f)G_\text{HP}^2(f)
 	,\end{align}
 mit der Tiefpassverstärkung $G_\text{LP}(f)=\left(1+(f/f_\text{l})^4\right)^{-1/2}$ und der Hochpassverstärkung $G_\text{HP}\left(f\right)=\left(f/f_\text{h}\right)^2\left(1+(f/f_\text{h})^4\right)^{-1/2}$.
 $f_\text{h}$ und $f_\text{l}$ sind die eingestellten Grenzfrequenzen von Hoch-- und Tiefpass.
+Das analytische Ergebnis des Integrals ist
+\begin{align}
+	\Delta f_\text{eff}=\dfrac{f_\text{l}^4\pi \left(f_\text{h}-f_\text{l}\right)}{2^{3/2}\left(f_\text{h}^4-f_\text{l}^4\right)}
+	.\end{align}
 
 \subsection{Durchführung \& Auswertung}
 Die Bandbreite wird für $f_\text{h}=\SI{1}{kHz}$ und $f_\text{l}=\SI{10}{kHz}$ bestimmt.
 Mit dem Frequenzgenerator werden, für eine konstante Eingangsspannung, verschiedene Frequenzen von $\SI{2}{Hz}$ bis $\SI{8}{MHz}$ eingestellt und die Ausgangsspannung gemessen.
 Daraus bestimmt sich jeweils die Verstärkung und damit die Bandbreite.
 
-\iffalse\begin{figure}[t]
+Abb.\ (\ref{fig:bandpass}) zeigt die Verstärkung gegen die eingestellte Frequenz.
+Die Bandbreite berechnet sich dann zu
+\begin{align}
+	\Delta f_\text{eff}\approx \SI{9997}{Hz}
+	.\end{align}
+
+\begin{figure}[t]
 	\centering
 	\resizebox{.5\textwidth}{!}{\input{eff_band.tex}}
-	\caption{Effektive Bandbreite.}
-\end{figure}\fi
-%TODO file not found error wtf
+	\caption{Gemessene Verstärkung $G=\frac{U_{\text{RMS}}}{U_{0\text{, RMS}}}$ im Bandpass.} \label{fig:bandpass}
+\end{figure}
 
 \section{\textsc{Johnson}--Rauschen}
 \subsection{Theoretischer Hintergrund}
 Das \textsc{Johnson}--Rauschen\footnote{auch thermisches Rauschen} entsteht durch thermodynamische Fluktuationen der Elektronen im Leitungsband.
-Dies geschieht, im Vergleich zum Schortrauschen, ohne, dass eine Spannung angelegt ist.
+Dies geschieht, im Vergleich zum Schrotrauschen, ohne, dass eine Spannung angelegt ist.
 Elektronen bewegen sich im thermischen Gleichgewicht ungeordnet aufgrund ihrer thermischen Energie wodurch sie kurze Spannungs-- bzw.\ Strompulse erzeugen.
 Mit Hilfe von sensitiven Messgeräten kann dieses Rauschen untersucht werden.
 
 Der formale Zusammenhang der mittleren quadratischen Rauschspannung in einem Widerstand $R$ ist
 \begin{align}
-	\overline{V^2}=4k_\text{B}TR\Delta f
+	\overline{V^2_\text{J}}=4k_\text{B}TR\Delta f_\text{eff}
 	,\end{align}
-mit der Temperatur $T$ und der Bandbreite $\Delta f$.
+mit der Temperatur $T$ und der Bandbreite $\Delta f_\text{eff}$.
 
 \subsection{Durchführung \& Auswertung: Beobachtung des \textsc{Johnson}--Rauschens}
 Das \textsc{Johnson}--Rauschen wird im Vorverstärkerschaltkreis aus Abb.\ (\ref{fig:vorverstärker}) beobachtet.
@@ -161,6 +170,17 @@ Um zu überprüfen, ob der Multiplier wie erwartet funktioniert, kann der Output
 Es ergibt sich Abb.\ (\ref{fig:multiplier}).
 Der quadratische Zusammenhang mit Verschiebung ist klar zu erkennen.
 
+Da das Ausgangssignal nur in einem kleinen Bereich -- zwischen $\SI{0.6}{V}$ und $\SI{1.2}{V}$ -- stabil und linear zum Eingangsrauschen ist, wird das DMM mit Hilfe der Verstärkung in diesem Bereich gehalten.
+Der Zusammenhang zwischen der am DMM abgelesenen Spannung ist modelliert durch
+\begin{align}
+	V_\text{meter}=\overline{V_\text{J}^2(t)+V_\text{N}^2(t)}\dfrac{\left(600G_2\right)^2}{\SI{10}{V}}
+	,\end{align}
+wobei das Rauschen in die beiden Anteile $V_\text{J}$ und $V_\text{N}$ aufteilt werden muss.
+$V_\text{J}$ ist das \textsc{Johnson}--Rauschen und $V_\text{N}$ ist der Anteil des Rauschens, der innerhalb der Verstärker entsteht.
+Eine Korrelation zwischen diesen beiden Rauschtypen gibt es nicht, da sie in unterschiedlichen Bauteilen beobachtet werden.
+Diese Tatsache erlaubt daher die Bestimmung von $V_\text{J}$ über die Variation des Widerstands $R_\text{in}$, da $V_\text{J}=V_\text{J}(R_\text{in})$ und $V_\text{N}\neq V_\text{N}(R_\text{in})$.
+Das \textsc{Johnson}--Rauschen kann zusätzlich über die Variation der Bandbreite erfolgen, da es von der Verstärkung $G_2$ abhängt.
+
 \begin{figure}[t]
 	\centering
 	\includegraphics[width=.5\textwidth]{425_schaltplan_messung_johnson.png}
@@ -173,13 +193,15 @@ Der quadratische Zusammenhang mit Verschiebung ist klar zu erkennen.
 	\caption{Output der HLE--Box (Kanal 1) gegen Multiplier (Kanal 2).} \label{fig:multiplier}
 \end{figure}
 
+\subsubsection{Variation des Widerstands}
+Wird der Widerstand variiert, um so das \textsc{Johnson}--Rauschen zu bestimmen, ergeben sich Abb.\ (\ref{fig:johnson_widerstand_messung}) mit Tab.\ (\ref{tab:johnson_widerstand_parameter}).
 
-\begin{figure}[h]
+\begin{figure}[t]
 	\centering
 	\resizebox{.5\textwidth}{!}{\input{Widerstandsabhängigkeit.tex}}
-	\caption{Widerstandsabhängigkeit mit $\overline{V_J^2(t)+V_N^2(t)}=V_{\text{meter}}\frac{\SI{10}{V}}{(600\cdot G_2)^2}$}
+	\caption{Widerstandsabhängigkeit mit $\overline{V_J^2(t)+V_N^2(t)}=V_{\text{meter}}\frac{\SI{10}{V}}{(600\cdot G_2)^2}$} \label{fig:johnson_widerstand_messung}
 \end{figure}
-\begin{table}[h!]
+\begin{table}[t]
 	\centering
 	\begin{tabular}{cc}
 		\textbf{Parameter} & {\textbf{Wert(Fehler)}}  \\
@@ -187,16 +209,38 @@ Der quadratische Zusammenhang mit Verschiebung ist klar zu erkennen.
 		m                  & \SI{1.51 \pm 0.11e-15}{} \\
 		b                  & \SI{7.04 \pm 0.29e-12}{} \\
 	\end{tabular}
-	\label{tab:parameter}
-	\caption{Widerstandsabhängigkeit modelliert mit $\overline{V_J^2(t)+V_N^2(t)}(R)=m\cdot R+b$}
+	\label{tab:johnson_widerstand_parameter}
+	\caption{Widerstandsabhängigkeit modelliert mit $\overline{V_J^2(t)+V_N^2(t)}(R_\text{in})=m\cdot R+b$}
 \end{table}
-
-\begin{figure}[h]
+\begin{figure}[t]
 	\centering
 	\resizebox{.5\textwidth}{!}{\input{Widerstandsresiduen.tex}}
 	\caption{$\text{res}=\overline{u^2}-\hat{\overline{u^2}}$}
 \end{figure}
+Es ist
+\begin{align}
+	\overline{V_\text{J}^2+V_\text{N}^2}=4k_B^RRT\Delta f_\text{eff}+\overline{V_\text{N}^2}
+	.\end{align}
+Aus der Anpassung geht hervor
+\begin{align}
+	\overline{V_\text{J}^2+V_\text{N}^2}=mR+b
+	,\end{align}
+sodass
+\begin{align}
+	k_B^R=\dfrac{m}{4T\Delta f_\text{eff}}\qquad \overline{V_\text{N}^2}=b
+	.\end{align}
+Die Temperatur war $T=\SI{252.3+-0.2}{K}$ und die Bandbreite $\Delta f_\text{eff}\approx \SI{110961.001}{Hz}$.
+Damit ist die \textsc{Boltzmann}--Konstante
+\begin{align}
+	k_B^R          & =\SI{11.53+-0.09e-23}{J/K}[836\%] \\
+	k_B^\text{lit} & =\SI{1.380e-23}{J/K}
+\end{align}
+Der Literaturwert ist entnommen von CODATA\cite{codataBoltzmann}.
+DISKUSSION (+ RESIDUEN)
 
+\subsubsection{Variation der Bandbreite}
+Dieses Verfahren ist analog zur Variation des Widerstands.
+Wird die Bandbreite Variiert, um so das \textsc{Johnson}--Rauschen zu bestimmen, ergeben sich Abb.\ (\ref{fig:johnson_bandbreite_plot}) mit Tab.\ (\ref{tab:johnson_bandbreite_parameter}).
 
 \begin{figure}[h]
 	\centering
@@ -231,13 +275,118 @@ Der quadratische Zusammenhang mit Verschiebung ist klar zu erkennen.
 	\label{tab:parameter}
 	\caption{Bandbreitenabhängigkeit modelliert mit $\overline{V_J^2(t)+V_N^2(t)}(\Delta f_{\text{eff}})=m\cdot \Delta f_{\text{eff}}+b$}
 \end{table}
+Es ist
+\begin{align}
+	\overline{V_\text{J}^2+V_\text{N}^2}=4k_B^fTR_\text{in}\Delta f_\text{eff}+\overline{V_\text{N}^2}
+	.\end{align}
+Aus der Anpassung geht hervor
+\begin{align}
+	\overline{V_\text{J}^2+V_\text{N}^2}=m\Delta f_\text{eff}+b
+	,\end{align}
+sodass
+\begin{align}
+	k_B^f=\dfrac{m}{4TR_\text{in}}\qquad \overline{V_\text{N}^2}=b
+	.\end{align}
+Der Widerstand lag bei $R_\text{in}=\SI{1}{k\ohm}$.
+Damit ist die \textsc{Boltzmann}--Konstante
+\begin{align}
+	k_B^f          & =\SI{6.756+-0.06e-23}{J/K}[390\%] \\
+	k_B^\text{lit} & =\SI{1.380e-23}{J/K}
+\end{align}
+Der Literaturwert ist entnommen von CODATA\cite{codataBoltzmann}.
+DISKUSSION
 
-\begin{figure}[h]
+\subsubsection{Vergleich Widerstand \& Bandbreite}
+Vergleicht man die beiden \textsc{Boltzmann}--Konstanten so liegt die Abweichung bei
+\begin{align}
+	k_B^R         & =\SI{11.53+-0.09e-23}{J/K}[836\%] \\
+	k_B^f         & =\SI{6.756+-0.06e-23}{J/K}[390\%] \\
+	|k_B^f-k_B^R| & =\SI{4.774+-0.90e-23}{J/K}
+\end{align}
+DISKUSSION
+
+
+\section{Schrotrauschen}
+\subsection{Theoretischer Hintergrund}
+Da die elektrische Ladung in $e$ gequantelt ist, wird bei dem Übergang von Elektronen über eine Potentialbarriere (z.B.\ zwischen zwei Bauteilen, Photodiode, etc.) stets eine Ladung von genau einem $e$ transferiert.
+Da die eingehende Ladung pro Zeit also nicht kontinuierlich ist, kommt es zu nicht stetigen Ausschlägen der Spannung, die über dieses Potential gemessen wird.
+Diese Spannung wird als Schrotrauschen auf sensitiven Messgeräten wahrgenommen.
+
+Formal ist das mittlere Rauschstromquadrat
+\begin{align}
+	\overline{i^2}=2ei_\text{dc}\Delta f_\text{eff}
+	,\end{align}
+mit $i_\text{dc}$ der angelegten Stromstärke.
+
+\subsection{Durchführung \& Auswertung: Beobachtung des Schrotrauschens}
+Das Schrotrauschen wurde innerhalb Abb.\ (\ref{fig:schrot_lle_beob}) bei einer Photodiode beobachtet.
+Dafür wurde dieser Schaltkreis in Abb.\ (\ref{fig:schrot_lle_mess}) zusammengesteckt.
+Die Elektronen aus der Photodiode wurden von einer Glühlampe herausgelöst, damit diese möglichst unkorreliert sind, um kein gleichmäßiges Rauschen zu erhalten.
+
+Beobachtet wurde der Rauschstrom bzw.\ die Rauschspannung mit Abb.\ (\ref{fig:schaltplan_schrot_mess}).
+Damit dies sichtbar war, wurde die Einstellung $f_\text{l}=\SI{100}{kHz}$ für die HLE--Box getroffen.
+Es ergab sich ein ähnliches Bild zum \textsc{Johnson}--Rauschen. %TODO kein bild schrotrauschen beob??
+
+\begin{figure}[t]
+	\centering
+	\includegraphics[width=.5\textwidth]{425_schaltplan_visualisierung_schort_LLE.png}
+	\caption{Schaltung für die LLE--Box zur Beobachtung und Messung des Schrotrauschens.\cite{anleitung425}} \label{fig:schrot_lle_beob}
+\end{figure}
+\begin{figure}[t]
+	\centering
+	\includegraphics[width=.5\textwidth]{425_schaltplan_messung_schrot_LLE.png}
+	\caption{LLE--Box zur Beobachtung und Messung des Schrotrauschens.\cite{anleitung425}} \label{fig:schrot_lle_mess}
+\end{figure}
+\begin{figure}[t]
+	\centering
+	\includegraphics[width=.5\textwidth]{425_schaltplan_messung_schrot.png}
+	\caption{Schaltplan zur Messung des Schrotrauschens.\cite{anleitung425}} \label{fig:schaltplan_schrot_mess}
+\end{figure}
+
+\subsection{Durchführung \& Auswertung: Messung des Schrotrauschens}
+Um den linearen Bereich der Messgeräte zu verwenden, wurde der Gain für jeden Messpunkt so eingestellt, dass die Werte auf dem DMM zwischen $\SI{0.6}{V}$ und $\SI{1.2}{V}$ lagen.
+Der Widerstand in der LLE--Box betrug $R_f=\SI{10}{k\ohm}$.
+Da der Strom, den der OpAmp zieht, vernachlässigbar klein ist, fließt $i_\text{dc}$ vollständig durch $R_f$, wodurch
+\begin{align}
+	V_\text{monitor}=-R_fi_\text{dc}
+	.\end{align}
+Das Schrotrauschen im Schaltkreis war dann gegeben durch
+\begin{align}
+	\overline{\delta i^2}=\dfrac{\overline{V_\text{meter}(t)}\SI{10}{V}}{(100G_2R_f)^2}
+	,\end{align}
+mit $\overline{V_\text{meter}(t)}$ dem auf dem DMM abgelesenen Wert und $G_2$ dem Gain der HLE--Box.
+
+\subsubsection{Untergrundbeiträge}
+Das gemessene Rauschen entsteht nicht ausschließlich durch das Schrotrauschen.
+
+Das \textsc{Johnson}--Rauschen im $R_f$ Widerstand liefert einen Beitrag.
+Um diesen zu berechnen wurde die Ausgabe von $\overline{V_\text{meter}(t)}$ bei ausgeschalteter Lampe gemessen.
+Diese liegt bei
+\begin{align}
+	V_\text{meter}^\text{J}=\SI{1.075+-0.005}{V}\qquad G_2=6000
+	.\end{align}
+Der Operationsverstärker hat eine gewisse Offset--Spannung bei ausgeschalteter Lampe für $i_\text{dc}=\SI{0}{V}$.
+Diese beträgt
+\begin{align}
+	V_\text{monitor}^\text{OpAmp}=\SI{-0.4+-0.1}{mV}
+	.\end{align}
+Das Aus-- und Einstecken des DMMs ist eine mögliche Quelle für ein weiteres Rauschen, allderdings zeigte dies keinen Effekt an $V_\text{monitor}$.
+
+Diese Beiträge werden in den folgenden Berechnungen berücksichtigt.
+
+\subsubsection{Abhängigkeit $i_\text{dc}$}
+Für unterschiedliche Spannungen der Glühlampe stellte sich ein unterschiedlich starkes Rauschen ein, da dieses linear von $i_\text{dc}$ abhängt.
+$\overline{\delta i^2}$ gegen $i_\text{dc}$ ist in Abb.\ (\ref{fig:abhängig_idc}) dargestellt.
+Die Parameter der Anpassung sind in Tab. (\ref{tab:abhängig_idc_parameter}) eingetragen.
+Es ist $R_f=\SI{10}{k\ohm}$.
+Der lineare Zusammenhang lässt sich klar erkennen. %TODO chi² oder ist nur guide für auge?
+
+\begin{figure}[t]
 	\centering
 	\resizebox{.5\textwidth}{!}{\input{idc.tex}}
-	\caption{Stromabhängigkeit mit $\overline{\delta i^2}=\frac{V_{\text{meter}}\SI{10}{V}}{(100G_2R_f)^2}$ und $i_{\text{dc}}=-\frac{V_{\text{monitor}}}{R_f}$}
+	\caption{Stromabhängigkeit mit $\overline{\delta i^2}=\frac{V_{\text{meter}}\SI{10}{V}}{(100G_2R_f)^2}$ und $i_{\text{dc}}=-\frac{V_{\text{monitor}}}{R_f}$} \label{fig:abhängig_idc}
 \end{figure}
-\begin{table}[h!]
+\begin{table}[t]
 	\centering
 	\begin{tabular}{cc}
 		\textbf{Parameter} & {\textbf{Wert(Fehler)}}    \\
@@ -245,16 +394,23 @@ Der quadratische Zusammenhang mit Verschiebung ist klar zu erkennen.
 		m                  & \SI{4.049 \pm 0.038e-14}{} \\
 		b                  & \SI{2.690 \pm 0.087e-19}{} \\
 	\end{tabular}
-	\label{tab:parameter}
-	\caption{Stromabhängigkeit modelliert mit $\overline{\delta i^2}(i_{\text{dc}})=m\cdot i_{\text{dc}}+b$}
+	\caption{Stromabhängigkeit modelliert mit $\overline{\delta i^2}(i_{\text{dc}})=m\cdot i_{\text{dc}}+b$} \label{tab:abhängig_idc_parameter}
 \end{table}
 
-\begin{figure}[h]
+\subsubsection{Abhängigkeit $\Delta f_\text{eff}$}
+Für $i_\text{dc}=\text{const.}$ wurde durch Variation der Bandbreite die Weißheit des Rauschens überprüft.
+Die Weißheit gibt an, wie sich das Rauschen bei unterschiedlichen Frequenzen verhält.
+Es ist weiß, wenn es frequenzunabhängig ist.
+$\overline{\Delta i^2}$ ist gegen $f$ in Abb.\ (\ref{fig:abhängig_f}) aufgetragen.
+Die Parameter für den Fit sind in Tab.\ (\ref{tab:abhängig_f_parameter}) eingetragen. %TODO chi² oder auch nur guide?
+Es ist zu erkennen, dass der Rauschstrom linear mit der Frequenz des Tiefpasses steigt.
+
+\begin{figure}[t]
 	\centering
 	\resizebox{.5\textwidth}{!}{\input{shot_freq.tex}}
-	\caption{Frequenzabhängigkeit mit $\overline{\delta i^2}=\frac{V_{\text{meter}}\SI{10}{V}}{(100G_2R_f)^2}$}
+	\caption{Frequenzabhängigkeit mit $\overline{\delta i^2}=\frac{V_{\text{meter}}\SI{10}{V}}{(100G_2R_f)^2}$} \label{fig:abhängig_f}
 \end{figure}
-\begin{table}[h!]
+\begin{table}[t]
 	\centering
 	\begin{tabular}{cc}
 		\textbf{Parameter} & {\textbf{Wert(Fehler)}}    \\
@@ -262,11 +418,22 @@ Der quadratische Zusammenhang mit Verschiebung ist klar zu erkennen.
 		m                  & \SI{2.784 \pm 0.056e-23}{} \\
 		b                  & \SI{-2.2 \pm 3.0e-21}{}    \\
 	\end{tabular}
-	\label{tab:parameter}
-	\caption{Frequenzabhängigkeit modelliert mit $\overline{\delta i^2}(f)=m\cdot f+b$}
+	\caption{Frequenzabhängigkeit modelliert mit $\overline{\delta i^2}(f)=m\cdot f+b$} \label{tab:abhängig_f_parameter}
 \end{table}
-\section{Schortrauschen}
-\subsection{Theoretischer Hintergrund}
+
+\subsubsection{Elementarladung}
+
+\begin{table}[t]
+	\centering
+	\begin{tabular}{cc}
+		\textbf{Parameter} & {\textbf{Wert(Fehler)}} \\
+		\hline
+		$f_l$              & \SI{10104 \pm 56}{}     \\
+		$f_h$              & \SI{100.50 \pm 0.17}{}  \\
+	\end{tabular}
+	\caption{Frequenzabhängigkeit modelliert mit $G_\text{LP}(f)=\left[1+(f/f_l)^4\right]^{-1/2}$ und $G_\text{HP}(f)=(f/f_h)^2\left[1+(f/f_h)^4\right]^{-1/2}$} \label{tab:parameter}
+\end{table}
+%TODO was ist die tabelle?
 
 
 \bibliography{refs}

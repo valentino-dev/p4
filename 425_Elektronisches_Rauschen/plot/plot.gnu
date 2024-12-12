@@ -65,6 +65,7 @@ T_err=0.5
 df=11109
 #df=1e4-1e2
 df_err=60
+print '-------------Widerstand-----------------'
 print 'kb'
 print m/T/4/df # k_b
 print sqrt((m_err/T/4/df)**2+(m/T**2/4/df*T_err)**2+(m/T/4/df**2*df_err)**2) # k_b_err
@@ -103,6 +104,7 @@ fit f(x) file using (df($1, $2)):($4/600**2/$3**2*10):($5/600**2/$3**2*10) yerro
 plot file using (df($1, $2)):($4/600**2/$3**2*10*1e12):($5/600**2/$3**2*10*1e12) w yerrorbars title '$V_\text{Rauschen}$',\
   f(x)*1e12 title 'Anpassung'
 R=1e3
+print '-------------Bandbreite--------------'
 print 'kb'
 print m/4/T/R # k_b
 print sqrt((m/(4*T**2*R)*T_err)**2+(m_err/(4*T*R))**2) # k_b_err
@@ -127,6 +129,7 @@ plot file using (-$1/R_f*1e6):($3*10/(100*$2*R_f)**2*1e18):($4*10/(100*$2*R_f)**
   f(x*1e-6)*1e18 title 'Anpassung'
 
 df= 111051
+print '-----------idc-------------'
 print 'e'
 print m/2/df
 print m_err/2/df
@@ -149,6 +152,7 @@ plot file using (3.141*$1/sqrt(2)**3*1e-3):($3*10/(100*$2*R_f)**2*1e18):($4*10/(
 
 I=0.711/R_f
 I_err=0.001/R_f
+print '---------------f-------------'
 print 'e'
 print m/2/I
 print sqrt((m_err/2/I)**2+(m/2/I**2*I_err)**2)
