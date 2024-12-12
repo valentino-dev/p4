@@ -17,7 +17,6 @@ plot file using 1:($3/(600*$2)**2*10)
 # 5.2
 file = '../data/processed_eff_band.dat'
 set output 'eff_band.tex'
-set print 'eff_band.dat'
 
 set fit errorvariables
 
@@ -34,14 +33,12 @@ set logscale x 10
 set grid
 set ylabel '$G$'
 set xlabel '$f/\SI{}{Hz}$'
+set title sprintf('$\chi^2/\text{ddof}=\SI{%.3f}{}$', FIT_STDFIT**2)
 plot file using ($1<1000?$1:1/0):2:3 with yerrorbars title 'Hochpass Dominiert' pt 0,\
   file using ($1>1000?$1:1/0):2:3 with yerrorbars title 'Tiefpass Dominiert' pt 0,\
   (g(x)<1?g(x):1/0) title 'Hochpass Modell $G_{\text{HP}}(f)$',\
   f(x) title 'Tiefpass Modell $G_{\text{LP}}(f)$'
 
-print file using 1:2:3 with yerrorbars title 'Hochpass Dominiert' pt 0,\
-
-unset print
 
 
 
@@ -62,6 +59,7 @@ f(x)=m*x+b
 fit f(x) file using ($1<=1e5?$1:1/0):($3/600**2/$2**2*10):($4/600**2/$2**2*10) yerrors via m,b
 #fit f(x) file using 1:($3/600**2/$2**2*10):($4/600**2/$2**2*10) yerrors via m,b
 
+set title sprintf('$\chi^2/\text{ddof}=\SI{%.3f}{}$', FIT_STDFIT**2)
 plot file using 1:($3/600**2/$2**2*10*1e12):($4/600**2/$2**2*10*1e12) w yerrorbars title 'Daten' pt 0,\
   (f(x)<4e-10?f(x)*1e12:1/0) title 'Anpassung'
 
@@ -87,6 +85,7 @@ unset ylabel
 unset xlabel
 set ylabel '$\text{res}/\SI{}{\micro V^2}$'
 set xlabel '$R/\SI{}{\Omega}$'
+set title ''
 plot file using 1:(($3/600**2/$2**2*10-f(x))*1e12):($4/600**2/$2**2*10-f(x)*1e12) w yerrorbars title 'Residuen' pt 0
 
 # 5.4
@@ -106,6 +105,7 @@ df(a, b)=a**4*3.141*(a-b)/(sqrt(2**3)*(a**4-b**4))
 f(x)=m*x+b
 fit f(x) file using (df($1, $2)):($4/600**2/$3**2*10):($5/600**2/$3**2*10) yerrors via m, b
 
+set title sprintf('$\chi^2/\text{ddof}=\SI{%.3f}{}$', FIT_STDFIT**2)
 plot file using (df($1, $2)):($4/600**2/$3**2*10*1e12):($5/600**2/$3**2*10*1e12) w yerrorbars title '$V_\text{Rauschen}$',\
   f(x)*1e12 title 'Anpassung'
 R=1e3
@@ -130,6 +130,7 @@ R_f=10e3
 
 f(x) = m*x+b
 fit f(x) file using (-$1/R_f):($3*10/(100*$2*R_f)**2):($4*10/(100*$2*R_f)**2) yerrors via m, b
+set title sprintf('$\chi^2/\text{ddof}=\SI{%.3f}{}$', FIT_STDFIT**2)
 plot file using (-$1/R_f*1e6):($3*10/(100*$2*R_f)**2*1e18):($4*10/(100*$2*R_f)**2*1e18) w yerrorbars title 'Daten',\
   f(x*1e-6)*1e18 title 'Anpassung'
 
@@ -145,13 +146,14 @@ print m_err/2/df
 file = '../data/shot_noise_frequency.dat'
 set output 'shot_freq.tex'
 set xlabel '$\Delta f_{\text{eff}}/\SI{}{\kilo Hz}$'
-set ylabel '$\overline{\delta i^2}/\SI{}{\nano V^2}$'
+set ylabel '$\overline{\delta i^2}/\SI{}{\nano A^2}$'
 set logscale yx 10
 #unset logscale
 set key opaque box bottom right width +2
 m=1.6e-24
 f(x)=m*x+b
 fit f(x) file using (3.141*$1/sqrt(2)**3):($3*10/(100*$2*R_f)**2):($4*10/(100*$2*R_f)**2) via m, b
+set title sprintf('$\chi^2/\text{ddof}=\SI{%.3f}{}$', FIT_STDFIT**2)
 plot file using (3.141*$1/sqrt(2)**3*1e-3):($3*10/(100*$2*R_f)**2*1e18):($4*10/(100*$2*R_f)**2*1e18) w yerrorbars title 'Daten',\
   f(x*1e3)*1e18 title 'Anpassung'
 
