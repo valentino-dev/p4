@@ -240,7 +240,7 @@ Es lässt sich an der Darstellung der Residuen Abb.\ (\ref{fig:residuen}) erkenn
 	\resizebox{.5\textwidth}{!}{\input{Widerstandsresiduen.tex}}
 	\caption{Die Residuen zur Widerstandsabhängigkeit; $\text{res}=\overline{u^2}-\hat{\overline{u^2}}$.} \label{fig:residuen}
 \end{figure}
-Aufgrund der Nyquist-Formel können wir das gesammte und auch insbesondere das Johnson Rauschen folgendermaßen identifizieren:
+Aufgrund der \textsc{Nyquist}--Formel kann man das gesamte und auch insbesondere das \textsc{Johnson}--Rauschen folgendermaßen identifizieren
 \begin{align}
 	\overline{V_\text{J}^2+V_\text{N}^2}=4k_B^RRT\Delta f_\text{eff}+\overline{V_\text{N}^2}
 	.\end{align}
@@ -263,7 +263,7 @@ Die Abweichung dieses Werts von der Literatur ist sehr groß, da aber der relati
 Eine Ursache waren überraschenderweise Gräusche -- wie Dialog oder das Tippen auf der Tastatur -- die dazu geführt haben, dass sich die gemessenen Spannungen änderten.
 Da dieses Phänomen nicht erwartet war, ist davon auszugehen, dass es weitere Ursachen gibt, deren Ursprung nicht klar ist.
 
-Für unsere Durchführung ist somit die Nyquist-Formel nicht mit der Messung kompatibel.
+Für die Durchführung ist somit die \textsc{Nyquist}--Formel nicht mit der Messung kompatibel.
 
 \subsubsection{Variation der Bandbreite}
 Dieses Verfahren ist analog zur Variation des Widerstands.
@@ -275,8 +275,10 @@ Wird die Bandbreite variiert, um so das \textsc{Johnson}--Rauschen zu bestimmen,
 Da $\chi^2/\text{ddof}=\SI{6.923}{}$, wurden die Messunsicherheiten leicht überschätzt, sind aber noch im guten Rahmen, sodass sie als repräsentativ angesehen werden können.
 
 Es lässt sich erkennen, dass das \textsc{Johnson}--Rauschen linear mit der Bandbreite steigt.
-Mit zunahme der Bandbreite werden immer mehr Frequenzen hindurchgelassen. Da allerdings das Rauschen linear steigt, muss jede Frequenz einen gleichen Beitrag leisten. Anders gesagt, ist die Verstärkung unabhängig von der Frequenz.
-Das \textsc{Johnson}--Rauschen ist also weißes Rauschen. Gleichzeitig lässt sich die linearität der Nyquist-Formel bestätigen.
+Mit zunahme der Bandbreite werden immer mehr Frequenzen hindurchgelassen. Da allerdings das Rauschen linear steigt, muss jede Frequenz einen gleichen Beitrag leisten. 
+Daher ist die Verstärkung unabhängig von der Frequenz.
+Das \textsc{Johnson}--Rauschen ist also weißes Rauschen. 
+Gleichzeitig lässt sich die Linearität der \textsc{Nyquist}--Formel bestätigen.
 
 \begin{figure}[h]
 	\centering
@@ -320,7 +322,7 @@ Beide Verfahren liefern Werte, die sehr stark von der Literatur abweichen; $k_B^
 Grund für den Unterschied zwischen $k_B^f$ und $k_B^R$ könnte sein, dass das \textsc{Johnson}--Rauschen weißes Rauschen ist -- daher unabhängig von der Frequenz -- aber abhängig von der Temperatur.
 Das bedeutet, dass die Variation der Frequenz selbst keinen Einfluss hat, die Temperatur im Widerstand allerdings schon.
 Deshalb ist die Abweichung bei der Frequenz geringer, da eine nicht unerhebliche Abweichung durch die Temperatur im Widerstand zustande kommen kann.
-Die absolute Abweichung beider Verfahren von der Literatur sind dann auf systematische Fehler zurückzuführen. Diese wurden schon zuvor diskutiert.
+Die absolute Abweichung beider Verfahren von der Literatur sind dann auf systematische Fehler zurückzuführen. Diese wurden im vorigen Abschnitt diskutiert.
 
 \section{Schrotrauschen}
 \subsection{Theoretischer Hintergrund}
@@ -328,14 +330,14 @@ Da die elektrische Ladung in $e$ gequantelt ist, wird bei dem Übergang von Elek
 Da die eingehende Ladung pro Zeit also nicht kontinuierlich ist, kommt es zu nicht stetigen Ausschlägen der Spannung, die über dieses Potential gemessen wird.
 Diese Spannung wird als Schrotrauschen auf sensitiven Messgeräten wahrgenommen.
 
-Formal ist das mittlere Rauschstromquadrat nach Schottky's Formel:
+Formal ist das mittlere Rauschstromquadrat nach \textsc{Schottky}'s Formel:
 \begin{align}
 	\overline{\delta i^2}=2ei_\text{dc}\Delta f_\text{eff}
 	,\end{align}
 mit $i_\text{dc}$ der angelegten Stromstärke.
 Da in der verwendeten Anordnung kein Hochpass verbaut ist, ist
 \begin{align}
-	\Delta f_\text{eff}=\int_{0}^{\infty}\td fG_\text{LP}^2\underbrace{G_\text{HP}^2}_{=1}=\dfrac{\pi f_\text{l}}{2^{3/2}}
+	\Delta f_\text{eff}=\int_{0}^{\infty}\td fG_\text{LP}^2\underbrace{G_\text{HP}^2}_{=1}=\dfrac{f_\text{l}\pi }{2^{3/2}}
 	.\end{align}
 
 \subsection{Durchführung \& Auswertung: Beobachtung des Schrotrauschens}
@@ -480,13 +482,14 @@ Hier gilt die selbe Diskussion.
 	\caption{Frequenzabhängigkeit modelliert mit $\overline{\delta i^2}(f)=m\cdot f+b$} \label{tab:abhängig_f_parameter}
 \end{table}
 
-\subsubsection{Vergleich $i_\text{dc}$ und $\Delta f_\text{eff}$}
+\iffalse\subsubsection{Vergleich $i_\text{dc}$ und $\Delta f_\text{eff}$}
 Vergleicht man die berechneten Elementarladungen so liegt die Abweichung bei
 \begin{align}
 	e^{i_\text{dc}}                           & =\SI{1.823+-0.017e-19}{C}[1\%,12.9\sigma ] \\
 	e^{\Delta f_\text{eff}}                   & =\SI{1.958+-0.039e-19}{C}[2\%,9.1\sigma ]  \\
 	|e^{i_\text{dc}}-e^{\Delta f_\text{eff}}| & =\SI{0.135+-0.043e-19}{C}
 	.\end{align}
+\fi
 
 \section{Fazit}
 Ein Bandpass liefert eine Bandbreite von
@@ -495,7 +498,7 @@ Ein Bandpass liefert eine Bandbreite von
 	.\end{align}
 Dieser Formel stimmt gut mit der gemessenen Bandbreite überein und konnte für diesen Versuch verwendet werden.
 
-Das \textsc{Johnson}--Rauschen, oder thermisches Rauschen, beschreibt das Rauschen in einem Widerstand $R$ bei Temperatur $T$ für eine gewissen Bandbreite $\Delta f_\text{eff}$
+Das \textsc{Johnson}--Rauschen, oder thermisches Rauschen, beschreibt das Rauschen in einem Widerstand $R$ bei Temperatur $T$ für eine gewisse Bandbreite $\Delta f_\text{eff}$
 \begin{align}
 	\overline{V_\text{J}^2}=4k_BTR\Delta _\text{eff}
 	.\end{align}
@@ -512,7 +515,7 @@ Das Rauschen hängt also von der Ladung $e$, dem angelegten Gleichstrom $i_\text
 \begin{align}
 	\overline{\delta i^2}=2ei_\text{dc}\Delta f_\text{eff}
 	.\end{align}
-Da hier nur ein Tiefpass verwendet worden ist, ist $\Delta f_\text{eff}=\tfrac{\pi f_\text{l}}{2^{3/2}}$.
+Da hier nur ein Tiefpass verwendet worden ist, ist $\Delta f_\text{eff}=\tfrac{f_\text{l}\pi }{2^{3/2}}$.
 Die Elementarladung kann dann über Variation von $i_\text{dc}$ oder $\Delta f_\text{eff}$ berechnet werden, zu
 \begin{align}
 	e^{i_\text{dc}}         & = \SI{1.823+-0.017e-19}{C}[1\%,12.9\sigma ] \\
