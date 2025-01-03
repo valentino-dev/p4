@@ -1,0 +1,906 @@
+[DataSet]
+Version=2
+GroupCount=2
+Gr0-Name=Scan forward
+Gr0-ID=0
+Gr0-Count=8
+Gr1-Name=Scan backward
+Gr1-ID=0
+Gr1-Count=8
+Gr0-Ch0=DataSet-0:0
+Gr0-Ch1=DataSet-0:1
+Gr1-Ch0=DataSet-1:0
+Gr1-Ch1=DataSet-1:1
+SetInfos=DataSet-Info
+InfoSetCount=3
+InfoSet0=DataSetInfos
+InfoSet1=Calibration
+InfoSet2=Parameters
+
+[DataSet-Info]
+-- Scan --=--------
+Image size=200nm
+Scan direction=Up
+Time/Line=199ms
+Points=128
+Lines=128
+X-Slope=408mТА
+Y-Slope=-2,37 ТА
+Rotation=0 ТА
+X-Pos=0 m
+Y-Pos=0 m
+Z-Plane=0 m
+Line mode=Standard
+Date=19-12-2024
+Time=13:42:53
+-- Feedback --=--------
+Setpoint=55nN
+P-Gain=1000
+I-Gain=2000
+D-Gain=0
+P-Gain2=0
+I-Gain2=0
+D-Gain2=0
+Tip voltage=1 V
+Feedback mode=Free
+Feedback algo.=Adaptive PID
+Error range=20 V
+Ampl. Ctrl. mode=Const. Drive
+-- Global --=--------
+Measurement environment=Air
+Op. mode=Static Force
+Cantilever type=Stat0.2LAuD
+Head type=AFM
+Scan head=Uncal_AFM.hed
+Laser working point=0.0%
+Deflection offset=0.0%
+Software ver.=3.10.0.36
+Firmware ver.=255.255.255.255
+Controller S/N=060-24-000
+
+[DataSet\DataSetInfos]
+SubSectionCount=3
+SubSection0=Scan
+SubSection1=Feedback
+SubSection2=Global
+
+[DataSet\DataSetInfos\Scan]
+SubSectionCount=0
+Image size=200nm
+Scan direction=Up
+Time/Line=199ms
+Points=128
+Lines=128
+X-Slope=408mТА
+Y-Slope=-2,37 ТА
+Rotation=0 ТА
+X-Pos=0 m
+Y-Pos=0 m
+Z-Plane=0 m
+Line mode=Standard
+Date=19-12-2024
+Time=13:42:53
+
+[DataSet\DataSetInfos\Feedback]
+SubSectionCount=0
+Setpoint=55nN
+P-Gain=1000
+I-Gain=2000
+D-Gain=0
+P-Gain2=0
+I-Gain2=0
+D-Gain2=0
+Tip voltage=1 V
+Feedback mode=Free
+Feedback algo.=Adaptive PID
+Error range=20 V
+Ampl. Ctrl. mode=Const. Drive
+
+[DataSet\DataSetInfos\Global]
+SubSectionCount=0
+Measurement environment=Air
+Op. mode=Static Force
+Cantilever type=Stat0.2LAuD
+Head type=AFM
+Scan head=Uncal_AFM.hed
+Laser working point=0.0%
+Deflection offset=0.0%
+Software ver.=3.10.0.36
+Firmware ver.=255.255.255.255
+Controller S/N=060-24-000
+
+[DataSet\Calibration]
+SubSectionCount=2
+SubSection0=Scanhead
+SubSection1=Cantilever
+
+[DataSet\Calibration\Scanhead]
+SubSectionCount=0
+Version=6
+HeadTyp=AFM
+SerialNo=uncal_70u
+RevisionNo=2
+ScanFit=Pomfit
+CtrlInPol=Positiv
+Main1InPol=Positiv
+Main2InPol=Positiv
+SignalUserADC0Pol=Positiv
+SignalUserADC1Pol=Positiv
+SignalUserADC2Pol=Positiv
+AnalogOut2Pol=Positiv
+AnalogOut3Pol=Positiv
+XAxisPol=Positiv
+YAxisPol=Positiv
+ZAxisPol=Negativ
+ZAxisAnalogOut2Pol=Positiv
+ZAxisAnalogOut3Pol=Positiv
+Ch0Corr=None
+SetPointCheck=None
+InCount=24
+In0=0,Channel0,Deflection,V,10,0
+In1=1,Channel1,Z-Axis,m,7e-06,0
+In2=2,Channel2,Amplitude,V,5,0
+In3=3,Channel3,Not defined 1,V,10,0
+In4=4,Channel4,Tip current,A,0.0001,0
+In5=5,TipSignalDC,Deflection,m,8e-06,0
+In6=6,TipSignalAC,Amplitude,V,10,0
+In7=7,TipPhase,Phase,ТА,90,0
+In8=8,Lever Current,Tip current,A,0.0001,0
+In9=9,User Input0,User Signal,V,10,0
+In10=10,User Input1,User input 2,A,1e-07,0
+In11=11,HeadSig2,Not defined 1,V,10,0
+In12=12,Channel5,User Signal,V,10,0
+In13=13,Channel6,User input 2,A,1e-07,0
+In14=15,Dissipation,Dissipation,V,5,0
+In15=16,TipSignalDC1,Deflection,V,10,0
+In16=17,TipSignalDC2,Deflection,N,1,0
+In17=18,SensorSignal1,SensorSignal,W,0.005,0
+In18=19,SensorSignal2,SensorSignal,A,0.0005,0
+In19=20,Channel7,Z-Axis,m,7e-06,0
+In20=21,XAxisSensor,X-Axis Sensor,m,0.0001,0
+In21=22,YAxisSensor,Y-Axis Sensor,m,0.0001,0
+In22=23,ZAxisSensor,Z-Axis Sensor,m,1e-05,0
+In23=24,User Input2,User In A,V,10,0
+OutCount=9
+Out0=0,ScanAxis0,X-Axis,m,3.5e-05,0
+Out1=1,ScanAxis1,Y-Axis,m,3.5e-05,0
+Out2=2,ScanAxis2,Z-Axis,m,7e-06,0
+Out3=4,AnalogOut0,Tip voltage,V,10,0
+Out4=5,AnalogOut1,Not defined,V,10,0
+Out5=6,AnalogOut2,User Output,V,10,0
+Out6=7,AnalogOut3,User Output 2,V,10,0
+Out7=8,DriveAmp,Drive Amplitude,V,5.3,0
+Out8=9,MixedOut4,User Output C,V,10,0
+ScanCorrCount=2
+ScanCorrA=0
+ScanCorrB=0
+ScanCorrC=0
+ScanCorrD=0
+ScanCorrE=0
+ScanCorrF=0
+ScanCorrG=0
+ScanCorrH=0
+ScanCorrI=0
+ScanCorrJ=0
+ScanCorrK=0
+ScanCorrL=0
+ScanCorrM=0
+ScanCorrN=0
+ScanCorrO=0
+ScanCorrTableRot=0
+ScanCorrA1=0
+ScanCorrB1=0
+ScanCorrC1=0
+ScanCorrD1=0
+ScanCorrE1=0
+ScanCorrF1=0
+ScanCorrG1=0
+ScanCorrH1=0
+ScanCorrI1=0
+ScanCorrJ1=0
+ScanCorrK1=0
+ScanCorrL1=0
+ScanCorrM1=0
+ScanCorrN1=0
+ScanCorrO1=0
+ScanCorrTableRot1=0.785398
+ScanCorrRotX=0
+ScanCorrRotY=0
+ScanScaleZ=3276
+ScanScaleXY=256
+ZRangeFit=None
+ZRangeCorrCount=1
+ZRangeCorrA=1
+ZRangeCorrB=0
+ZRangeCorrC=0
+ZRangeCorrD=0
+ApproachStartPos=0
+MaxApproachSpeed=1
+ManualMoveSpeed=1
+DefaultDynRefAmp=0.1
+DefaultDynRefAmpLiquid=0.2
+DefaultDynRefAmpVacuum=0.005
+DefaultForceModRefAmp=1
+DetectorABGainAC=0.5
+CompDcSourceWithX=0
+CompDcWithX=0
+CompDcSourceWithY=0
+CompDcWithY=0
+CompDcSourceWithZ=0
+CompDcWithZ=0
+VideoSupport=1
+HasLaserOnOffCtrl=0
+XYCLPIDGainsX=1.000000;1.000000;1.000000
+XYCLPIDGainsY=1.000000;1.000000;1.000000
+XZeroVoltage=0
+YZeroVoltage=0
+ZZeroVoltage=0
+ScanAxis0FilterCoeff0=1.000000;0.000000;0.000000;0.000000;0.000000;1.000000
+ScanAxis0FilterCoeff1=1.000000;0.000000;0.000000;0.000000;0.000000;1.000000
+ScanAxis0FilterCoeff2=1.000000;0.000000;0.000000;0.000000;0.000000;1.000000
+ScanAxis0FilterCoeff3=1.000000;0.000000;0.000000;0.000000;0.000000;1.000000
+ScanAxis1FilterCoeff0=1.000000;0.000000;0.000000;0.000000;0.000000;1.000000
+ScanAxis1FilterCoeff1=1.000000;0.000000;0.000000;0.000000;0.000000;1.000000
+ScanAxis1FilterCoeff2=1.000000;0.000000;0.000000;0.000000;0.000000;1.000000
+ScanAxis1FilterCoeff3=1.000000;0.000000;0.000000;0.000000;0.000000;1.000000
+ScanAxis2FilterCoeff0=1.000000;0.000000;0.000000;0.000000;0.000000;1.000000
+ScanAxis2FilterCoeff1=1.000000;0.000000;0.000000;0.000000;0.000000;1.000000
+ScanAxis2FilterCoeff2=1.000000;0.000000;0.000000;0.000000;0.000000;1.000000
+ScanAxis2FilterCoeff3=1.000000;0.000000;0.000000;0.000000;0.000000;1.000000
+HasXPositionSensor=0
+XPositionSensorPol=Negativ
+HasYPositionSensor=0
+YPositionSensorPol=Negativ
+HasZPositionSensor=0
+ZPositionSensorPol=Negativ
+ApproachStatusMode=1
+ApproachStatusPol=Positiv
+ApproachStatusMeterRange=-1;-0.9;0.9;1
+SensorStatusMode=1
+SensorStatusPol=Negativ
+SensorStatusMeterRange=0.0866142;0.102362;0.102362;0.811024;0.811024;0.913386
+LaserWavelength=6.5e-07
+
+[DataSet\Calibration\Cantilever]
+SubSectionCount=0
+Version=2
+GUID={A4A16538-CCD1-4BB1-B048-7B4F0F1B31BD}
+Name=Stat0.2LAuD
+Manufacturer=Nanosurf
+PropCount=14
+Prop0=D[0.2]*[N/m]
+Prop1=D[13000]*[Hz]
+Prop2=D[0.00045]*[m]
+Prop3=D[5e-05]*[m]
+Prop4=D[50]*[]
+Prop5=D[4000]*[Hz]
+Prop6=D[5]*[]
+Prop7=D[0]*[]
+Prop8=D[10]*[ТА]
+Prop9=D[7e-09]*[m]
+Prop10=D[50]*[]
+Prop11=D[13000]*[Hz]
+Prop12=D[0.3]*[]
+Prop13=D[1]*[]
+
+[DataSet\Parameters]
+SubSectionCount=8
+SubSection0=Approach
+SubSection1=ZFeedback
+SubSection2=Lithography
+SubSection3=Imaging
+SubSection4=SignalIO
+SubSection5=Spectroscopy
+SubSection6=SPMSystem
+SubSection7=Stage
+
+[DataSet\Parameters\Approach]
+SubSectionCount=0
+ApproachSteps=L[65000]*[]
+WithdrawSteps=L[1000]*[]
+AutoPeriode=D[0.02]*[s]
+MovePeriode=D[0.02]*[s]
+StepSlope=L[6]*[]
+AutoStartScan=B[0]*[]
+ApproachSpeed=D[0.0801099]*[%]
+AFMApproachMode=L[0]*[]
+AFMMotorSource=L[0]*[]
+AFMStepByStepSpeed=D[1]*[]
+AFMStepByStepSlope=D[5e-06]*[m/s]
+AFMStepByStepFineStepSizePercentage=D[5]*[%]
+AFMStepByStepCoarseStepSizePercentage=D[90]*[%]
+AFMStepByStepMode=D[0]*[]
+
+[DataSet\Parameters\ZFeedback]
+SubSectionCount=0
+PGain=L[1000]*[]
+IGain=L[2000]*[]
+DGain=L[0]*[]
+PGain2=L[0]*[]
+IGain2=L[0]*[]
+DGain2=L[0]*[]
+SetPoint=D[5.49821e-08]*[N]
+SetPointForce=D[5.49821e-08]*[N]
+SetPointDC=D[1e-09]*[m]
+SetPointAmp=D[50]*[%]
+SetPointPhase=D[1]*[ТА]
+SetPointForceUnitMode=L[2]*[]
+SetPointForce_V=D[0.125126]*[]
+SetPointForce_m=D[1.00101e-07]*[]
+SetPointForce_N=D[5.49821e-08]*[]
+SetPointDeltaF_Hz=D[0]*[Hz]
+SetPointUserDefined=D[0]*[V]
+ChGainRegError=L[0]*[]
+FeedbackMode=L[0]*[]
+Algorithm=L[1]*[]
+RefFrq=D[179239]*[Hz]
+RefAmplitude=D[0.530049]*[V]
+RefPhase=D[112.088]*[ТА]
+CoarseSweepStartFrq=D[9100]*[Hz]
+CoarseSweepEndFrq=D[16900]*[Hz]
+CoarseSweepStepFrq=D[100.002]*[Hz]
+FineSweepStartFrq=D[130000]*[Hz]
+FineSweepEndFrq=D[210000]*[Hz]
+FineSweepStepFrq=D[100]*[Hz]
+ManualSweepStartFrq=D[130000]*[Hz]
+ManualSweepEndFrq=D[210000]*[Hz]
+ManualSweepStepFrq=D[100]*[Hz]
+AutoCalFrqPeak=B[1]*[]
+AutoCalPhase=B[1]*[]
+DynamicAmp=D[0.200049]*[V]
+CalRefPlotGraph=B[0]*[]
+ForceModFrq=D[20000]*[Hz]
+ForceModAmp=D[4.00003]*[V]
+AutoFrqSweepRange=B[1]*[]
+AmpCtrlMode=L[0]*[]
+FrqPeakReduceAir=D[20]*[%]
+FrqPeakUpperSideAir=B[1]*[]
+FrqPeakReduceLiquid=D[5]*[%]
+FrqPeakUpperSideLiquid=B[0]*[]
+FrqPeakReduceVacuum=D[20]*[%]
+FrqPeakUpperSideVacuum=B[1]*[]
+RegMoveMode=L[0]*[]
+DynamicMeasureBW=L[9]*[]
+RegOutputSel=L[0]*[]
+FrequencyLockRange=L[1]*[]
+PhaseCtrlPGain=D[0.3]*[]
+PhaseCtrlIGain=D[2.5]*[]
+AmplCtrlPGain=D[2.5]*[]
+AmplCtrlIGain=D[20]*[]
+UserOpModeInputSel=L[3]*[]
+UserOpModeInputPol=L[0]*[]
+UserOpModePIDGainCorr=D[1]*[]
+UserOpModeDCOffsetMode=L[0]*[]
+UserOpModeDCOffsetAutoGain=D[10000]*[]
+CantileverExcitationMode=L[0]*[]
+
+[DataSet\Parameters\Lithography]
+SubSectionCount=0
+ModuleLevel=L[0]*[]
+OpMode=L[2]*[]
+InactivePenMode=L[0]*[]
+AutoChartSettings=B[1]*[]
+AutoCapture=B[1]*[]
+XYMoveSpeed=D[1e-05]*[m/s]
+ZMoveSpeed=D[1e-06]*[m/s]
+LiftTipAbsZPos=D[0]*[m]
+
+[DataSet\Parameters\Imaging]
+SubSectionCount=0
+ModuleLevel=L[1]*[]
+ScanRange=V[2e-07,2e-07,0]*[m,m,m]
+ScanOffset=V[0,0,0]*[m,m,m]
+ScanRotation=V[-2.36717,0.408,0]*[ТА,ТА,ТА]
+ScanTime=V[0.199136,0.199136,0]*[s,s,s]
+Datapoints=V[128,128,0]*[,,]
+ScanMode=L[0]*[]
+OverScanSize=D[0]*[%]
+FirstScanlineRep=L[1]*[]
+SyncOutMode=L[0]*[]
+LineScanning=L[0]*[]
+RelTipPos=D[2.49997e-08]*[m]
+ContourEnabled=B[0]*[]
+AutoReadjustProbeEnabled=B[0]*[]
+ReadjustLiftHeight=D[0]*[m]
+SndScanDynamicAmplitude=D[0]*[V]
+SndScanDynamicAmplitudeEnabled=B[0]*[]
+SndScanForceModulationAmplitude=D[0]*[V]
+SndScanForceModulationAmplitudeEnabled=B[0]*[]
+SndScanEnableDarkMode=B[0]*[]
+SndScanEnableKPFM=B[0]*[]
+SndScanSndLockInExcitationAmplitude=D[0]*[]
+SndScanSndLockInExcitationAmplitudeEnabled=B[0]*[]
+XYMoveSpeed=D[5e-05]*[m/s]
+AutoSlopeCorrection=B[1]*[]
+AutoDeleteBuffer=B[1]*[]
+AutoChartSettings=B[1]*[]
+AutoCapture=B[1]*[]
+SpikeGuardEnable=B[0]*[]
+PrescanSpeedup=L[0]*[]
+
+[DataSet\Parameters\SignalIO]
+SubSectionCount=0
+UserDAC0=D[0]*[V]
+UserDAC1=D[0]*[V]
+EnableUserADC0=B[0]*[]
+EnableUserADC1=B[0]*[]
+EnableUserADC2=B[0]*[]
+TipSignalMode=L[0]*[]
+ExcitationMode=L[0]*[]
+MonitorOut0=L[0]*[]
+MonitorOut1=L[0]*[]
+EnableUserADC1ZSensor=B[0]*[]
+User0CtrlMode=L[0]*[]
+User0InputPol=L[0]*[]
+User0OutputFlag=L[0]*[]
+User0SetPoint=D[0]*[V]
+User0IGain=L[1000]*[]
+
+[DataSet\Parameters\Spectroscopy]
+SubSectionCount=0
+ModuleLevel=L[0]*[]
+OutputType=L[0]*[]
+Repetition=L[1]*[]
+RepetitionMode=L[0]*[]
+FwModTime=D[1]*[s]
+BwModTime=D[1]*[s]
+ModRelValue=B[1]*[]
+FwModDatapoints=L[1024]*[]
+BwModDatapoints=L[1024]*[]
+SyncOutMode=L[0]*[]
+FeedbackActive=B[0]*[]
+AutoChartSettings=B[1]*[]
+AutoCapture=B[1]*[]
+SpecEndMode=L[1]*[]
+FwModRange=D[9.45455e-07]*[m]
+BwModRange=D[-9.45455e-07]*[m]
+XYMoveSpeed=D[2e-05]*[m/s]
+StartOffset=D[-5.72715e-07]*[m]
+StartOffsetMoveSpeed=D[1e-05]*[m/s]
+FwModMode=L[0]*[]
+BwModMode=L[0]*[]
+FwModStopValue=D[0]*[V]
+BwModStopValue=D[0]*[V]
+FwModStopMode=L[1]*[]
+BwModStopMode=L[1]*[]
+FwPauseTime=D[0]*[s]
+BwPauseTime=D[0]*[s]
+FwPauseDatapoints=L[0]*[]
+BwPauseDatapoints=L[0]*[]
+FwPauseMode=L[0]*[]
+BwPauseMode=L[0]*[]
+AutoRecalibrateProbeInterval=L[0]*[]
+PressurePulseValue=D[0]*[bar]
+PressurePulseDuration=D[0]*[s]
+PressurePulseRelative=B[0]*[]
+PressurePulseActive=B[0]*[]
+PressureActionId=L[0]*[]
+ModulationStopValueBandwidth=L[0]*[]
+
+[DataSet\Parameters\SPMSystem]
+SubSectionCount=0
+AOut0=D[1.00009]*[V]
+AOut1=D[0]*[V]
+SPMMode=L[2]*[]
+VideoFPSControlValueMin=D[1.5]*[]
+VideoFPSControlWindowSize=L[5]*[]
+VideoTopLight=D[100]*[%]
+VideoSideLight=D[100]*[%]
+VideoTopBrightness=D[80]*[]
+VideoSideBrightness=D[80]*[]
+VideoTopContrast=D[70]*[]
+VideoSideContrast=D[70]*[]
+FlexVideoTopExpTime=L[60]*[]
+FlexVideoSideExpTime=L[60]*[]
+FlexVideoTopGain=L[12]*[]
+FlexVideoSideGain=L[8]*[]
+FlexVideoTopADCLevel=L[2]*[]
+FlexVideoSideADCLevel=L[2]*[]
+FlexVideoTopRatioR=D[1]*[]
+FlexVideoSideRatioR=D[1]*[]
+FlexVideoTopRatioG=D[1]*[]
+FlexVideoSideRatioG=D[1]*[]
+FlexVideoTopRatioB=D[1]*[]
+FlexVideoSideRatioB=D[1]*[]
+FlexVideoTopRatioGamma=D[1]*[]
+FlexVideoSideRatioGamma=D[1]*[]
+FlexVideoTopAutoLevels=B[1]*[]
+FlexVideoSideAutoLevels=B[1]*[]
+FlexVideoTopPositionMarkerX=D[0]*[]
+FlexVideoSidePositionMarkerX=D[0]*[]
+FlexVideoTopPositionMarkerY=D[0]*[]
+FlexVideoSidePositionMarkerY=D[0]*[]
+HighResVideoTopExpTime=L[60]*[]
+HighResVideoSideExpTime=L[60]*[]
+HighResVideoTopGain=L[25]*[]
+HighResVideoSideGain=L[8]*[]
+HighResVideoSideADCLevel=L[2]*[]
+HighResVideoTopRatioR=D[1]*[]
+HighResVideoSideRatioR=D[1]*[]
+HighResVideoTopRatioG=D[0.8]*[]
+HighResVideoSideRatioG=D[1]*[]
+HighResVideoTopRatioB=D[0.8]*[]
+HighResVideoSideRatioB=D[1]*[]
+HighResVideoTopRatioGamma=D[0.9]*[]
+HighResVideoSideRatioGamma=D[1]*[]
+HighResVideoTopAutoLevels=B[1]*[]
+HighResVideoSideAutoLevels=B[1]*[]
+HighResVideoTopADCLevel=L[2]*[]
+HighResVideoTopPositionMarkerX=D[0]*[]
+HighResVideoSidePositionMarkerX=D[0]*[]
+HighResVideoTopPositionMarkerY=D[0]*[]
+HighResVideoSidePositionMarkerY=D[0]*[]
+ImSoVideoTVConfiguration=S[<device_state libver="3.4" filemajor="1" fileminor="0">    <device>        <vcdpropertyitems>            <item guid="{284C0E06-010B-45BF-8291-09D90A459B28}" name="Brightness">                <element guid="{B57D3000-0AC6-4819-A609-272A33140ACA}" name="Value">                    <itf guid="{99B44940-BFE1-4083-ADA1-BE703F4B8E03}" value="0" />                </element>            </item>            <item guid="{284C0E07-010B-45BF-8291-09D90A459B28}" name="Contrast">                <element guid="{B57D3000-0AC6-4819-A609-272A33140ACA}" name="Value">                    <itf guid="{99B44940-BFE1-4083-ADA1-BE703F4B8E03}" value="0" />                </element>            </item>            <item guid="{284C0E08-010B-45BF-8291-09D90A459B28}" name="Hue">                <element guid="{B57D3000-0AC6-4819-A609-272A33140ACA}" name="Value">                    <itf guid="{99B44940-BFE1-4083-ADA1-BE703F4B8E03}" value="0" />                </element>            </item>            <item guid="{284C0E09-010B-45BF-8291-09D90A459B28}" name="Saturation">                <element guid="{B57D3000-0AC6-4819-A609-272A33140ACA}" name="Value">                    <itf guid="{99B44940-BFE1-4083-ADA1-BE703F4B8E03}" value="43" />                </element>            </item>            <item guid="{284C0E0A-010B-45BF-8291-09D90A459B28}" name="Sharpness">                <element guid="{B57D3000-0AC6-4819-A609-272A33140ACA}" name="Value">                    <itf guid="{99B44940-BFE1-4083-ADA1-BE703F4B8E03}" value="2" />                </element>            </item>            <item guid="{284C0E0B-010B-45BF-8291-09D90A459B28}" name="Gamma">                <element guid="{B57D3000-0AC6-4819-A609-272A33140ACA}" name="Value">                    <itf guid="{99B44940-BFE1-4083-ADA1-BE703F4B8E03}" value="100" />                </element>            </item>            <item guid="{284C0E0D-010B-45BF-8291-09D90A459B28}" name="WhiteBalance">                <element guid="{B57D3001-0AC6-4819-A609-272A33140ACA}" name="Auto">                    <itf guid="{99B44940-BFE1-4083-ADA1-BE703F4B8E04}" value="1" />                </element>                <element guid="{AB98F78D-18A6-4EB2-A556-C11010EC9DF7}" name="WhiteBalance Mode">                    <itf guid="{99B44940-BFE1-4083-ADA1-BE703F4B8E06}" value="0" />                </element>            </item>            <item guid="{284C0E0F-010B-45BF-8291-09D90A459B28}" name="Gain">                <element guid="{B57D3001-0AC6-4819-A609-272A33140ACA}" name="Auto">                    <itf guid="{99B44940-BFE1-4083-ADA1-BE703F4B8E04}" value="0" />                </element>                <element guid="{B57D3000-0AC6-4819-A609-272A33140ACA}" name="Value">                    <itf guid="{99B44940-BFE1-4083-ADA1-BE703F4B8E03}" value="12" />                </element>            </item>            <item guid="{90D5702E-E43B-4366-AAEB-7A7A10B448B4}" name="Exposure">                <element guid="{B57D3001-0AC6-4819-A609-272A33140ACA}" name="Auto">                    <itf guid="{99B44940-BFE1-4083-ADA1-BE703F4B8E04}" value="0" />                </element>                <element guid="{B57D3000-0AC6-4819-A609-272A33140ACA}" name="Value">                    <itf guid="{99B44940-BFE1-4083-ADA1-BE703F4B8E08}" value="3.11999999999999985678122982335e-02" />                </element>                <element guid="{65190390-1AD8-4E91-9021-66D64090CC85}" name="Auto">                    <itf guid="{99B44940-BFE1-4083-ADA1-BE703F4B8E04}" value="1" />                </element>                <element guid="{6519038C-1AD8-4E91-9021-66D64090CC85}" name="Auto Reference">                    <itf guid="{99B44940-BFE1-4083-ADA1-BE703F4B8E03}" value="128" />                </element>            </item>            <item guid="{90D57031-E43B-4366-AAEB-7A7A10B448B4}" name="Trigger">                <element guid="{B57D3000-0AC6-4819-A609-272A33140ACA}" name="Enable">                    <itf guid="{99B44940-BFE1-4083-ADA1-BE703F4B8E04}" value="0" />                </element>            </item>            <item guid="{C3C9944A-E6F6-4E25-A0BE-53C066AB65D8}" name="Denoise">                <element guid="{B57D3000-0AC6-4819-A609-272A33140ACA}" name="Value">                    <itf guid="{99B44940-BFE1-4083-ADA1-BE703F4B8E03}" value="0" />                </element>            </item>            <item guid="{86D89D69-9880-4618-9BF6-DED5E8383449}" name="GPIO">                <element guid="{7D006621-761D-4B88-9C5F-8B906857A501}" name="GP Out">                    <itf guid="{99B44940-BFE1-4083-ADA1-BE703F4B8E03}" value="0" />                </element>            </item>            <item guid="{3A3A8F77-6440-46CC-940A-8752B02E6C29}" name="Color Enhancement">                <element guid="{B57D3000-0AC6-4819-A609-272A33140ACA}" name="Enable">                    <itf guid="{99B44940-BFE1-4083-ADA1-BE703F4B8E04}" value="1" />                </element>            </item>            <item guid="{546541AD-C815-4D82-AFA9-9D59AF9F399E}" name="Highlight reduction">                <element guid="{B57D3000-0AC6-4819-A609-272A33140ACA}" name="Enable">                    <itf guid="{99B44940-BFE1-4083-ADA1-BE703F4B8E04}" value="1" />                </element>            </item>            <item guid="{2CED6FD6-AB4D-4C74-904C-D682E53B9CC5}" name="Partial scan">                <element guid="{36EAA683-3321-44BE-9D73-E1FD4C3FDB87}" name="Auto-center">                    <itf guid="{99B44940-BFE1-4083-ADA1-BE703F4B8E04}" value="1" />                </element>            </item>            <item guid="{DC320EDE-DF2E-4A90-B926-71417C71C57C}" name="Strobe">                <element guid="{B57D3000-0AC6-4819-A609-272A33140ACA}" name="Enable">                    <itf guid="{99B44940-BFE1-4083-ADA1-BE703F4B8E04}" value="0" />                </element>            </item>        </vcdpropertyitems>    </device></device_state>]*[]
+ImSoVideoSVConfiguration=S[]*[]
+ActiveSensorByGUID=S[{A4A16538-CCD1-4BB1-B048-7B4F0F1B31BD}]*[]
+MeasEnv=L[0]*[]
+SystemStateIdleZAxisMode=L[1]*[]
+SystemStateIdleMixOut4Mode=L[3]*[]
+SystemStateIdleXYAxisMode=L[0]*[]
+SystemStateIdleZAxisValue=D[0]*[m]
+SndOpModeEnabled=B[0]*[]
+SndOpMode=L[0]*[]
+ZClosedLoopMode=L[0]*[]
+ZClosedLoopSpeed=D[1000]*[]
+XYClosedLoopEnabled=B[0]*[]
+XYClosedLoopSpeed=D[1000]*[]
+
+[DataSet\Parameters\Stage]
+SubSectionCount=0
+
+[DataSet-0:0]
+Version=2
+Points=128
+Lines=128
+Frame=Scan forward
+CurLine=127
+Dim0Name=X*
+Dim0Unit=m
+Dim0Range=2e-07
+Dim0Min=0
+Dim1Name=Y*
+Dim1Unit=m
+Dim1Range=2e-07
+Dim1Min=0
+Dim2Name=Deflection
+Dim2Unit=V
+Dim2Range=20
+Dim2Min=-10
+SaveMode=Binary
+SaveBits=16
+SaveSign=Signed
+SaveOrder=Intel
+
+[DataSet-0:1]
+Version=2
+Points=128
+Lines=128
+Frame=Scan forward
+CurLine=127
+Dim0Name=X*
+Dim0Unit=m
+Dim0Range=2e-07
+Dim0Min=0
+Dim1Name=Y*
+Dim1Unit=m
+Dim1Range=2e-07
+Dim1Min=0
+Dim2Name=Z-Axis
+Dim2Unit=m
+Dim2Range=1.4e-05
+Dim2Min=-7e-06
+SaveMode=Binary
+SaveBits=16
+SaveSign=Signed
+SaveOrder=Intel
+
+[DataSet-1:0]
+Version=2
+Points=128
+Lines=128
+Frame=Scan backward
+CurLine=127
+Dim0Name=Noname
+Dim0Unit=m
+Dim0Range=2e-07
+Dim0Min=0
+Dim1Name=Noname
+Dim1Unit=m
+Dim1Range=2e-07
+Dim1Min=0
+Dim2Name=Deflection
+Dim2Unit=V
+Dim2Range=20
+Dim2Min=-10
+SaveMode=Binary
+SaveBits=16
+SaveSign=Signed
+SaveOrder=Intel
+
+[DataSet-1:1]
+Version=2
+Points=128
+Lines=128
+Frame=Scan backward
+CurLine=127
+Dim0Name=Noname
+Dim0Unit=m
+Dim0Range=2e-07
+Dim0Min=0
+Dim1Name=Noname
+Dim1Unit=m
+Dim1Range=2e-07
+Dim1Min=0
+Dim2Name=Z-Axis
+Dim2Unit=m
+Dim2Range=1.4e-05
+Dim2Min=-7e-06
+SaveMode=Binary
+SaveBits=16
+SaveSign=Signed
+SaveOrder=Intel
+
+[SetView]
+ViewWidth=638
+ViewHeight=526
+ViewCount=4
+View0=SetView-View0
+View1=SetView-View1
+View2=SetView-View2
+View3=SetView-View3
+
+[SetView-View0]
+ViewTyp=1
+LineOp=2
+Channel=1
+Frame=0
+ViewSize=256
+ViewMode=0
+GraphMode=1
+AspectRatio=0
+AutoZRange=1
+ZRange=-41,37
+ParCount=9
+Par0=0,ReverseLine,0
+Par1=0,XAxisMin,0
+Par2=0,XAxisMax,2e-07
+Par3=1,Shading,0
+Par4=1,DeltaGain,5
+Par5=1,Smooth,0
+Par6=1,DriverInstanceNo,0
+Par7=1,RangeMin,0
+Par8=1,RangeMax,95
+
+[SetView-View1]
+ViewTyp=0
+LineOp=1
+Channel=1
+Frame=0
+ViewSize=256
+ViewMode=0
+GraphMode=1
+AspectRatio=0
+AutoZRange=1
+ZRange=-40,38
+ParCount=3
+Par0=0,ReverseLine,1
+Par1=0,XAxisMin,0
+Par2=0,XAxisMax,2e-07
+
+[SetView-View2]
+ViewTyp=1
+LineOp=2
+Channel=0
+Frame=0
+ViewSize=256
+ViewMode=0
+GraphMode=1
+AspectRatio=0
+AutoZRange=1
+ZRange=-32768,32767
+ParCount=9
+Par0=0,ReverseLine,0
+Par1=0,XAxisMin,0
+Par2=0,XAxisMax,2e-07
+Par3=1,Shading,0
+Par4=1,DeltaGain,5
+Par5=1,Smooth,0
+Par6=1,DriverInstanceNo,0
+Par7=1,RangeMin,0
+Par8=1,RangeMax,95
+
+[SetView-View3]
+ViewTyp=0
+LineOp=1
+Channel=0
+Frame=0
+ViewSize=256
+ViewMode=0
+GraphMode=1
+AspectRatio=0
+AutoZRange=1
+ZRange=-1,0
+ParCount=3
+Par0=0,ReverseLine,1
+Par1=0,XAxisMin,0
+Par2=0,XAxisMax,2e-07
+
+[ProcessorSet]
+ProcessorCount=0
+
+
+#!ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff ййїиіихипификижидиЮиХиЭиииЬикиЯийиси№ињиђийїийўи§ийџиййџиђиѓиюиоисиЮигиЬиЮиЧидигиеиЮижифийисицищињиіи	йњи й
+ййй§иќићиьинипипиоиЭидививиСиЦиЦизиШиуихициуиљићиџићиййй§ийўиўиќиюиуиуирикигибиЯиФиЬиРивиЦиЫигиеикитиьиєиёиййййњињи йћиљиєиуихикикийђиюиїитихипитиеимиеибиЧиЩиШинимитириэиьиѕијиїийййййћийђияиљиширисиниЭиЭигиЮиЯиЬиЯиЫигиуичифищиіићийй	йй й йќиѕи§иыиѓиыитииизииибиЧиаиаиЭигийиЮикийихиъияиѓи§иййџиќиййћиџиїиюициъигиаийиШиУиЮиЪиЮиФиЫийиЭийинищиъијиѕиййййййєиїи№июияиоиииЪийјиџињишиыийихидиоибикийизикийийичишищияиэиѓи§ийййћи§ийњиљиќиыитишириЯирилиЩигидиЭиЬивисифисириюиѓиюи§иџиййјићиййіияиюи№исисимикигиЫиХиеиФижикиеилимиюиыиэијийќићињиїиййњиіиѕицицикиривибиЮиЫигиЬидиХиЧиЭидимищициуиэиќиѓиййћийїиёи№и№иэиэичитигиіиѕи№иђиєиуитичиЮиниЮиЭидиЫидидизимифиьи№иїиђи§ийћиќињијиџи йѕияиїиюиъимидиЮигивиЧиШикииибидизиыи№иђици§ийй ййўиіији йюияихищитиоиоиЯиЩийиЬиЬиХиЬиЯизижишимирихиєиџиййєиўи йѕиўи йѕиєириуилибиЪигиЯизиЪидиаигиоимининиыиѕищињињињијиљиїиіиіиэиєифиьиоихижиєияиіишиёиьиципикиуисиоиЮижинииижиоихиыиъиђиёиўийћићиѕийњи йќиыишитиюичисидиеиоипизизиаижигикилиоиёиъићиўиљиіињи ййљићиэишиєичиэифихимивиоилинимипиеииизиъиуипиєиїићи§иљињи йќићиьињиѕитицихииийикиаиЮибийикивибиаийикиыисиъициѕиьиєи йђиќияиъиђихиэиъириоими йюиъифияитирихимитиниеивидиничифинициъи№ициёиіи§иўиіињињиђиўиіиёиюитицишихиеитифипиуиливиуилиоищияиыиѓиљиыиїиіиэиїиіиќиѕишияичищитилифижиоиаиоииириликиуисинириуичиэияиѓиэи§иїиїићиьиюиёиєитицичийивилизийипиеииииизиуирикиэиђихијиђищиїиѓиёияиіихиьиъифимимидиэиљиэиьиьитиуияищициьицихичишичиюифищириъиьиыичијиёијиєищищиёиїишиъиэияириэищиричижилиоисиниыиюиюиюиёиєиѕиіиіиюишиљиѓияичиіищиыиьиниыихихихиоичижитинизициъичияиъиъицияиэиєиѓихиыицициѕичириуилиоилилииизидипичифитифипиоипициыиоиёи№иэичишиєихиьи№ияириюипирипициѓияиєичиѓиьияихиэияищишихиуиэиюифичичиьишиіиєичихиёиѓициъи№иуифиуиэичиђиципифиоиэиписисиыичихититиыиуи№июихиьияиэиьиєишиъиьитиэитифиъикишишиписисиыиуилифиои№иоиоиритияиђириыияияи№ипиъиэищиписифилимикишитицийикийифитищинириъияиыишиыитиси№итиуиюиэиликифизитиѓишиёи№итихияищиѕиэиюиѕиєихиђифихиєиђиёиђиуиуичиэиэиуиьиципичиоиђи№иыиѓиђиуишиіиѕиєиѓиъитичиуи№ишиыиьисишиуимиуицищифимиьиоичиъищиёиэиѓисиѓищишиъифиуиьиэишиъифипиьинипиъихисихимиьищитифинихиниьичиуифиыиюиуифиуисичиыиэитищиэипикикифирийииифищификифичичимихияиэишияи№и№иђиыищияиєиэищиљијиѓиюихириуиъиюицищилинишишищиыичиюицифиэитиъиъиыичиюициьиђищифиьиъиђиёипириритиуиоирикирийисишиюисиуифияиьихиіиѓиїиьихиъичириьифицититиличизимийишифирицисисиуириоипифиыиьиюихи№ичиъисиюитиписишицисичихизинипицитичичийитишичиёичикихитихиъишияиюиўијиєи§иќићиљиєиѕиєиуищиэиыимихийинийивирисихифиэиьитихи№ићиўиѓићиїиэиќиљиёиєиуисиуичицизииииииимисииилитилишитиьифиъиёиюиіиѕи§иѓиђиєиљиђиыичисижиуилиеиривибийисизииихизичиюичиѕичиюиєиэиђиѕићиъияи№иэиюиыиуидивибиаиЯийижипигиоилимиуифисицииихихичитиьиэиыи йњиййййєиѓиѓишиєиьиьиликиуиоисисикииилилииищихиёиуиїиёиїиїи§иѕиѕијийюиїияиыитишициризимиоидидийийисивисисиьиуиэиђијићињи№и№ийяиэиђищиѓихичимипийииийиЪиииаинигипиииуихиьиёиѓиъи№иѕи§ињиђиыиєияиюипихишиуимибиеиЯибибизивиаинижизицисихихизийичищитичиьияиіиќиѕиіиіиљиќиѕиёићихияищитиоизиЯиЯиЭилиоинигимициэиоициэиїиѓиіийњиѕиййљиѓиљиэиъиыифипижижиаиЫиЬиЭибигинитиничифиъиьи№иђиѓийћијийєијиїияичисициуииидикивиЫиЩиЭиаизиоификисичиіиэињияи йћиёиљияиѕиѕиририжийивиЮийидизиЧиШизигидидицищишиђицибидижинифициіиюиљијиќий
+йй§иййњиьитиоиситиеикибийиЬиЫижийисизиуиэиђиёијиййїи й	ййњињијиёициэичициоижиеиЩиЯиЪивиЩиеиЮикифицитиэиѓиўиййўи	йіийўиљищиёиоирифиииЪикигигиТигиШиЫимитисиэиыи№иѓиюиџиѕиџиіиўињиїиюиљиюичимифинибиЧиЯиЦиРиЫиЫижинигидищиьиѓияийимийиоициюиѓияиййќийќийй йєи§иђиёимитибибилиЪиЫиЮиЫиеиииоиуисиницищијији йй
+ййўиќиіийђициёилитимиЯиЦиеиЭиХивиЫиеизинизицихи№иіиѓийййўиўи	йќийыиіишиуитигиаижибиЭиЪиЦиХизибититипищиєиёиќиђийџиљийњињиљишиёиэититидиЯиШиЭиЬиЪиаиЮиШийиЯифитиписиѓидибизиоихиєиіићи йййййй§ийѓиљиєиширижиригиЫидиЦивиФиЩиЮикипимиъиёињи йњийћийй§ийјићи№иэиьиьипииимиЬиЮивиТиШиШиЭииигифифиѕиєиюиљијийййййѕи§иѓичифишивиЯийиФиХибиРиЧиЬиЧиЭииийишириђиіиййџи	ййўиќий№иїихихихиииииЯиеивиЭиРиНибиЭибилиуиширицињиииуиуичиёишићийџий	йй
+й	йййњиіиёихиъикижиЬибиЮиШиЬиЩиЯиЬининимишиѓићиййџи
+йџийй§ийѓиѓиїиуимифиЮимидидиЬиЫиЩиШиаиеитизиниёиѕиєијий йўиўи йўийќиѓищиьищитиниЧиЬиЬиШиРиРиЯиФиЧикибирияијиіи§иўиўињиќийњиѓиїияиѓиьихивизийиЦиОиЧиПиЬиШиЮиЫиЭииифипищиїиЭиоичиьитиыиэи§иџи	йќи§и	ййййѓиќињиюиситиеилииижиаиХижиЦиаииийициъиєиъиѕий й
+ййййјићиўиьиэиђифихибижийиЦиЪигибиеиШикирисихиђи№ињи ййййй	й йћи§иєишисиширижиШидиУиУивиТиФиЪийиаиуиьипиђињиџи§и§ий	йййѕиіиыиюириоижиЮиЬижиУиЯиаиСиаиШиЮинимицихищиёизилиоири№иьиёий§и ййџи
+йййџийќиіиѕиыиоиминиШиЩиХижиеиЩизиеигиниыихиъи№иђиіињийй§ийљиёиљиїихикищилибизиаиЩиЪиЩиЫийиииоипиуи№ијиїи§иєиіиїи§иџиіийўищиѓипипивимиаиЩиШиСиРиЫиеиеиЭиоикипириђиєиёиѕињиййўиїи йэиѓиши№ириеипииизивиЫиаивиЧиЭиЮиЭигииихиѕиёитихинини№иєияиѓиѕий йўиййіиєиўиыичи№иоилидимилиииЮиЭикиЮирилимилиыицичиќиїиўићиіиџи§ићияи№иљичиьифификизиаизиЩивизилийизийикиъи№иіияиџи й йєињи§иђиљиљиыиѓиыисидилиеиЯиЯидибиХиеивизимидисихиѓиыиїиўиёийїий№иёиьициѓищииикиаимиЪиЬиЯиШиТиЪиЩиеийижитишифищиеийипиэисифићиэи§и йјий§ийјиёињињияихиримисилиаиЬигиеиниииаиликицичичиѓићи§ињиќињийџи й§иљиѓихихищинимииибинийизиЯиаикинитийисихициьи№иєиўиіићињиѓи йёиђищичиыийисиииЭилиЭиЪигиииЯивийижилифитищиъи§иѕијињијиёиљиѓиіихичищижизиоиаиЫиеивиЩиШилибибизиъириёиіийичиуияичиъищиєињи№и й№иџи§ияијияиёифияиюиьимишицийижиеитиричисифипиюи№иѓиёиъиьиїињиџиѓиќиъиѕияиэиэищимисипиликиаидилимикисицихиниьияиєиѕиъи§иэиљиљиђиђиѓиюиуиюишиъимидикивиииЯиЭииипимишишипититиѓиэиіиюиїиѓиѕиіиїициъитияишихирижийийиЬивижиаисифиририлишияисициюиуичиьифиѓиыиэиїиёиєињиёиђи№иєи№июи№ияихихикижизирипипичисимиоитиэитиъищишиєиьиюиќијияиъихиѕиыиуисичиуимичихихимимииичифинилиюифишищициюиюињијиѓиєиюиыишириоициуикиоииимиииоиеижижициниъишициђищиыиѓиёишиљиѓиьиіиёифищиуишичифииикиуибикинисифигииификисиоиђиыиуититияиёиюиъиуияиъищифифиуиэиюичиєиюихищиьищиуиъиуияиэицициъиписисиыичишиёи№иъиэиёищициыищитиьиситирихиюифитиоиыиэишимитиниыишишиоитифиюи№иуи№иъияихищишинишичиуиэилирипиуирилириничирихиуицицишипиуитиоиьиниоифицихитиницифиширииихижишифисишичириъицицисимиѓиђиьифиьиюиюиъисициёириыициюичиѓирири№иђичишиэиюиъищи№июириёищиёиуиьиыичиуипиъириёитишицишиниъипиоишипиёияи№ихиэиьиюиуиьияисисипиьищиьинитининиуиыишиуиюисиюиьицияиыиришиниоихицитиъисиыимипищихифиришикиыиъийицисиьихирифипититиюипипицичисицихиципифициъифицияиыиюиѕиєиуиьиэининищиииоифифифишисиьищиэиши№иѓињијиіиѓињиѕияиіиёиђишиъищирихифииицизиуихититищичипири№иуиюищиыияиэијиыиђиюишиюифифиэиуириуииизиоифидищиоийифияириъичишиѕиїиѕиьиъиыи№исиыиюиюириыирихинифифихигицинизищипикихищичици№иђияихиэиъиђиёиыиникититийиўиљиїиѕиђиьиъиъикитидипижииинилиуипиюиуичиђишищиыиьиьиєиѓи§иьиюиыиьиуи№иыиъирикизинийицигихиуишиьиьиэиюи№иъиьиѓиюи№ияиэициљиьиэиоиъиъихилиеитиоивиаитиоихимиъичичищиэиђиши№иєиђи№ичијиъиэицициъифизинирикийиЯизиуибиуидипикитиьиѓиєи№иїишиѕишиыиёисищиэицищимидиїи§иёиыиуищихишиеицизидиоийифифипириуиуиёициљияиўиќиѕийяиђи§иьиђиыи№июиъипиоиуииииириЯидифирилилиуифиѕиюиюиљиєиџиџињиєиёияиюиъисипипифилитисиЮиоилиаикижикицияихихиыиіиьи§иёияиїиєиэиёиђиђиьихисипийибиЮиаиЬиииеидиаивилишициѓиёихиєиљићиќиъиїијиъиъирипимирилий й№иѓиыириьийилийиииЭиЭикибипийииияиёиѕиєијиїиїийќиќиййњи§иђихихилиризикилиеиШигиЫиЮиЯибимиыиуиэищиђиђиџиіињићийѕиўияиьиыиыипикивинииигиеийиЬивиЭигикиеициыихиєиўиџи ййййіињиыиїиѓищиъимийивиниЭиЫижиЦиЮилииииичишияиђиђиыињияи ййђиюиѓиьиёишиьикийиЯийєиюиьитиюищикилимииийиЬигиЫиеивифиъияиёињиѕиѓийќиљиљићиіийњиљиєичифифипизибибиЯиЧибижийисипиоинияиєиіиіиєиўи йћиѕиєи№ињиѓиіитилилиуиаидиЮиФизиЦиЧикиЬивипицитиьиьиїиђињиєийіийяиёији№иминизисиЫибиФиФиХижиаикибикижиричияиђиєи§иййјиіињиэиыиіититижикиЬиџиѕиџиђиьинимипиЯиЬидибигиЦиЭиЫизитихисиіиьиййњићиййййййђијиѓиъинигиЯиЧиЧиШиЭидиеиЭиЮийийиьишијијиёиййўиййћиѓиіиёиэи№иниоиоигиЧиЩиХигиЬиЮиЧиЭинийициёиєи§иййїиййјићиєијиєи№иъиьитиживиЩиФиРиПиЮигиУиЫиоифиыиѓиѓиёиљиќиййќињий§и№ијищихиеиоики йѕиіиїиђипиеилиЬикиЪиживидиииЭиеийимифиьиљиіиўий	йџиџийџињиѓиюијиѓипимиаиеиЧиШивибиШиЩилиеихилиоиъишиіиўићийййњићийћиѕищишиьиуиЯиеиЯиЧиаиЬиПигиЦизииигиыиэиыињићийћийўийћийёићицичиригидидиЭиЬиШиТиаиХиЩикикиуичиши№ищиќиђийќиўијийєияиѕиѓисисиаижи	й§ићи№иђифихидиЭиаиЫиЦиУиЦигиЬинигитиьишиэиѕиййй йџийњиїи§иџишихирисиоивиХидиЩиЬиЦижиЭимитисисиѓиѕийўийййй
+йќийќиќиђияицивиЮибиЫиУиУиРиаиСиЪигиЯипищихияиѕиџийќийй
+йіиѕићиїи№ичиыисиЮиЫиЯиУиЭиЫиЫиЪиЩивидидиоиэияиюиѕиѓиййййќићияиыиђицийижиЫи й йіиљиыитиуиеиаиЫидиЮиЪиЫиЯиЭиииеириьијијиќиљийййй
+й
+йїиўињиїиэирицилиииШигиЫивиФигидиЯижичишиыичияиіињиќийй	ййљийђиъи№ишиуиЯииидиЮиЬиРиЩиЯиЧибикидишиюиѓиьи йѕи йќий йййєићиыицийибиЭиЪиХибиЦиТиЦиЪиЪизидимиыиыиіиъи§ићийџиїиййљиїищиэимизииигиіи№иїи№иэисириуидивиаибиеийиЭинижидичиыиђиїиѕийљићийй
+йўиљи й№иёисицизиаиаижизиЬиЮиЫигибигирикичихи№ијийљиїијиўийњиђи йћищишихилимижиЮиеиЭиЩиЦигииивилижилиёиыи№иѓиіићи	ййћијиўиѕиэиђириьилиииаиЩиЫиЭиаиЭиЦижизиритийиђихиыиєиѕиїийќиіиѓи йћияиэиьихидиЬий йьи№иєихизимивизиЯидиЩиЬилизизизитиђиъиѕиђиљийй
+ййљийњиіиєиђичицийизипиаиЧиаиЭиЩиЮикиаимимичиђи№иєиййййћијийй§иьифишихинибикибибиЫиФиЭиЫиШиЭиеитинищиёиыиєиђиіийўиљи§иўиіиіичиъикивипизиЬидигиЦиЯиЫиЪиЫийициииэиьиѓиѕи№иќиіиїиййћияичифиъисимидиђиљиіияиэициоиритиуиЯиЬиаизиаикииичитипияиїияийѕиђийіијићиіијиюиьищишиъицинидиЭиаигиЬиниеикишиыиьициэиђиќияиєийѕиіиѓићиьиьифиэиличириЯивииивикиеиЫинилижихиуищициэиєиљиєиёиѓиѕиёи§ићиъифиьиыисимиЮилийиЯиЮизилизимимицилиюиъищиєиьияиџиюиќијијиьиђиюичичикиоиёиїиюиѓишищилиоидиеисигисиеиуидичипититиьиѓиэиџийїи§иёијияияиыиёичиуиоимииижиуитирижиеитииизитиоиэищияиёићиѕиёи йїиђиїиєиэијияиуиуитичииижиЭиЭийиЬиниоиририиири№ициіиъиљи№иёиёияиђињиљиюи№итицийифигиЯигийиЭидилилилииимиши№ичиєичичиёиїиьијиіињиъиьиыипищиникињиэиѕиюисисисирициоинипикишилиширирифияиёиьихиїищиыиќиіи№иєиђичихиыишихиюитиуитипичикинисилиничияи№ифиъияи№ишињиёи№иіиъифиьиуифиэимисимифиеинисимидипизимищиуиюихитиюиюиыиъихициїиђи№иуиэиьиоищирилижиоикижийигитирипийинитипиъицифиюиюишиѓияишициэиситичинициеицихичиыиыиыиьиыичиьисиниъициыиэитиэисифищи№июиуиыиєиёиыиіи№иыиѕиђиэитияинипицишифициъицифипиуичияишишициъихиѓиѕиюияиѕияиуифиыиписириоищишихиыихизийилиоиоиуиюиюияифичифифи№ифиѓичищитиыихириричисийифиритиииеичихищириуихиуиришищициоитиэиъифи№ихиъицимицимимихиыицици№и№ицицисиьитиёиюиьи№ищиюиьициьиђициюиюияияиэиэиъиѓиъиэитиыиёипи№ифиъипиъипициоициьиниьиэириниёищиђипишихи№ифишиуиэиюифищихихиюиоицицисиуипифициъихиъиуичифиририхитипиъиририюиоиюицичиуишиьичичисикикиъитишиыимищимимимишицимиэихиыищичиьириъихиоикикиуииипипиэиюиыиэиѕиђиіиєијиѓиіищиьиїиыиыиёифиуиэисиуиьиэиъитисихиниюитиэисиёиюичиуиѓиіиѓиєишичиёиѕиьишиыиыишимициыихимихиминицицинипиуиоициыиѓициъишити№иьи№иёипишисишиличиуинифимикипирипипииинифиниьицисиыиьифиђитищиђиыифиыиьихикиъипииицилириоирихиниииниъирищириыиоиыиёиёиѓиюиљичијиыиьићијиыиѓиьищиъищирихинитизилижисижикихишиыищиуиуиѕиэищи№ињиљиљиъиђиєиіищиыиёичиъихимизилиуимийийишикиыипиыихищиыиёијищиѓищицијиѓицияициуифиоищидийифигинигириеиоициуиуихи№июияиъиіиіиєифиєиъиюиъифинихипихижисиризинипийитисиеисиъисичиыипициэиъищиюијияи йўиљи§ийй§и№ияиьиъитиюиэимийисисигиеирисииичизиъитиуициѓиѕияияиѓиђиџиўиіиѕияиэитирисинииирикибилигизижирисилишияифиъиіиэиєи§иљиўињиыияиши№исиьинитигиаиЭииивикилипийирижиниоихиіияиэиэијијићиїиєичи№ияиоииишифижизижизиЯибийивиеидимизиуини№ивийипипихиѕињиўиќиђий§иџиљиёиёи№иљиэишисициоидибиаиаиЬилинипихицичинифиїиќиўи№иёиєи§иќийїићиюициюиьииинигиЮимивиЪиЯиЯикимичилиыияијиыиўиёияиѕиѕићићиэиюиѕиыисиширихиеизиеиЫиЬигиЫийимикихисисиьияиьиєий§иђи§иџиьињищипиуифидивижиаидиЩижиЩиЧиЪизийизииияи№иѕигицицияифиэиђиѕийєијињийњийййёиєиёирийирииилигизиЧиаивиЫибидихицияиьи йѓиййїи
+ййўийїияиьисиничинибидивиЫигиХиШикибифицимиыиыињиєињийќий ййѓи§ичиюиьиъиииииЪигиеиЩиЪиШиЧиаииивинилициѓиєићијиљиџићиїићи№иъиђиёисиригиеиШиЧиЧиЭиЬидиЫижизиоикижифити№иЭийийифисиэиѓияиўи
+йй	йййљиќиїиюихи№иъисирилиЧиЭиЦидиФиЫийинимиыиуиєиъийѕи§и§иўи§иййєиїињифищийимимимиЭиЦивиХиЬиЪиииЬиииниуиэиђиђиљиїийўийњий йџиъиѓисилифивигиЦиЦиРиФиЮиЦииизикийиниоиєињияи§иїийіи йіийьичиуининикизиЫибивиПиПиЬиЫивиЪиЬижити№иъијиЯирикиэи№иыиљиѓи й йййййй йљијициъихимийиЯиЫиФибиЮиХиЮиЪигиеилиыищиэијийй йџиџий§и йћиэиїичирицииибиЧиаиЬиЬиШиЧиЯибидилищишићиѓиќиѕи
+йй
+йййіиєиђихинисисиЭиЫигиСиСиСиЯиЭиХиЩийиписиуияиѕиёињићињиљићийіияиќияиоижилидиЭигиаиСиЦиСиЫиЬиЭиЫижицисиєияикинижиъифиьиьиђийй
+йўийййџийяиіиъихишириЯибигиЯививиЯиииЯиаифиуиъиѕиўиєий
+йџийџијий§иљицитийифиЯиЮижигиЯиЬиЯиШиЯигигицищитиьи йіиїиййй	й§иййђичифихизикиаибиЯиЪиШиЧививиЭиЯивишиьиђиъиљий ййџийџиѕиэиљиьияириоипиЧиЭиЩиМиТиФиОиТивизипирициши№ижижиоиуифичиѕијий
+йџийййўи й§июиъитичиуинибизиШигиСигидижиииоиуипищищиђиџийййй	й
+ййџиќишириъинивикиЮиеиУиЫиЩидийинизирифиуиыићићий йќийййѓићиѓициэихитивигиаиЮиУиЬиШиЧидижиЭипилиъиъиіиѕиййњийййѓијићиыиэиуижиЭивибиЧиФиМиПиУиЦиЬийифиси№иэияигивийиоиюиѕиќиіиїийй й ййљијињиќихиьичичисикикиЯиФиЩиЦивиииЯиеитиэиьияи№ићиќийй йййїиќиыищиыищикинивидиШиЫиЭиЧиЪиеиЫийиуищиѓиїиьиєийй	йџи йљиѕиѕиќиђищипитизиЪиЯиЦивиСиаиЦиЧиеиЯифиницичиљиѕиљиѕиўијиййњићиєишипимиоижиЭиЧиЮиСиЮиФиЪиеизиаилицитиъиѓибилимифиъиіиќиђиєиййћи
+ййййљиљищиъицизижиоиииЫиЪиЪигивинификищишиыиђиџијийџи йіиіи йјиёиєицитичиуиниеиеиЫиеиЬиШиЧигиЯийитиуиђиљиьиђиѓи§иўиййіиќиўиъиђисиуиниеибиЬидиЯиФиЪиЦиеиеиеийилицихиљиѕийђийљиѕињиќиђиэиуитиоийигидижиеиХиУиаиЪиЦиеиЮиоийиъиєи№иписитишиыиђијијий й йўићиіийўиїиюи№итиоирисибиЭидиЫиЩиЪижимиоижищиниъияиэиїийћи ййўиѕиќи№иїияиђисищиридиниЮикиЩикиаивикидихисициэиёиѓиєиўијиєиѕиљиџи№иёишимилимикиииеигиХииизиЫиЭикилижифиоициьиїиўиќиіиѕи йіиэи№ияиьиъифиоивиливиЬиЬиЪиЫийиЮимиририричиђиэиеийиъиёиюи№ишиїиюиїиіијиіиџиќиёиюиѓифи№иуитикифититиоивизийикиоимиъипиёиіиљиёији№иќиљијиєиѓиїиши№иъиыирихииикилилибииинихиуинисихиьичиэиѓиїиьићиіињињиэиыиэиуитикицидизииибиЮиЯибипикикиоиуиуиыиуиъиѓиѕићиљићиыиіичияищиьичикитидижиЯигизилиЪининивитижиуиписиёиъиоиюиоиюиуиѕиљињи№иќијиџиѓиыићиѕиьиэиѓияиуисиницисихигинилитичишисиьисиѓиєишиюиѕиьиюиюиыищиёифицифиыихищицикитибиуипийимизийилишитиуиъиєиѓиєиьињињищији№ичирихиликифифитиуипибиииоисилилиришиъияиъиыи№и№иьињиъициіиђишитихификифимийижиниЭийизижиририкисиоищиђипифиюисиэишиєиѓијиёињиэињиъиєициєиђиѓирияиэиуимилиоирищилихирийиуищиэищиуиїиьиюиёиыиђищищиїиюияисицисиъищипилийиуихипициризинилиъихипиэиёияишифицичищиюиъишипияинихисиринижифиеийицисиуихишинифисиои№исиъишиъиюиъиуири№ипиъииипинифинитиридифифиридииириыишипитиёисиъиыициђисишиуиыиьияиуищишиђифиуиёихириририъищитицихишиёищишисириоицишиоифичиђишиыиъищичиъиыипициниуифириоиниьитиыихиоиыишиъишишиьиъифиэищичиюиыирихицирияиоиоиэипиьипиоисихишиьилиъицимищисинисишитихиримищиъиэилириричиличицихимиьиришиииъищисисилищинихикиёищиюи№иъиѓиуихичиьишичичиъисининипищитихицитиѓиёиюиьиюихиъиєиюи№иуишифинирихицичинилиюилиэичисипиыиёиыищиэияи№иѓиъиуиъипиэиоиципиоитиъихищищимиоикихищицикицириюипиьипиришиёияишипиэипиьичиоичисишиъиыиуипишичишишишииифичиыитисиоипирициришицищисиничиликиъишиіијищифифисиуиьиципихицишикизифиэищищиђиъицияиєињићиіиъиъиёияиіищициђичиуиъизилиоирихипинифинишимичипифихиъиъијиьишији№ишиыищиыириуисипийифипизивиминижифилиыиьиуиюиѓияиѕиьиђиьиђиєиѕиѕихияициъижицикиеимигилижимижижикицимипи№ичиђиьиїифиёияишиѕиѓиуихицихишихиіићишиуифиъиситихижиеижижилипииизифинитиыиіищиьиљијиќиюияиєиќияиэиюифифишисисибикиииЯисисиииуифиыиуипифијиьиыиіиєиюиіијиёици№иьиыиыикихидижисигиаийирититийичипиуиуиёиїияиэиэи№иљиюичиђиђитичипифиуиуииижиЬибийимиеитиоицисиэиьиёичихиђијиіиљи№иђиѓиыиьиниоинимиєи§иъиђишиэиъипимиЯизипивилипивигиеишипичиїињићийй йєиїи йєињиыиёишитифилижипиаизиЭиЯинисипикиоициёихищиэиљиѕиљиіиєињи§иыиѓиёишищийимигизиживиЮиаиаибийииижищиьиёијиюињиїиќиїиёиђиёиїиыиђириримибизиЮикиЪивиШиаизиЭиеириыиьириъи№иєиѕиўићиѕиљиіиьихисищисимидиўи№иэиѓияипизииирииийивиЪидикилисилитипиэи№иѕиўийћињиќијийјиђияиѕифиъикивирижилиЦиЭилиеиЭиаичиоифишищиэияиіињиєийџиљийќиьиьициуиоисиеиЬивиЬибиаиЦийиоифисищихиѓияиўијиљи й йїиџиіиѓиѕиъитисидитиЩидиУиХиЯиЦиЬигивиничиииюичиїиъиџи й йй йюињиїи№и№иниситижий№июиэиѕияиридийиЮижиХиЪиЧиЧибидицимищищиъийџийќий й
+й	йѕиєиљиэищикийимиаиЮиЫиЯиЪиЮизиЫимижихиуиъици№иќијиќиќи
+йййй§ияишичифибиаигиЫиаиФибиШиЮиеийиликишитиєиьијиџи§и§ийљињијиђињициыищимипиЪиЪиЩиУиСиРиЩиЬизивифийиёиєиюиђиєиљиййљиђи йѓиљифипихижиди	йй§ициуищимиликиЮиЮиЦижиеивибиеизихияиъиъиђийњийййџийњиѓиђиіиуиринилиЮиаиЧиеиХиЧиЮиЯийизипиьиѕијияиђијиўи	йќи§ийћиђиљишициникимибиЫиаиЧиЯиСиСиаиШижиеиэириљиќиѕиіи	й йййћийіиєиыифизиоивиЦиЬиУиЭиНиТиЪиЮиЩидивипи№ициђиљиѓиїи§ийџиѓий§ищиюиэититидийѕиђишиѓичикириЫиЪиаиФидиЦиЭиЯиоиоиыици№ињий§иййййўиййјийяиуиричизиииЯиЭиШиЫиЫиЪиЪижининипиєищиќийљийййџий§иљиђиіириыисиЯиЩигиЯиХиЧиФиУиЯибирисиъияиіиіиќийџи	йџийїийіињияипиниеиеиЪиЬиПиРиОиПиЩиЪиЬигилириьияи№иіи§ийй	й§ићиўиѕиљиюимипийиЭийїиёијичинилииивиЪиХиЧидиЫиЪиаиликишищијијиєијийќийййййєијиђихиоипизизидиЦиЦиЩиЯиЫилигикилищиєишиўиљий й
+йййќий№иэиђишиыитиииЬиеиЩиЦиЫиУигиШиЩииижишициєиьи йџи
+йџий йіиќињиђихиэийижимииигиОиЯиСиМиУиЦиЩииициуириыијиюићиќийїий§иёиєиъищихитирийийћиїијихишикиоилизизиЦиФиФиЧиЫилигикиыищиыиџијийййй
+ййџи№иьиѕичисижиЮилиаиХиУиаиЦиЭиЭиЭийикиьиуиыиєийћиљи	ййњий§иѓићиіичичиоийийиЧививиФиЦиФидижииийилиъињияиїиїиљиїињићиќиѕиђиьичиуицинилизиеивиФиШиХиЭиЯидижилилиёиуиёиќи§и§ийњий ййяиіиъирисисизиџиѕияиьищихишиуиоиЮизиииЦиЫиеиииоиуишисиьи№иљиђиџијиййй	йќиєиюиыишириниииЯиЫизижиЦиЩиЬиЬидипишилихијиёи йћиџи	й
+ййќиїиѕиёиѕияициуижийижибиШиФигибигиЫивихимифихищићиџићи йћиљийђи§иъиыишиуибизииижиЭиЬиЫиШиЮивидидиуиуиуиєиђиюиюићиќиђийљиѓияиєитилисилиЮиїиэиъиѓиёипиоиоиоисийиЬийижиоикисииичихишињиѕи ййћийєиіињиѓиёијиюифиририеийиаииивизивиоиаидирилихиуияиёијийййћиѓиџияиўиіихичикинийиоиЯикикиЪиЭивиаивигичисичишиъиъи§иййїиѕијиэиљициуификинимимиЯизиЫиЫибииимимимицимиэишиѓиёиѓиќиђићияиыињиїиђиьиыиииоини§ищиљиыишиюинишиеииизиЮиаидиоигипиоициыи№ищиёиђињийїињиўиќиќиѓиљиёиьичиииниписигипивиривинилиуикищияиъиёиѕињи§иѓиѕиѕияињияиѓиєиуиримидиЯипивиЭиЮинивириаиникини№итиѓиїиєи№иэи§ияињићиюиѓиыиъифицийимиеизизижиаивиливиоипирициюитичиїиїиыиїиѓињиђиьиѓиъитипициниќиєиђияи№иоифиришифихививитигиуизиыихициьиыишиєијињиіиљиэиьиќиыиыиыиыиьилишисиоикиоинижибигиеимитилиѓиђиёищијиђиёиќияињиыиѕихиюисиьинитигидисиеибидивибизифифиъичиэиыиэиѓиѕиіићињиъи№ифичиуитириеижижипиривизиЭиаикипиуиуиуиричитиъиіи№иєиыиѕиьиъиши№итишизипикиэищичиѓиуисипихимичилиуипифихиыинипиуипияиѕиэифиїиэиљиіиљиєиюиёиєириђисихиширищиоимишишикифишичимиыиыичиыиэиєичиєияиёищициёиёиэимилирициъиписиеиеитичизищипиниъипишитиуисиыи№ифициѓи№исицихиоиэишипиритинилиуигицитикириликиыиюимиэиьиюиуи№ияиюи№ияицимицимилинихишищиьиуиши№ичицифиьияияиюиуиыищициьи№итичиыиуицичиђиыиъищиьиэиъиюиъипинитициэичиэишиэициьицитиэифищиуирихи№ишиьияиыиёиюиыияичичипиритифийийиоисирипиоищичицитиъиоиюишищитипиьипицишияимицинишимитинисимиоиниуитипитииищининиуихичимиъисиэицичисициьиоиьиоичишириририпияичиюияиѕишиѕи№иђичишиѓиыифи№ихиъиэияинифишиъиэирипиыиоиоиоихипиэититифихитиѕиѕихитициыиьитиьиюипищичихитичициыихишиюитиьиыи№иуиьихицияищиђицириюияиьилимициришиликиуийиоийициъиыиыиэиьиэищихищипиыиђихипиуишиьичиуимиоисикифифичисифизилифихиоициъиоирипиоитищи№ициъиюиъиђищијиёиіичияиюиёишиюиоиьищиуитизичиуиоиуикичифиуисиуициъиіиїијиљиёищиђияиђи№ишиыинищищинимизиоиеиеишицисийицичи№иуиьици№ичиђиѕияиєиђиёиыиъимилиуисинитисизитихикийирииииишиюияициэицияиыиэищифиыитиуифиоицийишидитиииуилийиситиридиуифилитияикифишиъифиэиїи№иєиўиљиёи№ийјиыиѓиэишиъитишицисизиоирисимиаимиритиэиюисиёиѓићијићияиіияиюићињиьисиририйитижииигижирижививииишициыихиіиђишиёиѕиєиѕиљиїињиѓифиєиюихимиииоиЯивилиЫииижипибиликимисисиуишичиьи№иъиюиіиђичияиоищифизипиииЭикиаиЪивиЪилипикиоиуитиоихидижиоиши№иэичиїиєиљиййќиїийџиіиєиъиѓирищицитикиЯийиЯипимиоийийиоифиєиѓиъиќићији йљиђиѕиђиїиєичи№иринитиуиЭивиЬийизиЫиеийиризисиуицишиыиэиѓијиіиќићиїиьиђи№июиуииикиаиЭиЭиЫиЫиаимиеиоиоифимипихифиѓиьиђијиёиёиљиљиёиэицифицирикимиЯибизиЯивиЩинииивикиуипитияимисиеиьиъиёиїињиййћињийјийћиіињияиыиыиуибийиаивиЩидиШиЪийигииифицищияи№иўињиєиџи§иџиѕиѓи§иыихичилициуиоилиииЮиХидииигигитициюипиёиьиёийљиїиљиѓийњиєијиѓифицинисилидиеиЦиЯиФийиШиаиоижихиоищиѓиќияий§иђийяињиэишичиьиииеиеивиЯибиЧиТиаиЩиЪиЮиминипиэиэиэинигирищифиъиљиџи йѕиўийќийіиѕийёиѓиьиыиоиЮиЯиаиЮиШизиХигиЯииинипиоиьиѓиѕиљијињийќийўийѓиыищиђиричиЯивиШиЩиЫиУиЭиЦиЯивилисишипищиьиђиљи§ийјийййяињифиьикиуийигивиЭиЯиаиЪиФиЭикикиситифишиюиўиђиєийњијиљиіићиїи№иоипибиЯиииЭиРиЮиЦиаиЦиаиЭибикиеиъицињивийихихиюиєияићиййййўиййљиёиѕиѓиъимирийинигиХиЯиШиЮиаиЮимидииипиѓиший йўий ййћићиййќиѕиєилижириииЩиЯиЮиСиЯиФииимимиуисиэиѕиєиййййй	й	йєиђиюиъичитикигиЮиеиЯиЮиПиЪиЬиЪижиЭитисифиѓиђињийџи§иїиіийљиіищиьищитикизиЪиФиЫиаиЪиЬиТигиЦижикииисисиѕиаидихиъиђиюиљиѓићиќиџийй	ййїи§ињиюиэичипиоиаиФиеиЪиТиЯиЫизигирищихиђиѕиіи§и йќи§иййњи§ићищияиђинисизигиЫиЯиЧиЬиЩиХижиЯирипишициъиіиќиўийййќийќијияиэиэишиниЫиеиЪиаиРиЭиТивигибипифифичиєияиќиїиѕий
+йџијиєиьиьиьимиуивикиЧиЧиНиЬиФиТиЦигижиеиуихиъияићигириниыияиѕиёи№ий	й	йййй§иїињиђиѕичиритиииииЪиЫиЪиЯиФиЫиаижижинияияи№ийййййй	йќиѕиѓиѕиъириуидилимиЫиЭиФиСиЩибиЫиЩиеиниъихиюиљиќийџи йй§и	йќий№иьисиъитиеиШидиТиЪиУиТиШивиаивизицирищи№иђиђийй	ййњийюиєияифимидиеиеидиШиСиЯиХиЧиЫиЧиЩиеиуицихиыижикимияиришињињиљиљийџиџийјийњињи№ирииийикидиЬигиЫиЭигиииЮилиоихифиёишийіиџиџийй
+й§иѓињиэиїияиыиоигибиФибиСиЮиЭиШииибинифитириъиђиђићийй
+й ййњиєијијинициликижиЩиСиУиПиЪиЧиеийимиииуиъиїишийћиїи	й	ййєиђи§иѓияипиоивижидигиШиПиЩиНиЫиаиЪилиричимишиѓикирисишиьиѕиъияиќињийййййњиќиђиђитирифипиниЧиЮиЫизивибиЫидипипиьиэиёи ййљији	й
+ййћиџињиэиэищиоиоивиаиЪиЯивиТивиУигизисициуиђи№иќийњиййўиљийўијичихишизиуиеиЪиЯидиЯиЦиРиЧиЩиЮиеилимиуиѓиёиќийћиќийњиљиђиьиѓиюиэижидиниЩиеиЦиСиЮиЯиХиШибиниуииищиуиѕинициииришищиќиьијиўиќий йѕийєићиєихиёифириеииивикиЫиЮигивилиоийищияиыиєияиљиіиййљићиђијияиљиюиъисиоизиЭимиаиЯиЫиииЯивидитилищифишиєиќиёиђијиєийђићиѕиюияиуичимикиеиаиЩиХиЯиЯиЮидиЫиаигисиыи№иьиїи§иіиѓијиёиюиёиѕихициъишиуижидиЧиЬиЫидигигиШиаиЯивиоиыициіизилитиничиєи№иљи йўиѕийјийџи§иіиѓиэиюипищиоилиЯивижиЪибиЬивижилиоиыи№иэиыиэияиєиџиўи§иїићиюиєичихиписилириоизижилийиииририкикипищичиљићияињиѕиўићиїићиьиыиъишичипибидимиЫиШиЩийиЭикидикикикиниыиѕияиѓи§ићињиѕиыиъиэициъиоицимисибиЪиШигиЫизиаиЩиЯижимиоищияиыисисиьичифиѓиъиёићићићињиїиѓиьи№иъихиєириуипифинижиеинийиуирииимихиоиоиђияичияиљи№иќићиіияиљиёифищитищирисикидиоииидижииииилинийиъиоицищиіиіиюияи№иыиљиьищифичиыиъиситигипигикиеиЯиаирисисичикиъиричиѓиыиіиюиюиєишиѓицищиуицишиоииинириминибиниоиЮизимисилиьичи№иоихимиёиђиёиьиїищиюињиъиьищиѕияиъихифифиэимифиуиоичиеихиеихифиминиюиэифихиэиьичичијиїиїи№ищифихи№ишишиоитихинихисисимицилирициниоипициєияиъијиєиѕиђичиёиёифицириличиоицифисинирифийинирипиъипипифихиђиюиіиьиыицичи№ириуифирициииниеийиририжилидитижилишиуичитифиуири№и№ичиѓи№ифиэияиэищиуишищихиёиуитиьищиъиоифиьиьиыиьиъиьищициьиюиэипи№иыиёитиуиёичиъипиуиъиъициьиэифиоиуишиципищилихиъихитинифисиуихиоиришиюиэишипифициниуитиоишилисиоиниыиуиоирицинищиэициъиминихиьиуициъитисиуициэичичипиъинийисифисичииижисикищифирисикисиъишифишициьисиэисисиыияириъиуифиьиэиьиьихифиђирипихиюиыи№ирияицифици№ияиыияиыиуичитиуипиширинищиоиситихифиюиэити№ишиюиъиъиьиоинитиъиниэилищиыилитинициуипиъикифимишичиьищиюихипиоишитимиуипиыиъинииисиричишилитийикиъиъикиницикихиъиьифишимилифиъихиьимихиуифиоиіиѕиїихи№ицифиыихилижижикикиииъиъиниьиыисиыищичишиєиєиђищиіихишияиђиримиуишищийииисифиеикиринихичисиэиыиѕишияичиђиёиѕиёиђияиюициыиэириъиоимиуитиливирисизизипикичи№иэиыиѕицијијичиъицищифитиюишифиоиоимивиоиливимииифиоисимиуиниуиюиюиєичиыиъитиьиюихиликипичири§иїициыиэишифийишизилиеиеикириоиъихипиоиэиюиѕињињиђиіиьиіиєиэи№и№июириыиэисииихитидикинисиоикиыикиритихиѕичијиѕияияињињиљияициыиширинифижилидиеимиеиаидитищимисищириъиѕичиюи№июиюицищиёицифиъиьикифисинибийинизизигидигиуизишиуихичи№ищишиэичичиђихипиуиуимитилийјиэияиэиуимитифизипикиоикисижидифишиоиѓиїи№иќиђи йји§иѓићиѕиѕиъициђичилиоийиЭигиаиЯиаиЭинирижикицищиђићиљињиђиўийўиќияиљияиѕиьимириуиаиеиЫиЬиЫибиеивибидипиъиричи№ияиќи й§иќиљиыияиэишияиоицифилиЯиаиЧийизиШийибиоиаисиыинириъиѓиѕиљияи№иџиэиэиъиѓиьиэифивиииџи§иѓифияитипицииивиЮимиаигимипихиуититиёијиќиђийїийћиќиљиѕићиьиђишиэизижимикийиЯиЦиЭимигилииихишищи№иьиљиџиєиййќиќиђићиьиєиоиъиеимиЭижиЫивигиииЬиеиаирижищияиіицияиёиіиџијиџињиёиєихитимисийириЯиеиЪиУиЬиЧиаиЩикинизитиъи№ияиёиѕи§иђиєиџиѓињиьиёичириеиниоиѕиќијициёиыизикижиЭиЬиЫиЩиХиЩигийидикиюијиљиѓињийњийййњийјиѓиєичилимиЯийигизидиЯиЦиЬикинифифиъиєици№ияиѕийййййѓийѕиєицищиривиШиЬиЪиСиУиТижиЭииижиуишияиёиіи йййњиййѕий§иѓиэирифиоивиЪиШиСиУиЪиТиЧивижииизиииуиѓиђи§иѓийіиєи йєиіиєиэи№ириоизиЫийљиїичияинижийилидиХиЧиЮигидигимигиуиуи№иьиѕийћи
+йћий йййёиўиёияипициаиаижиЭиСидиХиЧидиаилизифиєиёи№ији§ийййййўиќи№ихиьисииигиеиХиЮиаиХиСиЪизидивиоиьиюи№иёи йђийћиљићијиїиїиіиьишисимиЮигиШиРиЯиПиЧиТиаидиоинишиьиюияиєиќињиййљиђийѕиїичиьиригиаийџиёиёичичизижиаиеиШидиХиФиЯиаигигичиниэи№иййй	й	йййй
+йёиіиѓищинитиЯивиУиЮиФивиЭиЦийизижисикишияиўиђийћийй§и
+й§иѓиюиїиэийиуиЮиШиХиЯиХиСиЩиЭивижимижишиьичиъиїијиўийјиџиіиїияи№иьиоисибийибиЦиТиФиЬиХиаиШиЮиЯиеириоиьиљиєићиџићи	йџиїиєијињичиюитиЯиЭињи йєиіиыиъикийиниШигигивиШиЫиаивиниуифиыиіиѓиєийўийй йњи йћиўиыицийипибиЩиЩиеивиЧиТиЪиЬиЪимизишиёишиэиљи	йййќи
+йййяияиїишииидипиЧигиЫиОиЪиЮиЪиЦиШигипицихиѓиѓиўи§и§ийййіи§и§и№иёичиыитидиХиЫиЧиСиШиФиФиРизикиуийи№иђиљи№иййљийќиіиёиюиђиуитижимиЩи ййўищихиэилижидийибиЬиЮидиШиЩигитишишичи№и§иќиййййџиљињиђи№иїисикилинийиЦиЭиЪиФивиЮикиЭифисилищијиљи ййјићиййјиќијияиьиюицигивиЯиаиСиРиЦиСиаиЬиЭивитиыиыиђиіиљи й	ййййџиєи йѓиюиьиоивилибиЩиЫиЫиЦиЬиШиУииимимикифиєиыияињий йіи йїијиіиђифиюийитиЪийќињихифиуийигинииигиЦиЪиШизижийийисисиѕищиєиќиџи§иџи§иўиіий№июиѕи№иъиеижикиииЦиЧиЧиШибиаирипишисиєиъиіиќиїићийй ййѓиўиъи№ищифиниииЬиииФиУиЫиТиЫиШиаисилиьишиьияи йўиўийіийёийюиљиэиэиъиииЭиЭиЩиЭиУиТигиФиФиаиЭигииирициїијиѓијиѕиџиѓи йђиьиіиёищиписилийѓињиєищишифийипикигиЧидиЯиЪиеимикиоишишичияиџиййїий§ијињи§иїиэицишимидилиШигиЯиЬигиЯимигидицикичиюијиѓиєиџиййљиіи йњиѕифишиъийиЮиЪиЧиЭиЩигигиЫибиЮиримимиэищи№иѓиѕињиіиќиџиўићиіиыиѕификирийиШивиЦиСиЬиЦиЦиЧиЮийииилисиуиђиьияиєийєиџиђиёиэичишитикидизи§иэиљиєияи№ичимимийижикилиаириаинилининичиёиќиіињиѕиљи йїиєиќиїиєихишикилирилинипилиеиеиоиригитиоитишиѕијиьиђиѓий№и йјиєияиїиуиьиминивиЭивиЪиЫиЪиииЮипимизихиьифи№иїиюиіиюи№иёиїиьияиєиыиуихипичириииииЯивигиЩибийибисижищифиоиьиљићињињиџиѕићиёиьиэициыицитиоияиїиіиьипиьимипирииибикижиоиеипииисили№июичиёиыиїияиѕиіияиђијиъиїичисинифииизимисижизиаириризифиоиьисиуихиёијиљиѕияиьи№иїициюитимихиуиеисигимипивиеиаиримиоикифинисиюичиьићиїиїиэиёиѕиѕишиъиьиъичивиририниаиЭимиоидиеизинитишисифиьияиэи№и№иыиъиѓиѓиёипимиуирипичиыиюихитишиюинийисимицимиричихирифиыиьичифиѓиіиіијиєищияиіихиыищицитифиримитиширихикишииичирифифиьитихиєиѓишиъиюиэиѕиєиёициыихиоишиъириризиоижикиеицисичийичиуиыищифиєифифияичиэичиђиши№ицифиниуиуифисирилибифийииимикиииуищиниыипиюифиєиѓиэищиюиниюиэиьийисицичищиѕициђичиюиъишифиликихиъицихиюифириьициёияишихиѓищиъищихиђириёичишириоиьисикиуинихипичихишишиэишиъиюиъищиьищияифитищиуицияиуиниъийифищинийизижийирифисиринилифиьияишифиуи№исицияициэиюиуиоицишикилиоифисииитихихилиииъимицилиьимичиэипиюиыипищипициминисиписищипи№ирихиѓияиъичиэихиыиѕиуиъиьиђи№иуифифиыинищитисипитичиъиьиситисиниоипиюищичи№иуищиьищихиђицифиъисиоиъиъиыитиличиуиуиэишипитищириюиюиэитищириуиёишисипищиуичиьилириыиситинищифиуисипиниуиъифитиъинифиэи№ихихияихиьиоиыиьилириричифипиципинирийищицинищинимиоилияисипиуиъиэиѕиѕиъияиюиэиђиъичиуитиюияиуинищисирихииитийищиыиуихиюичириђихитичищиѕиёицицишиєитиьиуилицириличихисириииризихитиъиыифифиъиуихиэиюиєиєиуияияихисишиэихириуиоимифихизицифипичипипириси№ипипи№иђиэиыияиъиоиюиьинилифипихизириуизикивиеилилитицичихининириыишичиъищиюияиќи йїињи§иќиїиъиьиьиюиоириуицидийисизирибигизипиьиюи№ияи№иѓиъићиќиюиђиљиъиѓициђияичиуикицизиоитиЮирипижисиуилитиьичихиѕиѓищищиљиёишиђиъиђиыифихизижигижидиаидиниЯивилинилиуитихитичиђиђињиїиђишиьияиьищиоиуизитииипилиаизилиЭииивидиоиуипихиьиоихихиюиюити№июиєи§иљий йѓиёиїияиэиэицичишисикииипизиЯизизибиоишициниэифищиюияиѓиѕи§ињи№иъињифи№ияимирилимидийиЭигидииизигирифипищи№иїиєићиўиљиўињиэиыиёиыичиуицитизимипизивилиеиеийиоиеириоиюициьиэиіиъи№иїијињи№иёи№ириуилиеидиЫижиЫииийиЮимиЯижибикисисиюихийилирицихиђиюи§иёијийїи ййѓиѓиђиэиђитишижинизиЭиЯизиЪиШиеиливифисиюиєициђи§ийўийјијиєиіиіијицищипитинидиеиШиХиЩижибигивигиуипиуиыиюиіиіиѓийђијиїи§иѓиёиыиэиыисимижиЩивиЫивиШигиШилиниситичичияи№иіияијиёиіиџиэији№ифирииигилийиЪиФиЩиЩидиФиЦизиЮиоимириыищиЭипилиыиюифиєињиіий
+й§ий йњиџиџиёиѕиципийийидиЬиЬивиФиЭиииЫибивихириіияињи№ийџиййй й§иїиэитификиминийиЪиЩиЫивижидиЮижибиуириуициіиѓијињиѕиіиџиўийќиєиёисириридибибибивиЦиЮидиЩилисигикишиуиѓиьијиљиџиђий№иљиъиёиёимиеийиЮиЮибиРибиЫиШивиеиЭиоилифитищињиниаифилирициыий йййњий§иййёиюиєицимитиЭижиЯиХизидиЫибилиаикичилицищиєи№иїиіи§ийўиџиєићиѓициъиоииилиЪигиЭиХиШиЫигиеибизиеирияиіиђийњиййййџийіичиїиюиыиаиЭиЯиЬиЧиЮиаиЮиЪизиЮиниуищитиыиъиѕи№иєиќињийѕијияиши№инитизиЮиФивиХиРиЭиЬиЫиЮивижилициниъиљиЭинидишириэиљиёињийй	йййййџиэиюиэиоидиЯиЮивиеиЬиФигиЦиЪидитииилиуищи йћиќи
+йййййїи йъиэиьищимигиеиШиШиЦиШиЪигибиШисиеиюичи№иўиѕийййџи й§иѓијишицириписиииХиЫиЮиНиЯиФиЯиШивиЯипичипищиёиѓиљийіийљиљийёиёириюийийиниФиЩиУиМиТиЩиЫиУииикибимиьищи№изигиуиниьиьиѓићиѕийййй
+йййџиєиєиъисиоилиЩиУиЫиШиЦиаидивибиеишиоиѓиъињијийќий	йй	йјийьиѓиђиуилииикиЯиУиЬиШиаиЬизиликизиуихиїиєиђийй й ййййњищихишиуипиЬиЮиЪиЧиФиЬиУиЦиУиЧиоитифицияишиїиѓийй ййѕиќиьиъициьимиЯиЯижиЪиЦиХиЪиПиШиФидидизийиьихијиЮирицищиюиьиьиќийћийћиййўијийѕиюичиуиникиЫиХиеиЦиЯидиШиЪибикихисиѓишиќиљи ййййјињий йюихи№ириоиаиЭиаиУиПиЭиЧиУиЯигигитиуиђијиіиїийќи§ий§и йќићиђиёиуисивиЯиЫиЫиЮиЯиЮиЪиЧиУиЧимининиыичиши йњи йўиљийџиќиђияиъиоиеижимииивиПиУиТиПиЩивиЮиииуилишиэи№иииаимиъисиёиѓи§иіиййййй
+ййёићи№иыиуилинилидиаиТиЯиЧиЯизииийишиуиэиїиўиўићиіиљићиїићийіиіициюимиииаиЪиЪивиЦиЫивигиШиЫиниеиыияиюиѓийќиќијийќий§ијиѕиѓиэишидиоижиШиРиФиШиСиЧиЧиЧиоилифипиєициѕиџиїиййћиўиїиэиѕиьисизитимибиЩиЪиЧиФиУиРидиЬиЮигипициэиїиЮиеижиъиюиђиѓиђиіињиўиќиљийјиќиђиїиѕищинипибиниЪиЩивиаиаиЫиЮимиуицисищиьи№июићићийїиѕиіиёиіијиєиоищихижиииЯиаиЫиЬиЫиЪийиЭиуитифириъиєињиййєићиїиѓиіияишищичицикиЮиаигиаиЬиУиЮиаиЮиЮиситифириюиъиъијиїи ййєиюиєиэиэишишиоигириЬиииЩибиШиЯиЪиЩизикижиуиэисишиЯинифияишиѕиъиїи№и йњийџиџиѓи№и№и№ишищиуилизигилижикизижидидиуитифиъиьиыиюияиіи§иќиѓи§иўиџиыишихиђилисилиеийигиЧививиеивинирихисиуиэиюиѕиїијиўиіиїиљиёиѓихихиьишизииивиеийиЬиФиииЯиаиЭипифийисичичиёиэиёиїи§ињињи§иёиѓиюицигидиаиЬиаивиЦиЯиЧиХидиЬигиритимияиіирисиниэисиэишичияияиэиљиїи№иєиїињияиюипиоиьилилисикинимимиуиеитиъиэиыиьиѓиэиъиюиєиіиќиќињиѓијиіиѓипикийитирижизидижиеиеиминишишипиыиёихиыиіияи№иэиюищиђиъиђитиюийичигидиЯиеимизиЭигигиаикизищищиэиуияиїи№иэиъињиёиюитишиыифипипивиликиЪиаигидиЯиЯипипицинифиюиыифифициыиыиуиьифиіишиюиљиљићищиѕищищиёиципимииишиеийихипижиуининипиоири№июиєиєиђиљиэияиюиъиэиѕиьиђишитифиуичигилибилисиуиничитимилиыирифиєиїишиьиіичиьиѓиъиђититирицитижипижимиеитинирикисищищиьиэищишифиѕиюиєиюиыичичишилишичиуифизимимиеиеикиеиииеихийиуифиюифимиоиъиђи№иёиѓиђиъияиуиѓищициђиыиёисиюиёициоифияитирифимирихимириыициюищиыисиёиюияиуиыичиёиёиђичири№имиуириуицииийийициуиыиниуисичиыисинипицияиоириуицириэиыиоиуихисиоишифийишиоилицицитипичиыиниуищишисишиъиыиьипиъихиуитихизиъимипийииижифиоидисихициъипитиыифиъифитиђиыиуичиђиуишититиричиьишияифиуипиьипитиоищиюиуициюичиёияиричиыиуиьишифиниюифиписищиуияияихишиюиничиыиоихипифиьишишишихихиэипипиюиьичириыиэипикимирифиъифициюищисициоиритилилиоиьисищиыиыисикиоиципикищикичиоисицийихичиуимипикициоиъищипипицилиуисищицицищи№ихиуиёиъиьишиыишитииишизисикикитититириюиыиьиёиъициїи№ифиуиьишичищиуиъиуилищикипизиниоийихирициьияи№ифиуишичиьифици№ияи№ициоишисичиоизицилижижийижидихифиликипи№ияиуищиёиёиэиуиђиђияиыицищифихишижисиуигитирифизиципитикилимицичихияиђитиьиюиъичиюитищижикииијиёиьиёищифилитипижиеигимизижисимифишиьиуифиєиђияищиљиќиёиёициэициьифилициоизиуипиуииизиеисииилихиюиьиуихиєиљиђиђиэиёиљиѕиіифишиэицичисиоиниуиеимитилизиеитииириуиэиъиёихиэичиъиъияиђиюисиуисисиииуигиридиаимивикиЯисикишиоиъиыириуи№и№иєиіиёи№ичищияиъинийикиии№и№иіищихиьищитипимийивиоизижииининимияиѓиѕиэићићиљиіийіиєиўиэиђиэияиъикинибириоикиииЯииижидифинихишищиьияияи йїиїиќиќи§иёиёитифисикидидиЯимизиаибиЮиаивисилищи№июи№июиђиѓиђиџиѕиѕиѕиєиыищифиъипитиЮибиЯигиЯийижиниЮимиеишиъиёиђиєищињиќиїи§иѓиыихитирихихиуиииєиєиэициуиуилиоиииниЪиаиниЯибирилиеищисишищијијијий§иљиєи йјиюи№июипийимииирикиЪижиЧибижижикилириъиёиєиѓиьићиўиђиђи й§иџиїиєицинийигидиЮиниЪиеиШиЩиЦиЯиоикицичиэиуихиёиђияиђийћиёиѓиёиёиыинирибимимигиФивибиЦиЧибижилиуищиэиуияиѕиѓиїи йји№иіиюиђици№иъилипиЯий№иѕи№ирифижипилиЬиЫиаибизидиеигиеиринихиёиџиёићийћиќийћиўиїиєиуиьийичидижизиииииЩибиЫидигинииимиёиіиїиѓијиљијићи§ийќиэиюищиьизитидийиЭиЮививиЮигиииЭиаирихиюиыиђи№иљийќи§ићий й№иђи№иминидизивиЦиУиТиЩиХиЮизиЪилициъи№июищи№ијиѕийѓиїиђиђи№ичихишиеипиеиѕийљицияитизиеиаизизиХиЭиЯиЪигижиришищищиэи йййййй
+й йќий§иъияимитизиииЦиЧидиФигиЧижиЯимижийичичиљињиіиіийййѕиѓиюияиѓихитиоилиЭиаивиТиУивиЦиШиеипилишиёиљиюиєиѕиіиўи§иіиђиѓиїиыиьипишиуилидижиЦиЯиШиЩиТиЯивигимими№иєиѓиьијићиййћийѕиъиљиёипимириЪиffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffйўиџићиѓиыишимижийипийииидиниоинияиіиюиџий	йййййййййџи
+йєићиѕифифитизиаикийигижиуифиэихијиќиййџийййййй	йййѕиєичитимиоириниЯиЭилиликиниуи№ищиъиїијий ййййййййѕиљиёиуищизисидиЪидииииииирикиъияиъи№иёињийй	йййййй
+йћиўиїиэиэиеи	ййџиїиїи№ишимииифивийириеигижимиъищиќиёийй йййййййййййїищиђиьишииииикимижижижиуисиѓиѕиѕиџи
+ййййййййй
+йййїиюишиъиуиЯиаииииибиЬижиеимиъиѓиѕи§ијийййй
+ййй й
+йіиќићихипиыипижиЯибиЭиЭигибизилищиьиёи№ийќи	йййййй	ййўиўиъи№июириййќиіиљиђиъичииикифифимигиеииихихишиєи§ийййййййй	йй	йљийяиєиёикищиоиригиоийииитимиуиёиѕићијиййџийй	ййй ййњиѓищиъиэиъиуисиуиЮиаирииилиририсињињиєийй йййййййћиіиёиѓиіифиуилиоиеилимиеигижихипияиыи№и№иўи
+ййййййй ййёиѓияи№исизий
+йџиєиьиьиђитикиоикиоисинифиниьиёишиќи№иџи йй	й	йййййўиўиџи№иэиьищищийицизибисиеипииичияифиєиьиййй йййййй§ийјиќиљиьисиыисигимиеиЯилилихикиъиэициъийѕи	й§иййй§и
+ййќи§ияиїиъиъиуизивипизисидикивипипиуичијиђиёиѕи§иййййййњийюијиыиуиси
+ййћи№иэиѓиїифиыимищимишипифичичихиёищиїиѕи ййййййй
+йййєиѓиїијиіияишимипийирисициуициэиши№иїияиљиѕиџиййћиййїиќи№иїиђиёисиыичиуинилипизитиситищиђиєиїиљи й§ийўиџиќиўиўийєиџи№ијиъичиьитинификихирипилихиэиєи№ињи№иіиѕиљийй
+йјиџиєи йўиъијиѓишиши§ињији§июияиыичифитиьиэипициэиэиэиїиєиєиєиљиќијиййй	ййјиўиѕиљиѓиэиъиєициоисихирикисиюишиђи№иёичи§иќињиєийњий йќи	йјий§иєи№иїиєичицитихищикипикиюищищиѕијиэиюиѓиџи§и й й§ийњийіияиђиъи№иритищитишипийиоициыифи№иыиюищиќи№иїийѓиџийѕиййѓиьичиіияисихиїићињиэиїиёиъиъичиѓияиъишиіиуиѓиіиьићиѕиџиёијиўи ййўиѕийњиіиёи§ияиъиыи№ифи№иуитиыиђиыияишияиїиѓиъиёи§и§ињиіијийјиўи йюи§и§и№ишишичиѓищичи№иђиуихифишиуиъиъиюијиёиљиєиќи№иѕиєиѓијиёиўиќиѓищичиђи№ифифифичиоихиши№иыищичиіиїиэиіиђиѕиќиюиўиєињиїиіињиіичиѓиэи№иёиєићи§иќиїињиќиєиёиѓиёиюи№и№иђи№ињијићиќиѓи йђи й№иѕиќиѓи йќињијијиіиїиьиіијияиьиёиьиїиъиюиђичиђиѕиюи№иљиѓиьиѓи№иќиђиіи§и№ићищиђичихиєиђищиъиыициђияиюиыишиьиъишиэиѓияиљињиъиїињићиэиљиєиђишиѕичициъияиыишиђищиуиѕичициэияиюищиэиьиђићиљиъиьиїиёиѓиѕиюицишишиэиьиѓиўиэиёиџи§иїиђиѕиѓиіийяиїиўиќиљиђиёи№ијияиѓиёичиъиюиыиэиыијиыиіи№иіиѓиѕиэиєиќиѕи йѕиюиьиѕиъињиєичињияиэищиѕифи№июиєиъициши№иёиіиќиьињиъиѕиыи№иѕиђиёиіији№ишиъиёищиэихиюиѕищиђифифиєияиъияи№иёи№иєиђињиъиыиєиъищијичиђиыищиыиьияичичифифитисисичифи№ициђияи№иіијијиіияиёиіићиѕиіийџијићи§и§иєиљиђињиіиэијиёиђиэиыиуихиэифиъиљиъиєиќиіияињиќиўийййќиџињињићијињиђиюиъищиђиыиъиъиыишиіиѕи№иьињиђи§ияиїи§иўияићияиљиєи§ињиљиђиыифияирифищифиьитихиђиуиэи№ициыияиюиљићиѓиюиїињиэињићишишиёиѓиъиыисиыихиоитисичичихиъи№ишиѕиѕиъиъи№июиьиѕиђиѕиіи	ййџи
+ййјийњињи йюияиїихихипиуихихитифишиѓищиіиіиђиџиљийїиййй§иїийјиюиўи§и№ишифифиьиоириуищичишиоиыифичиђиљиџиѓиџиўийййѕијиёићиюиєиђицишиэиыичилипишиыипиьиыициіиэиѕи§ињиёи§иѕиїијињийјићиьиїихищиьиьитииишитийимимиыишиьитияи№ићишиѓияићияиђиєиєиљиййџиййџиљиљиєиљиђиіиыишихиэифичичипиъипиыиыиђишињиџиљињиййўиййййй йіиэихиюи№июииичиуиоихииитияищиѕиюиёияиўийји	йќийћийњийџијищиєичиэиъикичизимирилинифичичиёиыиьи§иђи§ийќиййўињиєиѓияиьиѕисишисихийиеитижижиуиуиуириьияиіи§ипихициђиўиљийјиййййй	йййџи§ијиюиыиюиоиыифищисисинифипиуитиюичиюиўи йји§ийй й йййййџиюиіияинипилинифижириоикищисиуиѓиђи№иўи	йљиййй йќиќијиєиїиыиыичиуитизипифииииидихишиоиыиъиѓиџийѕий§ий ййўиќињиљићи№иъищиуиииииеизизининизиниоиыиюишиыињииициѓиљињиїий§и йй	йййй
+ййўиџиѕиіищиъитисинийизититиуимиыихищињиѓий§и	й	йй
+ййййўийјиљиўиэичиэикихивижикиЯиаижилиэицишиєийћи
+ййй
+йййџийййїиіиёиуициуидинипиЭизигиеисиьинишияиќији
+йћиййџиййй§иіияиъиуиьичиуижикиЬиаиЫииигижинитияиьиўиймититињиыићиќи ййййй	йййџићийѓиђиїиђиыиливиоизикидидиоикищиѓиыи№ийќи	йййййййййй§и№ихициииоикикииийиаиеиуилимиъиъиѕиіийййййййййўијићиѕичилиииминиЯивибигииирихиниуиєияиќийћићийййййййјињиьициъицийииизидиаиеиниЯиризиыитиєијийниципи№иьийй й
+ййййййййййћиѓиѕиьишишикирибижиоикийиъиуитиэиїиѕиќиџиййййййџийїийэишиэитидивинилиЫигижимифияиыиэиёиіийййййййййййјиљищирицилиаикизиЫивиЫиЮиииоициъиђиєиїиййййййй йџийњиѓихимичиниримиЭивииидиЯибичинифиюиїиїихирисияиюиіиќийййййййй	ййййјиьиэихиоиеилиЭиеиЮисижимиэиёиёиѓийћи	й	йййййй йй§ијиёишифиииуизийиеилиЮиЯиоипинициіињиіи
+йџий	ййййййќийѕиъичикимипимигиаиЮиЩигибиаициуиъиѕиўињи
+йййййййўињијињиъиъиыипимиаибиаигиЦиЮилифииимичиъиэийхириюиєи§иўийќий	й
+ййййййййљиўиіиђишифисиаидижибиаийищишиѓиъиѕиіи
+ййййййййййќиќијиьияичипинисиЬиминиеиоириьияичињиўийй
+й
+йййййџићийњияиэинииибисиЬизижибийиниоишиэихиѕићиїићийййййййљийўиѕищиьиъибийиЪиеигивиЫигииииихиѓијиїиќифитихищиѕиюий	йй	ййййй
+ййћи йќиэиёитиуисилитииидимисийичиюичиєиљийџий
+йй	ййййй
+йѓийэишицилийиеикийиниоиситиуициэияиюийџи йй йййййй	йєићиђиэихиоиживиеиЫиЮиЬииитидишиыиіи№иђиџићиџиййййй ййіићищихилихиуизижиЬиЭииийигидиоиуиши№иђиѕикичифиёиѓиџиўий
+ййййййй§ийћийьишициоиъиригисифифииимишириѓиёиџиєиўиййй ййййџийѓиўиіихиюицихинимитисийисинихициђиюиќијиќињиййўиййййййўияиьияификисикинимизивиииниоиоиъиіи§ињићийй
+йййќиййјиљиюиыипикицидисивидиЯибиуижимичитиіиќиџимишияијиўиѕиййџиййџий
+йќийўийљиљиєихисифитимисиеииищишичиъиыиљияињиййќиќиўийй	йййњиѕићичияифищициоигиридитиыифиришишијиїиїињињий
+й§иўи йќићи йјијиѕифиюиъишидиеибипидижинитищи№иєиўиќиєињийййћийјиђиѓиьиьиыисиуииизибийиЯитигипийиъиэичиєиєиёиуицищиќиіиѓиќиїийџийќиййџиїиййўићиіиђитициыищиуишиэиниричиёиєиэиэи№ий§ий§ићийџиѕийўи№иёићиљичиѓицициуитимикичиэипиёиіищиѕиѕийђиџиѓиіиїи йййй й№ијичиэисисисилищикиоипишишищисичијићи йћиќий§иѓийџиѕи№иїиьиѓиэиђисиришихийишиуифишиоиюитиъичиѓиьиђияищиїиѕиіиќиљи§иййљиќиййћиіиїиєиѓиђиєиѕицищи№ищиьищихияиђијињишињиїийўийѓињијињийјићи§иљиѓијиши№ищититичириэихицитиѕиюиїиёињиѓийѓи№ийўи ййєићиэиэиъиюияичиоитихимиэиыиьишичициэиъиэиќиёиіињиќиљийџи№ињиєи№иёияицичиьиуиуиъификихициыиоищичиѕиѕиёиѕиэиђићиўиёиџиљиіи йяиѓи йѓиэиђиіиюиђиєи№иѕиьияиъиыиљиэиїиьиђијиїиѕињиѓиъиыиьиєи§иѕиѓиєиїиєиѕи§иєиыиѓиэи№ињиіијиєиѓиђиѓијијиђиїијияишиіиьиюији№иыи§иёиыиђиэиыијиѕиюиъиїихиіиіифихиъиыифиюиїиїияиљиєиєичиыищиэиїиљи№иыиэиэиэиёи№ишишихищичихихити№исияичищициєиђияи§иљићиљи№иѕи§ияиѓиїиёияиіиюиёиыиїи№иёиёиэићиїићи№ијиюиюијињиыи№иыиюиыиѕишиьиьиэиъиъиѕиљи№иъиьищињићиђињиъиюиюињиюиђиыиыићиђишиши№иэиіиёиэищиыиюияиэиїиьиїиљи№ияиыияиюиэијиёияиєиюиљи№иѓиіиљичи№иэиѕияищиђиѕифиїихиђициэициѕиъияиьиёичијиэиьи№ициєиіиьиіиыиєиыияиѕиѓиѓиљиљиќиїиђиьишиъифиђищиюичиюи№иєиёиљићиђиѕиѓий§иќиѓийќиђиќиьиюиђиїишишиєифиъицифиєиєи№иьиюиѓи§иѓијиўићињи§иљиљиўиќијиљиљиэищиъичиюихихиёиыиыичиьиѓиъиюичияиќиўиљиіиюиїиљиѕиєиђи§ияиєиюифиъиэищиыиюиоинияифитифиэихициђишияиєиўињиїиѓиѕиєиѕиѕи№ишициєиуи№и§ийќиќиьиюиѕиыифиьиэититиуитиэиёиёи№иёиїиљиїијиєиййййџийіийюиюиєијиѓиси№исифиьитичи№иэичијиюиыиќиќиѕиїи§ијиўиѕийўи§иѓиўиыиьиюитищиниъиуищимисиуияишиъиђиыиїиюи ййїиќићиќиљи ййћиїијищиуиђирипиъичилифишифипиэиђиъијиїиѕи§иєиїиййяињиљиїиєиѕиђиёиуириїиўиіи йљиэициьириьиыицимишифисиђиэиэиьияиіи§ийџийййќийњињиёиѓиђиіиёиуи№иэиуицисиниуиьиыиэифициыиэиџићи ййўий§иїиїийѓиіиєиіифиёитиоиыицикитишипимиэиъијищиѕиёиййљий§ићиѕињийњиэијихиѓиэилищийихихишипиоиличиъишиђиёиєиїиќийѓиіи й§иїиўияиёиьишиёисийјиўийыиїихияицитищижицисишиыиуиуи№иѓи§ий
+йй	йййџиййќий§ињияиіишиюипичилиеиоисииифиюихиєиёиѓийљи§ийййййййййєићияифиыисихикитииисизимихитиђиіи№иєиќий й	й§иџиўи§ийњиєићиѕиыисиьипинивибиеипихитипикиьиєињиўиєиѕиіи§и§и	й
+йњињиѕиџиѓиѓиьиьинийџийўиђиїишисиииуиоимигихихиуиуицияиѓиџиђи§ий ййййй	йййй§иьиѓишилиситизипининивииииисиіиіиѕији йййййййй йћи§иѓиђишифиуилипииикикисивилинимичишиёий§ији§и
+йййй	ййћийїиљихиуилититиЮижиЮиЭинимисийиъиуиёиёињийњићи
+й
+ййўийўиўиєиљициоишийййѕиюищитичифииибинипизиоиеисиоиђињиўийййй
+йййййй§ийќи№иъитипишизийидиЭисиеийийириюиђиљиіи
+йй
+й	ййййййййђиіиѕищичижикивийибииилииилиыисиїиїиїиййййййййййїиђиѕиуищисизиЮибилививиоилициоиыияиђиёићиџи ййййййййїиѓиёицириди	й	йћиѕијиєиюиъииидиоинилиЯиоиииъиниъиђиџиййййййййййй§иєиюиъипихициииииниЭииийицифипичихиђићи
+й	ййййййй йй ййчищиъифимизиеиЯикикидибидитиъиїиѓијиїиййййй	йййўијиќи№ифичицилимигиЬийиШиЬипихижитиыияиљи§ий
+ййййййќиййэиїиыишими	йй
+й§иёиыиьицирихиЯидирилииидикисиіияиљиїи йййййй
+йййўийіи№иєичииициаимиЭиЭиаиЭивизи№ишиѓиќиййййй	йййй§иййіиђиыиэизипививиЪиеигииизифиыиоијиьий§ий
+ййййййџий ййєихиуиципиоижиЫидидижибиуициэиыиёиіиіийћиййййййјийѕиыипичизиййћиїиіиіиуимипиуигиеиЮибивииитичиђиьиёи йџиййййййййўиќиџићиёиьимийиаижиЫиииоиаиииуициси№иѕиіийййййй
+йй
+ййќијињиуифиуибилиЯиниЩибикидижиьи№ихиэиџийййййй
+йй й	йџиўиѓифишисииидивийиЫиШииидидиуиъиыиьиїиџиљийййййййїийёицихициеи	ййќиєиљиъияияилирисирижииизицириьичићийѕи
+ййййййййййўињиюи№исилимиеибиеисизидиуищиъиѓи№ићи§ийййййййййќиєияи№ихиюисихипийимибигиЯикикихиъијићи йййййййй	йй й§июиєиђичищитиаиЮиЫилиЯиоижидиоипиъиљињијийўи	йййййњиќийіиѓиъиьичийњийёиьиыиюирийиииеилидижижиуиниюиёиѓињи§и й§ийй
+ййййўи	йўијићиёиуицириниуибизиоипииикифихияиьиџиџийййй
+й	йй	йќиёиџи№иьичириуииинииириеиаихирихициёиєияийјий йй	ййй
+йййљиьифичификириЮизиЬиЮизифижишиъифињи§иўий
+й ййќиййййљиэи№ищиэифићињий йэиљиыиьичинисикичисийифисиьи№ијиѓиўи§иљийййй§ий§ијийіиэи№ичищиницинижинирищисицифишиыиїињийїиййййй	йїијићиэиэиіиьипищикиеигийийишисисиьияиїиїиёиёийўиййй
+ййњийяиєиіиєипичипипиоизибийиуижиуиэиъиьиѕи§ияиєиййџий§иййњи йјијириёиоийѕиѓиїияићиъифиёиыисиыиьиницитияиѓищиђиіињиѕићиййўийўийќињийёиёиыи№и№ичиыиъилипиыипихиэищи№иіи§иьиўијий йљийййййѓиёи№иэи№иэишипишизихищимилисирисиѓиіиёийіиќиќийй йњићијиёи№иёифициэисииийизикижинифищицифиъиѓији§иіиќиййййјиљиёињиђиъиришитийћићињиљияиєи№и№и№итищиэитиєиѕиюиѓињиіиѓи§ийќийђићи§ијиџи§иєи йќи§иєиѕиъициэиюиуищиыиуиуиуиђиёињиёићи§и йјиййёийѕиџиэиђиєиьиїишифиьиыиъищиыитифищишиыиюиѕиіиыи§иэи йјиѓиіияиёиўиђиќиьијиьиђитиыиуипимиримихичифиыиуиёициыиюиђиюи№иђи§иђиђињиіиэищиїищиѓири№ињийєиыиќићијициѕиїиёиьихи№иыиђиїиьиыиѕиіиёиўиђи йєиіиљиўиїињиєиэи№иєишиљияифиъициыиюиѕищиѓијияиёиюиќиєићиєиюиџиљиюићиюијияиєичишиыиїиіиђи№иыиъитиьиёишиђиѓищияи№июиьияиљијиєијиьиќиєиђијиьиїиѕишиьисиёиюисисишищичиђиьищиыищијиыиыиќијищи№иєиьиіиѕи№иыиѕиьифиёи йіиїиѓиіиєићиёиъиёиђиєищиїиьи№иыи№ијияиѕиѓи§ићиєияиёиђиќиђиїијићиљићијиёиїиљищиљиюиєиљиіиюичиѕи№ичиыиќијињијияиѓиљијињиєи№ияиъичиёиыичиіиэиёиэиъищиёиъиєициѓичиьи№и№ијишияијиѕиљијиїиьиыишиюијиъиэиъиђишиыициёиьищишиѓиїиєияихиђиїиљиіищи№ихиъияиђияиѓиюиёиьищиєиѓищиђияињиіиѕиѕиййќий№ињиєиїићиёињиєиіиѓичияияищичиєи№ијиъищијиіиѓиўиєи№иіиѓиќи§иљијияићиїиєињи№иєиєищитиъиьиъишищиђициіищиёиэиќиєиљиёиўиьићићи§ијиёиѕишијияиѓиѓитичи№иъиэиэицихиёишиђиіиюичиљиќиюиђиєиэијиёиѕиѕиэиѓиѕиуиєиыиюипияисиоичихи№ищифиёищиїицифиэиёиєи№иљи йјийњий§ий§и йјий й§иќиљиіиѕифиэисиюирицичиьиьиъиёиѕиѓиђияи§иќи§иѓийўиєијији№ијиљи№иєишиёисиъиэиыихиуипиєи№иђищиюиїињиѕиёиљиѓићиїићићиџиіиыияиэитиюитисифисиуияиоифичифи№иьихиёиюи§ињиіийњиўићиюијиъиѓиэиуиёиуиюиоимимиъиоищишифициуиыиєияиђиуициєиьиѓи§ићиййќиўийййљићијиђий№иђиѕиђи№ихиыилифинифишипихичиѕиёи§ийїиљијиџиќиўићиќийёиёиъифиѓиэичифирихихиъирипипиыиѕиєиђиєићиїиєиџићиџиїиіи йњиёињиёихиыичисицииижизифизититиоищи№иіијиџиѓиўиєийћијиѕињиўияињиіиьищинисиоичижигипихифиниьихищиљиѕиќиоиёиёиѕияиїийќиўиййййййўиййїияиыияиуимиоищизифийиииоишищиѓияиюиѓийіийќи
+й§иййњиџиїиљиыиѕиэищикийилинипинитипинитиъищиљињиљиќиќийћиййййќиюи§иыихисишимишилипитипинииизицичиёициёи йй§ићићи	йји§ињиїиџиѕијияипиыииифимидиоииимифийипиьиѓиіищийлиуиюициьићићиїий	йй
+йй	йййќиўи§ићияитифисийихифижимифитиэичищищићиёиџийййййййй	ййђићиьиђириъиеидиливиииуиуициэириіиьи йй§и
+йй	йййй
+й й№и йюиєичириризибиеибипиеипижиоичифиєиќиёийљийй
+йй	йййєиьиђитихийиуиуилиииииЬилииидизиришищићиџифиуисиљиёиёиќиййййййййўий§иђињияисищищиуиуивидипиуийийихиюиъи йќићи	ййййй	йййџињиіиюихиыилилифисиеидибиаиуижиюиыищиђиіињиќийй	йййййййєиљиєиъимимибиЮиииЯимивиииписичихиёиїиїиййўий йййћињийњиѓиђифииийиаибимикимибиписинихиуиѕиѓиђиеиэиуиэиѓиџиќийй	йййййййўий№иыиѓичитимиииниЮиеигиЯинициэиэициќиіийййййййййџийљиыичиыисициЮигиЯиниЬиЬихиуиыипи№иєићиљийййййй	йй
+ййѕиѕиъихириоиниаикизиЩивимийириуифиёиўићићийййййййџийўиљиыиэиииниииЯиЯиЩиаиЭижиеихициэиѓиёи йриьиъиыиіињиџићийййййййййји йѓияирилириеибиЬикидиаитищиоитиљи йљиййййййййййњи№ияичияицитийидидилидиеикитиьисищияийџиййййййййй§иѕиђиђищирибилиеиЯидиеивиЭижицилиьиёийњий	йййййййййьиюиъиъифимилибиЮиЫиииЫилизитисифиѓињиўихинишияиёиєићи	ййййййй	ййџиййќиъи№ийисиуивиеиЬиеирикиоициѓиэиїиљиџи	йййййййййћиѓиіиыиринирибиризиЪилижитичициёиѓиѓињиіийй	ййййййййџи№июитихикибииибизиЫиаилижихипи№июиљийййй
+ййййўи	ййєијитиэикивиаизиЮиЬижиЬиоисилицифиёияиџишифифиѕиўиџијиййй
+йййййй йїићиюиыиьифийипимилиаиоизисикичиуиђияиќийџиййййййџийєиљиьичифирилиуиоимиЭидипикийиоитиыиьиййй й
+й
+ййййййўияиыитирисиуимиииеиЩимимиЮивиуиыиѕињиўиѕий йййййййїийєиьиьиничиуиЮинидиЧиЮиЫиеириииписиэи§иџитиюичишиќиюићиџи йййййййўиўиќиѕиёичичимилихикивибифимикиьичиъищи§ији йй	йййййўиййїиѓиѕиїихицишинифимидиликинипиниюиюиьиўи ййййй	йййййџиіиѓиыиринижимиеиЯивидитилириыиьиђиъияиџи§ићиќийййййљићиѕияиьифимигипиЬижиЯиЪилинихиуириуијиёи§ишириуиэиѓиўињиїийййййўий ййќиїиэихиёияихишилиеимижичийишиыиёиэиѕиєийјиййййййййџиўињихиѓирикииизийиеитизиоитищиьиьиэийњий
+ййўийййјийѓиєиѕищириниеидикизиеиоинилихиэи№иэијиџи§ийји	йй	йййљиййыиьихичифийисиоииириаитиаиеищиси№ињиќиіипиуиіияиьияићиййњићийй йљиќиќийђиѓиьиіиыисиписикисищишиюифиэиіияиќиѕиќиѓийљиќиййййљијиљињиїихиъиьиоирипишисиыищисихиьиђи№и№ияиџийјийљиќийџий§ияиэифиѓиэиуичииичийипирилиуипитиэициіиќиєий йќиіијийєиѕиќиюиђисицисисиоизичицижиуихинихихичи№ињиљиђиђичишиьиљиђићи§ийњи	йљиіиџиљији№иђиюиюияичи№иписитиыиуиыиђиэиэиїињиўиђиљиѕиіиіијийїийњийѓиэиѓиіиѓитиёирифимикиьихищишичиьияиёињиђићи§и йіи§иййђиіиѓи№иыиѕиыищифиэикиъициэициоичиюишихиьиёиќи§иѕийєиёиєиљиїиэиэиїиюичиђиыифиьищикийиоищиририэичицияиіиєияиїишиэиќиєиќи№иџиќиќи й й йіийќиіи§июиѕи№июиыиѓиѓиуифиєиэиьиьиїи№иыиіиђиїияиёийѓијийњиљиюиэиѓиѓиыиѓихишихиуияиыици№иьицичичиьиэищиьиџиїињи й§и ййєијићиьиюищияиэиъияиоиъишищиюиэиёициъиёиѕиљищиьиёиўи§иџи№июиќи№иіиіиюиъиєихифияилицитиоириоинисиуиђиђиїиїиђиђияићиќи№иѕиёиэиѕиєиьиљиѓиіиэиљищияиђиєиљиіињиъиюиыијиюиѓиыиљищиѕиђиѕиљиёињиђићиљищијиѕищићијиьичи№иїишијијиёичиђияиіициьиьиѓиђиїиэиюишиыищиѕишиьиѓиыиљищициєи№иыи№ихицищиѕиіиѓифиъиыицишиђищиыиїиэиѕихиъиъиъичиъиюиыиёиёиѓиъиъиђи№иъиэиюиіиђиьищиѕиюиьиѕиюишиџияиўиљиёиыишиыињиёиюиљиђицињијићиѕишиіиёиюиўиыиџи№ијиєиїиђиюиіиѓиэи№ишиыиыиљичиыихихиёиьиіишиъиєиєињишиюиѓиєиёи§ијиёиюиьиѓињиіиѓијичиїиьиёиёиёифиѕифияи№ифищихищиэиєиёињиюиіиёијишиьијияи№иэияифиыифиюияицишици№июитифиєиіиѓијиъиѓи№иѕияиѓищиэиіишияиюияицициѓињиђиљићиљиіияиьиыициыисиыихиюиѓиёиъиюиљиѕињий ййўиййіиййљиѕиьиыиёиѕиёиёириыиюиюиуипиэиёицишиюиќиэи№ияињи§иєийўиђињиџиєи№иѕиьияияихиэиъищимиъиьифиуищишишияиєи№иџићиёињиѓиёиўиџиёињиюиэи№иъиыичичиоишифиыиуиыитиэияифиєиіиђиыи§и№ињиєиюиќиѕи№июијияичиуишиљиѓиљи§иѓиќиьиіифиэицицинипирипичи№иєиїиѓиюиййўићи§ији йй йћиђиьиъичихиёиэинирийиыишиоишишиэишичиќиџияиіиѕиѕийїиџиіићиѓиѓияиюишищищипирититинифимисимифиыихиіиќи§иѓий ййййђиќиіиїиђиѕиъириринихизиуикикисиуихиоиыисишиѓи№ињиёијићи§иёийџињиѕи№иёитияимиййй§иљијитияичиыисижисисичисиси№иэиюиђиђиљиййўийййўийўиљиюиіи№ицихинижиоикилиуижипифичифиђиёиљиљињи	йййќийџи§иљийѕињициюисиоийинигизизиниоипитиуияиђиёиўиіиййй ййййѕи№ићишиьинилимисилипириаикифимилияиэиъиэияиїиџиќи йўиййњиєи§июиэиъиъипийџи йљиэиыи№иъищиридиникикишихиъиъиїиёињийќиўиййййййќиќиїийюиѕиёисирихиситисиживицимихихиїиѓиќиќийй§ийй
+йй й	йњињиѕифипиыийикибидижиоиеипифихи№июищиѕиѕийй ййй йй	й§иўи№иѓиуиэийикилиЭиЭийивиииницихи№ияиюиїиєиѓийй	й й	йљиљиџиѕиыичичиюими	ййййќијисихиоимииипипиеифиуиоиьияиќиўиѕийўи	ййййййй	йѕињиьиєититичииижидиииаииицижици№иєиїиєиййййййй
+йџиџи§и йъитищийидикижиниоимилимилишиюиѕијиѕиййџиџий	йййўиљийњијиѓиэикиниЯилиЮиЪижиЬийиоисирихищиљиіий	ййй	йййййћињициыилифи	йџи§и йєиѕихиоитипитипидиеидиоимисиёиїиёийќийййййййййќийњищищихигийимилиЫивипиоикишишичи№иђи§и
+йй
+ййййй§иќићияиѓи№илищикиоиаимиЯивибиеиришициэищийй
+йй ййй	й
+йќиййўишиёихикимибигиЯивиЬиеилифифияиєиѓияиїи	й йџийй	йййѕий№иѕирисипиййўиѓиэиђиэиуигифиаизивижибихищияиѓиїи№ийййййййййййџиџиїичичишидибибимигиеижимилицишиєињиѓийўийййййййўиќиџиюиуиуикинипиииЭилививимиеицинициьийџийўиййййййњиѕи§иѕияилищикилиЭиЫиЮизибиоижизишиѓи№июий	йй	йййййййћиѓи№иьипири
+й	йй йѓи№ияититиеибиииЬидиуисициыихијийййййййййййййяи§иьитишимиаигизибийилисисиписиђиѓиєи	ййййййййййѕиєициєипифиЯикиЬидиЫииивикидимипиѓиіиєиўи
+й ййййййўићийѓищиыикипитийигидикиЫикиоисиоишиѓијиђијиўийй йййййййыиєитинихий§ињићиіиъиѓиьиликиниаисиаижичийицифиіиёиййй	йй	йй	йййй йњиыиѓитифипидигиоиЭинитизисихиёиђиљиєиўи	й	ййййййййџиђиѕичиэирифиаиЭиниаиЭизирифиои№иыиљи йєиўиййййй§ийјийёиѓитишитигинийижижибивиоиеиуири№иыиіи№иљий
+ййййййјиќиьиѕиыисизийййіиўиёищицизийитипииизийимипиоифиёияийўиўиййййййййњиѓиѓишияиыихилиииииоикимиоипириуиђиўи№и	й
+йййййййџићићиіиљиѓиыиоиуифимиЯимизиеииифици№ияишиљиќий	й йййййљийђиїиѓихитииийитиаиЫимиЯивиеиоихиюищиљиќиіиљийћий§иййћийџиѓициюисики§иїињияиьиђиёичирицизипифижирищиьициэиљийћиїи	й
+йќиййй
+йййљи йѓи№ищиъитифийикизигидичихиуихиюиѕиљиййњий	йўиўий
+йћи№иџициюирикищиииоигибитизишиоитищиюиєиёиѓиўийњиййџи йџиєи№иьиђиѓишиыикидиеилиЯийифийиоириёи№ияиъињињи§иљийй йїийќиџићиіищиуилиљиїийљиюињичищичишишинисилимипи№ифияиїиѕийџийй	й	й йй йїиѓиђиїиђиѓишиэиюищийиниришитищифиъиэихићијиџийќиљий	йњиййіићиіиюиыищичищифищирийихимиуиъириѓиіишиќињиѓијиџийџијиййй№иіиіиѓищиьиыижикииийижихифииифиюиэињићиѓиќиѓийјийіиййѕиђи№и№иэиэичиџийћињијиѕицищириёиуиьиьициъичисиьиѕиъијиўиѕийй йјиќийљий ййўињи№иуитиыиципипилимихифициѓиьишияиэићићињиййіийѕиќићињиэиэицифиюиъиоипифиииуиоилишиёиюи№иђиьиэиёиёиіийй йєиїиёићиьиёифиюиюиьицишищилииимитиыинияиђичиђиљићиќийіиђийѕиќиџиѓијиђихисиъиџиѓи№иђиъиєињишиъиэихифичиѕиэиьи№ишиѓиїиьиюиєиўиѕи№и№иїиќияияиюиюи§иќиљиіияифиѕицифичиэищиыиѓишиъиєиьињиьиѕиљиёији§ићиѓиёиѓиєиѓиэи№июиэиуи№иђипиьияичичифияифи№иєићињиёиїиьи№ијиѓиљиѕиіиэиђиюиэиэиёиыи№ипичитирищихихиђищиъихиёиэиѓиіиёиѕиёиђијиїиьиёициэитиюитиёиўиўиѓиєиѕиъиєиђищи№ицищиюијиљијињиьиѓиыијиёиїиьи№иэијиєиќиѓићиьиђиыиєишијиэиѕиьиєиёиъи№ијициюи№иѓиљији№иєиёиьиѓињиыиэи№иєиєиіиєиєихиєищицичияиыищиіичиѓициюиђиѕиюиђијиёићиїиїиђиыиєиыињиѓиђиѕиъиюичиэиыиёиэихихихиюиђиђиуишихиэиљиюичиюиђиїиюиэишичиѕищиѓиђиёиюиїиьијиѓиєићиљиђи§иўиіиўиќиєи йђиќиэияишиюиёишиэији№иіициэицициэи№иљијиюиюиыиыиџиьиѓи§иѓијиѕи№иёијиїиіијиђициюициѕишиьишиѕищияиїи№ињияиіи№иіиђиќияиёиѕиљиьиэиѓичициыиъиєи№иєифиьиыифиђищиъиёициюициюиєиёијиїиьиѓишиэиіияиђиуияичиђифиюиуиыиьиририьиыицияиђиїиѓиьиіияиюиёи№ијиёиџиѕићиѓиўи йєиіиѓиќиљиъиьишиьичисиуиђиѓиуияиыиъичиѓиёи§иїияиіиїиљиўийѕиђиїијићиёищиэиѓичи№ихичисиуияиуицичиёиђишиђиѕиьијиюиіи№иѓиѓиюиѓињињићиђициуи№иёихихисиыияищихициюиыиєициьищиэињи№ияиџиќи§иїијиіијиыиѓиыищитишихирисиоичилиуиририђиьиэиђияиєиїијиѕићиўийўиџи	йљиљиџиййєијиѓиѕиыиђихиюилицисишиьихимиюи№ифиэи№иљиўиййћийййќињи§иўи§июиѕиыичишикисифирииимиэиъиыищиїиќиїиџињиїийййњићиљийўиљиьичиуипиоилифицийичикифичихиѓиэиєиэиѕиђиђиљиййіиўи йёиђиюиѓисихитищишижидирифичитиоиоипиуиѕиђияили№ифиыиђићиўиєийўий§иййй йјийђијиъиуичищиъимирикицичийисияиьиѕиѕиљиўийџийќи
+й йўиїийѓиёи№иђиђипимищиридинииийитиьисихи№иєиюићи йййй йњийўи§иёиьиђиёиуищиниуипизиоиуийинитиьиыиіиѕиєиђиџиљиїиїиќи	йјиўиђињиэиєиђинимирикииитииифиуилининисисиіијићимичичиюияиђийљиййййййййййяиѓиѓитиуишицификивигийициуициёиъиіий	йййџийй
+йййіиџи§иьищи№ицийизиоинивипижийихиъитиюиьиљиѕийй§ийййййњиќиѓиюиѕириыифиииринимибинивичитихиђиьињиђиіиўи
+йўиўиўийййљићиэиђихиоизиииЯиЭидинивикилитихиђиюиѕийщиэиоиьиѕияињићийййййййййњийіихиэифижиоилипиеидивицирипиёихи№ийййййй	ййййњињи йѓиѕиуилипииилиЯижиаигитийищириљиїиєиљиййййййййћиђиўиёиъиьиниуизиеимидиЯигисититипичичияиѓийћийй
+ййўиќий§ијиэишицилисийигиЬизиЬиЭийижирихисиъиьићиоичихиђиїи№ийћи
+ййййййй
+ййіиѕи§иэиъийиииеиЭинимикириоищисиыиёиєиєињи йййййййййєияиёифи№иниииливиеиЭизипизиеихияи№иъиўиіийййййййй
+йљи№иљиъинизидидиЮикизибиЫигиририщияиїи№иѓићийййййй
+йќиєиыиђияиниливиЭиЩиЯиЧийиЭилисириуипиьи§иќикиыиниюићиёиџийййййййййй
+йќиѕияиюитизигиЮинигийикизищирияиъийййй
+ййййййй§иўиљиѕиуиюиниеийизибиЮизиЯидииихифиюиўиѕићийййййййййћиѓиюичиьирипизиЩиЪиЯиЫииилиаиуикиьиєиюи йй йййййййй й№ицичимихибиаийиЩиЪидиЯизибижиэипи№иёийтитири№иіиђий
+ййййййййййїиѓиэи№итинихиЮимидиЫизиаизимитичиюиџијићийй	йййййй
+ййћиќичиыиуидизигиЫигизиЬиаисиничишиєиѓийй	ййй	йййййіийјиьилилизигиииШиЫизиЯизиеириьифияиєиєи§ийй
+ййййййљићияиэисикикиииииииЬизиеивиоилиюициђијиіижикириѕи№ияићийййй
+йй
+ййййіиіиїитищифииириоимидиоиеидишинициюи йђи§ий
+йй
+йййййњи§ийђиуищитификижимикилиаиуизишипијиѓийўи й
+ййййййћийћиѕиыищиуисиуиЯиаиШиЬиеигирижимиоиђијиєиѓиййййййџиўиїийъиіиёичишииижизикиЩижиииеипихиуиьиђиёи§ихичичициюиљиѕи йй	йййй	йййййћи§иуиюиъичививидииирибигитиъишиѓияиљи
+йќийййййй§и§ийћиќиѓиуитиоийиоибиЬийииийирифиёиыиїийљи§и йййййўийќиђи йыичиьицизивиеибиЭиЬиаийиеисиьифиљиєиљиўиљи	йй
+йџи
+йќийѓияијищиликикибибиеиаижижигихициоисиэијийоирищиъињићиџий	ййййййй ййћиђи§ичиёицийийитикизихииинимиъиыиђияиџијиўићийй йййўийјиёиэиѕиыиэицимизимивикигифичимитиюиъиіий§ињићийй й
+йћиїийэихияиуиниливидижиЭикийиоититиыичиёиўиёиџи§ийќий йњий й№ићиєиёитиуисидиоидиаиЯиЯигикицинитиѓиэийъициыищиѓиђијий
+йўийй	ййййєићијиђиѓиьиниситиниоипипифиуичифиъияиыији йќий	йй§иййћийєиьиюиђишимиуихисижифитирипишищищијиђиџиљијињиќиќиќий	йййюиэищиђиыисижичикипилийивиниуифиъи№ияи№ий йўиќийјиїий§ињиїияихицисиничиуисилидииивинитийияисиэиыињи№ишиіиіиєияиљи№ићиљи йјиййњиўијияиюи№ичиёиыиьициэиьиниюифиоияиѕичиѕиєиџијиўийіиџићиќиџийѕиёиђињиђиёициьилиэиуинишиэиыисиыи№ињијијиљиђињиљийљињийїияиьиёиѓихияищинисиъисицииишихилипиыи№иђиљићиюиїиёијиђийџићиїи№иљиєици№ишийиримисирижирициъияиюиши№иљићиёиђищиљи№и№ињияињињи ййєийѕи йђи йюиєиѓиъиюитишиуи№и№ищирисиьифи№иѕиѕиѕиђиљиўиіиїиіиўињийэиэијићициыихифициёиэи№ияиписиуищиѓичињиьиђиїићиўи№иіиџиўињиўищи№ияиіищитицищициоиуиыищиуиъищичиђијићиїиьиќији§июи йћиўиюиёичиѓиуирисиьитилишиъилилимищияицищиїихиёијиђиѕиёиёиѓиыиљијићиєиёињиўијиіиїищиъићиљиыиёиьиѕиыињиіиѕиєищиѕиљияиїищиѓищиёиъиѕићияиыијиёиѕиљи№ияиыишиїиіиьияиёици№иѕиїиэиэиђиёиѕиѕиђиѕиѕијияиђиђиэиђијиєиюиэиѓияияифихишихиыитиыитиыициѓишиъичиьичиєиъициюицичиъиѓиёициѕихиэицичиуиуиыифихиђитифичиьиъиъиюищиѕиѕиєиэињиєищищиюиъиьиыиьичиьиљияиыиэиюињиыиіиыиїињиѕијиќиэиєияищиїияији№иєиёиѓиьихиђияиђишияиюиїишиѕињиљиђиюиєиыиюиыищиђијињищиіичиѓицициюифиѕиыи№ияиіищихиѕиъиѕичищиєиыијиѕиѕищишицищиэиєиыиэиюи№июиѕиъиѓиэиєиуиьияиѕиьихиѓишихищиїичишиъиѓиёијициюищиѕиѓихичиѕи§иѕиюияиђишиєи№ичицишиёияифиьиюиъищиєиёияиіићи йййњиљиѕиќи№иљиёињиѕи№итиъиыипиыиюиыишиђиёиыиыиіијијиіи№ињи№ий§и№и§иѓиєиѓищищиєиьияипияишиуипиьисиьишиѓифихиёијияиёиђиєиіиёијиіиќиќиїиэиѓиыияиъиьитифинищихиницитириъициюищиьиѕи№и№ияиьиўиёиюи№иљиюищифисиуиљийљиюиўиыияиѓицитипиэиниоиэихиэичиљиіиєиюиєиќићиіиџийййййёиьиѓиѓиъиѓишишиюишиоичиъиьитисиъи№ији№иёиљићийїий§и§иќи йёи№ициѕиьичиэищиыихинийитиъияитиъиюиэиїиђиќиўиљињиќићијићиѓиѓиыи№иіиѓияимищишишисишисимиэимищитияишиъияијиёи йїиѓи§иёи§иљиїиєиуиьиоиййјиьи№иэиёитихичизиоийишифипи№иёишиёијиўињий	йййййћиййђи§ићиёититиьисипицижийифитиьиёихичиьиїиіиўийййћиљиййіиўиќиіифисиоииищимиридидиришиъищици№иђиіи§иййљи§иййййји§иэиыиѕиъихижийитисидиоирилизифи№иэиыијиќийђий йњи
+ййїињиљи№ијиюихишиййіићијињитичифифилиципижишикияисишиїиђиёиљиўийўиййййўиџиўиїиэиъиуиминилидиииуизифишиоинихиьиюиєиѕиїийџиййййўиїиѕиѕиѕишиыицишимимижиаитижиеишиситичиђи№иўиўињи§иџийййљийіиёиьищирипиуилиоипиЮиоивихишихириюищи№ийўиїиййўий§ийєиўищихи№ишийийўи§июиѕиљиђиыижидимидинийигифиьиэиъиёиќийќиййййй	й йййїийћиёипииихитиаимиЭилийичихири№ищиђињиіиљиййййййййїиюияиыицичиуиЮизидидидийигиииэифициіићиййййййўийййљиєицитиюикисиииЮимидиЮиЬиоидизичиуиђиєийљи§ий	ййй йљиџиќиєиэифичичий§иўиўиэищиьиэизиоиЯиеипиЯилизипиьиіи№иєиєиййййййййй	йјияи№ияи№ииициЮимиЬимигиЮиниуифичи№иџиёийџийййй	ййййєијишиъинисижииимиЩиживиЬисижитипиъиёи§иљињийййййййљиїиѓиђиёирищикиЮиаикиЩизимиоисихихиёиіиэий йййййййййњињи№иниыиеиййй№ићиэиьишииижиЯиЭиеииимижисимиэиѓиљиџињий	йййййййџи
+йќићисихизигийийиЪижиЭимикинифициъиѕи йй	йййййййййєићишитищифийипилизиЪийиЪиеииишиюияиъиѓиўийййййййййћи йєиэихиригиЬидибиЦиЭиЪиоикитисияиьиюиљийй
+йййййй ййљиєиэишиоийўиўићиэиёихинифиуиЭиЯимипиниоичитищиїи§ијийййййййй
+йњи	йќиќиюиыишимизиЬизилимиаиоинипиђичиюињийўий	йййййййџиїијихиъииириЭилидиЫивилигиуишипиѕищиёиєийййййййййіи№и№ициоихиживибизивиеийимийисифиэиэиєий
+й йй йййџи	йййэиыичихижиййіиѕи№иђипилииикидикиеиЮигилиуичиђиљиёиййййййййй йљи ййљищисипипикивикиниеийибиеициэишиєиєиіиййййййййњиѕи§иіи№ищиципимибиаиЫиЮимийииинирифиѕиѓиєињиўи
+й	йййййјий§июиюихитидиниЬидиЮийизииигимипищиюићињий§и ййййй§иќиєиъиєипичисиџий	йюиљиыисипихитииизикипикинипиъишиїиѕињиљиййййййй
+йњиєиіиќичифиуичисипивиЯиоижийисифиѓишиљи§иќий йџиййй ййййєиыиюиьитириЯийиЭидиЬийивихилифиѕиэиіийййййй ййљи
+йѓиќијиэикишизизиЮикизииипиЮифищи№итиїияиџий	й§ийййй§иїийэиэицицийиџи§и йњићиђиѓишищиримиеимибитирипичициюиљи ййњийййййй	йљийџиїиуишинифидифиаирипиуиоипичиѓифи№и йїи й йџиййййййји№иёиюихимифилиЯизииимиеисижипипиыияињиєийўиќи	йўийййй№иьиыифиэирифиЯимиЯилиЫиЭисиеикисичињиєияиѕийй§иџий
+йўиѓи§иёиёихиципи§ийїиюиыиэиѕисилиьийижищисифифиюи№иѓи№иђиўийй йћиўи§и	йййѓиѕи№иёияиђиоиоикийичипикитисиюиђичи№иіији§иййњийћи ййїиййяиши№иришицимичинипижикипиничиюиьиьињи№ијийіиўий йќиєи йэи№ијитиъиоинимикириеинизииийиъитиуиъиђињиіићиљињи§иќиєиѓийћиіиєиэияипий йіиэиѕиюиыиъихишихициэисисифишиюияињићиёиљиќийўийўийјийўиўиђиѓиєифиуиниыицицисииищияищищихиѓиъињиѕићиіиѕийџийјиєињиўиэиэи№ириэишимишижилиликииишиэиьиђиьиѕиэиљийљиџиџиїиќиџиєиѕиєишифищияикиринийийипиеичипиюицишихиыиьиѕи№иёиєиџи§ићиљињиєиљищищитищијиѓиёијиќиєиіиєиыиьифиѓисихишиѕиэиѕиіиіиєиьиєиёиіићиўи й§и§иљиќињиэиёиёиэиэиъихипищисирияисияиєиїиыињиэиіиїиќићийѕиёиѓиёиіиїињи№иьияиыитирипияиыиюипифиёиєициъиїињи№и§иќињиљияи йљиьиыињиєиэиъитиэичиоипичирицишиширихитиђиёиьиєиэиъиэияиыиёияиьиъиыиїиэиъиюищияи№и№ијиђићиёиѕи№и№иьиіияичиїициъишиљиіиљиюиюиљияиєиўиѓиђияиёиѓиђиёияиѕиъиђиѕихиьиуиѓичихиьиёишичиыиѓиїиѕијињићиѕиєиэиќијићиѕияишиѕиъи№ишиёиѓиричиёиыицихиєиєифиэиіиёиєишиьишищиэијиэињиёияицияиэициђиуитиюиьиыиыици№и№ияиъиэиіиђиєиіиёијиюищиъиюищиюиюиёиыи№иыияиюиїићиђиэињи№иэиїијиђи§и§иїиљиэиѕи№иѕичи№ищијиђиѕияиіиїиюиюияиэиъијиэињијиєиюиђиьиќиђиьиьиљиьишияиёияихиїиіиэиѓиђиуиуифиьищи№ияиіиёищиіиэиљиэиєиъијиєијиюиіиђищихиєищиёиюисихищиёиѓиѓиђиѓиюиёиьиэиєиђиѓиёиїиёиьичиїиыияифитияиьиэиьиёишищифисиэияиъияиыиюиєиѓиђиђиыияи№и№июиёиіиїиђиёиїиїињићијиџиѓиѓиёиѕиѕиђичиьиѓихиђиъичиёиѕищиыићињиіиџињиѓиќи§иѕиэиўиіињишиѕишихиуиуичиыициуиуиъиъити№ицијищиёијијиђияиѕи§иѕиѓиѓиђиђиєищиёиэияипичиэипициэичитиэисияихияијиыиюиэиќиљиьиэи§иѓиѕиіичи№иьиьиэинимисириримиьипищиьихисиэищиљициѕиїиїиѕиэиџићийѕиўијиўиџићиййђиіиюиѕиіиъириуишихисихиюириёихищиѕиіиѓийќиіиќиййїићи йєиџиѓињи№иыипи№итиъисиуиьипихищищифијијиїиіићийјиќињий§ињиѓиыиіияичитишифиуихириуицицифириъи№ичихиѓиѓиюийќиљийћиёићиіи§иѕиуишищицихимипифисидинипичитипияициьиъищитищишиђиєиїиєиїиќи	й§ийњиќи
+йћиђиьиєициєишищипиыихиииниъицисиђиьиљияи§иџи§ийљи
+йййџиќиїиѕињиќиьиыичихитийинитифииитилиёичиѕиіиѓи№ийййќийљий йћињиэиэициэишихимижисиуифиниририлитихијиѕиўиіи§ийњийњийіиўићиіифиђиуипимитилийикикиниуищийиоисиыиёи§илипи№иъи№иёиййћий
+йййй
+йўийўиђиђиєиъиритинизитиеилижишириуиьищиљи§ийџийййййййѕи№иђиљиуиуишиуижилиникиЯибисииифиыиїиѓияи§иййй
+йй йџиййћиїиєиѓипиримижиЮиЯилидикижизиуиъищиьиѕињи§иїињиўиййјиќийёиѓияиьиэипигирипидизийибийиеижиницициэиіииищиэициіиєиѕињийййййййџийўињијиыиьинипижилиеиоилинимикиъичиѓићиіињиййџийй	йййййєиьияитикизининилиЬиЭининиуиуи№иђи№ияи ййќий	ййййй йњиѓи№иёитимиоикиЯиоиЭидимидииисиоичијиљиіийќи
+й й§ийййїи йѓиюи№имиминиримиЮилиЭиаиаигисиюиёициїиїихиъихиыиљићиіийййййй
+й	ййййјияицисиуимиаикижииипибинисичи№ихиѓиййќийййййййњиќиіищиђищизицидийийилиЭибилифиниоиюиќиўићињиййй	й ййййѕићи№ициоиригиоидиииЫийиЮинининитифиёиєий
+йй йџи
+ййўићиіийщиђи№ищилитиеиЭиЭиЭиЮиеиписийичиуиьиђиўифиоисихищияиќиййййййййййћиѕиъиэи№ичиеиЯивизигилиииоинири№иэиѕиєиљи
+йййййййй§иѕиџиюиёирицифижиЮиЬиЩиииаирижилиюи№иэињиџи йййй	йййџиўийяиёиэитипирибикиииаигививибиоисищиьийњиљиўиййййййѕиђиђицитиъихиризидижибиЭиЧививилиэиъиєиљијинийишихиљиіићиўийййй	ййййййіињиѓиюининипиииаиаизиливиримиуиыиќиіиџи
+йййййййййћиэиіиєиыишифийиЮибиаиЯимиЯитихифиюиќиўийй ййййййўиќий йѓичилиуилибиЫибиЧиЬиеиаилийиьиъиїийўий	ййййййњијиіиьиюисимийижиоиЬиЬидижиаииитииищицичиыиєиеиыиюищиѓињићи ййййййййййћияиѓиыиэисипиоидилиЫимикииижихиёициёињи§иййййй	ййййљиђиьиёитититиЯиеикийиЭимижинилиуияиьиўиџиййй
+йй
+й
+йй
+йџијиђиюийипижигиЮиЭижиЬивимиЯичиьиэиъићији	йййййййўиѕиіиђиѓиоихихидимиииЩивиЧииигивилилипиыиіийеищициьиђиїи йййййййййй ййўи§иёиъиуиеивидидижилиаиписиьиюичиќијийўийййй
+ййќиџи й йіиьишиоимидиЮилиЯижиЭидиеиъищициіийјиййййй	ййњийџиђиыисиьийитимиЫививииимизигиъиричишиіиљићи§и§иййййљийђињиѕихилизижизиЬигиЦиЭилимикидициёищи§ићихичиэиюиыи ййўий	йййййўийййџиьицифилишикиминикиоихиниьичиьиєиёиѕиййќий	ййй йќи йљиѕићиюиъиуицинипинизиаизичисисисиюиюићийййй§иййййћиёијиёиђиюикиеисиеигиЬидиниоицищиэиѓи№ињи йји
+йййййй§иљиљиѕи№ициуипиникивиЮилиЬийидицисипициѓи№ийтиоиєиьији§иђиїи	ййййй йћийќиїићијифиъитиыицифиуигижизийириюициьиѕијиіийй йй§иййљиќиїияишиыиситифииикиуииифирижихиьиюичићиѕиѕийјићи	ййјий§ийњиќиэиыиьишичидигиииеиеиуирииишици№иьињијиѓиџийџи
+йњиџиіићиїиьиєишихийиуидитиаиЭилириеинириюиэиђиэиэиьихи№иіиљиьиўийіиїиййџиййіиіиіићињиђичиьиниыиэипиыитифимихихиѓиэиѓиіиўийййјийєиљиџиљиіиѕиѕиыиуишиюишиъичичитишищитиэищиюиѓиєиєићиўийєийји§ийњиьияияицицициничикижикиеиниъиъисисихиьищиюи№и йѓиййѓийђиџиќиљиэиуитиуищифижихикиоиоижичикишишифициѕиёиѕичијиїиєиїиѕиђи й йћијиљиййљи§иёиэи№иьиыисияи№ихи№ияияишиђиуиїишиќиіиіи йўићийђийјиќиџиєињиіиѓиъитишициоищишисиъишишиъиђиѓиљиэиыийђи й§ийёиїиѓиюиѓиђиїиэиъищиъирисиуицищиъиъиьищиыи№ияињији§ињияи№июияиђиєи§иѓиъиьиэишияищичитишициъиоиыищичиёиёияијиђишињијияиїиъиѓиѕиэиєиѓи§ијиўијиѓиєиёиїијињијиъихищи№иђишихищијихиђиђиљијиъищиљиъиьи№иђиљиљиыиьиюиёиъијиєияичиёиѕифиѕияишиђиіиьихиэицицищиыиђиёиёињиьијиьиѕиѓиєиэиєициьиыитияицишиуихиыиђихиёиюиђиєищиєициэиъияишијиёиіиъиьиэищиуиѓифишиуицисицихищициыиђицичиьиђиъиюиќищиэиёишияиєиыиќијиїияияиюиєищи№июиюи№иыиєиюији№ияиыияији№и№иєиэичиђи№ициѓиъиьишиєиіиіиѓиљијиїиюиьиэиљињиыиъиьиіиьиєиёијиіиїиёиъияи№иђишиэияиёифиђиђиьиъиіиыиши№иыиэиіиѓиэиыияиђиіиъиьициђиѕишиѕи№иуиѓияиуичиёихихиѕияи№иєиёихичиѕиѓишицищиуиыиъиыихиѓисиуийћиюиќиїиіиёияиѓияиѓитисиьиыиэищиђиіијиъиџиќиўијиїийїињиђиєиюићиъиђиэищияиѕиъифи№иьичияиыияихиыиђи№ијињијији йљиўиѓићиўиёияиъиюи№ишифиъициуифиситичишиыияи№ищияи№иыиыињи§и№ијиќиіиіићиђиѓиїиэиёиђиюихичиюиэичишищирияити№ихиїијиђиѕиїиѕиьиїиэиљијиюиьиіиши№ициіиѓиїићиђиєи№ифициђиъишиюифифиђиёихишищиђиіиіињиѕињиўиіий§иёиўиэиєињиєиэишипичициъиуиюипифиюиёищиьи№и§и№ияиџийњиіиљијићийьији№иіиьиюихициоилилиъицичиыишичиыиѕиљиљиљијићи№и§ий№ијијиыиыищиѕияиоиэисисисицищипимиоитифиыиєијиѕиэи§иђиюиљиѓиўиѓиєињи№иєиыицишињиќињиїиљиъищи№исиыипикиуиуиоифиъициѕичиќи§ијиўийй
+йййџињиќиќиьищихи№ишихипиницитижиниьиоиюиуиїиљи§иёиіијийќиййјиљићијиїи№иъициуифииикиритииисиципиуицихи№ияиљиййййй	йїиђийєиќиьиђирититийивижийиоифийифисияиєищиїиђиџиїиўиўи§иќиіиђиєиѓициьичинихиўи йўи№июищихиыинилирититийициыинириъи№ићиќиййййќиййй§иєийіиъичичиоиыииийиеиуипипининиёитищићиєиџий
+ййййћи
+йљи йюиїиѓиѓисищирихифирилилигидижифицишиљиѓи№ий ййййййћийўиљиіиуихиыиеиуийибидипиниришииитиєиѕиёиіиќићиќиџий§ийѕиёи№ияиіиьипинийќиѕиѕиыияиэихириширигикидижикифиуиіиэиїиёийй
+йй	й
+ййййњиѕињиђиуиюиьисиринийижимийимиоиуиэихиъиђићийййџийййй§ийїиёичитищинириииеинижижигичициыиѓиђиѓи§иіийй	йййњийѕиўиіијиэиэиуифиеиеиЬиниЯипииимижиьишиїиіиѕиіи ййќиййљиіи§ињиѕиёифинипиййќиёиїиљиђиминихиЮивигиаирииипиыифи№иѕийљиййййййййљийјиіишисицитиоикииижимиЯифиеичиуиэиїиїийќий йййййййўиѕиюиьинириуикигибикийииисиоиуиъияиїи йџийй	йййџийййќияихихийиииживиЫииибижиЬидиликиьисиѕиђиіиџијийўийййћийђиїишисириги
