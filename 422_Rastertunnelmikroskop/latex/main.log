@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.12.13)  5 JAN 2025 17:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.12.13)  5 JAN 2025 17:58
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1200,6 +1200,126 @@ Overfull \hbox (11.3811pt too wide) in paragraph at lines 227--228
  [][] 
  []
 
+<../data/Graphit2_current.png, id=133, 180.675pt x 130.4875pt>
+File: ../data/Graphit2_current.png Graphic file (type png)
+<use ../data/Graphit2_current.png>
+Package pdftex.def Info: ../data/Graphit2_current.png  used on input line 232.
+(pdftex.def)             Requested size: 227.62204pt x 164.39519pt.
+
+Overfull \hbox (11.3811pt too wide) in paragraph at lines 232--233
+ [][] 
+ []
+
+<../data/Graphit2_z.png, id=134, 185.69376pt x 130.4875pt>
+File: ../data/Graphit2_z.png Graphic file (type png)
+<use ../data/Graphit2_z.png>
+Package pdftex.def Info: ../data/Graphit2_z.png  used on input line 237.
+(pdftex.def)             Requested size: 227.62204pt x 159.9551pt.
+
+Overfull \hbox (11.3811pt too wide) in paragraph at lines 237--238
+ [][] 
+ []
+
+<../data/Graphit3_current.png, id=135, 181.67876pt x 130.4875pt>
+File: ../data/Graphit3_current.png Graphic file (type png)
+<use ../data/Graphit3_current.png>
+Package pdftex.def Info: ../data/Graphit3_current.png  used on input line 242.
+(pdftex.def)             Requested size: 227.62204pt x 163.48924pt.
+
+Overfull \hbox (11.3811pt too wide) in paragraph at lines 242--243
+ [][] 
+ []
+
+<../data/Graphit3_z.png, id=136, 189.70876pt x 130.4875pt>
+File: ../data/Graphit3_z.png Graphic file (type png)
+<use ../data/Graphit3_z.png>
+Package pdftex.def Info: ../data/Graphit3_z.png  used on input line 247.
+(pdftex.def)             Requested size: 227.62204pt x 156.56827pt.
+
+Overfull \hbox (11.3811pt too wide) in paragraph at lines 247--248
+ [][] 
+ []
+
+<../data/Graphit4_current.png, id=137, 179.67125pt x 130.4875pt>
+File: ../data/Graphit4_current.png Graphic file (type png)
+<use ../data/Graphit4_current.png>
+Package pdftex.def Info: ../data/Graphit4_current.png  used on input line 252.
+(pdftex.def)             Requested size: 227.62204pt x 165.32501pt.
+
+Overfull \hbox (11.3811pt too wide) in paragraph at lines 252--253
+ [][] 
+ []
+
+<../data/Graphit4_z.png, id=138, 189.70876pt x 130.4875pt>
+File: ../data/Graphit4_z.png Graphic file (type png)
+<use ../data/Graphit4_z.png>
+Package pdftex.def Info: ../data/Graphit4_z.png  used on input line 257.
+(pdftex.def)             Requested size: 227.62204pt x 156.56827pt.
+
+Overfull \hbox (11.3811pt too wide) in paragraph at lines 257--258
+ [][] 
+ []
+
+<../data/Graphit5_current.png, id=139, 183.68625pt x 130.4875pt>
+File: ../data/Graphit5_current.png Graphic file (type png)
+<use ../data/Graphit5_current.png>
+Package pdftex.def Info: ../data/Graphit5_current.png  used on input line 262.
+(pdftex.def)             Requested size: 227.62204pt x 161.70923pt.
+
+Overfull \hbox (11.3811pt too wide) in paragraph at lines 262--263
+ [][] 
+ []
+
+<../data/Graphit5_z.png, id=140, 189.70876pt x 130.4875pt>
+File: ../data/Graphit5_z.png Graphic file (type png)
+<use ../data/Graphit5_z.png>
+Package pdftex.def Info: ../data/Graphit5_z.png  used on input line 267.
+(pdftex.def)             Requested size: 227.62204pt x 156.56827pt.
+
+Overfull \hbox (11.3811pt too wide) in paragraph at lines 267--268
+ [][] 
+ []
+
+<../data/Graphit6_current.png, id=141, 179.67125pt x 130.4875pt>
+File: ../data/Graphit6_current.png Graphic file (type png)
+<use ../data/Graphit6_current.png>
+Package pdftex.def Info: ../data/Graphit6_current.png  used on input line 272.
+(pdftex.def)             Requested size: 227.62204pt x 165.32501pt.
+
+Overfull \hbox (11.3811pt too wide) in paragraph at lines 272--273
+ [][] 
+ []
+
+<../data/Graphit6_z.png, id=142, 189.70876pt x 130.4875pt>
+File: ../data/Graphit6_z.png Graphic file (type png)
+<use ../data/Graphit6_z.png>
+Package pdftex.def Info: ../data/Graphit6_z.png  used on input line 277.
+(pdftex.def)             Requested size: 227.62204pt x 156.56827pt.
+
+Overfull \hbox (11.3811pt too wide) in paragraph at lines 277--278
+ [][] 
+ []
+
+<../data/Graphit7_current.png, id=143, 179.67125pt x 130.4875pt>
+File: ../data/Graphit7_current.png Graphic file (type png)
+<use ../data/Graphit7_current.png>
+Package pdftex.def Info: ../data/Graphit7_current.png  used on input line 282.
+(pdftex.def)             Requested size: 227.62204pt x 165.32501pt.
+
+Overfull \hbox (11.3811pt too wide) in paragraph at lines 282--283
+ [][] 
+ []
+
+<../data/Graphit7_z.png, id=144, 191.71625pt x 130.4875pt>
+File: ../data/Graphit7_z.png Graphic file (type png)
+<use ../data/Graphit7_z.png>
+Package pdftex.def Info: ../data/Graphit7_z.png  used on input line 287.
+(pdftex.def)             Requested size: 227.62204pt x 154.93558pt.
+
+Overfull \hbox (11.3811pt too wide) in paragraph at lines 287--288
+ [][] 
+ []
+
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1212,12 +1332,12 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 pdfTeX warning (ext4): destination with the same identifier (name{figure.12}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.230 \end{document}
+l.291 \end{document}
                     
 pdfTeX warning (ext4): destination with the same identifier (name{figure.13}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.230 \end{document}
+l.291 \end{document}
                     
 
 
@@ -1225,12 +1345,12 @@ l.230 \end{document}
 pdfTeX warning (ext4): destination with the same identifier (name{figure.14}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.230 \end{document}
+l.291 \end{document}
                     
 pdfTeX warning (ext4): destination with the same identifier (name{figure.15}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.230 \end{document}
+l.291 \end{document}
                      <../data/Gold_10nm_current.png> <../data/Gold_10nm_z.png> <../data/Gold_10nm_50mV_current.png> <../data/Gold_10nm_50mV_z.png>]
 Underfull \hbox (badness 10000) has occurred while \output is active
 []| []
@@ -1240,22 +1360,22 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 pdfTeX warning (ext4): destination with the same identifier (name{figure.16}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.230 \end{document}
+l.291 \end{document}
                     
 pdfTeX warning (ext4): destination with the same identifier (name{figure.17}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.230 \end{document}
+l.291 \end{document}
                     
 pdfTeX warning (ext4): destination with the same identifier (name{figure.18}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.230 \end{document}
+l.291 \end{document}
                     
 pdfTeX warning (ext4): destination with the same identifier (name{figure.19}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.230 \end{document}
+l.291 \end{document}
                      <../data/Gold_200nm_current.png> <../data/Gold_200nm_z.png> <../data/Gold_200nm_50mV_current.png> <../data/Gold_200nm_50mV_z.png>]
 Underfull \hbox (badness 10000) has occurred while \output is active
 []| []
@@ -1265,23 +1385,98 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 pdfTeX warning (ext4): destination with the same identifier (name{figure.20}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.230 \end{document}
+l.291 \end{document}
                     
 pdfTeX warning (ext4): destination with the same identifier (name{figure.21}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.230 \end{document}
+l.291 \end{document}
                     
 pdfTeX warning (ext4): destination with the same identifier (name{figure.22}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.230 \end{document}
+l.291 \end{document}
                     
 pdfTeX warning (ext4): destination with the same identifier (name{figure.23}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.230 \end{document}
-                     <../data/Gold_400nm_current.png> <../data/Gold_400nm_z.png> <../data/Graphit_4nm_1V_current.png> <../data/Graphit_4nm_1V_z.png>] (./main.aux)
+l.291 \end{document}
+                     <../data/Gold_400nm_current.png> <../data/Gold_400nm_z.png> <../data/Graphit_4nm_1V_current.png> <../data/Graphit_4nm_1V_z.png>]
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]| []
+ []
+
+[8
+pdfTeX warning (ext4): destination with the same identifier (name{figure.24}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.291 \end{document}
+                    
+pdfTeX warning (ext4): destination with the same identifier (name{figure.25}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.291 \end{document}
+                    
+pdfTeX warning (ext4): destination with the same identifier (name{figure.26}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.291 \end{document}
+                    
+pdfTeX warning (ext4): destination with the same identifier (name{figure.27}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.291 \end{document}
+                     <../data/Graphit2_current.png> <../data/Graphit2_z.png> <../data/Graphit3_current.png> <../data/Graphit3_z.png>]
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]| []
+ []
+
+[9
+pdfTeX warning (ext4): destination with the same identifier (name{figure.28}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.291 \end{document}
+                    
+pdfTeX warning (ext4): destination with the same identifier (name{figure.29}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.291 \end{document}
+                    
+pdfTeX warning (ext4): destination with the same identifier (name{figure.30}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.291 \end{document}
+                    
+pdfTeX warning (ext4): destination with the same identifier (name{figure.31}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.291 \end{document}
+                     <../data/Graphit4_current.png> <../data/Graphit4_z.png> <../data/Graphit5_current.png> <../data/Graphit5_z.png>]
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]| []
+ []
+
+[10
+pdfTeX warning (ext4): destination with the same identifier (name{figure.32}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.291 \end{document}
+                    
+pdfTeX warning (ext4): destination with the same identifier (name{figure.33}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.291 \end{document}
+                    
+pdfTeX warning (ext4): destination with the same identifier (name{figure.34}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.291 \end{document}
+                    
+pdfTeX warning (ext4): destination with the same identifier (name{figure.35}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.291 \end{document}
+                     <../data/Graphit6_current.png> <../data/Graphit6_z.png> <../data/Graphit7_current.png> <../data/Graphit7_z.png>] (./main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
@@ -1295,18 +1490,18 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: C8E58C90CE2FB458217CDE8DBC84C8F2;1357.
  ) 
 Here is how much of TeX's memory you used:
- 22599 strings out of 476023
- 394043 string characters out of 5791581
- 1940187 words of memory out of 5000000
- 44332 multiletter control sequences out of 15000+600000
+ 22710 strings out of 476023
+ 396966 string characters out of 5791581
+ 1944187 words of memory out of 5000000
+ 44428 multiletter control sequences out of 15000+600000
  612394 words of font info for 181 fonts, out of 8000000 for 9000
  24 hyphenation exceptions out of 8191
- 90i,8n,93p,541b,936s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 90i,8n,93p,541b,948s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb>
-Output written on main.pdf (7 pages, 7745352 bytes).
+Output written on main.pdf (10 pages, 7975135 bytes).
 PDF statistics:
- 239 PDF objects out of 1000 (max. 8388607)
- 159 compressed objects within 2 object streams
- 44 named destinations out of 1000 (max. 500000)
- 196 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 289 PDF objects out of 1000 (max. 8388607)
+ 182 compressed objects within 2 object streams
+ 59 named destinations out of 1000 (max. 500000)
+ 256 words of extra memory for PDF output out of 10000 (max. 10000000)
 
