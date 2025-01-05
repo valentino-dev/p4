@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1736093519.0852 "main.aux" "main.bbl" "main" 1736093711.84119 0
+["bibtex main"] 1736094786.22483 "main.aux" "main.bbl" "main" 1736094787.29816 0
   "./refs.bib" 1736089958.07407 312 8ee5f4fb5a7ed3cd1db63e482d7f4cfd ""
   "./sn-mathphys-num.bst" 1736083798.89988 64141 2560fd4f8e8321a304f732d035eb1b51 ""
-  "main.aux" 1736093711.67667 3052 a181ee87fbda008daa33ff0f6870e0b7 "pdflatex"
+  "main.aux" 1736094787.13502 3180 8e6ae32b8bd7b36030054a25b74174df "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1736093710.79394 "main.tex" "main.pdf" "main" 1736093711.84133 0
+["pdflatex"] 1736094786.27257 "main.tex" "main.pdf" "main" 1736094787.29829 0
   "../data/Gold_1.png" 1736083775.21323 674545 f2b306fcd0db95b18432bdb7fca6cbfd ""
   "../data/Gold_2.png" 1736083775.22656 726727 e31cc3c180ceb7f99bec5f63ca4de438 ""
   "../data/Gold_3.png" 1736083775.23989 611610 c47d548b900b745b19b6c9c8eaff2e59 ""
@@ -193,10 +193,10 @@
   "422_aufbau.png" 1736088928.315 630458 1691cf5d3856f39578f44d1f0c83902d ""
   "422_naiostm.png" 1736090590.1534 1067741 fe67d13077b90a1272821761fa583376 ""
   "422_naiostm_closeup.png" 1736090616.49978 138091 d8d4016131efc958861d708786ce5804 ""
-  "main.aux" 1736093711.67667 3052 a181ee87fbda008daa33ff0f6870e0b7 "pdflatex"
-  "main.bbl" 1736093519.12724 2574 7f758206eb4d1dda183394e1d324ada7 "bibtex main"
-  "main.out" 1736093711.67667 1074 cac38cfec4cabe96283ee4e7a9140de0 "pdflatex"
-  "main.tex" 1736093710.74334 6778 f144d868dc0b0124b24e107f211b89af ""
+  "main.aux" 1736094787.13502 3180 8e6ae32b8bd7b36030054a25b74174df "pdflatex"
+  "main.bbl" 1736094786.26502 2574 7f758206eb4d1dda183394e1d324ada7 "bibtex main"
+  "main.out" 1736094787.13502 1074 cac38cfec4cabe96283ee4e7a9140de0 "pdflatex"
+  "main.tex" 1736094784.03837 6927 7dd183af046e92b4bdb39aa885d5873f ""
   "sn-jnl.cls" 1736083798.89988 55331 2adf3041e7f64a0f542a04760be0043f ""
   (generated)
   "main.aux"
