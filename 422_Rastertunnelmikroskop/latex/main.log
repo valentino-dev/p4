@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.12.13)  5 JAN 2025 18:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.12.13)  7 JAN 2025 11:55
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -854,7 +854,7 @@ LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <5.52065> not available
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <5.52065> not available
 (Font)              size <6> substituted on input line 51.
 
-<422_aufbau.png, id=42, 774.895pt x 585.18625pt>
+<422_aufbau.png, id=50, 774.895pt x 585.18625pt>
 File: 422_aufbau.png Graphic file (type png)
 <use 422_aufbau.png>
 Package pdftex.def Info: 422_aufbau.png  used on input line 61.
@@ -864,7 +864,7 @@ Overfull \hbox (11.3811pt too wide) in paragraph at lines 61--62
  [][] 
  []
 
-<422_naiostm.png, id=48, 1498.59875pt x 997.7275pt>
+<422_naiostm.png, id=56, 1498.59875pt x 997.7275pt>
 File: 422_naiostm.png Graphic file (type png)
 <use 422_naiostm.png>
 Package pdftex.def Info: 422_naiostm.png  used on input line 72.
@@ -874,7 +874,7 @@ Overfull \hbox (11.3811pt too wide) in paragraph at lines 72--73
  [][] 
  []
 
-<422_naiostm_closeup.png, id=50, 400.49625pt x 296.10625pt>
+<422_naiostm_closeup.png, id=58, 400.49625pt x 296.10625pt>
 File: 422_naiostm_closeup.png Graphic file (type png)
 <use 422_naiostm_closeup.png>
 Package pdftex.def Info: 422_naiostm_closeup.png  used on input line 77.
@@ -919,8 +919,27 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\\' on input line 112.
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]| []
+ []
+
+[2
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.129 
+       <./422_naiostm_closeup.png (PNG copy)>]
+
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\\' on input line 114.
+(hyperref)                removing `\\' on input line 134.
+
+
+Underfull \hbox (badness 1337) in paragraph at lines 144--145
+\OT1/cmr/m/n/10 der ma-kro-sko-pi-schen Un-eben-hei-ten ver-wen-det,
+ []
 
 (./main.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 59--64
@@ -935,114 +954,29 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []| []
  []
 
-[2
-pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.120 \clearpage
-                 <./422_naiostm_closeup.png (PNG copy)>]
-<../data/Spitze1_1.png, id=86, 642.4pt x 481.8pt>
+[3]
+<../data/Spitze1_1.png, id=168, 642.4pt x 481.8pt>
 File: ../data/Spitze1_1.png Graphic file (type png)
 <use ../data/Spitze1_1.png>
-Package pdftex.def Info: ../data/Spitze1_1.png  used on input line 124.
+Package pdftex.def Info: ../data/Spitze1_1.png  used on input line 169.
 (pdftex.def)             Requested size: 227.62204pt x 170.71304pt.
 
-Overfull \hbox (11.3811pt too wide) in paragraph at lines 124--125
+Overfull \hbox (11.3811pt too wide) in paragraph at lines 169--170
  [][] 
  []
 
-<../data/Spitze1_2.png, id=88, 642.4pt x 481.8pt>
+<../data/Spitze1_2.png, id=170, 642.4pt x 481.8pt>
 File: ../data/Spitze1_2.png Graphic file (type png)
 <use ../data/Spitze1_2.png>
-Package pdftex.def Info: ../data/Spitze1_2.png  used on input line 129.
+Package pdftex.def Info: ../data/Spitze1_2.png  used on input line 174.
 (pdftex.def)             Requested size: 227.62204pt x 170.71304pt.
 
-Overfull \hbox (11.3811pt too wide) in paragraph at lines 129--130
+Overfull \hbox (11.3811pt too wide) in paragraph at lines 174--175
  [][] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]| []
- []
-
-[3
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.132 \clearpage
-                
-pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.132 \clearpage
-                
-
- <../data/Spitze1_1.png> <../data/Spitze1_2.png>]
-<../data/Gold_1.png, id=95, 642.4pt x 481.8pt>
-File: ../data/Gold_1.png Graphic file (type png)
-<use ../data/Gold_1.png>
-Package pdftex.def Info: ../data/Gold_1.png  used on input line 135.
-(pdftex.def)             Requested size: 227.62204pt x 170.71304pt.
-
-Overfull \hbox (11.3811pt too wide) in paragraph at lines 135--136
- [][] 
- []
-
-<../data/Gold_2.png, id=96, 642.4pt x 481.8pt>
-File: ../data/Gold_2.png Graphic file (type png)
-<use ../data/Gold_2.png>
-Package pdftex.def Info: ../data/Gold_2.png  used on input line 140.
-(pdftex.def)             Requested size: 227.62204pt x 170.71304pt.
-
-Overfull \hbox (11.3811pt too wide) in paragraph at lines 140--141
- [][] 
- []
-
-<../data/Gold_3.png, id=97, 642.4pt x 481.8pt>
-File: ../data/Gold_3.png Graphic file (type png)
-<use ../data/Gold_3.png>
-Package pdftex.def Info: ../data/Gold_3.png  used on input line 145.
-(pdftex.def)             Requested size: 227.62204pt x 170.71304pt.
-
-Overfull \hbox (11.3811pt too wide) in paragraph at lines 145--146
- [][] 
- []
-
-<../data/Graphit_3.png, id=98, 642.4pt x 481.8pt>
-File: ../data/Graphit_3.png Graphic file (type png)
-<use ../data/Graphit_3.png>
-Package pdftex.def Info: ../data/Graphit_3.png  used on input line 150.
-(pdftex.def)             Requested size: 227.62204pt x 170.71304pt.
-
-Overfull \hbox (11.3811pt too wide) in paragraph at lines 150--151
- [][] 
- []
-
-<../data/Graphit_1.png, id=99, 642.4pt x 481.8pt>
-File: ../data/Graphit_1.png Graphic file (type png)
-<use ../data/Graphit_1.png>
-Package pdftex.def Info: ../data/Graphit_1.png  used on input line 155.
-(pdftex.def)             Requested size: 227.62204pt x 170.71304pt.
-
-Overfull \hbox (11.3811pt too wide) in paragraph at lines 155--156
- [][] 
- []
-
-<../data/Graphit_2.png, id=100, 642.4pt x 481.8pt>
-File: ../data/Graphit_2.png Graphic file (type png)
-<use ../data/Graphit_2.png>
-Package pdftex.def Info: ../data/Graphit_2.png  used on input line 160.
-(pdftex.def)             Requested size: 227.62204pt x 170.71304pt.
-
-Overfull \hbox (11.3811pt too wide) in paragraph at lines 160--161
- [][] 
- []
 
 
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -1050,154 +984,234 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [4
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.177 \clearpage
+                
+pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.177 \clearpage
+                
+
+ <../data/Spitze1_1.png> <../data/Spitze1_2.png>]
+<../data/Gold_1.png, id=178, 642.4pt x 481.8pt>
+File: ../data/Gold_1.png Graphic file (type png)
+<use ../data/Gold_1.png>
+Package pdftex.def Info: ../data/Gold_1.png  used on input line 180.
+(pdftex.def)             Requested size: 227.62204pt x 170.71304pt.
+
+Overfull \hbox (11.3811pt too wide) in paragraph at lines 180--181
+ [][] 
+ []
+
+<../data/Gold_2.png, id=179, 642.4pt x 481.8pt>
+File: ../data/Gold_2.png Graphic file (type png)
+<use ../data/Gold_2.png>
+Package pdftex.def Info: ../data/Gold_2.png  used on input line 185.
+(pdftex.def)             Requested size: 227.62204pt x 170.71304pt.
+
+Overfull \hbox (11.3811pt too wide) in paragraph at lines 185--186
+ [][] 
+ []
+
+<../data/Gold_3.png, id=180, 642.4pt x 481.8pt>
+File: ../data/Gold_3.png Graphic file (type png)
+<use ../data/Gold_3.png>
+Package pdftex.def Info: ../data/Gold_3.png  used on input line 190.
+(pdftex.def)             Requested size: 227.62204pt x 170.71304pt.
+
+Overfull \hbox (11.3811pt too wide) in paragraph at lines 190--191
+ [][] 
+ []
+
+<../data/Graphit_3.png, id=181, 642.4pt x 481.8pt>
+File: ../data/Graphit_3.png Graphic file (type png)
+<use ../data/Graphit_3.png>
+Package pdftex.def Info: ../data/Graphit_3.png  used on input line 195.
+(pdftex.def)             Requested size: 227.62204pt x 170.71304pt.
+
+Overfull \hbox (11.3811pt too wide) in paragraph at lines 195--196
+ [][] 
+ []
+
+<../data/Graphit_1.png, id=182, 642.4pt x 481.8pt>
+File: ../data/Graphit_1.png Graphic file (type png)
+<use ../data/Graphit_1.png>
+Package pdftex.def Info: ../data/Graphit_1.png  used on input line 200.
+(pdftex.def)             Requested size: 227.62204pt x 170.71304pt.
+
+Overfull \hbox (11.3811pt too wide) in paragraph at lines 200--201
+ [][] 
+ []
+
+<../data/Graphit_2.png, id=183, 642.4pt x 481.8pt>
+File: ../data/Graphit_2.png Graphic file (type png)
+<use ../data/Graphit_2.png>
+Package pdftex.def Info: ../data/Graphit_2.png  used on input line 205.
+(pdftex.def)             Requested size: 227.62204pt x 170.71304pt.
+
+Overfull \hbox (11.3811pt too wide) in paragraph at lines 205--206
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]| []
+ []
+
+[5
 pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.163 \clearpage
+l.208 \clearpage
                 
 pdfTeX warning (ext4): destination with the same identifier (name{figure.7}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.163 \clearpage
+l.208 \clearpage
                 
 pdfTeX warning (ext4): destination with the same identifier (name{figure.8}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.163 \clearpage
+l.208 \clearpage
                 
 pdfTeX warning (ext4): destination with the same identifier (name{figure.9}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.163 \clearpage
+l.208 \clearpage
                 
 pdfTeX warning (ext4): destination with the same identifier (name{figure.10}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.163 \clearpage
+l.208 \clearpage
                 
 pdfTeX warning (ext4): destination with the same identifier (name{figure.11}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.163 \clearpage
+l.208 \clearpage
                  <../data/Gold_1.png> <../data/Gold_2.png> <../data/Gold_3.png> <../data/Graphit_3.png> <../data/Graphit_1.png> <../data/Graphit_2.png>]
-<../data/Gold_10nm_current.png, id=117, 183.68625pt x 130.4875pt>
+<../data/Gold_10nm_current.png, id=194, 183.68625pt x 130.4875pt>
 File: ../data/Gold_10nm_current.png Graphic file (type png)
 <use ../data/Gold_10nm_current.png>
-Package pdftex.def Info: ../data/Gold_10nm_current.png  used on input line 169.
-(pdftex.def)             Requested size: 227.62204pt x 161.70923pt.
-
-Overfull \hbox (11.3811pt too wide) in paragraph at lines 169--170
- [][] 
- []
-
-<../data/Gold_10nm_z.png, id=118, 189.70876pt x 130.4875pt>
-File: ../data/Gold_10nm_z.png Graphic file (type png)
-<use ../data/Gold_10nm_z.png>
-Package pdftex.def Info: ../data/Gold_10nm_z.png  used on input line 174.
-(pdftex.def)             Requested size: 227.62204pt x 156.56827pt.
-
-Overfull \hbox (11.3811pt too wide) in paragraph at lines 174--175
- [][] 
- []
-
-<../data/Gold_10nm_50mV_current.png, id=119, 179.67125pt x 130.4875pt>
-File: ../data/Gold_10nm_50mV_current.png Graphic file (type png)
-<use ../data/Gold_10nm_50mV_current.png>
-Package pdftex.def Info: ../data/Gold_10nm_50mV_current.png  used on input line 179.
-(pdftex.def)             Requested size: 227.62204pt x 165.32501pt.
-
-Overfull \hbox (11.3811pt too wide) in paragraph at lines 179--180
- [][] 
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<../data/Gold_10nm_50mV_z.png, id=120, 189.70876pt x 130.4875pt>
-File: ../data/Gold_10nm_50mV_z.png Graphic file (type png)
-<use ../data/Gold_10nm_50mV_z.png>
-Package pdftex.def Info: ../data/Gold_10nm_50mV_z.png  used on input line 184.
-(pdftex.def)             Requested size: 227.62204pt x 156.56827pt.
-
-Overfull \hbox (11.3811pt too wide) in paragraph at lines 184--185
- [][] 
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<../data/Gold_200nm_current.png, id=121, 173.64874pt x 130.4875pt>
-File: ../data/Gold_200nm_current.png Graphic file (type png)
-<use ../data/Gold_200nm_current.png>
-Package pdftex.def Info: ../data/Gold_200nm_current.png  used on input line 189.
-(pdftex.def)             Requested size: 227.62204pt x 171.05136pt.
-
-Overfull \hbox (11.3811pt too wide) in paragraph at lines 189--190
- [][] 
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<../data/Gold_200nm_z.png, id=122, 185.69376pt x 130.4875pt>
-File: ../data/Gold_200nm_z.png Graphic file (type png)
-<use ../data/Gold_200nm_z.png>
-Package pdftex.def Info: ../data/Gold_200nm_z.png  used on input line 194.
-(pdftex.def)             Requested size: 227.62204pt x 159.9551pt.
-
-Overfull \hbox (11.3811pt too wide) in paragraph at lines 194--195
- [][] 
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<../data/Gold_200nm_50mV_current.png, id=123, 175.65625pt x 130.4875pt>
-File: ../data/Gold_200nm_50mV_current.png Graphic file (type png)
-<use ../data/Gold_200nm_50mV_current.png>
-Package pdftex.def Info: ../data/Gold_200nm_50mV_current.png  used on input line 199.
-(pdftex.def)             Requested size: 227.62204pt x 169.10408pt.
-
-Overfull \hbox (11.3811pt too wide) in paragraph at lines 199--200
- [][] 
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<../data/Gold_200nm_50mV_z.png, id=124, 185.69376pt x 130.4875pt>
-File: ../data/Gold_200nm_50mV_z.png Graphic file (type png)
-<use ../data/Gold_200nm_50mV_z.png>
-Package pdftex.def Info: ../data/Gold_200nm_50mV_z.png  used on input line 204.
-(pdftex.def)             Requested size: 227.62204pt x 159.9551pt.
-
-Overfull \hbox (11.3811pt too wide) in paragraph at lines 204--205
- [][] 
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<../data/Gold_400nm_current.png, id=125, 179.67125pt x 130.4875pt>
-File: ../data/Gold_400nm_current.png Graphic file (type png)
-<use ../data/Gold_400nm_current.png>
-Package pdftex.def Info: ../data/Gold_400nm_current.png  used on input line 209.
-(pdftex.def)             Requested size: 227.62204pt x 165.32501pt.
-
-Overfull \hbox (11.3811pt too wide) in paragraph at lines 209--210
- [][] 
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<../data/Gold_400nm_z.png, id=126, 183.68625pt x 130.4875pt>
-File: ../data/Gold_400nm_z.png Graphic file (type png)
-<use ../data/Gold_400nm_z.png>
-Package pdftex.def Info: ../data/Gold_400nm_z.png  used on input line 214.
+Package pdftex.def Info: ../data/Gold_10nm_current.png  used on input line 214.
 (pdftex.def)             Requested size: 227.62204pt x 161.70923pt.
 
 Overfull \hbox (11.3811pt too wide) in paragraph at lines 214--215
+ [][] 
+ []
+
+<../data/Gold_10nm_z.png, id=195, 189.70876pt x 130.4875pt>
+File: ../data/Gold_10nm_z.png Graphic file (type png)
+<use ../data/Gold_10nm_z.png>
+Package pdftex.def Info: ../data/Gold_10nm_z.png  used on input line 219.
+(pdftex.def)             Requested size: 227.62204pt x 156.56827pt.
+
+Overfull \hbox (11.3811pt too wide) in paragraph at lines 219--220
+ [][] 
+ []
+
+<../data/Gold_10nm_50mV_current.png, id=196, 179.67125pt x 130.4875pt>
+File: ../data/Gold_10nm_50mV_current.png Graphic file (type png)
+<use ../data/Gold_10nm_50mV_current.png>
+Package pdftex.def Info: ../data/Gold_10nm_50mV_current.png  used on input line 224.
+(pdftex.def)             Requested size: 227.62204pt x 165.32501pt.
+
+Overfull \hbox (11.3811pt too wide) in paragraph at lines 224--225
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<../data/Gold_10nm_50mV_z.png, id=197, 189.70876pt x 130.4875pt>
+File: ../data/Gold_10nm_50mV_z.png Graphic file (type png)
+<use ../data/Gold_10nm_50mV_z.png>
+Package pdftex.def Info: ../data/Gold_10nm_50mV_z.png  used on input line 229.
+(pdftex.def)             Requested size: 227.62204pt x 156.56827pt.
+
+Overfull \hbox (11.3811pt too wide) in paragraph at lines 229--230
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<../data/Gold_200nm_current.png, id=198, 173.64874pt x 130.4875pt>
+File: ../data/Gold_200nm_current.png Graphic file (type png)
+<use ../data/Gold_200nm_current.png>
+Package pdftex.def Info: ../data/Gold_200nm_current.png  used on input line 234.
+(pdftex.def)             Requested size: 227.62204pt x 171.05136pt.
+
+Overfull \hbox (11.3811pt too wide) in paragraph at lines 234--235
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<../data/Gold_200nm_z.png, id=199, 185.69376pt x 130.4875pt>
+File: ../data/Gold_200nm_z.png Graphic file (type png)
+<use ../data/Gold_200nm_z.png>
+Package pdftex.def Info: ../data/Gold_200nm_z.png  used on input line 239.
+(pdftex.def)             Requested size: 227.62204pt x 159.9551pt.
+
+Overfull \hbox (11.3811pt too wide) in paragraph at lines 239--240
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<../data/Gold_200nm_50mV_current.png, id=200, 175.65625pt x 130.4875pt>
+File: ../data/Gold_200nm_50mV_current.png Graphic file (type png)
+<use ../data/Gold_200nm_50mV_current.png>
+Package pdftex.def Info: ../data/Gold_200nm_50mV_current.png  used on input line 244.
+(pdftex.def)             Requested size: 227.62204pt x 169.10408pt.
+
+Overfull \hbox (11.3811pt too wide) in paragraph at lines 244--245
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<../data/Gold_200nm_50mV_z.png, id=201, 185.69376pt x 130.4875pt>
+File: ../data/Gold_200nm_50mV_z.png Graphic file (type png)
+<use ../data/Gold_200nm_50mV_z.png>
+Package pdftex.def Info: ../data/Gold_200nm_50mV_z.png  used on input line 249.
+(pdftex.def)             Requested size: 227.62204pt x 159.9551pt.
+
+Overfull \hbox (11.3811pt too wide) in paragraph at lines 249--250
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<../data/Gold_400nm_current.png, id=202, 179.67125pt x 130.4875pt>
+File: ../data/Gold_400nm_current.png Graphic file (type png)
+<use ../data/Gold_400nm_current.png>
+Package pdftex.def Info: ../data/Gold_400nm_current.png  used on input line 254.
+(pdftex.def)             Requested size: 227.62204pt x 165.32501pt.
+
+Overfull \hbox (11.3811pt too wide) in paragraph at lines 254--255
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<../data/Gold_400nm_z.png, id=203, 183.68625pt x 130.4875pt>
+File: ../data/Gold_400nm_z.png Graphic file (type png)
+<use ../data/Gold_400nm_z.png>
+Package pdftex.def Info: ../data/Gold_400nm_z.png  used on input line 259.
+(pdftex.def)             Requested size: 227.62204pt x 161.70923pt.
+
+Overfull \hbox (11.3811pt too wide) in paragraph at lines 259--260
  [][] 
  []
 
@@ -1212,54 +1226,54 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []| []
  []
 
-[5
+[6
 
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{figure.12}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.218 \clearpage
+l.263 \clearpage
                 
 pdfTeX warning (ext4): destination with the same identifier (name{figure.13}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.218 \clearpage
+l.263 \clearpage
                 
 pdfTeX warning (ext4): destination with the same identifier (name{figure.14}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.218 \clearpage
+l.263 \clearpage
                 
 pdfTeX warning (ext4): destination with the same identifier (name{figure.15}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.218 \clearpage
+l.263 \clearpage
                  <../data/Gold_10nm_current.png> <../data/Gold_10nm_z.png> <../data/Gold_10nm_50mV_current.png> <../data/Gold_10nm_50mV_z.png>]
 Underfull \hbox (badness 10000) has occurred while \output is active
 []| []
  []
 
-[6
+[7
 pdfTeX warning (ext4): destination with the same identifier (name{figure.16}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.218 \clearpage
+l.263 \clearpage
                 
 pdfTeX warning (ext4): destination with the same identifier (name{figure.17}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.218 \clearpage
+l.263 \clearpage
                 
 pdfTeX warning (ext4): destination with the same identifier (name{figure.18}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.218 \clearpage
+l.263 \clearpage
                 
 pdfTeX warning (ext4): destination with the same identifier (name{figure.19}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.218 \clearpage
+l.263 \clearpage
                  <../data/Gold_200nm_current.png> <../data/Gold_200nm_z.png> <../data/Gold_200nm_50mV_current.png> <../data/Gold_200nm_50mV_z.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1268,161 +1282,44 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []| []
  []
 
-[7
+[8
 pdfTeX warning (ext4): destination with the same identifier (name{figure.20}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.218 \clearpage
+l.263 \clearpage
                 
 pdfTeX warning (ext4): destination with the same identifier (name{figure.21}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.218 \clearpage
+l.263 \clearpage
                 
 
  <../data/Gold_400nm_current.png> <../data/Gold_400nm_z.png>]
-<../data/Graphit_4nm_1V_current.png, id=160, 181.67876pt x 130.4875pt>
+<../data/Graphit_4nm_1V_current.png, id=227, 181.67876pt x 130.4875pt>
 File: ../data/Graphit_4nm_1V_current.png Graphic file (type png)
 <use ../data/Graphit_4nm_1V_current.png>
-Package pdftex.def Info: ../data/Graphit_4nm_1V_current.png  used on input line 223.
+Package pdftex.def Info: ../data/Graphit_4nm_1V_current.png  used on input line 268.
 (pdftex.def)             Requested size: 227.62204pt x 163.48924pt.
-
-Overfull \hbox (11.3811pt too wide) in paragraph at lines 223--224
- [][] 
- []
-
-<../data/Graphit_4nm_1V_z.png, id=161, 189.70876pt x 130.4875pt>
-File: ../data/Graphit_4nm_1V_z.png Graphic file (type png)
-<use ../data/Graphit_4nm_1V_z.png>
-Package pdftex.def Info: ../data/Graphit_4nm_1V_z.png  used on input line 228.
-(pdftex.def)             Requested size: 227.62204pt x 156.56827pt.
-
-Overfull \hbox (11.3811pt too wide) in paragraph at lines 228--229
- [][] 
- []
-
-<../data/Graphit2_current.png, id=162, 180.675pt x 130.4875pt>
-File: ../data/Graphit2_current.png Graphic file (type png)
-<use ../data/Graphit2_current.png>
-Package pdftex.def Info: ../data/Graphit2_current.png  used on input line 233.
-(pdftex.def)             Requested size: 227.62204pt x 164.39519pt.
-
-Overfull \hbox (11.3811pt too wide) in paragraph at lines 233--234
- [][] 
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<../data/Graphit2_z.png, id=163, 185.69376pt x 130.4875pt>
-File: ../data/Graphit2_z.png Graphic file (type png)
-<use ../data/Graphit2_z.png>
-Package pdftex.def Info: ../data/Graphit2_z.png  used on input line 238.
-(pdftex.def)             Requested size: 227.62204pt x 159.9551pt.
-
-Overfull \hbox (11.3811pt too wide) in paragraph at lines 238--239
- [][] 
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<../data/Graphit3_current.png, id=164, 181.67876pt x 130.4875pt>
-File: ../data/Graphit3_current.png Graphic file (type png)
-<use ../data/Graphit3_current.png>
-Package pdftex.def Info: ../data/Graphit3_current.png  used on input line 243.
-(pdftex.def)             Requested size: 227.62204pt x 163.48924pt.
-
-Overfull \hbox (11.3811pt too wide) in paragraph at lines 243--244
- [][] 
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<../data/Graphit3_z.png, id=165, 189.70876pt x 130.4875pt>
-File: ../data/Graphit3_z.png Graphic file (type png)
-<use ../data/Graphit3_z.png>
-Package pdftex.def Info: ../data/Graphit3_z.png  used on input line 248.
-(pdftex.def)             Requested size: 227.62204pt x 156.56827pt.
-
-Overfull \hbox (11.3811pt too wide) in paragraph at lines 248--249
- [][] 
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<../data/Graphit4_current.png, id=166, 179.67125pt x 130.4875pt>
-File: ../data/Graphit4_current.png Graphic file (type png)
-<use ../data/Graphit4_current.png>
-Package pdftex.def Info: ../data/Graphit4_current.png  used on input line 253.
-(pdftex.def)             Requested size: 227.62204pt x 165.32501pt.
-
-Overfull \hbox (11.3811pt too wide) in paragraph at lines 253--254
- [][] 
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<../data/Graphit4_z.png, id=167, 189.70876pt x 130.4875pt>
-File: ../data/Graphit4_z.png Graphic file (type png)
-<use ../data/Graphit4_z.png>
-Package pdftex.def Info: ../data/Graphit4_z.png  used on input line 258.
-(pdftex.def)             Requested size: 227.62204pt x 156.56827pt.
-
-Overfull \hbox (11.3811pt too wide) in paragraph at lines 258--259
- [][] 
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<../data/Graphit5_current.png, id=168, 183.68625pt x 130.4875pt>
-File: ../data/Graphit5_current.png Graphic file (type png)
-<use ../data/Graphit5_current.png>
-Package pdftex.def Info: ../data/Graphit5_current.png  used on input line 263.
-(pdftex.def)             Requested size: 227.62204pt x 161.70923pt.
-
-Overfull \hbox (11.3811pt too wide) in paragraph at lines 263--264
- [][] 
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<../data/Graphit5_z.png, id=169, 189.70876pt x 130.4875pt>
-File: ../data/Graphit5_z.png Graphic file (type png)
-<use ../data/Graphit5_z.png>
-Package pdftex.def Info: ../data/Graphit5_z.png  used on input line 268.
-(pdftex.def)             Requested size: 227.62204pt x 156.56827pt.
 
 Overfull \hbox (11.3811pt too wide) in paragraph at lines 268--269
  [][] 
  []
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<../data/Graphit6_current.png, id=170, 179.67125pt x 130.4875pt>
-File: ../data/Graphit6_current.png Graphic file (type png)
-<use ../data/Graphit6_current.png>
-Package pdftex.def Info: ../data/Graphit6_current.png  used on input line 273.
-(pdftex.def)             Requested size: 227.62204pt x 165.32501pt.
+<../data/Graphit_4nm_1V_z.png, id=228, 189.70876pt x 130.4875pt>
+File: ../data/Graphit_4nm_1V_z.png Graphic file (type png)
+<use ../data/Graphit_4nm_1V_z.png>
+Package pdftex.def Info: ../data/Graphit_4nm_1V_z.png  used on input line 273.
+(pdftex.def)             Requested size: 227.62204pt x 156.56827pt.
 
 Overfull \hbox (11.3811pt too wide) in paragraph at lines 273--274
  [][] 
  []
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<../data/Graphit6_z.png, id=171, 189.70876pt x 130.4875pt>
-File: ../data/Graphit6_z.png Graphic file (type png)
-<use ../data/Graphit6_z.png>
-Package pdftex.def Info: ../data/Graphit6_z.png  used on input line 278.
-(pdftex.def)             Requested size: 227.62204pt x 156.56827pt.
+<../data/Graphit2_current.png, id=229, 180.675pt x 130.4875pt>
+File: ../data/Graphit2_current.png Graphic file (type png)
+<use ../data/Graphit2_current.png>
+Package pdftex.def Info: ../data/Graphit2_current.png  used on input line 278.
+(pdftex.def)             Requested size: 227.62204pt x 164.39519pt.
 
 Overfull \hbox (11.3811pt too wide) in paragraph at lines 278--279
  [][] 
@@ -1431,11 +1328,11 @@ Overfull \hbox (11.3811pt too wide) in paragraph at lines 278--279
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<../data/Graphit7_current.png, id=172, 179.67125pt x 130.4875pt>
-File: ../data/Graphit7_current.png Graphic file (type png)
-<use ../data/Graphit7_current.png>
-Package pdftex.def Info: ../data/Graphit7_current.png  used on input line 283.
-(pdftex.def)             Requested size: 227.62204pt x 165.32501pt.
+<../data/Graphit2_z.png, id=230, 185.69376pt x 130.4875pt>
+File: ../data/Graphit2_z.png Graphic file (type png)
+<use ../data/Graphit2_z.png>
+Package pdftex.def Info: ../data/Graphit2_z.png  used on input line 283.
+(pdftex.def)             Requested size: 227.62204pt x 159.9551pt.
 
 Overfull \hbox (11.3811pt too wide) in paragraph at lines 283--284
  [][] 
@@ -1444,13 +1341,130 @@ Overfull \hbox (11.3811pt too wide) in paragraph at lines 283--284
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<../data/Graphit7_z.png, id=173, 191.71625pt x 130.4875pt>
-File: ../data/Graphit7_z.png Graphic file (type png)
-<use ../data/Graphit7_z.png>
-Package pdftex.def Info: ../data/Graphit7_z.png  used on input line 288.
-(pdftex.def)             Requested size: 227.62204pt x 154.93558pt.
+<../data/Graphit3_current.png, id=231, 181.67876pt x 130.4875pt>
+File: ../data/Graphit3_current.png Graphic file (type png)
+<use ../data/Graphit3_current.png>
+Package pdftex.def Info: ../data/Graphit3_current.png  used on input line 288.
+(pdftex.def)             Requested size: 227.62204pt x 163.48924pt.
 
 Overfull \hbox (11.3811pt too wide) in paragraph at lines 288--289
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<../data/Graphit3_z.png, id=232, 189.70876pt x 130.4875pt>
+File: ../data/Graphit3_z.png Graphic file (type png)
+<use ../data/Graphit3_z.png>
+Package pdftex.def Info: ../data/Graphit3_z.png  used on input line 293.
+(pdftex.def)             Requested size: 227.62204pt x 156.56827pt.
+
+Overfull \hbox (11.3811pt too wide) in paragraph at lines 293--294
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<../data/Graphit4_current.png, id=233, 179.67125pt x 130.4875pt>
+File: ../data/Graphit4_current.png Graphic file (type png)
+<use ../data/Graphit4_current.png>
+Package pdftex.def Info: ../data/Graphit4_current.png  used on input line 298.
+(pdftex.def)             Requested size: 227.62204pt x 165.32501pt.
+
+Overfull \hbox (11.3811pt too wide) in paragraph at lines 298--299
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<../data/Graphit4_z.png, id=234, 189.70876pt x 130.4875pt>
+File: ../data/Graphit4_z.png Graphic file (type png)
+<use ../data/Graphit4_z.png>
+Package pdftex.def Info: ../data/Graphit4_z.png  used on input line 303.
+(pdftex.def)             Requested size: 227.62204pt x 156.56827pt.
+
+Overfull \hbox (11.3811pt too wide) in paragraph at lines 303--304
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<../data/Graphit5_current.png, id=235, 183.68625pt x 130.4875pt>
+File: ../data/Graphit5_current.png Graphic file (type png)
+<use ../data/Graphit5_current.png>
+Package pdftex.def Info: ../data/Graphit5_current.png  used on input line 308.
+(pdftex.def)             Requested size: 227.62204pt x 161.70923pt.
+
+Overfull \hbox (11.3811pt too wide) in paragraph at lines 308--309
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<../data/Graphit5_z.png, id=236, 189.70876pt x 130.4875pt>
+File: ../data/Graphit5_z.png Graphic file (type png)
+<use ../data/Graphit5_z.png>
+Package pdftex.def Info: ../data/Graphit5_z.png  used on input line 313.
+(pdftex.def)             Requested size: 227.62204pt x 156.56827pt.
+
+Overfull \hbox (11.3811pt too wide) in paragraph at lines 313--314
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<../data/Graphit6_current.png, id=237, 179.67125pt x 130.4875pt>
+File: ../data/Graphit6_current.png Graphic file (type png)
+<use ../data/Graphit6_current.png>
+Package pdftex.def Info: ../data/Graphit6_current.png  used on input line 318.
+(pdftex.def)             Requested size: 227.62204pt x 165.32501pt.
+
+Overfull \hbox (11.3811pt too wide) in paragraph at lines 318--319
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<../data/Graphit6_z.png, id=238, 189.70876pt x 130.4875pt>
+File: ../data/Graphit6_z.png Graphic file (type png)
+<use ../data/Graphit6_z.png>
+Package pdftex.def Info: ../data/Graphit6_z.png  used on input line 323.
+(pdftex.def)             Requested size: 227.62204pt x 156.56827pt.
+
+Overfull \hbox (11.3811pt too wide) in paragraph at lines 323--324
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<../data/Graphit7_current.png, id=239, 179.67125pt x 130.4875pt>
+File: ../data/Graphit7_current.png Graphic file (type png)
+<use ../data/Graphit7_current.png>
+Package pdftex.def Info: ../data/Graphit7_current.png  used on input line 328.
+(pdftex.def)             Requested size: 227.62204pt x 165.32501pt.
+
+Overfull \hbox (11.3811pt too wide) in paragraph at lines 328--329
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<../data/Graphit7_z.png, id=240, 191.71625pt x 130.4875pt>
+File: ../data/Graphit7_z.png Graphic file (type png)
+<use ../data/Graphit7_z.png>
+Package pdftex.def Info: ../data/Graphit7_z.png  used on input line 333.
+(pdftex.def)             Requested size: 227.62204pt x 154.93558pt.
+
+Overfull \hbox (11.3811pt too wide) in paragraph at lines 333--334
  [][] 
  []
 
@@ -1465,78 +1479,78 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []| []
  []
 
-[8
+[9
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{figure.22}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.292 \end{document}
+l.337 \end{document}
                     
 pdfTeX warning (ext4): destination with the same identifier (name{figure.23}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.292 \end{document}
+l.337 \end{document}
                     
 pdfTeX warning (ext4): destination with the same identifier (name{figure.24}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.292 \end{document}
+l.337 \end{document}
                     
 pdfTeX warning (ext4): destination with the same identifier (name{figure.25}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.292 \end{document}
+l.337 \end{document}
                      <../data/Graphit_4nm_1V_current.png> <../data/Graphit_4nm_1V_z.png> <../data/Graphit2_current.png> <../data/Graphit2_z.png>]
 Underfull \hbox (badness 10000) has occurred while \output is active
 []| []
  []
 
-[9
+[10
 pdfTeX warning (ext4): destination with the same identifier (name{figure.26}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.292 \end{document}
+l.337 \end{document}
                     
 pdfTeX warning (ext4): destination with the same identifier (name{figure.27}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.292 \end{document}
+l.337 \end{document}
                     
 pdfTeX warning (ext4): destination with the same identifier (name{figure.28}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.292 \end{document}
+l.337 \end{document}
                     
 pdfTeX warning (ext4): destination with the same identifier (name{figure.29}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.292 \end{document}
+l.337 \end{document}
                      <../data/Graphit3_current.png> <../data/Graphit3_z.png> <../data/Graphit4_current.png> <../data/Graphit4_z.png>]
 Underfull \hbox (badness 10000) has occurred while \output is active
 []| []
  []
 
-[10
+[11
 pdfTeX warning (ext4): destination with the same identifier (name{figure.30}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.292 \end{document}
+l.337 \end{document}
                     
 pdfTeX warning (ext4): destination with the same identifier (name{figure.31}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.292 \end{document}
+l.337 \end{document}
                     
 pdfTeX warning (ext4): destination with the same identifier (name{figure.32}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.292 \end{document}
+l.337 \end{document}
                     
 pdfTeX warning (ext4): destination with the same identifier (name{figure.33}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.292 \end{document}
+l.337 \end{document}
                      <../data/Graphit5_current.png> <../data/Graphit5_z.png> <../data/Graphit6_current.png> <../data/Graphit6_z.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1545,16 +1559,16 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []| []
  []
 
-[11
+[12
 pdfTeX warning (ext4): destination with the same identifier (name{figure.34}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.292 \end{document}
+l.337 \end{document}
                     
 pdfTeX warning (ext4): destination with the same identifier (name{figure.35}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.292 \end{document}
+l.337 \end{document}
                     
 
  <../data/Graphit7_current.png> <../data/Graphit7_z.png>] (./main.aux)
@@ -1568,21 +1582,21 @@ LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.5pt have occurred.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 463CA8B83BED5B396877252761565529;1231.
+(rerunfilecheck)             Checksum: 1612E0A7AAC9AAB1E01FF53B08226FF4;1751.
  ) 
 Here is how much of TeX's memory you used:
- 22709 strings out of 476023
- 396953 string characters out of 5791581
- 1940187 words of memory out of 5000000
- 44427 multiletter control sequences out of 15000+600000
+ 22721 strings out of 476023
+ 397218 string characters out of 5791581
+ 1941187 words of memory out of 5000000
+ 44436 multiletter control sequences out of 15000+600000
  612394 words of font info for 181 fonts, out of 8000000 for 9000
  24 hyphenation exceptions out of 8191
  90i,8n,93p,541b,938s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb>
-Output written on main.pdf (11 pages, 7975002 bytes).
+Output written on main.pdf (12 pages, 7983251 bytes).
 PDF statistics:
- 289 PDF objects out of 1000 (max. 8388607)
- 181 compressed objects within 2 object streams
- 59 named destinations out of 1000 (max. 500000)
- 248 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 343 PDF objects out of 1000 (max. 8388607)
+ 233 compressed objects within 3 object streams
+ 62 named destinations out of 1000 (max. 500000)
+ 264 words of extra memory for PDF output out of 10000 (max. 10000000)
 

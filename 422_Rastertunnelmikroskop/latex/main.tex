@@ -110,8 +110,53 @@ Dies ermöglicht eine wesentlich schnellere Messung, ist allerdings nur für ebe
 Die Einstellung des PID--Regelkreises sind $P=0$, $I=4$ und $D=0$.
 
 \section{Durchführung \& Auswertung:\\Goldprobe}
+Die verwendete Goldprobe ist \glqq Gold14\grqq{} und in Abb.\ (\ref{fig:goldfern}), (\ref{fig:goldmittel}) und (\ref{fig:goldnah}) zu erkennen.
+Die aufgenommenen Bilder sind (\ref{fig:g10nmc}), (\ref{fig:g10nmz}), (\ref{fig:g10nm50mVc}), (\ref{fig:g10nm50mVz}), (\ref{fig:g200nmc}), (\ref{fig:g200nmz}), (\ref{fig:g200nm50mVc}), (\ref{fig:g200nm50mVz}), (\ref{fig:g400nmc}) und (\ref{fig:g400nmz}).
+
+In den makroskopischen Aufnahmen ist zu erkennen, dass die Goldprobe eine ebene Oberfläche besitzt, die durch viele Kratzer beschädigt ist.
+Zudem sind drei prägnante Einkerbungen und ein runder Fleck(?) zu erkennen.
+An diesen vier Stellen wurde die mikroskopische Untersuchung vermieden.
+Der Zusand dieser Probe ist für diesen Versuch föllig ausreichend.
+
+\subsection{Untersuchung STM: \textit{constant current mode}}
+Der \textit{constant current mode} wurde hier aufgrund der vielen Kratzer und Rauheit der Oberfläche verwendet, um die Spitze nicht zu beschädigen.
+
+In Abb.\ (\ref{fig:g400nmc}) ist eine helle Wolke mit grauen Verschmierungen zu erkennen. 
+Eine genauere Auflösung der Wolke ist in Abb.\ (\ref{fig:g200nmz}) und (\ref{fig:g200nm50mVz}), wobei die grauen Unterteilungen deutlich werden.
+Dieser Bilder waren erwartet, da bei Gold das \textsc{Fermi}--Niveau im Leiterband ist und eine Auflösung des Gitters daher nicht möglich ist.
+Abb.\ (\ref{fig:g10nmz}) und (\ref{fig:g10nm50mVz}) sind für die Auflösung der Wolken zu nah an der Probe.
+Eine Aussage über die makroskopische Beschaffenheit der Oberfläche lässt sich hiermit nicht tätigen, allerdings kann erkannt werden, dass die Wolken ein Streifenmuster aufweisen.
+
+Alle Stromkarten (\ref{fig:g10nmc}), (\ref{fig:g10nm50mVc}), (\ref{fig:g200nmc}), (\ref{fig:g200nm50mVc}) und (\ref{fig:g400nmc}) liefern identische Ergebnisse auf unterschiedlichen Größenskalen.
+Es ist eine fast uniforme Stromverteilung zu erkennen mit vereinzelten sehr hellen Pixeln.
+Dieses Ergebnis war erwartet, da hier im \textit{constant current mode} gearbeitet worden ist.
 
 \section{Durchführung \& Auswertung:\\HOPG--Probe}
+Die verwendete HOPG (highly oriented pyrolytic graphite) Probe ist \glqq HOPG8\grqq{} und in Abb.\ (\ref{fig:graphitfern}), (\ref{fig:graphitmittel}) und (\ref{fig:graphitnah}) zu erkennen.
+Die aufgenommenen Bilder sind Abb.\ (\ref{fig:gr4nm50nVc}), (\ref{fig:gr4nm50nVz}), (\ref{fig:gr100nm100nVc}), (\ref{fig:gr100nm100nVz}), (\ref{fig:gr100nm200nVc}), (\ref{fig:gr100nm200nVz}), (\ref{fig:gr10nm200nVc}), (\ref{fig:gr10nm200nVz}), (\ref{fig:gr2nm50nVc}), (\ref{fig:gr2nm50nVz}), (\ref{fig:gr2nm50nVc2}), (\ref{fig:gr2nm50nVz2}), (\ref{fig:gr2nm50nVc3}) und (\ref{fig:gr2nm50nVz3}).
+
+In den makroskopischen Aufnahmen ist eine äußert unebene Struktur zu erkennen.
+Die besteht aus prägnanten quaderförmigen Kristallstrukturen.
+Aufgrund der natürlichen Unordnung und Unebenheit der Struktur sind keine Unreinheiten oder Beschädigungen zu erkennen.
+Für die Untersuchung wurde eine möglichst flache Stelle auf der Probe verwendet.
+
+\subsection{Untersuchung STM: constant current mode}
+Der \textit{constant current mode} wurde hier aufgrund der makroskopischen Unebenheiten verwendet, um die Spitze nicht in die Probe zu bewegen.
+
+Die Untersuchung der Probe -- vor Allem die Auflösung der Gittersturktur -- stellte sich als unerwartet schwierig dar, sodass diese nicht beobachtet werden konnte.
+Alle Höhenkarten weisen Artefakte, Rauschen oder Schlieren auf; alle Stromkarten weisen vor Allem Rauschen und wenige Unebenheiten auf.
+
+Um eine atomare Auflösung zu erzielen wurden folgende Vorgehensweisen versucht:
+Eine neue Spitze wurde aus einer alten Spitze gerissen und mit großer Vorsicht in den Spitzenhalter eingebaut.
+Dabei ist die Spitze nicht in Berührung mit anderen Gegenständen gekommen.
+Die HOPG Probe wurde mehrfach abgezogen und der Probenhalter gereinigt.
+Beim Anbringen der Probe wurde darauf geachtet, dass eine möglichst ebene Fläche der Probe zur Spitze zeigt.
+Das Heranfahren an die Probe wurde nur auf eine noch makroskopisch unterschiedbare Entfernung mit der Hand getan, die weitere Bewegung wurde mit \textit{Approach} und \textit{Advance} vollführt, sodass es nicht möglich war, dass Probe und Spitze in Berührung gekommen sind.
+Ein \textit{Adjust Slope} wurde durchgeführt und ein \textit{Tip Cleaning Pulse} gegeben.
+Die Bilder wurden ohne Erfolg mit verschiedenen PID Parametern, verschiedenen Geschwindigkeiten und verschiedenen Größenordnungen gemacht.
+Auch das Klopfen auf den Tisch hat nicht funktioniert.
+Alle Schritte wurden für mehrere Spitzen ($<5$) durchgeführt und jedes mal sorgfältig gearbeitet.
+Es konnte kein Bild in atmoarer Auflösung erzielt werden.
 
 \section{Fazit}
 
@@ -133,86 +178,86 @@ Die Einstellung des PID--Regelkreises sind $P=0$, $I=4$ und $D=0$.
 \begin{figure}[t]
   \centering
   \includegraphics[width=.5\textwidth]{../data/Gold_1.png}
-  \caption{Gold fern.}
+  \caption{Gold fern.} \label{fig:goldfern}
 \end{figure}
 \begin{figure}[t]
   \centering
   \includegraphics[width=.5\textwidth]{../data/Gold_2.png}
-  \caption{Gold mittel.}
+  \caption{Gold mittel.} \label{fig:goldmittel}
 \end{figure}
 \begin{figure}[t]
   \centering
   \includegraphics[width=.5\textwidth]{../data/Gold_3.png}
-  \caption{Gold nah.}
+  \caption{Gold nah.} \label{fig:goldnah}
 \end{figure}
 \begin{figure}[t]
   \centering
   \includegraphics[width=.5\textwidth]{../data/Graphit_3.png}
-  \caption{Graphit fern.}
+  \caption{Graphit fern.} \label{fig:graphitfern}
 \end{figure}
 \begin{figure}[t]
   \centering
   \includegraphics[width=.5\textwidth]{../data/Graphit_1.png}
-  \caption{Graphit mittel.}
+  \caption{Graphit mittel.} \label{fig:graphitmittel}
 \end{figure}
 \begin{figure}[t]
   \centering
   \includegraphics[width=.5\textwidth]{../data/Graphit_2.png}
-  \caption{Graphit nah.}
+  \caption{Graphit nah.} \label{fig:graphitnah}
 \end{figure}
 \clearpage
 
 % TODO: Grobe aufteilung. Kann immer geändert werden. Ist jetzt nicht so festgelegt. Nur als Orientierung.
-\section{Gold Probe}
+\section{Goldprobe}
 \begin{figure}[h]
         \centering
         \includegraphics[width=.5\textwidth]{../data/Gold_10nm_current.png}
-        \caption{Gold: Strom Karte bei const. current Modus (Setpoint=\SI{1}{\nano A}, P-Gain=\SI{1000}{}, I-Gain=\SI{2000}{} und Tip voltage=\SI{1}{V})} \label{fig:g10nmc}
+        \caption{Gold: Stromkarte im const. current Modus (Setpoint=\SI{1}{\nano A}, P-Gain=\SI{1000}{}, I-Gain=\SI{2000}{} und Tip voltage=\SI{1}{V})} \label{fig:g10nmc}
 \end{figure}
 \begin{figure}[h]
         \centering
         \includegraphics[width=.5\textwidth]{../data/Gold_10nm_z.png}
-        \caption{Gold: Höhen Karte bei const. current Modus (Setpoint=\SI{1}{\nano A}, P-Gain=\SI{1000}{}, I-Gain=\SI{2000}{} und Tip voltage=\SI{1}{V})} \label{fig:g10nmz}
+        \caption{Gold: Höhenkarte im const. current Modus (Setpoint=\SI{1}{\nano A}, P-Gain=\SI{1000}{}, I-Gain=\SI{2000}{} und Tip voltage=\SI{1}{V})} \label{fig:g10nmz}
 \end{figure}
 \begin{figure}[h]
         \centering
         \includegraphics[width=.5\textwidth]{../data/Gold_10nm_50mV_current.png}
-        \caption{Gold: Strom Karte bei const. current Modus (Setpoint=\SI{1}{\nano A}, P-Gain=\SI{1000}{}, I-Gain=\SI{2000}{} und Tip voltage=\SI{50}{\milli V})} \label{fig:g10nm50mVc}
+        \caption{Gold: Stromkarte im const. current Modus (Setpoint=\SI{1}{\nano A}, P-Gain=\SI{1000}{}, I-Gain=\SI{2000}{} und Tip voltage=\SI{50}{\milli V})} \label{fig:g10nm50mVc}
 \end{figure}
 \begin{figure}[h]
         \centering
         \includegraphics[width=.5\textwidth]{../data/Gold_10nm_50mV_z.png}
-        \caption{Gold: Höhen Karte bei const. current Modus (Setpoint=\SI{1}{\nano A}, P-Gain=\SI{1000}{}, I-Gain=\SI{2000}{} und Tip voltage=\SI{50}{\milli V})} \label{fig:g10nm50mVz}
+        \caption{Gold: Höhenkarte im const. current Modus (Setpoint=\SI{1}{\nano A}, P-Gain=\SI{1000}{}, I-Gain=\SI{2000}{} und Tip voltage=\SI{50}{\milli V})} \label{fig:g10nm50mVz}
 \end{figure}
 \begin{figure}[h]
         \centering
         \includegraphics[width=.5\textwidth]{../data/Gold_200nm_current.png}
-        \caption{Gold: Strom Karte bei const. current Modus (Setpoint=\SI{1}{\nano A}, P-Gain=\SI{1000}{}, I-Gain=\SI{2000}{} und Tip voltage=\SI{1}{V})} \label{fig:g200nmc}
+        \caption{Gold: Stromkarte im const. current Modus (Setpoint=\SI{1}{\nano A}, P-Gain=\SI{1000}{}, I-Gain=\SI{2000}{} und Tip voltage=\SI{1}{V})} \label{fig:g200nmc}
 \end{figure}
 \begin{figure}[h]
         \centering
         \includegraphics[width=.5\textwidth]{../data/Gold_200nm_z.png}
-        \caption{Gold: Höhen Karte bei const. current Modus (Setpoint=\SI{1}{\nano A}, P-Gain=\SI{1000}{}, I-Gain=\SI{2000}{} und Tip voltage=\SI{1}{V})} \label{fig:g200nmz}
+        \caption{Gold: Höhenkarte im const. current Modus (Setpoint=\SI{1}{\nano A}, P-Gain=\SI{1000}{}, I-Gain=\SI{2000}{} und Tip voltage=\SI{1}{V})} \label{fig:g200nmz}
 \end{figure}
 \begin{figure}[h]
         \centering
         \includegraphics[width=.5\textwidth]{../data/Gold_200nm_50mV_current.png}
-        \caption{Gold: Strom Karte bei const. current Modus (Setpoint=\SI{1}{\nano A}, P-Gain=\SI{1000}{}, I-Gain=\SI{2000}{} und Tip voltage=\SI{50}{\milli V})} \label{fig:g200nm50mVc}
+        \caption{Gold: Stromkarte im const. current Modus (Setpoint=\SI{1}{\nano A}, P-Gain=\SI{1000}{}, I-Gain=\SI{2000}{} und Tip voltage=\SI{50}{\milli V})} \label{fig:g200nm50mVc}
 \end{figure}
 \begin{figure}[h]
         \centering
         \includegraphics[width=.5\textwidth]{../data/Gold_200nm_50mV_z.png}
-        \caption{Gold: Höhen Karte bei const. current Modus (Setpoint=\SI{1}{\nano A}, P-Gain=\SI{1000}{}, I-Gain=\SI{2000}{} und Tip voltage=\SI{50}{\milli V})} \label{fig:g200nm50mVz}
+        \caption{Gold: Höhenkarte im const. current Modus (Setpoint=\SI{1}{\nano A}, P-Gain=\SI{1000}{}, I-Gain=\SI{2000}{} und Tip voltage=\SI{50}{\milli V})} \label{fig:g200nm50mVz}
 \end{figure}
 \begin{figure}[h]
         \centering
         \includegraphics[width=.5\textwidth]{../data/Gold_400nm_current.png}
-        \caption{Gold: Strom Karte bei const. current Modus (Setpoint=\SI{1}{\nano A}, P-Gain=\SI{1000}{}, I-Gain=\SI{2000}{} und Tip voltage=\SI{1}{V})} \label{fig:g400nmc}
+        \caption{Gold: Stromkarte im const. current Modus (Setpoint=\SI{1}{\nano A}, P-Gain=\SI{1000}{}, I-Gain=\SI{2000}{} und Tip voltage=\SI{1}{V})} \label{fig:g400nmc}
 \end{figure}
 \begin{figure}[h]
         \centering
         \includegraphics[width=.5\textwidth]{../data/Gold_400nm_z.png}
-        \caption{Gold: Höhen Karte bei const. current Modus (Setpoint=\SI{1}{\nano A}, P-Gain=\SI{1000}{}, I-Gain=\SI{2000}{} und Tip voltage=\SI{1}{V})} \label{fig:g400nmz}
+        \caption{Gold: Höhenkarte im const. current Modus (Setpoint=\SI{1}{\nano A}, P-Gain=\SI{1000}{}, I-Gain=\SI{2000}{} und Tip voltage=\SI{1}{V})} \label{fig:g400nmz}
 \end{figure}
 
 \clearpage
@@ -221,72 +266,72 @@ Die Einstellung des PID--Regelkreises sind $P=0$, $I=4$ und $D=0$.
 \begin{figure}[h]
         \centering
         \includegraphics[width=.5\textwidth]{../data/Graphit_4nm_1V_current.png}
-        \caption{Gold: Strom Karte bei const. current Modus (Setpoint=\SI{1}{\nano A}, P-Gain=\SI{1000}{}, I-Gain=\SI{2000}{} und Tip voltage=\SI{50}{\nano V})} \label{fig:gr4nm50mVc}
+        \caption{HOPG: Stromkarte im const. current Modus (Setpoint=\SI{1}{\nano A}, P-Gain=\SI{1000}{}, I-Gain=\SI{2000}{} und Tip voltage=\SI{50}{\nano V})} \label{fig:gr4nm50nVc}
 \end{figure}
 \begin{figure}[h]
         \centering
         \includegraphics[width=.5\textwidth]{../data/Graphit_4nm_1V_z.png}
-        \caption{Gold: Höhen Karte bei const. current Modus (Setpoint=\SI{1}{\nano A}, P-Gain=\SI{1000}{}, I-Gain=\SI{2000}{} und Tip voltage=\SI{50}{\nano V})} \label{fig:gr4nm50mVz}
+        \caption{HOPG: Höhenkarte im const. current Modus (Setpoint=\SI{1}{\nano A}, P-Gain=\SI{1000}{}, I-Gain=\SI{2000}{} und Tip voltage=\SI{50}{\nano V})} \label{fig:gr4nm50nVz}
 \end{figure}
 \begin{figure}[h]
         \centering
         \includegraphics[width=.5\textwidth]{../data/Graphit2_current.png}
-        \caption{Gold: Strom Karte bei const. current Modus (Setpoint=\SI{1}{\nano A}, P-Gain=\SI{1000}{}, I-Gain=\SI{2000}{} und Tip voltage=\SI{100}{\nano V})} \label{fig:gr2c}
+        \caption{HOPG: Stromkarte im const. current Modus (Setpoint=\SI{1}{\nano A}, P-Gain=\SI{1000}{}, I-Gain=\SI{2000}{} und Tip voltage=\SI{100}{\nano V})} \label{fig:gr100nm100nVc}
 \end{figure}
 \begin{figure}[h]
         \centering
         \includegraphics[width=.5\textwidth]{../data/Graphit2_z.png}
-        \caption{Gold: Höhen Karte bei const. current Modus (Setpoint=\SI{1}{\nano A}, P-Gain=\SI{1000}{}, I-Gain=\SI{2000}{} und Tip voltage=\SI{100}{\nano V})} \label{fig:gr2z}
+        \caption{HOPG: Höhenkarte im const. current Modus (Setpoint=\SI{1}{\nano A}, P-Gain=\SI{1000}{}, I-Gain=\SI{2000}{} und Tip voltage=\SI{100}{\nano V})} \label{fig:gr100nm100nVz}
 \end{figure}
 \begin{figure}[h]
         \centering
         \includegraphics[width=.5\textwidth]{../data/Graphit3_current.png}
-        \caption{Gold: Strom Karte bei const. current Modus (Setpoint=\SI{5}{\nano A}, P-Gain=\SI{1000}{}, I-Gain=\SI{2000}{} und Tip voltage=\SI{200}{\nano V})} \label{fig:gr3c}
+        \caption{HOPG: Stromkarte im const. current Modus (Setpoint=\SI{5}{\nano A}, P-Gain=\SI{1000}{}, I-Gain=\SI{2000}{} und Tip voltage=\SI{200}{\nano V})} \label{fig:gr100nm200nVc}
 \end{figure}
 \begin{figure}[h]
         \centering
         \includegraphics[width=.5\textwidth]{../data/Graphit3_z.png}
-        \caption{Gold: Höhen Karte bei const. current Modus (Setpoint=\SI{5}{\nano A}, P-Gain=\SI{1000}{}, I-Gain=\SI{2000}{} und Tip voltage=\SI{200}{\nano V})} \label{fig:gr3z}
+        \caption{HOPG: Höhenkarte im const. current Modus (Setpoint=\SI{5}{\nano A}, P-Gain=\SI{1000}{}, I-Gain=\SI{2000}{} und Tip voltage=\SI{200}{\nano V})} \label{fig:gr100nm200nVz}
 \end{figure}
 \begin{figure}[h]
         \centering
         \includegraphics[width=.5\textwidth]{../data/Graphit4_current.png}
-        \caption{Gold: Strom Karte bei const. current Modus (Setpoint=\SI{5}{\nano A}, P-Gain=\SI{1000}{}, I-Gain=\SI{2000}{} und Tip voltage=\SI{200}{\nano V})} \label{fig:gr4c}
+        \caption{HOPG: Stromkarte im const. current Modus (Setpoint=\SI{5}{\nano A}, P-Gain=\SI{1000}{}, I-Gain=\SI{2000}{} und Tip voltage=\SI{200}{\nano V})} \label{fig:gr10nm200nVc}
 \end{figure}
 \begin{figure}[h]
         \centering
         \includegraphics[width=.5\textwidth]{../data/Graphit4_z.png}
-        \caption{Gold: Höhen Karte bei const. current Modus (Setpoint=\SI{5}{\nano A}, P-Gain=\SI{1000}{}, I-Gain=\SI{2000}{} und Tip voltage=\SI{200}{\nano V})} \label{fig:gr4z}
+        \caption{HOPG: Höhenkarte im const. current Modus (Setpoint=\SI{5}{\nano A}, P-Gain=\SI{1000}{}, I-Gain=\SI{2000}{} und Tip voltage=\SI{200}{\nano V})} \label{fig:gr10nm200nVz}
 \end{figure}
 \begin{figure}[h]
         \centering
         \includegraphics[width=.5\textwidth]{../data/Graphit5_current.png}
-        \caption{Gold: Strom Karte bei const. current Modus (Setpoint=\SI{1}{\nano A}, P-Gain=\SI{1000}{}, I-Gain=\SI{2000}{} und Tip voltage=\SI{50}{\nano V})} \label{fig:gr5c}
+        \caption{HOPG: Stromkarte im const. current Modus (Setpoint=\SI{1}{\nano A}, P-Gain=\SI{1000}{}, I-Gain=\SI{2000}{} und Tip voltage=\SI{50}{\nano V})} \label{fig:gr2nm50nVc}
 \end{figure}
 \begin{figure}[h]
         \centering
         \includegraphics[width=.5\textwidth]{../data/Graphit5_z.png}
-        \caption{Gold: Höhen Karte bei const. current Modus (Setpoint=\SI{1}{\nano A}, P-Gain=\SI{1000}{}, I-Gain=\SI{2000}{} und Tip voltage=\SI{50}{\nano V})} \label{fig:gr5z}
+        \caption{HOPG: Höhenkarte im const. current Modus (Setpoint=\SI{1}{\nano A}, P-Gain=\SI{1000}{}, I-Gain=\SI{2000}{} und Tip voltage=\SI{50}{\nano V})} \label{fig:gr2nm50nVz}
 \end{figure}
 \begin{figure}[h]
         \centering
         \includegraphics[width=.5\textwidth]{../data/Graphit6_current.png}
-        \caption{Gold: Strom Karte bei const. current Modus (Setpoint=\SI{1}{\nano A}, P-Gain=\SI{1000}{}, I-Gain=\SI{2000}{} und Tip voltage=\SI{50}{\nano V})} \label{fig:gr6c}
+        \caption{HOPG: Stromkarte im const. current Modus (Setpoint=\SI{1}{\nano A}, P-Gain=\SI{1000}{}, I-Gain=\SI{2000}{} und Tip voltage=\SI{50}{\nano V})} \label{fig:gr2nm50nVc2}
 \end{figure}
 \begin{figure}[h]
         \centering
         \includegraphics[width=.5\textwidth]{../data/Graphit6_z.png}
-        \caption{Gold: Höhen Karte bei const. current Modus (Setpoint=\SI{1}{\nano A}, P-Gain=\SI{1000}{}, I-Gain=\SI{2000}{} und Tip voltage=\SI{50}{\nano V})} \label{fig:gr6z}
+        \caption{HOPG: Höhenkarte im const. current Modus (Setpoint=\SI{1}{\nano A}, P-Gain=\SI{1000}{}, I-Gain=\SI{2000}{} und Tip voltage=\SI{50}{\nano V})} \label{fig:gr2nm50nVz2}
 \end{figure}
 \begin{figure}[h]
         \centering
         \includegraphics[width=.5\textwidth]{../data/Graphit7_current.png}
-        \caption{Gold: Strom Karte bei const. current Modus (Setpoint=\SI{1}{\nano A}, P-Gain=\SI{1000}{}, I-Gain=\SI{2000}{} und Tip voltage=\SI{50}{\nano V})} \label{fig:gr7c}
+        \caption{HOPG: Stromkarte im const. current Modus (Setpoint=\SI{1}{\nano A}, P-Gain=\SI{1000}{}, I-Gain=\SI{2000}{} und Tip voltage=\SI{50}{\nano V})} \label{fig:gr2nm50nVc3}
 \end{figure}
 \begin{figure}[h]
         \centering
         \includegraphics[width=.5\textwidth]{../data/Graphit7_z.png}
-        \caption{Gold: Höhen Karte bei const. current Modus (Setpoint=\SI{1}{\nano A}, P-Gain=\SI{0}{}, I-Gain=\SI{4}{} und Tip voltage=\SI{50}{\nano V})} \label{fig:gr7z}
+        \caption{HOPG: Höhenkarte im const. current Modus (Setpoint=\SI{1}{\nano A}, P-Gain=\SI{0}{}, I-Gain=\SI{4}{} und Tip voltage=\SI{50}{\nano V})} \label{fig:gr2nm50nVz3}
 \end{figure}
 
 \end{document}
