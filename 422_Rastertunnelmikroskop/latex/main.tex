@@ -50,12 +50,13 @@
 \maketitle
 
 \section{Einleitung}
+Um atomare Auflösungen und mikroskopische Materialstrukturen zu erkennen, ging aus der Vermessung von Austritsarbeiten eine neue Technologie hervor, die Vergrößerungen jenseits der optischen Begrenzung bietet.
 Wenn sich zwei leitende Materialien mit verschiedenen Austrittsarbeiten nahe genug kommen, dann ist es Elektronen im \textsc{Fermi}--Niveau möglich, zwischen den Materialien zu tunneln.
 Das Rastertunnelmikroskop (STM, scanning tunneling microscope) verwendet diesen Effekt, um Strukturen von Materialien auf mikroskopischer Ebene aufzulösen.
 
 \section{Experimenteller Aufbau}
 Der experimentelle Aufbau ist in Abb.\ (\ref{fig:aufbau}) zu sehen.
-Das verwendete STM ist das \glqq NaioSTM\grqq{} von \textit{Nanosurf} (\url{www.nanosurf.com})
+Das verwendete STM ist das \glqq NaioSTM\grqq{} von \textit{Nanosurf} (\url{www.nanosurf.com}).
 \begin{figure}[t]
   \centering
   \includegraphics[width=.5\textwidth]{422_aufbau.png}
@@ -84,8 +85,8 @@ Ein Bild der Probe wird erzeugt, in dem der gemessene Strom gegen den Ort aufget
 Dieses Bild wird mit der \glqq Easyscan 2\grqq{} Software von Nanosurf aufgenommen.
 
 Die Spitze kann mit makroskopischen Methoden von einem langen Pt--Ir Draht gewonnen werden.
-Dabei wird ein kleines Stück des Drahtes mit einer Zange abgerissen, wodurch sich eine mikroskopisch kleine Spitze bildet.
-Da die Spitze nicht zu allen Seiten streng monoton fallend sein muss, sondern ausreichend ist, wenn es nur eine Stelle gibt, die der Probe am nächsten ist, kann diese Methode gut verwendet werden.
+Dabei wird ein kleines Stück des Drahtes mit einer Zange abgerissen, wodurch sich eine mikroskopisch kleine Spitze bildet. Das ist das sog. Reissen einer Spitze.
+Da die Spitze nicht zu allen Seiten streng monoton fallend sein muss, sondern ausreichend ist, wenn es nur eine Stelle gibt, die der Probe am nächsten ist, kann diese Methode gut verwendet werden. % TODO: streng monoton fallend hört sich etwas over the top an
 
 Die Probe wird mit dem Slip--Stick Mechanismus an die Spitze herangefahren.
 Dabei wird der Probenhalter mit einem anderen Material (z.B.\ Gummi) in Kontakt gebracht.
@@ -94,16 +95,16 @@ Durch schnelles Zurückziehen des Gummis gleitet dies über den Probenhalter zur
 
 Die Bewegung der Probe orthogonal zur Spitze werden mit Hifle von \textsc{Piezo}--Kristallen realisiert.
 Ein \textsc{Piezo}--Kristall besitzt in einer bestimmten Achse des Gitters keine Spiegelsymmetrie, wodurch mechanische Stauchung und Streckung eine Potentialdifferenz im Kristall verursachen.
-Dieses Phänomen funktioniert auch andersherum.
+Dieses Phänomen funktioniert auch andersherum. % TODO: kann man saver schöner schreiben
 Druch eine angelegte Spannung verschieben sich die Ladungsträger, wodurch eine Stauchung oder Streckung verursacht wird.
-Dadruch wird die Probe (der Probenhalter) orthogonal verschoben.
+Dadruch wird die Probe (der Probenhalter) orthogonal verschoben. % TODO: Warum 'orthogonal'?
 
 Das STM kann in zwei Modi verwendet werden.
 
 Im \textit{constant current mode} wird die Entfernung der Spitze von der Probe so reguliert, dass immer die gleiche Stromstärke gemessen wird.
 Dies wird mit einem PID--Regelkreis (proportional integral differential) realisiert.
-Die Einstellung hierfür sind $P=2000$, $I=2000$ und $D=0$.
-Dieser Modus ist vor Allem für Proben mit unebenem Höhenprofil vorteilhaft, um die Spitze nicht auf der Probe auflaufen zu lassen.
+Die Einstellung hierfür sind $P=2000$, $I=2000$ und $D=0$. % TODO: P=1000
+Dieser Modus ist vor Allem für Proben mit unebenem Höhenprofil vorteilhaft, um die Spitze nicht auf der Probe auflaufen zu lassen. % TODO: Geschwindigkeit diskutieren
 
 Im \textit{constant height mode} wird die Entfernung der Spitze von der Probe konstant gelassen.
 Dies ermöglicht eine wesentlich schnellere Messung, ist allerdings nur für ebene Proben ratsam.
@@ -114,9 +115,9 @@ Die verwendete Goldprobe ist \glqq Gold14\grqq{} und in Abb.\ (\ref{fig:goldfern
 Die aufgenommenen Bilder sind (\ref{fig:g10nmc}), (\ref{fig:g10nmz}), (\ref{fig:g10nm50mVc}), (\ref{fig:g10nm50mVz}), (\ref{fig:g200nmc}), (\ref{fig:g200nmz}), (\ref{fig:g200nm50mVc}), (\ref{fig:g200nm50mVz}), (\ref{fig:g400nmc}) und (\ref{fig:g400nmz}).
 
 In den makroskopischen Aufnahmen ist zu erkennen, dass die Goldprobe eine ebene Oberfläche besitzt, die durch viele Kratzer beschädigt ist.
-Zudem sind drei prägnante Einkerbungen und ein runder Fleck(?) zu erkennen.
-An diesen vier Stellen wurde die mikroskopische Untersuchung vermieden.
-Der Zusand dieser Probe ist für diesen Versuch föllig ausreichend.
+Zudem sind drei prägnante Einkerbungen und ein runder Fleck(?) zu erkennen. % TODO: Fleck -> Eindruck
+An diesen vier Stellen wurde die mikroskopische Untersuchung vermieden. % Das war uns egal lol, aber finde ich gut
+Der Zusand dieser Probe ist für diesen Versuch föllig ausreichend. % Finde ich fr ein gutes Statement
 
 \subsection{Untersuchung STM: \textit{constant current mode}}
 Der \textit{constant current mode} wurde hier aufgrund der vielen Kratzer und Rauheit der Oberfläche verwendet, um die Spitze nicht zu beschädigen.
@@ -135,8 +136,7 @@ Dieses Ergebnis war erwartet, da hier im \textit{constant current mode} gearbeit
 Die verwendete HOPG (highly oriented pyrolytic graphite) Probe ist \glqq HOPG8\grqq{} und in Abb.\ (\ref{fig:graphitfern}), (\ref{fig:graphitmittel}) und (\ref{fig:graphitnah}) zu erkennen.
 Die aufgenommenen Bilder sind Abb.\ (\ref{fig:gr4nm50nVc}), (\ref{fig:gr4nm50nVz}), (\ref{fig:gr100nm100nVc}), (\ref{fig:gr100nm100nVz}), (\ref{fig:gr100nm200nVc}), (\ref{fig:gr100nm200nVz}), (\ref{fig:gr10nm200nVc}), (\ref{fig:gr10nm200nVz}), (\ref{fig:gr2nm50nVc}), (\ref{fig:gr2nm50nVz}), (\ref{fig:gr2nm50nVc2}), (\ref{fig:gr2nm50nVz2}), (\ref{fig:gr2nm50nVc3}) und (\ref{fig:gr2nm50nVz3}).
 
-In den makroskopischen Aufnahmen ist eine äußert unebene Struktur zu erkennen.
-Die besteht aus prägnanten quaderförmigen Kristallstrukturen.
+In den makroskopischen Aufnahmen ist eine äußerst unebene Struktur zu erkennen, welche aus prägnanten quaderförmigen Kristallstrukturen besteht. % TODO: Welche makrsoskopischen Aufnahmen genau? Ich kann da garkeite Struktur erkennen.
 Aufgrund der natürlichen Unordnung und Unebenheit der Struktur sind keine Unreinheiten oder Beschädigungen zu erkennen.
 Für die Untersuchung wurde eine möglichst flache Stelle auf der Probe verwendet.
 
@@ -158,6 +158,11 @@ Auch das Klopfen auf den Tisch hat nicht funktioniert.
 Alle Schritte wurden für mehrere Spitzen ($<5$) durchgeführt und jedes mal sorgfältig gearbeitet.
 Es konnte kein Bild in atmoarer Auflösung erzielt werden.
 
+% TODO: Wir können noch passende Bilder an dieser Stelle referenzieren, um ein Beispiel zu geben, dass wir auf den passenden Größenskalen gearbeitet haben
+
+% TODO: Allgemein finde ich das schon nicht schlecht. Aber ich habe das Gefühl, dass selbst die Bilder für die Goldprobe echt schlecht waren. Wenn ich mich an die Bilder erinnere, welche wir in dem Handbuch gesehen hatten, dann könnten sich gefühlt alle unsere Aufnahmen dort einreihen. Vielleicht sollte insbesondere bei der Goldprobe diese Möglichkeit nochmal erwähnt werden.
+
+% TODO: Vielleicht sollte auch nochmal diskutiert werden, dass wir nur eine einzige constant hight Aufnahmen haben. Außerden könnte die auch nochmal inhaltlich diksutiert werden.
 \section{Fazit}
 
 \bibliography{refs}
