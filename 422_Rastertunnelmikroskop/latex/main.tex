@@ -86,7 +86,7 @@ Dieses Bild wird mit der \glqq Easyscan 2\grqq{} Software von Nanosurf aufgenomm
 
 Die Spitze kann mit makroskopischen Methoden von einem langen Pt--Ir Draht gewonnen werden.
 Dabei wird ein kleines Stück des Drahtes mit einer Zange abgerissen, wodurch sich eine mikroskopisch kleine Spitze bildet. Das ist das sog. Reissen einer Spitze.
-Da die Spitze nicht zu allen Seiten streng monoton fallend sein muss, sondern ausreichend ist, wenn es nur eine Stelle gibt, die der Probe am nächsten ist, kann diese Methode gut verwendet werden. % TODO: streng monoton fallend hört sich etwas over the top an
+Da die Spitze nicht zu allen Seiten streng monoton fallend sein muss, sondern ausreichend ist, wenn es nur eine Stelle gibt, die der Probe am nächsten ist, kann diese Methode gut verwendet werden. % TODO: streng monoton fallend hört sich etwas over the top an // idk ich find das beschreibt es aber echt passend xD
 
 Die Probe wird mit dem Slip--Stick Mechanismus an die Spitze herangefahren.
 Dabei wird der Probenhalter mit einem anderen Material (z.B.\ Gummi) in Kontakt gebracht.
@@ -95,20 +95,27 @@ Durch schnelles Zurückziehen des Gummis gleitet dies über den Probenhalter zur
 
 Die Bewegung der Probe orthogonal zur Spitze werden mit Hifle von \textsc{Piezo}--Kristallen realisiert.
 Ein \textsc{Piezo}--Kristall besitzt in einer bestimmten Achse des Gitters keine Spiegelsymmetrie, wodurch mechanische Stauchung und Streckung eine Potentialdifferenz im Kristall verursachen.
-Dieses Phänomen funktioniert auch andersherum. % TODO: kann man saver schöner schreiben
-Druch eine angelegte Spannung verschieben sich die Ladungsträger, wodurch eine Stauchung oder Streckung verursacht wird.
-Dadruch wird die Probe (der Probenhalter) orthogonal verschoben. % TODO: Warum 'orthogonal'?
+Durch eine angelegte Spannung verschieben sich die Ladungsträger, wodurch eine Stauchung oder Streckung verursacht wird.
+Dadurch wird die Probe (der Probenhalter) orthogonal zur Spitze verschoben.
 
 Das STM kann in zwei Modi verwendet werden.
 
 Im \textit{constant current mode} wird die Entfernung der Spitze von der Probe so reguliert, dass immer die gleiche Stromstärke gemessen wird.
 Dies wird mit einem PID--Regelkreis (proportional integral differential) realisiert.
 Die Einstellung hierfür sind $P=1000$, $I=2000$ und $D=0$.
-Dieser Modus ist vor Allem für Proben mit unebenem Höhenprofil vorteilhaft, um die Spitze nicht auf der Probe auflaufen zu lassen. % TODO: Geschwindigkeit diskutieren
+Dieser Modus ist vor Allem für Proben mit unebenem Höhenprofil vorteilhaft, um die Spitze nicht auf der Probe auflaufen zu lassen.
+Allerdings verringert sich in diesem Modus die Scangeschwindigkeit signifikant, da der Abstand der Spitze jedes mal neu justiert werden muss.
 
 Im \textit{constant height mode} wird die Entfernung der Spitze von der Probe konstant gelassen.
 Dies ermöglicht eine wesentlich schnellere Messung, ist allerdings nur für ebene Proben ratsam.
 Die Einstellung des PID--Regelkreises sind $P=0$, $I=4$ und $D=0$.
+
+\subsection{Maßstab}
+Der Maßstab der Bilder des USB--Mikroskops wurde mit einem Gitter mit bekannten Maßstab gemessen.
+Das Gitter in Abb.\ (\ref{fig:gitter_fern}) und (\ref{fig:gitter_nah}) besteht aus $\SI{400}{mm}\times \SI{100}{mm}$ Strichen.
+Zu jedem mit dem USB--Mikroskop aufgenommenen Bild wurde der Maßstab anhand diesem Gitter abgelesen.
+
+Der Maßstab der Bilder mit dem STM geht aus der Bildgröße hervor.
 
 \section{Durchführung \& Auswertung:\\Goldprobe}
 Die verwendete Goldprobe ist \glqq Gold14\grqq{} und in Abb.\ (\ref{fig:goldfern}), (\ref{fig:goldmittel}) und (\ref{fig:goldnah}) zu erkennen.
@@ -132,11 +139,16 @@ Alle Stromkarten (\ref{fig:g10nmc}), (\ref{fig:g10nm50mVc}), (\ref{fig:g200nmc})
 Es ist eine fast uniforme Stromverteilung zu erkennen mit vereinzelten sehr hellen Pixeln.
 Dieses Ergebnis war erwartet, da hier im \textit{constant current mode} gearbeitet worden ist.
 
+Es ist wichtig zu erwähnen, dass alle Abbildungen zu Gold Eigenschaften besitzen (z.B.\ Artefakte wie weiße Pixel und Striche) in dem Handbuch unter dem Kapitel zu nicht richtig aufgenommenen Bildern gelistet sind.
+Es besteht also weiterhin die Möglichkeit, dass diese Bilder keine korrekten Aussagen über die Oberfläche geben.
+Dies geht vor Allem aus dem Vergleich mit den Literaturaufnahmen in Abb.\ (\ref{fig:gold_lit}) hervor, in denen die Goldstruktur klar zu erkennen ist.
+
 \section{Durchführung \& Auswertung:\\HOPG--Probe}
 Die verwendete HOPG (highly oriented pyrolytic graphite) Probe ist \glqq HOPG8\grqq{} und in Abb.\ (\ref{fig:graphitfern}), (\ref{fig:graphitmittel}) und (\ref{fig:graphitnah}) zu erkennen.
 Die aufgenommenen Bilder sind Abb.\ (\ref{fig:gr4nm50nVc}), (\ref{fig:gr4nm50nVz}), (\ref{fig:gr100nm100nVc}), (\ref{fig:gr100nm100nVz}), (\ref{fig:gr100nm200nVc}), (\ref{fig:gr100nm200nVz}), (\ref{fig:gr10nm200nVc}), (\ref{fig:gr10nm200nVz}), (\ref{fig:gr2nm50nVc}), (\ref{fig:gr2nm50nVz}), (\ref{fig:gr2nm50nVc2}), (\ref{fig:gr2nm50nVz2}), (\ref{fig:gr2nm50nVc3}) und (\ref{fig:gr2nm50nVz3}).
 
-In den makroskopischen Aufnahmen ist eine äußerst unebene Struktur zu erkennen, welche aus prägnanten quaderförmigen Kristallstrukturen besteht. % TODO: Welche makrsoskopischen Aufnahmen genau? Ich kann da garkeite Struktur erkennen.
+\subsection{Beobachtung}
+In den makroskopischen Aufnahmen ist eine äußerst unebene Struktur zu erkennen, welche aus quaderförmigen kristallartigen Strukturen besteht. % TODO: Welche makrsoskopischen Aufnahmen genau? Ich kann da garkeite Struktur erkennen. // idk so ein bisschen kann man da ja größere klötze sehen. hab mal 'prägnant' und so rausgenommen xD
 Aufgrund der natürlichen Unordnung und Unebenheit der Struktur sind keine Unreinheiten oder Beschädigungen zu erkennen.
 Für die Untersuchung wurde eine möglichst flache Stelle auf der Probe verwendet.
 
@@ -156,14 +168,49 @@ Ein \textit{Adjust Slope} wurde durchgeführt und ein \textit{Tip Cleaning Pulse
 Die Bilder wurden ohne Erfolg mit verschiedenen PID Parametern, verschiedenen Geschwindigkeiten und verschiedenen Größenordnungen gemacht.
 Auch das Klopfen auf den Tisch hat nicht funktioniert.
 Alle Schritte wurden für mehrere Spitzen ($<5$) durchgeführt und jedes mal sorgfältig gearbeitet.
-Es konnte kein Bild in atmoarer Auflösung erzielt werden.
+Es konnte kein Bild in atmoarer Auflösung erzielt werden; auch für sehr kleine Bildgrößen, bei denen ein Gitter eigentlich aufgelöst werden sollte (s.\ z.B.\ Abb.\ (\ref{fig:gr10nm200nVz}))
 
-% TODO: Wir können noch passende Bilder an dieser Stelle referenzieren, um ein Beispiel zu geben, dass wir auf den passenden Größenskalen gearbeitet haben
+In den Literaturbildern aus Abb.\ (\ref{fig:hopg_lit}) erkennt man die Gitterstruktur klar.
+Vergleicht man mit den aufgenommenen Bildern sind die Unterschiede eindeutig.
 
-% TODO: Allgemein finde ich das schon nicht schlecht. Aber ich habe das Gefühl, dass selbst die Bilder für die Goldprobe echt schlecht waren. Wenn ich mich an die Bilder erinnere, welche wir in dem Handbuch gesehen hatten, dann könnten sich gefühlt alle unsere Aufnahmen dort einreihen. Vielleicht sollte insbesondere bei der Goldprobe diese Möglichkeit nochmal erwähnt werden.
+\subsection{Gitterstruktur}
+Da die Bilder keine verwertbare Gitterstruktur zeigen, kann hier die Bestimmung der Winkel und der Abstände zwischen den Atomen nicht berechnet werden.
+Eine theoretische Berechnung sähe wie folgt aus:
 
-% TODO: Vielleicht sollte auch nochmal diskutiert werden, dass wir nur eine einzige constant hight Aufnahmen haben. Außerden könnte die auch nochmal inhaltlich diksutiert werden.
+Man wählt einen Bereich der Aufnahme, in der wenig Verzerrungen vorhanden sind, um möglichst einheitliche Abstände und Winkel zu betrachten.
+Der Winkel zweier Atome kann über Vektoren berechnet werden.
+Es gilt
+\begin{align} 
+  \alpha =\arccos\left(\dfrac{\boldsymbol{i} \boldsymbol{j} }{ij}\right)
+,\end{align} 
+mit $\boldsymbol{i} \equiv\vv{i}$ und $i\equiv |\vv{i}|$.
+Die Vektoren ergeben sich aus der Verbindungslinie zweier Atome $A$ und $B$ oder $B$ und $C$
+\begin{align} 
+  \boldsymbol{i} =\overline{AB}=\text{Pos}(B)-\text{Pos}(A)\\
+  \boldsymbol{j} =\overline{BC}=\text{Pos}(B)-\text{Pos}(C)
+\end{align} 
+wobei $A$ und $B$ die Koordinaten beider Atome von einem einheitlichen Ursprung gemessen sind.
+
+Der Abstand zweier Atome kann mit Hilfe des Winkels berechnet werden.
+Es ist für ein Hexagon
+\begin{align} 
+  \cos \ang{30}=\dfrac{1}{2}\dfrac{j}{i}\Leftrightarrow i=\dfrac{j}{2\cos \ang{30}}
+,\end{align} 
+mit $\ang{30}\equiv \tfrac{\alpha }{4}$.
+
+% TODO: Vielleicht sollte auch nochmal diskutiert werden, dass wir nur eine einzige constant hight Aufnahmen haben. Außerden könnte die auch nochmal inhaltlich diksutiert werden. // wo is die denn?
 \section{Fazit}
+In diesem Versuch wurden Gold-- und HOGP--Proben untersucht, indem Bilder mit Hilfe eines STMs aufgenommen worden sind.
+Die Verwendung des STM hat gut funktioniert, darunter auch das Spitzen reißen und einsetzen, sowie das Annähern der Probe an die Spitze.
+
+Diese Bilder liefern für Gold gute Ergebnisse und zeigen eine wolkenartige Struktur, die für dieses Material erwartet war.
+Dies ist auf unterschiedlichen Größenskalen zu erkennen.
+
+Die Bilder der HOPG Probe zeigen keine brauchbaren Ergebnisse.
+Hier ist die erwartete Gitterstruktur auf verschiedenen Größenskalen nicht zu erkennen.
+Mögliche Ursachen hierfür könnten unter anderem eine fehlerhafte Spitze oder falsche Bedienung des STMs sein.
+Die angestellten Methoden zur Verbesserung der Bildqualität haben nicht funktioniert.
+Die Berechnung der Winkel und Abstand zwischen den Atomen hat mit diesen Aufnahmen auch nicht funktioniert.
 
 \bibliography{refs}
 
@@ -338,5 +385,26 @@ Es konnte kein Bild in atmoarer Auflösung erzielt werden.
         \includegraphics[width=.5\textwidth]{../data/Graphit7_z.png}
         \caption{HOPG: Höhenkarte im const. current Modus (Setpoint=\SI{1}{\nano A}, P-Gain=\SI{0}{}, I-Gain=\SI{4}{} und Tip voltage=\SI{50}{\nano V})} \label{fig:gr2nm50nVz3}
 \end{figure}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=.5\textwidth]{422_gold_lit.png}
+  \caption{Literaturbild der Goldprobe aus \cite{anleitung422}.} \label{fig:gold_lit}
+\end{figure}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=.5\textwidth]{422_HOPG_lit.png}
+  \caption{Literaturbild der HOPG Probe aus \cite{anleitung422}.} \label{fig:hopg_lit}
+\end{figure}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=.5\textwidth]{../data/gold_1_norm.png}
+  \caption{Gitter zur Bestimmung des Maßstabs (fern).} \label{fig:gitter_fern}
+\end{figure}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=.5\textwidth]{../data/gold_3_norm.png}
+  \caption{Gitter zur Bestimmung des Maßstabs (nah).} \label{fig:gitter_nah}
+\end{figure}
+
 
 \end{document}
