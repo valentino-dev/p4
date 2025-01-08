@@ -358,6 +358,16 @@ INPUT /usr/share/texmf-dist/fonts/tfm/public/newtx/ntxsyc.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/newtx/ntxexa.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/newtx/ntxexa.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/newtx/ntxexa.tfm
+INPUT ./Jonas.jpeg
+INPUT ./Jonas.jpeg
+INPUT ./Jonas.jpeg
+INPUT ./Jonas.jpeg
+INPUT ./Jonas.jpeg
+INPUT ./Angelo.jpeg
+INPUT ./Angelo.jpeg
+INPUT ./Angelo.jpeg
+INPUT ./Angelo.jpeg
+INPUT ./Angelo.jpeg
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmcsc10.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
