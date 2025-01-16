@@ -1,6 +1,6 @@
 %% BioMed_Central_Bib_Style_v1.01
 
-\begin{thebibliography}{0}
+\begin{thebibliography}{4}
 % BibTex style file: bmc-mathphys.bst (version 2.1), 2014-07-24
 \ifx \bisbn   \undefined \def \bisbn  #1{ISBN #1}\fi
 \ifx \binits  \undefined \def \binits#1{#1}\fi
@@ -42,5 +42,42 @@
 \ifx \bconflocation  \undefined \def \bconflocation#1{#1}\fi
 \ifx \arxivurl  \undefined \def \arxivurl#1{\textsf{#1}}\fi
 \csname PreBibitemsHook\endcsname
+
+%%% 1
+\bibitem[\protect\citeauthoryear{}{}]{wikipediaCassegrain}
+\begin{botherref}
+Cassegrain reflector.
+\url{https://en.wikipedia.org/wiki/Cassegrain_reflector}.
+Letzter Zugriff: 2025-01-14
+\end{botherref}
+\endbibitem
+
+%%% 2
+\bibitem[\protect\citeauthoryear{Praktikumsleitung}{2016}]{anleitung464}
+\begin{botherref}
+\oauthor{\bsnm{Praktikumsleitung}}:
+P464 spektroskopie von sternen.
+Universität Bonn
+(2016)
+\end{botherref}
+\endbibitem
+
+%%% 3
+\bibitem[\protect\citeauthoryear{}{}]{wikipediaSpektralklasse}
+\begin{botherref}
+Spektralklasse.
+\url{https://de.wikipedia.org/wiki/Spektralklasse}.
+Letzter Zugriff: 2025-01-14
+\end{botherref}
+\endbibitem
+
+%%% 4
+\bibitem[\protect\citeauthoryear{}{}]{saha}
+\begin{botherref}
+Ionization, Saha Equation.
+\url{https://www.astro.princeton.edu/~gk/A403/ioniz.pdf}.
+Letzter Zugriff: 2025-01-16
+\end{botherref}
+\endbibitem
 
 \end{thebibliography}

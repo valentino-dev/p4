@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.12.13)  14 JAN 2025 11:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2025.1.14)  16 JAN 2025 11:21
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -854,7 +854,60 @@ LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <5.52065> not available
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <5.52065> not available
 (Font)              size <6> substituted on input line 50.
 
-(./Einleitung.tex) (./Teleskop.tex) (./Spektrograph.tex) (./Kalibrierung.tex) (./Abhängigkeit-der-H-a-Linie-von-der-Spektralklasse.tex
+(./Einleitung.tex) (./Teleskop.tex
+<Cassegrain.en.png, id=73, 935.495pt x 696.6025pt>
+File: Cassegrain.en.png Graphic file (type png)
+<use Cassegrain.en.png>
+Package pdftex.def Info: Cassegrain.en.png  used on input line 5.
+(pdftex.def)             Requested size: 227.62204pt x 169.49457pt.
+
+Overfull \hbox (11.3811pt too wide) in paragraph at lines 5--6
+ [][] 
+ []
+
+) (./Spektrograph.tex
+<464_dados_spektrograph.png, id=76, 1294.8375pt x 555.07375pt>
+File: 464_dados_spektrograph.png Graphic file (type png)
+<use 464_dados_spektrograph.png>
+Package pdftex.def Info: 464_dados_spektrograph.png  used on input line 5.
+(pdftex.def)             Requested size: 227.62204pt x 97.5713pt.
+
+Overfull \hbox (11.3811pt too wide) in paragraph at lines 5--6
+ [][] 
+ []
+
+<464_dados_schema.png, id=78, 735.74875pt x 604.2575pt>
+File: 464_dados_schema.png Graphic file (type png)
+<use 464_dados_schema.png>
+Package pdftex.def Info: 464_dados_schema.png  used on input line 10.
+(pdftex.def)             Requested size: 227.62204pt x 186.93985pt.
+
+Overfull \hbox (11.3811pt too wide) in paragraph at lines 10--11
+ [][] 
+ []
+
+
+Underfull \hbox (badness 1721) in paragraph at lines 11--11
+[]\OT1/cmr/bx/n/8 Abbildung 3 []\OT1/cmr/m/n/8 Schematische Zeich-nung des DADOS--
+ []
+
+) (./Kalibrierung.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]| []
+ []
+
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.8 
+     <./Cassegrain.en.png>]) (./Abhängigkeit-der-H-a-Linie-von-der-Spektralklasse.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
@@ -871,14 +924,73 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\\' on input line 1.
 
-) (./T-H-Wasserstoff.tex) (./T-H-Spektralklassen.tex) (./D-A-Sternspektren.tex
+<464_stellar_classification_chart.png, id=101, 192.72pt x 124.0635pt>
+File: 464_stellar_classification_chart.png Graphic file (type png)
+<use 464_stellar_classification_chart.png>
+Package pdftex.def Info: 464_stellar_classification_chart.png  used on input line 8.
+(pdftex.def)             Requested size: 227.62204pt x 146.53183pt.
+
+Overfull \hbox (11.3811pt too wide) in paragraph at lines 8--9
+ [][] 
+ []
+
+) (./T-H-Wasserstoff.tex) (./T-H-Spektralklassen.tex)
+Underfull \hbox (badness 1019) in paragraph at lines 2--64
+\OT1/cmr/m/n/10 von un-ter-schied-li-chen Wel-lenl[]angen emit-tie-ren,
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]| []
+ []
+
+[2
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.64 
+     
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.64 
+     
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.64 
+      <./464_dados_spektrograph.png (PNG copy)> <./464_dados_schema.png (PNG copy)> <./464_stellar_classification_chart.png>] (./D-A-Sternspektren.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\\' on input line 1.
 
-) (./HD1.tex) (./HD2.tex) (./HD3.tex) (./Sternwinde.tex) (./T-H-P-Cygni-Profil.tex) (./D-A-P-Cygni.tex) (./Fazit.tex) (./main.bbl
+) (./HD1.tex) (./HD2.tex) (./HD3.tex) (./Sternwinde.tex) (./T-H-Sternwinde.tex) (./T-H-P-Cygni-Profil.tex) (./D-A-P-Cygni.tex) (./Fazit.tex) (./main.bbl
+Underfull \hbox (badness 10000) in paragraph at lines 49--54
+[]\OT1/cmr/m/n/10 Cassegrain re-flec-tor. [][]$https : / / en . wikipedia .
+ []
 
-Package natbib Warning: Empty `thebibliography' environment on input line 46.
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--73
+[]\OT1/cmr/m/n/10 Spektralklasse. [][]$https : / / de . wikipedia .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--73
+\OT1/cmr/m/n/10 org / wiki / Spektralklasse$[][]. Letz-ter Zu-griff:
+ []
+
+
+Underfull \hbox (badness 7151) in paragraph at lines 77--82
+[]\OT1/cmr/m/n/10 Ionization, Sa-ha Equa-ti-on. [][]$https : / / www .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 77--82
+\OT1/cmr/m/n/10 astro . princeton . edu / []gk / A403 / ioniz . pdf$[][].
+ []
 
 ) (./Appendix.tex)
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -888,9 +1000,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []| []
  []
 
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
-
-
+[3
 
 ] (./main.aux)
  ***********
@@ -903,21 +1013,21 @@ LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.47935pt have occurred.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 4523E4425177775BC32FBD0C67001029;2491.
+(rerunfilecheck)             Checksum: 6026737EE3BB5BA8BE6BF23017AAEFEF;2800.
  ) 
 Here is how much of TeX's memory you used:
- 22460 strings out of 476023
- 390420 string characters out of 5791581
- 1936187 words of memory out of 5000000
- 44175 multiletter control sequences out of 15000+600000
- 596953 words of font info for 140 fonts, out of 8000000 for 9000
+ 22560 strings out of 476023
+ 392538 string characters out of 5791582
+ 1942187 words of memory out of 5000000
+ 44247 multiletter control sequences out of 15000+600000
+ 601292 words of font info for 153 fonts, out of 8000000 for 9000
  24 hyphenation exceptions out of 8191
- 90i,7n,93p,541b,923s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on main.pdf (1 page, 98238 bytes).
+ 90i,13n,93p,541b,923s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/NewTXMI5.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/NewTXMI7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/txsys.pfb>
+Output written on main.pdf (3 pages, 886757 bytes).
 PDF statistics:
- 122 PDF objects out of 1000 (max. 8388607)
- 101 compressed objects within 2 object streams
- 18 named destinations out of 1000 (max. 500000)
- 129 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 203 PDF objects out of 1000 (max. 8388607)
+ 162 compressed objects within 2 object streams
+ 31 named destinations out of 1000 (max. 500000)
+ 157 words of extra memory for PDF output out of 10000 (max. 10000000)
 
