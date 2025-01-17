@@ -1,1 +1,16 @@
 \subsection{Kalibrierung}
+Um ein hochwertiges Bild mit dem Teleskop aufzunehmen, müssen verschiedene Kalibrierungen durchgeführt werden.
+
+Der \textit{dark frame} gleicht das thermische Rauschen der CCD aus.
+Durch eine gewisse thermische Energie der Elektronen, können diese aus dem Valenzband in das Leitungsband gehoben werden und dadurch in einen Potentialtopf der CCD gelangen.
+Um diese gemessenen Elektronen von dem eigentlichen light frame abzuziehen, wird ein Bild mit vollständig abgedunkelter CCD durchgeführt.
+Da dieses Rauschen im Mittel steigt, ist die Integrationszeit des dark frames gleich der Integrationszeit des light frames.
+
+Der \textit{Kalibrierungsframe} dient der Zuordnung der Wellenlänge zu den Pixeln.
+Mit einer Gasentladungslampe eines bekannten Gases wird ein Spektrum aufgenommen, um die Position der Emissionslinien (also den Wellenlängen) der Position der Pixel zuzuordnen.
+
+\iffalse
+Der \textit{FLAT frame} dient zur Korrektur der Pixelempfindlichkeit auf der CCD.
+Da nicht jeder Pixel die gleiche Lichtempfindlichkeit aufweist und diese durch Staub oder Unreinheiten stark beeinträchtigt wird, wird ein frame mit vollständig ausgeleuchteter CCD aufgenommen.
+Dieser frame wird durch den -- bereits mit dem dark frame korrigierten -- light frame geteilt, um jeden Pixel auf seine Empfindlichkeit zu normieren.
+\fi
