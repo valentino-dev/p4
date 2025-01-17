@@ -1,4 +1,4 @@
-.PHONY: halpha, winde, plot
+.PHONY: halpha winde plot copy
 
 halpha:
 	cd src;\
@@ -17,5 +17,8 @@ plot:
 		gnuplot plot_winde.gnu;\
 		gnuplot plot_pcygni_spectra.gnu;\
 		gnuplot plot_aq.gnu
+
+copy:
+	cp -t latex plot/*.tex plot/*.pdf
 		
 

@@ -50,14 +50,16 @@ for i in range(len(lines)):
     velocity_err = ((-3e8*(2*blaue_kante[i]*blaue_kante_err[i])/(blaue_kante[i]**2+mitte**2)+3e8*(blaue_kante[i]**2-mitte**2)/(blaue_kante[i]**2+mitte**2)**2*2*blaue_kante[i]*blaue_kante_err[i])**2+(3e8*(mitte*2*mitte_err)/(blaue_kante[i]**2+mitte**2)+3e8*(blaue_kante[i]**2-mitte**2)/(blaue_kante[i]**2+mitte**2)**2*2*mitte*mitte_err)**2)**(1/2)
 
     np.savetxt(f'../data/processed/P-Cygni_{lines[i]}.dat', np.array([star_spectra[:, 1][export_mask], star_spectra[:, 0][export_mask]]).T)
-    mat = np.zeros((gauss_fts[0].shape[0]+2, 2))
+    mat = np.zeros((gauss_fts[0].shape[0]+3, 2))
     r = y - gauss_fct(x, *gauss_fts[0])
     mat[0, 0] = np.sum((r/sigma)**2) / (x.shape[0] - len(gauss_fts[0]))
     mat[0, 1] = 0
     mat[1, 0] = velocity
     mat[1, 1] = velocity_err
-    mat[2:,0] = gauss_fts[0]
-    mat[2:,1] = np.diag(gauss_fts[1])**(1/2)
+    mat[2, 0] = blaue_kante[i]
+    mat[2, 1] = blaue_kante_err[i]
+    mat[3:,0] = gauss_fts[0]
+    mat[3:,1] = np.diag(gauss_fts[1])**(1/2)
     np.savetxt(f'../data/processed/P-Cygni_{lines[i]}_params.dat', mat)
 
     xlin = np.linspace(export_bounds[i, 0], export_bounds[i, 1], 1000)
