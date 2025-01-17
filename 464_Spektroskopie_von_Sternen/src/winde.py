@@ -71,4 +71,42 @@ for i in range(len(lines)):
     plt.scatter(star_spectra[:, 1][export_mask], star_spectra[:, 0][export_mask])
     plt.show()
     '''
+
+
+def gauss_fct2(x, a0, a1, a2, c, b0, b1, b2):
+    return c+a0*np.exp(-(x-a1)**2/2/a2**2)+b0*np.exp(-(x-b1)**2/2/b2**2)
+
+doublets = ['Si3']#, 'C2']
+fit_bounds= np.array([[6.32e-7, 6.4e-7]])
+p0 = [[5.74e4-4.73e4, 6.34525e-7, 6.34525e-7-6.34722e-7, 4.73e4, 5.38e4-4.73e4, 6.3699e-7, 6.37182e-7-6.3699e-7]]
+for i in range(len(doublets)):
+    fit_mask = (star_spectra[:,1]>fit_bounds[i, 0])*(star_spectra[:,1]<fit_bounds[i, 1])
+    x = star_spectra[:,1][fit_mask]
+    y = star_spectra[:,0][fit_mask]
+    gauss_fts = sp.optimize.curve_fit(gauss_fct2, x, y, p0=p0[i], sigma=sigma)
+    p0[i] = gauss_fts[0]
+    plt.plot(x, y)
+    plt.plot(x, gauss_fct2(x, *p0[i]))
+    #plt.show()
+    gauss_fts_err = np.diag(gauss_fts[1])**(1/2)
+    lh, ll = gauss_fts[0][1], gauss_fts[0][5]
+    lh_err, ll_err = gauss_fts_err[1], gauss_fts_err[5]
+    velocity = -3e8*(ll**2-lh**2)/(ll**2+lh**2)
+    velocity_err = ((-3e8*(2*ll*ll_err)/(ll**2+lh**2)+3e8*(ll**2-lh**2)/(ll**2+lh**2)**2*2*ll*ll_err)**2+(3e8*(lh*2*lh_err)/(ll**2+lh**2)+3e8*(ll**2-lh**2)/(ll**2+lh**2)**2*2*lh*lh_err)**2)**(1/2)
+
+    np.savetxt(f'../data/processed/P-Cygni_{doublets[i]}_doublet.dat', np.array([star_spectra[:, 1][fit_mask], star_spectra[:, 0][fit_mask]]).T)
+    mat = np.zeros((gauss_fts[0].shape[0]+2, 2))
+    r = y - gauss_fct2(x, *gauss_fts[0])
+    mat[0, 0] = np.sum((r/sigma)**2) / (x.shape[0] - len(gauss_fts[0]))
+    mat[0, 1] = 0
+    mat[1, 0] = velocity
+    mat[1, 1] = velocity_err
+    mat[2:,0] = gauss_fts[0]
+    mat[2:,1] = gauss_fts_err 
+    np.savetxt(f'../data/processed/P-Cygni_{doublets[i]}_doublet_params.dat', mat)
+
+    print(velocity/2, velocity_err/2)
+
+
+
     

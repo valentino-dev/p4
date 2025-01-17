@@ -15,6 +15,7 @@ plot:
 		gnuplot plot_gauss.gnu;\
 		gnuplot plot_kali.gnu;\
 		gnuplot plot_winde.gnu;\
+		gnuplot plot_doublet.gnu;\
 		gnuplot plot_pcygni_spectra.gnu;\
 		gnuplot plot_aq.gnu
 
