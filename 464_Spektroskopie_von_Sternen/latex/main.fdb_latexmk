@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1737192156.28032 "main.aux" "main.bbl" "main" 1737196442.40918 0
+["bibtex main"] 1737204630.97789 "main.aux" "main.bbl" "main" 1737204832.76047 0
   "./refs.bib" 1737021845.06327 669 e0b2b4cb99aac85eebda6d6d8d612d09 ""
   "./sn-mathphys-num.bst" 1736847689.89949 64141 2560fd4f8e8321a304f732d035eb1b51 ""
-  "main.aux" 1737196442.20597 7522 65f898b2225a119d59c8af425b0414eb "pdflatex"
+  "main.aux" 1737204832.56616 7522 1d106d6ff5b9207c58a2d906a29525bf "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1737196441.41271 "main.tex" "main.pdf" "main" 1737196442.40931 0
+["pdflatex"] 1737204831.7492 "main.tex" "main.pdf" "main" 1737204832.7606 0
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1736268207 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1736268207 916 f87d7c45f9c908e672703b83b72241a3 ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm" 1736268207 924 9904cf1d39e9767e7a3622f2a125a565 ""
@@ -233,11 +233,11 @@
   "60179-A1_kali.pdf" 1737196440.73942 2665 d7bf7431d44b9c1b343babb1c9669e22 ""
   "60179-A1_kali.tex" 1737196440.72942 5908 5b79af07fc38b0486166d229d60119f8 ""
   "Abhängigkeit-der-H-a-Linie-von-der-Spektralklasse.tex" 1737022823.6835 708 d1cbdd0ef10600d5840c184bbf59997f ""
-  "Appendix.tex" 1737196324.6536 2464 a14976d8d26f009b532c364d8516c614 ""
+  "Appendix.tex" 1737197020.08796 2464 72e1007bed5848a6135d248907350d84 ""
   "Bereitgestellt.tex" 1737042564.96759 478 c3d6cd7b2f4024b1ff7a009ac771963e ""
   "Cassegrain.en.png" 1736865413.47509 77574 043c63012ee55b0fa5582cfe51741220 ""
-  "D-A-P-Cygni-R.tex" 1737044780.77366 182 533febf6b1a574c98288b0c9f7f07a0f ""
-  "D-A-P-Cygni-v.tex" 1737042567.08758 1162 425805f37200ae1a28b418a748935703 ""
+  "D-A-P-Cygni-R.tex" 1737204830.60284 377 2e90c92afbfe970af5707e90fa18bbff ""
+  "D-A-P-Cygni-v.tex" 1737204427.24243 1396 eff10364c6123865f9dd2673543f66c8 ""
   "D-A-Sternspektren.tex" 1737042568.11091 1221 990051d0b57a4d9f24d5ccb3375ac3e1 ""
   "Einleitung.tex" 1737017764.96835 591 a3f3aac273c0eafd935cf78c95ddcbbe ""
   "Fazit.tex" 1736850520.98889 17 43a331624ac64d4fc38db32f8923541e ""
@@ -262,9 +262,9 @@
   "T-H-Sternwinde.tex" 1737042566.05759 818 d44f1ff956a13542f5d6f364ec6c7a52 ""
   "T-H-Wasserstoff.tex" 1737041799.65136 818 8b6a7699a4b974196ab3963bac3d3d65 ""
   "Teleskop.tex" 1737022444.66361 662 9c88c2b4e62982a82f5c4188bee27d44 ""
-  "main.aux" 1737196442.20597 7522 65f898b2225a119d59c8af425b0414eb "pdflatex"
-  "main.bbl" 1737192156.32389 3037 bb6d116b85e76f8fe8986b0f66fc0030 "bibtex main"
-  "main.out" 1737196442.20597 3755 ad238c6cb3bc12cded95a812c61e0834 "pdflatex"
+  "main.aux" 1737204832.56616 7522 1d106d6ff5b9207c58a2d906a29525bf "pdflatex"
+  "main.bbl" 1737204631.01736 3037 bb6d116b85e76f8fe8986b0f66fc0030 "bibtex main"
+  "main.out" 1737204832.56949 3755 ad238c6cb3bc12cded95a812c61e0834 "pdflatex"
   "main.tex" 1737192132.92998 1869 c1e03f6cc3a3c1483a2cdc161a402ce7 ""
   "sn-jnl.cls" 1736847689.89616 55331 2adf3041e7f64a0f542a04760be0043f ""
   "äquivalenzbreiten.pdf" 1737196440.73942 7595 8e8e221c0ba483b0efaefe41ad666139 ""

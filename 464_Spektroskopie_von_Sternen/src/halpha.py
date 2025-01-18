@@ -83,6 +83,7 @@ for i in range(len(stars_path)):
 äquivalenzbreite_err = np.array([(gauss_fts[i][1][-2, -2]**(1/2)*gauss_fts[i][0][0]/gauss_fts[i][0][-1])**2+(gauss_fts[i][0][-2]*gauss_fts[i][1][0, 0]**(1/2)/gauss_fts[i][0][-1])**2+(gauss_fts[i][0][-2]*gauss_fts[i][0][0]/gauss_fts[i][0][-1]**2*gauss_fts[i][1][-1, -1]**(1/2))**2 for i in range(len(stars_path))])**(1/2)*(2*3.141)**(1/2)
 
 #äquivalenzbreite_err=0
+print('--------äquivalenzbr--------')
 print(äquivalenzbreite)
 
 temperatur = np.array([5943, 6528, 18000, 8306, 9250])
