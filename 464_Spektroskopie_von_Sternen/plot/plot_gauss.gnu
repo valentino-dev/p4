@@ -11,8 +11,8 @@ stars_path[5]='60179-A1'
 set grid
 set xlabel 'Wellenlänge $\lambda/\SI{}{m}$'
 set ylabel 'Amplitude$/\textrm{a.u.}$'
-set format y '%.0s\cdot10^{%T}'
-set format x '%.0s\cdot10^{%T}'
+set format y '$%.0s\cdot10^{%T}$'
+set format x '$%.0s\cdot10^{%T}$'
 set xrange [656e-9-10e-9:656e-9+10e-9]
 set samples 1000
 set key bottom right

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2025.1.14)  16 JAN 2025 16:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2025.1.14)  18 JAN 2025 11:34
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1075,7 +1075,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 77--82
 \OT1/cmr/m/n/10 astro . princeton . edu / []gk / A403 / ioniz . pdf$[][].
  []
 
-) (./Appendix.tex)
+)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -1085,7 +1085,522 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 [5
 
-] (./main.aux)
+] (./Appendix.tex (./109358-G0_data.tex
+\gptboxheight=\skip76
+\gptboxwidth=\skip77
+\gptboxtext=\box89
+
+
+pdfTeX warning: pdflatex (file ./109358-G0_data.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<109358-G0_data.pdf, id=162, 361.35pt x 216.81pt>
+File: 109358-G0_data.pdf Graphic file (type pdf)
+<use 109358-G0_data.pdf>
+Package pdftex.def Info: 109358-G0_data.pdf  used on input line 135.
+(pdftex.def)             Requested size: 361.35463pt x 216.81938pt.
+)
+Overfull \hbox (11.38869pt too wide) in paragraph at lines 4--5
+ [][] 
+ []
+
+(./109358-G0_gauss.tex
+
+pdfTeX warning: pdflatex (file ./109358-G0_gauss.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<109358-G0_gauss.pdf, id=163, 361.35pt x 216.81pt>
+File: 109358-G0_gauss.pdf Graphic file (type pdf)
+<use 109358-G0_gauss.pdf>
+Package pdftex.def Info: 109358-G0_gauss.pdf  used on input line 123.
+(pdftex.def)             Requested size: 361.35463pt x 216.81938pt.
+)
+Overfull \hbox (11.38869pt too wide) in paragraph at lines 9--10
+ [][] 
+ []
+
+(./109358-G0_kali.tex
+
+pdfTeX warning: pdflatex (file ./109358-G0_kali.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<109358-G0_kali.pdf, id=164, 361.35pt x 216.81pt>
+File: 109358-G0_kali.pdf Graphic file (type pdf)
+<use 109358-G0_kali.pdf>
+Package pdftex.def Info: 109358-G0_kali.pdf  used on input line 139.
+(pdftex.def)             Requested size: 361.35463pt x 216.81938pt.
+)
+Overfull \hbox (11.38869pt too wide) in paragraph at lines 14--15
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+(./134083-F5_data.tex
+
+pdfTeX warning: pdflatex (file ./134083-F5_data.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<134083-F5_data.pdf, id=165, 361.35pt x 216.81pt>
+File: 134083-F5_data.pdf Graphic file (type pdf)
+<use 134083-F5_data.pdf>
+Package pdftex.def Info: 134083-F5_data.pdf  used on input line 135.
+(pdftex.def)             Requested size: 361.35463pt x 216.81938pt.
+)
+Overfull \hbox (11.38869pt too wide) in paragraph at lines 19--20
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+(./134083-F5_gauss.tex
+
+pdfTeX warning: pdflatex (file ./134083-F5_gauss.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<134083-F5_gauss.pdf, id=166, 361.35pt x 216.81pt>
+File: 134083-F5_gauss.pdf Graphic file (type pdf)
+<use 134083-F5_gauss.pdf>
+Package pdftex.def Info: 134083-F5_gauss.pdf  used on input line 129.
+(pdftex.def)             Requested size: 361.35463pt x 216.81938pt.
+)
+Overfull \hbox (11.38869pt too wide) in paragraph at lines 24--25
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+(./134083-F5_kali.tex
+
+pdfTeX warning: pdflatex (file ./134083-F5_kali.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<134083-F5_kali.pdf, id=167, 361.35pt x 216.81pt>
+File: 134083-F5_kali.pdf Graphic file (type pdf)
+<use 134083-F5_kali.pdf>
+Package pdftex.def Info: 134083-F5_kali.pdf  used on input line 139.
+(pdftex.def)             Requested size: 361.35463pt x 216.81938pt.
+)
+Overfull \hbox (11.38869pt too wide) in paragraph at lines 29--30
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+(./21428-B3_data.tex
+
+pdfTeX warning: pdflatex (file ./21428-B3_data.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<21428-B3_data.pdf, id=168, 361.35pt x 216.81pt>
+File: 21428-B3_data.pdf Graphic file (type pdf)
+<use 21428-B3_data.pdf>
+Package pdftex.def Info: 21428-B3_data.pdf  used on input line 131.
+(pdftex.def)             Requested size: 361.35463pt x 216.81938pt.
+)
+Overfull \hbox (11.38869pt too wide) in paragraph at lines 34--35
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+(./21428-B3_gauss.tex
+
+pdfTeX warning: pdflatex (file ./21428-B3_gauss.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<21428-B3_gauss.pdf, id=169, 361.35pt x 216.81pt>
+File: 21428-B3_gauss.pdf Graphic file (type pdf)
+<use 21428-B3_gauss.pdf>
+Package pdftex.def Info: 21428-B3_gauss.pdf  used on input line 131.
+(pdftex.def)             Requested size: 361.35463pt x 216.81938pt.
+)
+Overfull \hbox (11.38869pt too wide) in paragraph at lines 39--40
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+(./21428-B3_kali.tex
+
+pdfTeX warning: pdflatex (file ./21428-B3_kali.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<21428-B3_kali.pdf, id=170, 361.35pt x 216.81pt>
+File: 21428-B3_kali.pdf Graphic file (type pdf)
+<use 21428-B3_kali.pdf>
+Package pdftex.def Info: 21428-B3_kali.pdf  used on input line 137.
+(pdftex.def)             Requested size: 361.35463pt x 216.81938pt.
+)
+Overfull \hbox (11.38869pt too wide) in paragraph at lines 44--45
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+(./29488-A5_data.tex
+
+pdfTeX warning: pdflatex (file ./29488-A5_data.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<29488-A5_data.pdf, id=171, 361.35pt x 216.81pt>
+File: 29488-A5_data.pdf Graphic file (type pdf)
+<use 29488-A5_data.pdf>
+Package pdftex.def Info: 29488-A5_data.pdf  used on input line 133.
+(pdftex.def)             Requested size: 361.35463pt x 216.81938pt.
+)
+Overfull \hbox (11.38869pt too wide) in paragraph at lines 49--50
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+(./29488-A5_gauss.tex
+
+pdfTeX warning: pdflatex (file ./29488-A5_gauss.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<29488-A5_gauss.pdf, id=172, 361.35pt x 216.81pt>
+File: 29488-A5_gauss.pdf Graphic file (type pdf)
+<use 29488-A5_gauss.pdf>
+Package pdftex.def Info: 29488-A5_gauss.pdf  used on input line 123.
+(pdftex.def)             Requested size: 361.35463pt x 216.81938pt.
+)
+Overfull \hbox (11.38869pt too wide) in paragraph at lines 54--55
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+(./29488-A5_kali.tex
+
+pdfTeX warning: pdflatex (file ./29488-A5_kali.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<29488-A5_kali.pdf, id=173, 361.35pt x 216.81pt>
+File: 29488-A5_kali.pdf Graphic file (type pdf)
+<use 29488-A5_kali.pdf>
+Package pdftex.def Info: 29488-A5_kali.pdf  used on input line 143.
+(pdftex.def)             Requested size: 361.35463pt x 216.81938pt.
+)
+Overfull \hbox (11.38869pt too wide) in paragraph at lines 59--60
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+(./60179-A1_data.tex
+
+pdfTeX warning: pdflatex (file ./60179-A1_data.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<60179-A1_data.pdf, id=174, 361.35pt x 216.81pt>
+File: 60179-A1_data.pdf Graphic file (type pdf)
+<use 60179-A1_data.pdf>
+Package pdftex.def Info: 60179-A1_data.pdf  used on input line 133.
+(pdftex.def)             Requested size: 361.35463pt x 216.81938pt.
+)
+Overfull \hbox (11.38869pt too wide) in paragraph at lines 64--65
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+(./60179-A1_gauss.tex
+
+pdfTeX warning: pdflatex (file ./60179-A1_gauss.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<60179-A1_gauss.pdf, id=175, 361.35pt x 216.81pt>
+File: 60179-A1_gauss.pdf Graphic file (type pdf)
+<use 60179-A1_gauss.pdf>
+Package pdftex.def Info: 60179-A1_gauss.pdf  used on input line 123.
+(pdftex.def)             Requested size: 361.35463pt x 216.81938pt.
+)
+Overfull \hbox (11.38869pt too wide) in paragraph at lines 69--70
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+(./60179-A1_kali.tex
+
+pdfTeX warning: pdflatex (file ./60179-A1_kali.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<60179-A1_kali.pdf, id=176, 361.35pt x 216.81pt>
+File: 60179-A1_kali.pdf Graphic file (type pdf)
+<use 60179-A1_kali.pdf>
+Package pdftex.def Info: 60179-A1_kali.pdf  used on input line 139.
+(pdftex.def)             Requested size: 361.35463pt x 216.81938pt.
+)
+Overfull \hbox (11.38869pt too wide) in paragraph at lines 74--75
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+(./äquivalenzbreiten.tex
+
+pdfTeX warning: pdflatex (file ./äquivalenzbreiten.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<äquivalenzbreiten.pdf, id=177, 361.35pt x 216.81pt>
+File: äquivalenzbreiten.pdf Graphic file (type pdf)
+<use äquivalenzbreiten.pdf>
+Package pdftex.def Info: äquivalenzbreiten.pdf  used on input line 149.
+(pdftex.def)             Requested size: 361.35463pt x 216.81938pt.
+)
+Overfull \hbox (11.38869pt too wide) in paragraph at lines 79--80
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+(./P-Cygni_He2_gauss.tex
+
+pdfTeX warning: pdflatex (file ./P-Cygni_He2_gauss.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<P-Cygni_He2_gauss.pdf, id=178, 361.35pt x 216.81pt>
+File: P-Cygni_He2_gauss.pdf Graphic file (type pdf)
+<use P-Cygni_He2_gauss.pdf>
+Package pdftex.def Info: P-Cygni_He2_gauss.pdf  used on input line 121.
+(pdftex.def)             Requested size: 361.35463pt x 216.81938pt.
+)
+Overfull \hbox (11.38869pt too wide) in paragraph at lines 84--85
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+(./P-Cygni_H_gauss.tex
+
+pdfTeX warning: pdflatex (file ./P-Cygni_H_gauss.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<P-Cygni_H_gauss.pdf, id=179, 361.35pt x 216.81pt>
+File: P-Cygni_H_gauss.pdf Graphic file (type pdf)
+<use P-Cygni_H_gauss.pdf>
+Package pdftex.def Info: P-Cygni_H_gauss.pdf  used on input line 133.
+(pdftex.def)             Requested size: 361.35463pt x 216.81938pt.
+)
+Overfull \hbox (11.38869pt too wide) in paragraph at lines 89--90
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+(./P-Cygni_N2_gauss.tex
+
+pdfTeX warning: pdflatex (file ./P-Cygni_N2_gauss.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<P-Cygni_N2_gauss.pdf, id=180, 361.35pt x 216.81pt>
+File: P-Cygni_N2_gauss.pdf Graphic file (type pdf)
+<use P-Cygni_N2_gauss.pdf>
+Package pdftex.def Info: P-Cygni_N2_gauss.pdf  used on input line 125.
+(pdftex.def)             Requested size: 361.35463pt x 216.81938pt.
+)
+Overfull \hbox (11.38869pt too wide) in paragraph at lines 94--95
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+(./P-Cygni_Si3_doublet.tex
+
+pdfTeX warning: pdflatex (file ./P-Cygni_Si3_doublet.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<P-Cygni_Si3_doublet.pdf, id=181, 361.35pt x 216.81pt>
+File: P-Cygni_Si3_doublet.pdf Graphic file (type pdf)
+<use P-Cygni_Si3_doublet.pdf>
+Package pdftex.def Info: P-Cygni_Si3_doublet.pdf  used on input line 137.
+(pdftex.def)             Requested size: 361.35463pt x 216.81938pt.
+)
+Overfull \hbox (11.38869pt too wide) in paragraph at lines 99--100
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+(./P_Cygni_spectra.tex
+
+pdfTeX warning: pdflatex (file ./P_Cygni_spectra.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<P_Cygni_spectra.pdf, id=182, 361.35pt x 216.81pt>
+File: P_Cygni_spectra.pdf Graphic file (type pdf)
+<use P_Cygni_spectra.pdf>
+Package pdftex.def Info: P_Cygni_spectra.pdf  used on input line 131.
+(pdftex.def)             Requested size: 361.35463pt x 216.81938pt.
+)
+Overfull \hbox (11.38869pt too wide) in paragraph at lines 104--105
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]| []
+ []
+
+[6
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.92 \end{document}
+                   
+pdfTeX warning (ext4): destination with the same identifier (name{figure.7}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.92 \end{document}
+                   
+pdfTeX warning (ext4): destination with the same identifier (name{figure.8}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.92 \end{document}
+                   
+pdfTeX warning (ext4): destination with the same identifier (name{figure.9}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.92 \end{document}
+                   
+pdfTeX warning (ext4): destination with the same identifier (name{figure.10}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.92 \end{document}
+                    <./109358-G0_data.pdf> <./109358-G0_gauss.pdf
+
+pdfTeX warning: pdflatex (file ./109358-G0_gauss.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./109358-G0_kali.pdf
+
+pdfTeX warning: pdflatex (file ./109358-G0_kali.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./134083-F5_data.pdf
+
+pdfTeX warning: pdflatex (file ./134083-F5_data.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./134083-F5_gauss.pdf
+
+pdfTeX warning: pdflatex (file ./134083-F5_gauss.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>]
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]| []
+ []
+
+[7
+pdfTeX warning (ext4): destination with the same identifier (name{figure.11}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.92 \end{document}
+                   
+pdfTeX warning (ext4): destination with the same identifier (name{figure.12}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.92 \end{document}
+                   
+pdfTeX warning (ext4): destination with the same identifier (name{figure.13}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.92 \end{document}
+                   
+pdfTeX warning (ext4): destination with the same identifier (name{figure.14}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.92 \end{document}
+                   
+pdfTeX warning (ext4): destination with the same identifier (name{figure.15}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.92 \end{document}
+                   
+pdfTeX warning (ext4): destination with the same identifier (name{figure.16}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.92 \end{document}
+                    <./134083-F5_kali.pdf> <./21428-B3_data.pdf
+
+pdfTeX warning: pdflatex (file ./21428-B3_data.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./21428-B3_gauss.pdf
+
+pdfTeX warning: pdflatex (file ./21428-B3_gauss.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./21428-B3_kali.pdf
+
+pdfTeX warning: pdflatex (file ./21428-B3_kali.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./29488-A5_data.pdf
+
+pdfTeX warning: pdflatex (file ./29488-A5_data.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./29488-A5_gauss.pdf
+
+pdfTeX warning: pdflatex (file ./29488-A5_gauss.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>]
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]| []
+ []
+
+[8
+pdfTeX warning (ext4): destination with the same identifier (name{figure.17}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.92 \end{document}
+                   
+pdfTeX warning (ext4): destination with the same identifier (name{figure.18}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.92 \end{document}
+                   
+pdfTeX warning (ext4): destination with the same identifier (name{figure.19}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.92 \end{document}
+                   
+pdfTeX warning (ext4): destination with the same identifier (name{figure.20}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.92 \end{document}
+                   
+pdfTeX warning (ext4): destination with the same identifier (name{figure.21}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.92 \end{document}
+                   
+pdfTeX warning (ext4): destination with the same identifier (name{figure.22}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.92 \end{document}
+                    <./29488-A5_kali.pdf> <./60179-A1_data.pdf
+
+pdfTeX warning: pdflatex (file ./60179-A1_data.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./60179-A1_gauss.pdf
+
+pdfTeX warning: pdflatex (file ./60179-A1_gauss.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./60179-A1_kali.pdf
+
+pdfTeX warning: pdflatex (file ./60179-A1_kali.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./äquivalenzbreiten.pdf
+
+pdfTeX warning: pdflatex (file ./äquivalenzbreiten.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./P-Cygni_He2_gauss.pdf
+
+pdfTeX warning: pdflatex (file ./P-Cygni_He2_gauss.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>]
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]| []
+ []
+
+[9
+pdfTeX warning (ext4): destination with the same identifier (name{figure.23}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.92 \end{document}
+                   
+pdfTeX warning (ext4): destination with the same identifier (name{figure.24}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.92 \end{document}
+                   
+pdfTeX warning (ext4): destination with the same identifier (name{figure.25}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.92 \end{document}
+                   
+pdfTeX warning (ext4): destination with the same identifier (name{figure.26}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.92 \end{document}
+                    <./P-Cygni_H_gauss.pdf> <./P-Cygni_N2_gauss.pdf
+
+pdfTeX warning: pdflatex (file ./P-Cygni_N2_gauss.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./P-Cygni_Si3_doublet.pdf
+
+pdfTeX warning: pdflatex (file ./P-Cygni_Si3_doublet.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./P_Cygni_spectra.pdf
+
+pdfTeX warning: pdflatex (file ./P_Cygni_spectra.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>] (./main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
@@ -1099,18 +1614,18 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: AD238C6CB3BC12CDED95A812C61E0834;3755.
  ) 
 Here is how much of TeX's memory you used:
- 22703 strings out of 476023
- 395158 string characters out of 5791582
- 1945187 words of memory out of 5000000
- 44364 multiletter control sequences out of 15000+600000
+ 23061 strings out of 476023
+ 403805 string characters out of 5791582
+ 1992187 words of memory out of 5000000
+ 44634 multiletter control sequences out of 15000+600000
  629806 words of font info for 228 fonts, out of 8000000 for 9000
  24 hyphenation exceptions out of 8191
  90i,15n,93p,541b,1083s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/NewTXMI5.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/NewTXMI7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/txexs.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></usr/share/texmf-dist/fonts/type1/public/newtx/txsys.pfb>
-Output written on main.pdf (5 pages, 1108311 bytes).
+Output written on main.pdf (9 pages, 1513200 bytes).
 PDF statistics:
- 248 PDF objects out of 1000 (max. 8388607)
- 198 compressed objects within 2 object streams
- 40 named destinations out of 1000 (max. 500000)
- 178 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 338 PDF objects out of 1000 (max. 8388607)
+ 262 compressed objects within 3 object streams
+ 65 named destinations out of 1000 (max. 500000)
+ 283 words of extra memory for PDF output out of 10000 (max. 10000000)
 

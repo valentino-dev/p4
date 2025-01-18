@@ -1,9 +1,9 @@
 set term cairolatex #standalone header '\usepackage{siunitx}'
 set pointintervalbox 0
 
-set format y '%.0s\cdot10^{%T}'
-set format y2 '%.0s\cdot10^{%T}'
-set format x '%.0s\cdot10^{%T}'
+set format y '$%.0s\cdot10^{%T}$'
+set format y2 '$%.0s\cdot10^{%T}$'
+set format x '$%.0s\cdot10^{%T}$'
 set xrange [0:20000]
 set y2label 'Äquivalenzbreite$/\SI{}{m}$'
 set ylabel '$\frac{n_2}{n}/\textrm{a.u.}$'

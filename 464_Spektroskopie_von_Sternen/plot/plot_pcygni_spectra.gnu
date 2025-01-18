@@ -2,8 +2,8 @@ set term cairolatex #standalone header '\usepackage{siunitx}'
 set pointintervalbox 0
 
 set grid
-set format y '%.0s\cdot10^{%T}'
-set format x '%.0s\cdot10^{%T}'
+set format y '$%.0s\cdot10^{%T}$'
+set format x '$%.0s\cdot10^{%T}$'
 set xlabel 'Wellenlänge $\lambda/\SI{}{m}$'
 set ylabel 'Amplitude$/\SI{}{a.u}$'
 set title 'P-Cygni Spektrum'
