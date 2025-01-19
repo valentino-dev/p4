@@ -1,5 +1,9 @@
-\subsubsection{Bereitgestellt: HD109358, HD134083, HD21428, HD29488, HD60179}
+\subsubsection{Bereitgestellt: HD109358(G0), HD134083(F5), HD21428(B3), HD29488(A5), HD60179(A1)}
 Da die aufgenommenen Sternspektren allein nicht für die Auswertung reichen, werden Daten von weiteren Sternen bereitgestellt.
+Diese sind HD109358(G0), HD134083(F5), HD21428(B3), HD29488(A5) und HD60179(A1).
+Die Analyse des Spektrums wurde mit nEDAR durchgeführt, kalibriert und dann mit einer \textsc{Gauss}--Kurve die H$\alpha $ Linie angepasst.
+Für einen Stern sind diese Plots in Abb.\ (\ref{fig:1a}) (nEDAR), (\ref{fig:1b}) (Anpassung H$\alpha $) und (\ref{fig:1c}) (Kalibrierung) zu sehen.
+Für die anderen vier Sterne ist dies analog; Abb.\ (\ref{fig:2a}), (\ref{fig:2b}), (\ref{fig:2c}) und (\ref{fig:3a}), (\ref{fig:3b}), (\ref{fig:3c}) und (\ref{fig:4a}), (\ref{fig:4b}), (\ref{fig:4c}) und (\ref{fig:5a}), (\ref{fig:5b}), (\ref{fig:5c}).
 
 Hieraus ergeben sich
 \begin{table}[h]
@@ -7,12 +11,21 @@ Hieraus ergeben sich
     \toprule
     Stern & Äquivalenzbreite H$\alpha $\\
     \midrule
-    HD109358 & \\
-    HD134083 & \\
-    HD21428 & \\
-    HD29488 & \\
-    HD60179 & \\
+    HD109358 & $\SI{2.066+-0.137e-10}{m}$ \\
+    HD134083 & $\SI{3.268+-0.275e-10}{m}$ \\
+    HD21428 & $\SI{4.300+-0.278e-10}{m}$ \\
+    HD29488 & $\SI{7.446+-0.316e-10}{m}$ \\
+    HD60179 & $\SI{9.154+-0.563e-10}{m}$ \\
     \bottomrule
   \end{tabular}
 \end{table}
-%TODO daten
+Diese sind gegen die Temperatur des jeweiligen Sterns in Abb.\ (\ref{fig:äquivalenzbreiten}) aufgetragen.
+Die Temperatur ergibt sich aus der Spektralklasse.
+Man siehe dafür \cite{anleitung464} oder Abb.\ (\ref{fig:spektralklasse}).
+In diese Abbildung ist weiter die Besetzungszahl $n_2$ des Wasserstoffs eingezeichnet, die sich wie Gleichung (\ref{eq:n2}) verhält.
+
+Zu erkennen ist, dass für tiefe Temperaturen bist zum Peak der Kurve bei $\SI{1e+4}{K}$ die Theorie sehr gut mit den Messungen übereinstimmt.
+Die Datenpunkte liegen in diesem Intervall mit ihren Fehlergrenzen auf der Kurve.
+
+Für Temperaturen größer als $\SI{1e+4}{K}$ gibt es zwar nur einen Datenpunkt, dieser liegt aber erheblich weit weg von der Kurve.
+Für größere Temperaturen ist die Theorie nach dieser Messung als nicht mit der Realität vereinbar; dafür müsste die Kurve weniger stark abfallen und einen längeren Auslauf haben.

@@ -10,8 +10,8 @@ stars_path[3]='H'
 set grid
 set xlabel 'Wellenlänge $\lambda/\SI{}{m}$'
 set ylabel 'Amplitude$/\textrm{a.u.}$'
-set format y '%.0s\cdot10^{%T}'
-set format x '%.0s\cdot10^{%T}'
+set format y '$%.0s\cdot10^{%T}$'
+set format x '$%.0s\cdot10^{%T}$'
 set samples 1000
 set key top right
 do for[i=1:3]{

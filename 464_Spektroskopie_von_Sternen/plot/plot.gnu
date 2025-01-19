@@ -11,7 +11,7 @@ stars_path[5]='60179-A1'
 set grid
 set xlabel 'Pixelkoordinate$/\textrm{Pixel}$'
 set ylabel 'Amplitude$/\textrm{a.u.}$'
-set format y '%.0s\cdot10^{%T}'
+set format y '$%.0s\cdot10^{%T}$'
 set title 'Spektrum'
 do for[i=1:5]{
   set output stars_path[i].'_data.tex'

@@ -11,7 +11,7 @@ stars_path[5]='60179-A1'
 set grid
 set xlabel 'Pixelkoordinate$/\textrm{Pixel}$'
 set ylabel 'Wellenlänge $\lambda/\SI{}{m}$'
-set format y '%.0s\cdot10^{%T}'
+set format y '$%.0s\cdot10^{%T}$'
 do for[i=1:5]{
   set output stars_path[i].'_kali.tex'
   stats '../data/processed/'.stars_path[i].'_kali_params.dat' using 1 every ::0::0 nooutput
