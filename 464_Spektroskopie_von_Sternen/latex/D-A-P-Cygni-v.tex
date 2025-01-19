@@ -1,5 +1,7 @@
 \subsection{Durchführung \& Auswertung: P Cygni Profil\\Endsternwindgeschwindigkeit}
 Analog zur H$\alpha $ Linie wird das Spektrum von P Cygni aufgenommen, mit nEDAR analysiert und ein linearer Fit zur Wellenlängenkalibrierung durchgeführt.
+Da es wie auch in (\ref{sec:beobachtet}) nicht möglich war ein gelungenes Spektrum aufzunehmen, wird hier auf die bereitgestellten Daten zugegriffen.
+Hierfür vergleicht man die Analyse des selbst aufgenommenen Spektrums in Abb.\ (\ref{fig:beob_pcygni}) und die des bereitgestellten Spektrums in Abb.\ (\ref{fig:bereit_pcygni}).
 
 Um die Endwindgeschwindigkeit $v_\infty$ zu bestimmen kann wie in \ref{sec:T-H-P-Cygni} vorgegangen werden.
 Es ist
@@ -8,17 +10,12 @@ Es ist
 .\end{align} 
 Die Wellenlängen $\lambda _\text{e}$ und $\lambda _\text{b}$ werden an dem Plot des P Cygni Profils abgelesen.
 Dies wird für die Linien H$\alpha$, N\textsc{ii} $\SI{6482,0}{\r{A}}$ und He\textsc{ii} $\SI{6678,2}{\r{A}}$ durchgeführt.  
-Es ergeben sich die Werte
-\begin{table}[h]
-  \begin{tabular}{cccc}
-    \toprule
-    & H$\alpha$ & He\textsc{ii} & N\textsc{ii}\\
-    \midrule
-    $\lambda _\text{b}$ & $\SI{6.5580+-0.0003e-7}{m}$ & $\SI{6.4793+-0.0002e-7}{m}$ & $\SI{6.67404+-0.0004e-7}{m}$ \\
-    $\lambda _\text{e}$ & $\SI{6.56272+-0.00005e-7}{m}$ & $\SI{6.482+-21.821e-7}{m}$ & $\SI{6.67807+-0.00009e-7}{m}$ \\
-    $v_\infty$ & $\SI{2.1801+-0.1391e+5}{m/s}$ & $\SI{1.36+-10098e+5}{m/s}$ & $\SI{1.808+-0.201e+5}{m/s}$ \\
-    \bottomrule
-  \end{tabular}
-  \caption{Die Endwindgeschwindigkeiten der verschiedenen Emissionslinien.} \label{tab:vinf}
-\end{table}
-%TODO tabelle doppelspaltig
+Diese sind als gesamtes Spektrum in Abb.\ (\ref{fig:pcygniSpektrum}) und einzeln in (\ref{fig:pcHe2}), (\ref{fig:pcH}), (\ref{fig:pcN2}) und (\ref{fig:pcSi3}) zu sehen.
+Die blaue Kannte ist als blaue vertikale Linie eingezeichnet.
+Es ergeben sich die Werte aus Tab.\ (\ref{tab:vinf}).
+Das Mittel liegt bei
+\begin{align} 
+  \overline{v_\infty}\approx \SI{1.78+-3366e+5}{m/s}
+.\end{align} 
+Die Größenordnung ($\approx \SI{178}{km/s}$) liegt im erwarteten Bereich von bis zu $\SI{2000}{km/s}$.
+Der relativ große Fehler auf die Endwindgeschwindigkeit der He\textsc{ii} Linie (und damit auch auf den Mittelwert) kommt von den wenigen Datenpunkten, an die eine \textsc{Gauss}--Kurve angepasst werden kann. 

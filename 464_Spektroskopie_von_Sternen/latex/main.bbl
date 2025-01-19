@@ -1,6 +1,6 @@
 %% BioMed_Central_Bib_Style_v1.01
 
-\begin{thebibliography}{4}
+\begin{thebibliography}{5}
 % BibTex style file: bmc-mathphys.bst (version 2.1), 2014-07-24
 \ifx \bisbn   \undefined \def \bisbn  #1{ISBN #1}\fi
 \ifx \binits  \undefined \def \binits#1{#1}\fi
@@ -77,6 +77,15 @@ Letzter Zugriff: 2025-01-14
 Ionization, Saha Equation.
 \url{https://www.astro.princeton.edu/~gk/A403/ioniz.pdf}.
 Letzter Zugriff: 2025-01-16
+\end{botherref}
+\endbibitem
+
+%%% 5
+\bibitem[\protect\citeauthoryear{}{}]{pcygniRadialvelocity}
+\begin{botherref}
+Radialgeschwindigkeit P Cygni.
+\url{https://vizier.cds.unistra.fr/viz-bin/VizieR-5?-out.add=.&-source=III/252/table8&HIP=100044}.
+Letzter Zugriff: 2025-01-19
 \end{botherref}
 \endbibitem
 

@@ -85,6 +85,8 @@ for i in range(len(stars_path)):
 #äquivalenzbreite_err=0
 print('--------äquivalenzbr--------')
 print(äquivalenzbreite)
+print('---äqui_err----')
+print(äquivalenzbreite_err)
 
 temperatur = np.array([5943, 6528, 18000, 8306, 9250])
 pe=10e9
