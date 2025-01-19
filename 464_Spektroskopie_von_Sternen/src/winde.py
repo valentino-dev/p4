@@ -64,6 +64,17 @@ for i in range(len(lines)):
 
     xlin = np.linspace(export_bounds[i, 0], export_bounds[i, 1], 1000)
 
+    if lines[i]=='H':
+
+        ll=gauss_fts[0][2]
+        ll_err=np.diag(gauss_fts[1])[2]**(1/2)
+        lh=6.564628e-7
+        lh_err=0
+
+        velocity = -3e8*(ll**2-lh**2)/(ll**2+lh**2)
+        velocity_err = ((-3e8*(2*ll*ll_err)/(ll**2+lh**2)+3e8*(ll**2-lh**2)/(ll**2+lh**2)**2*2*ll*ll_err)**2+(3e8*(lh*2*lh_err)/(ll**2+lh**2)+3e8*(ll**2-lh**2)/(ll**2+lh**2)**2*2*lh*lh_err)**2)**(1/2)
+        print("H doppler: ", velocity, velocity_err)
+
     '''
 
     plt.clf()
