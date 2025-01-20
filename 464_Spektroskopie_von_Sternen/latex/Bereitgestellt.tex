@@ -31,15 +31,20 @@ Hieraus ergeben sich
     HD60179 & $\SI{9.154+-0.563e-10}{m}$ \\
     \bottomrule
   \end{tabular}
-\end{table} %TODO: Parameter auflisten oder irgendwie im Protokoll referenzieren. Generell müssen glaube ich alle Parameter ins Protokoll.
+\end{table} %TODO: Parameter auflisten oder irgendwie im Protokoll referenzieren. Generell müssen glaube ich alle Parameter ins Protokoll. // meinst du a0, a2?
 
 Diese sind gegen die Temperatur des jeweiligen Sterns in Abb.\ (\ref{fig:äquivalenzbreiten}) aufgetragen.
 Die Temperatur ergibt sich aus der Spektralklasse.
 Man siehe dafür \cite{anleitung464} oder Abb.\ (\ref{fig:spektralklasse}).
 In diese Abbildung ist weiter die Besetzungszahl $n_2$ des Wasserstoffs eingezeichnet, die sich wie Gleichung (\ref{eq:n2}) verhält.
+Für den Parameter $\chi $ wurde die Ionisationsenergie von Wasserstoff aus \cite{saha} entnommen, diese liegt bei $\chi =\SI{13.54}{eV}$.
+Ein Elektronendruch von $p_\text{e}=\SI{10}{Pa}$ wurde angenommen.
+% TODO: Diskussion des Drucks und chi in saha gleichung
 
 Zu erkennen ist, dass für tiefe Temperaturen bist zum Peak der Kurve bei $\SI{1e+4}{K}$ die Theorie sehr gut mit den Messungen übereinstimmt.
 Die Datenpunkte liegen in diesem Intervall mit ihren Fehlergrenzen auf der Kurve.
 
 Für Temperaturen größer als $\SI{1e+4}{K}$ gibt es zwar nur einen Datenpunkt, dieser liegt aber erheblich weit weg von der Kurve.
-Für größere Temperaturen ist die Theorie nach dieser Messung als nicht mit der Realität vereinbar; dafür müsste die Kurve weniger stark abfallen und einen längeren Auslauf haben. % TODO: Diskussion des Drucks und chi in saha gleichung
+Für größere Temperaturen ist die Theorie nach dieser Messung als nicht mit der Realität vereinbar; dafür müsste die Kurve weniger stark abfallen und einen längeren Auslauf haben.
+Aus diesem Grund passt die Annahme von $p_\text{e}=\SI{10}{Pa}$ nicht.
+Für einen Verlauf, der zu den experimentellen Daten passt, muss $p_\text{e}\ll \SI{10}{Pa}$. %TODO: muss kleiner sein oder??
