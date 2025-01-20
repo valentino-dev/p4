@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1737362923.14318 "main.aux" "main.bbl" "main" 1737364871.46792 0
+["bibtex main"] 1737362923.14318 "main.aux" "main.bbl" "main" 1737365410.07556 0
   "./refs.bib" 1737318050.60289 899 feb0dea850d4d306eea139a1f2b84fa3 ""
   "./sn-mathphys-num.bst" 1736862885.54293 64141 2560fd4f8e8321a304f732d035eb1b51 ""
-  "main.aux" 1737364870.90801 9561 2f0291d9a2e894f9afe9e1b63e084f49 "pdflatex"
+  "main.aux" 1737365409.43692 9561 2f0291d9a2e894f9afe9e1b63e084f49 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1737364868.44033 "main.tex" "main.pdf" "main" 1737364871.46817 0
+["pdflatex"] 1737365406.87261 "main.tex" "main.pdf" "main" 1737365410.07581 0
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1246382020 916 f87d7c45f9c908e672703b83b72241a3 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm" 1246382020 924 9904cf1d39e9767e7a3622f2a125a565 ""
@@ -236,9 +236,9 @@
   "Abhängigkeit-der-H-a-Linie-von-der-Spektralklasse.tex" 1737127412.34907 708 d1cbdd0ef10600d5840c184bbf59997f ""
   "Appendix.tex" 1737318050.57956 4116 387542b0aea6b390f2f1777a24960489 ""
   "Beobachtet.tex" 1737363726.27328 1172 e000dc3803f4b56ff969e315477f64a6 ""
-  "Bereitgestellt.tex" 1737363080.52735 2643 c7c3f226c0675890bc403456143c686d ""
+  "Bereitgestellt.tex" 1737365249.87292 2701 f4b50a37c643081140ed0006b62bb0d7 ""
   "Cassegrain.en.png" 1737127412.35241 77574 043c63012ee55b0fa5582cfe51741220 ""
-  "D-A-P-Cygni-R.tex" 1737364868.07133 1515 edf2265d03012a2a4269065db3dc7917 ""
+  "D-A-P-Cygni-R.tex" 1737365406.35357 1853 5406fa889ca6952f56fc7f53db6df0ea ""
   "D-A-P-Cygni-v.tex" 1737363875.7439 1904 275e68ab797113ba325a9d67c50ad052 ""
   "D-A-Sternspektren.tex" 1737362243.5177 1251 3488dab761ccb245d94032a641c29a66 ""
   "Einleitung.tex" 1737127412.35241 591 a3f3aac273c0eafd935cf78c95ddcbbe ""
@@ -264,9 +264,9 @@
   "Teleskop.tex" 1737127412.35241 662 9c88c2b4e62982a82f5c4188bee27d44 ""
   "eigenes_spektrum_pcygni.png" 1737318050.58289 152815 0b8ea2bba67c87e27729232d597951f5 ""
   "gestellter_stern_hd109358.png" 1737318050.58289 81758 26320305e4f68d1cfb23f272e9f65db9 ""
-  "main.aux" 1737364870.90801 9561 2f0291d9a2e894f9afe9e1b63e084f49 "pdflatex"
+  "main.aux" 1737365409.43692 9561 2f0291d9a2e894f9afe9e1b63e084f49 "pdflatex"
   "main.bbl" 1737362923.30674 3308 a6cafc279805a2462cbd2295a23ebc70 "bibtex main"
-  "main.out" 1737364870.91135 3918 6934de08310ab5035510a3c896a1bba0 "pdflatex"
+  "main.out" 1737365409.43692 3918 6934de08310ab5035510a3c896a1bba0 "pdflatex"
   "main.tex" 1737318050.60289 1838 4729d3b98118287c7db6c775498b66b6 ""
   "sn-jnl.cls" 1736862885.5396 55331 2adf3041e7f64a0f542a04760be0043f ""
   "äquivalenzbreiten.pdf" 1737133230.7947 7593 605af7d7e1a4e7672ee4f8a0b7fa622a ""
