@@ -5,6 +5,19 @@ Die Analyse des Spektrums wurde mit nEDAR durchgeführt, kalibriert und dann mit
 Für einen Stern sind diese Plots in Abb.\ (\ref{fig:1a}) (nEDAR), (\ref{fig:1b}) (Anpassung H$\alpha $) und (\ref{fig:1c}) (Kalibrierung) zu sehen.
 Für die anderen vier Sterne ist dies analog; Abb.\ (\ref{fig:2a}), (\ref{fig:2b}), (\ref{fig:2c}) und (\ref{fig:3a}), (\ref{fig:3b}), (\ref{fig:3c}) und (\ref{fig:4a}), (\ref{fig:4b}), (\ref{fig:4c}) und (\ref{fig:5a}), (\ref{fig:5b}), (\ref{fig:5c}).
 
+Aus einer Gausskurve der Form
+\begin{align}
+  G_\textrm{f}(x)=c+a_0\cdot\exp(-\frac{(x-a_1)^2}{2a_2^2})
+\end{align}
+ergibt sich durch Integration die Fläche
+\begin{align}
+  A=\sqrt{2\pi}\cdot a_0a_2
+\end{align}
+und somit über die Maximalintensität $I_0:=c$ die Äquivalenzbreite
+\begin{align}
+  B_\textrm{äq.}=\sqrt{2\pi}\frac{a_0a_2}{c}.
+\end{align}
+
 Hieraus ergeben sich
 \begin{table}[h]
   \begin{tabular}{cc}
@@ -18,7 +31,8 @@ Hieraus ergeben sich
     HD60179 & $\SI{9.154+-0.563e-10}{m}$ \\
     \bottomrule
   \end{tabular}
-\end{table}
+\end{table} %TODO: Parameter auflisten oder irgendwie im Protokoll referenzieren.
+
 Diese sind gegen die Temperatur des jeweiligen Sterns in Abb.\ (\ref{fig:äquivalenzbreiten}) aufgetragen.
 Die Temperatur ergibt sich aus der Spektralklasse.
 Man siehe dafür \cite{anleitung464} oder Abb.\ (\ref{fig:spektralklasse}).
@@ -28,4 +42,4 @@ Zu erkennen ist, dass für tiefe Temperaturen bist zum Peak der Kurve bei $\SI{1
 Die Datenpunkte liegen in diesem Intervall mit ihren Fehlergrenzen auf der Kurve.
 
 Für Temperaturen größer als $\SI{1e+4}{K}$ gibt es zwar nur einen Datenpunkt, dieser liegt aber erheblich weit weg von der Kurve.
-Für größere Temperaturen ist die Theorie nach dieser Messung als nicht mit der Realität vereinbar; dafür müsste die Kurve weniger stark abfallen und einen längeren Auslauf haben.
+Für größere Temperaturen ist die Theorie nach dieser Messung als nicht mit der Realität vereinbar; dafür müsste die Kurve weniger stark abfallen und einen längeren Auslauf haben. % TODO: Diskussion des Drucks und chi in saha gleichung
